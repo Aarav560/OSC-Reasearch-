@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OSC Showreel</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  :root {
+    --ink: #0e0d0c; --cream: #f1ebdd; --coral: #e5673b; --coral-d: #b84a25;
+    --green: #5bd17a; --lazy: #d9483b; --mute: #8a8378;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+  canvas { position: absolute; inset: 0; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+  .anton { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
+  .serif { font-family: 'Instrument Serif', serif; font-style: italic; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .inter { font-family: 'Inter', sans-serif; }
+  .mask { overflow: hidden; display: block; }
+  .mask > span { display: block; will-change: transform; }
+  .center { position: absolute; left: 0; right: 0; text-align: center; }
+  .kicker { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 10px; font-size: 26px; text-transform: uppercase; }
+  .grain { position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="bg" class="layer"></div>
+  <canvas id="gl" width="1080" height="1920"></canvas>
+  <canvas id="fx" width="1080" height="1920"></canvas>
+  <div id="ui" class="layer"></div>
+  <canvas id="grain" class="grain" width="540" height="960"></canvas>
+</div>
+<script src="assets/three.min.js"></script>
+<script>
+/* ===================================================================
+   Orbital Strike Cannon — research showreel.
+   Everything is a pure function of time t (seconds): renderFrame(t).
+   =================================================================== */
+const W = 1080, H = 1920, DUR = 50;
+const C = { ink: '#0e0d0c', cream: '#f1ebdd', coral: '#e5673b', green: '#5bd17a', lazy: '#d9483b', mute: '#8a8378' };
+
+// ---------- math helpers ----------
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  outCubic: k => 1 - Math.pow(1 - k, 3),
+  outExpo: k => k >= 1 ? 1 : 1 - Math.pow(2, -10 * k),
+  inOutCubic: k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  inOutQuint: k => k < .5 ? 16 * k ** 5 : 1 - Math.pow(-2 * k + 2, 5) / 2,
+  outBack: k => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); },
+  inExpo: k => k <= 0 ? 0 : Math.pow(2, 10 * k - 10),
+};
+function rng(seed) { let s = seed >>> 0; return () => { s = (s + 0x6D2B79F5) >>> 0; let t = s; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+let MANIFEST = [], DATA = null;
+
+// ---------- DOM element factory (created once, styled per frame) ----------
+const ui = document.getElementById('ui');
+const bg = document.getElementById('bg');
+const fx = document.getElementById('fx').getContext('2d');
+const els = {};
+function el(id, html, css) {
+  if (els[id]) return els[id];
+  const d = document.createElement('div');
+  d.innerHTML = html; d.style.cssText = 'position:absolute;' + (css || '');
+  ui.appendChild(d); els[id] = d; return d;
+}
+function show(d, on) { d.style.display = on ? 'block' : 'none'; }
+function hideAll() { for (const k in els) els[k].style.display = 'none'; }
+
+/* Masked line reveal: each line slides up from behind its mask, staggered. */
+function maskLines(id, lines, css, t, t0, t1, opts = {}) {
+  const html = lines.map(l => `<div class="mask"><span>${l}</span></div>`).join('');
+  const d = el(id, html, css);
+  if (d._html !== html) { d.innerHTML = html; d._html = html; }
+  show(d, t >= t0 && t < t1);
+  const spans = d.querySelectorAll('.mask > span');
+  spans.forEach((s, i) => {
+    const kin = E.outExpo(prog(t, t0 + i * (opts.stagger ?? .07), t0 + i * (opts.stagger ?? .07) + (opts.inDur ?? .55)));
+    const kout = E.inOutCubic(prog(t, t1 - (opts.outDur ?? .35), t1));
+    const y = (1 - kin) * 110 - kout * 110;
+    s.style.transform = `translateY(${y}%)`;
+  });
+  return d;
+}
+
+// ---------- grain ----------
+const gctx = document.getElementById('grain').getContext('2d');
+const gimg = gctx.createImageData(540, 960);
+function grain(t) {
+  const r = rng(Math.floor(t * 30) * 7919 + 1);
+  for (let i = 0; i < gimg.data.length; i += 4) { const v = r() * 255; gimg.data[i] = gimg.data[i + 1] = gimg.data[i + 2] = v; gimg.data[i + 3] = 255; }
+  gctx.putImageData(gimg, 0, 0);
+}
+
+// =================================================================
+// 3D: stylized OSC voxel model
+// =================================================================
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true, preserveDrawingBuffer: true, alpha: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+renderer.setClearColor(0x000000, 0);
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0x0e0d0c, 60, 140);
+const camera = new THREE.PerspectiveCamera(38, W / H, 0.1, 500);
+scene.add(new THREE.HemisphereLight(0xfff3e6, 0x2a2522, 0.75));
+const sun = new THREE.DirectionalLight(0xffffff, 0.75); sun.position.set(30, 60, 20); scene.add(sun);
+const rim = new THREE.DirectionalLight(0xe5673b, 0.35); rim.position.set(-40, 20, -30); scene.add(rim);
+
+const PAL = {
+  deepslate: 0x3b3a3d, blackstone: 0x2b2627, stair: 0x5a2b2b, obsidian: 0x1c1430, portal: 0x8a3cf0,
+  slime: 0x6fc25a, tnt: 0xd8402f, tntw: 0xeeeeee, piston: 0x9c8a6a, redstone: 0xb3241b, observer: 0x6b6b6b,
+  snow: 0xdbe9f5, lectern: 0x8a5a33, quartz: 0xe9e2d6, glass: 0x9ad7e6,
+};
+const blocks = [];  // {x,y,z,c}
+function add(x, y, z, c) { blocks.push({ x, y, z, c }); }
+(function buildModel() {
+  // base slab 17x17
+  for (let x = -8; x <= 8; x++) for (let z = -8; z <= 8; z++) add(x, 0, z, (x + z) & 1 ? 'deepslate' : 'blackstone');
+  // four propellant arms along the axes
+  const arms = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+  for (const [dx, dz] of arms) {
+    for (let i = 2; i <= 7; i++) {
+      const x = dx * i, z = dz * i, px = dz, pz = dx; // perpendicular for walls
+      add(x + px, 1, z + pz, 'stair'); add(x - px, 1, z - pz, 'stair');
+      if (i % 2 === 0) add(x, 1, z, 'redstone');
+      add(x + px, 2, z + pz, i % 3 ? 'piston' : 'observer');
+      add(x - px, 2, z - pz, i % 3 ? 'piston' : 'observer');
+    }
+    // duper tower at arm end
+    const ex = dx * 10, ez = dz * 10;
+    for (let y = 1; y <= 6; y++) for (let a = -1; a <= 1; a++) {
+      const x = ex + (dz ? a : 0), z = ez + (dx ? a : 0);
+      const c = y === 6 ? 'slime' : (a === 0 ? (y % 2 ? 'tnt' : 'tntw') : (y % 2 ? 'slime' : 'piston'));
+      add(x, y, z, c);
+    }
+    for (let i = 8; i <= 9; i++) { add(dx * i, 1, dz * i, 'observer'); add(dx * i, 2, dz * i, 'slime'); }
+  }
+  // central intersection: quartz ring, powder snow, payload
+  for (let x = -1; x <= 1; x++) for (let z = -1; z <= 1; z++) if (x || z) add(x, 1, z, 'quartz');
+  add(0, 1, 0, 'snow'); add(0, 2, 0, 'snow');
+  add(0, 3, 0, 'tnt');
+  // two nether portals (chunk loaders) on the diagonal
+  for (const [cx, cz, axis] of [[-13, -13, 'x'], [13, 13, 'z']]) {
+    for (let a = -2; a <= 1; a++) for (let y = 0; y <= 5; y++) {
+      const edge = a === -2 || a === 1 || y === 0 || y === 5;
+      const x = cx + (axis === 'x' ? a : 0), z = cz + (axis === 'z' ? a : 0);
+      add(x, y + 1, z, edge ? 'obsidian' : 'portal');
+    }
+  }
+  // control deck with lecterns
+  for (let i = -3; i <= 3; i++) { add(i, 1, 13, 'quartz'); if (i % 2 === 0) add(i, 2, 13, 'lectern'); else add(i, 2, 13, 'redstone'); }
+})();
+// build order: by height, then distance from centre, with jitter
+(function order() {
+  const r = rng(42);
+  blocks.forEach(b => b.k = b.y * 1.6 + Math.hypot(b.x, b.z) * 0.18 + r() * 0.9);
+  blocks.sort((a, b) => a.k - b.k);
+  blocks.forEach((b, i) => b.i = i);
+})();
+const NB = blocks.length;
+const geo = new THREE.BoxGeometry(0.94, 0.94, 0.94);
+const groups = {};
+for (const b of blocks) (groups[b.c] = groups[b.c] || []).push(b);
+const meshes = [];
+for (const c in groups) {
+  const transparent = c === 'portal' || c === 'glass';
+  const mat = new THREE.MeshLambertMaterial({ color: PAL[c], transparent, opacity: transparent ? 0.72 : 1,
+    emissive: c === 'portal' ? 0x5a1ab0 : c === 'redstone' ? 0x600a05 : 0x000000, emissiveIntensity: c === 'portal' ? .6 : .4 });
+  const m = new THREE.InstancedMesh(geo, mat, groups[c].length);
+  m.userData.list = groups[c]; scene.add(m); meshes.push(m);
+}
+const edgeMat = new THREE.LineBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.25 });
+
+// chunk grid + lazy ring tiles on the ground plane
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(400, 400), new THREE.MeshLambertMaterial({ color: 0x151312 }));
+ground.rotation.x = -Math.PI / 2; ground.position.y = -0.5; scene.add(ground);
+const gridLines = new THREE.GridHelper(192, 12, 0x3a3532, 0x2a2624); gridLines.position.y = -0.48; scene.add(gridLines);
+const tiles = [];
+for (let cx = -2; cx <= 1; cx++) for (let cz = -2; cz <= 1; cz++) {
+  const inner = cx >= -1 && cx <= 0 && cz >= -1 && cz <= 0;
+  const t = new THREE.Mesh(new THREE.PlaneGeometry(15.6, 15.6), new THREE.MeshBasicMaterial({ color: inner ? 0xd9483b : 0x5bd17a, transparent: true, opacity: 0 }));
+  t.rotation.x = -Math.PI / 2; t.position.set(cx * 16 + 8, -0.46, cz * 16 + 8); scene.add(t); tiles.push(t);
+}
+// payload streak
+const streak = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.5, 1, 12, 1, true), new THREE.MeshBasicMaterial({ color: 0xffd2b8, transparent: true, opacity: 0 }));
+scene.add(streak);
+const flare = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 20), new THREE.MeshBasicMaterial({ color: 0xfff1e0, transparent: true, opacity: 0 }));
+scene.add(flare);
+
+const M4 = new THREE.Matrix4(), Q = new THREE.Quaternion(), S3 = new THREE.Vector3(), P3 = new THREE.Vector3(), EUL = new THREE.Euler();
+function placeBlocks(k, t) {
+  // k: 0..1 build progress; blocks appear in order with a drop + scale pop
+  const span = 0.012; // fraction of the build each block takes to land
+  let placed = 0;
+  for (const m of meshes) {
+    m.userData.list.forEach((b, j) => {
+      const start = (b.i / NB) * (1 - span);
+      const p = clamp((k - start) / span);
+      if (p > 0.999) placed++;
+      const e = E.outBack(p);
+      const s = p <= 0 ? 0.0001 : lerp(0.2, 1, clamp(e, 0, 1.2));
+      P3.set(b.x, b.y + (1 - E.outCubic(p)) * 6, b.z);
+      EUL.set((1 - p) * 0.8, (1 - p) * 1.2, 0); Q.setFromEuler(EUL);
+      S3.set(s, s, s);
+      M4.compose(P3, Q, S3); m.setMatrixAt(j, M4);
+    });
+    m.instanceMatrix.needsUpdate = true;
+  }
+  return placed;
+}
+
+// =================================================================
+// particles (2D) for the title formation
+// =================================================================
+function textPoints(lines, size, font, step) {
+  const c = document.createElement('canvas'); c.width = W; c.height = 900;
+  const g = c.getContext('2d'); g.fillStyle = '#fff'; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.font = `${size}px ${font}`;
+  lines.forEach((l, i) => g.fillText(l, W / 2, 450 + (i - (lines.length - 1) / 2) * size * 1.0));
+  const d = g.getImageData(0, 0, W, 900).data, pts = [];
+  for (let y = 0; y < 900; y += step) for (let x = 0; x < W; x += step) if (d[(y * W + x) * 4 + 3] > 128) pts.push([x, y + 510]);
+  return pts;
+}
+let TITLE_PTS = null;
+
+// =================================================================
+// scenes
+// =================================================================
+function bgColor(c) { bg.style.background = c; }
+
+function sceneIntro(t) {
+  // 0 – 3.6 : three punch cards
+  const cards = [
+    [0.0, 1.2, C.coral, C.ink, '73 VIDEOS.', 'RESEARCHED'],
+    [1.2, 2.4, C.cream, C.ink, 'ONE SERVER.', 'PAPER 26.3'],
+    [2.4, 3.6, C.ink, C.cream, 'ZERO PLAYERS.', 'JUST CODE'],
+  ];
+  for (const [a, b, bgc, fg, big, small] of cards) {
+    if (t >= a && t < b) bgColor(bgc);
+    maskLines('ic-' + a, [`<span class="kicker" style="color:${fg};opacity:.75">${small}</span>`],
+      `left:0;right:0;top:820px;text-align:center;`, t, a + .02, b, { inDur: .45 });
+    maskLines('ib-' + a, [big], `left:0;right:0;top:870px;text-align:center;color:${fg};font-size:150px;line-height:1.05;` +
+      `font-family:Anton;text-transform:uppercase;letter-spacing:-2px;`, t, a + .06, b, { inDur: .5 });
+  }
+  // blinking coral block cursor on the last card
+  const cur = el('cursor', '', `width:34px;height:120px;background:${C.coral};top:893px;`);
+  show(cur, t >= 3.0 && t < 3.6 && Math.floor(t * 4) % 2 === 0);
+  cur.style.left = '1000px';
+}
+
+function sceneTerminal(t) {
+  const a = 3.6, b = 7.0;
+  if (t < a || t >= b) return;
+  bgColor('#0b0b0a');
+  const k = prog(t, a, b - 0.4);
+  const n = Math.floor(E.inOutCubic(k) * MANIFEST.length);
+  const lines = [];
+  lines.push(`<span style="color:${C.coral}">$</span> yt-dlp --write-auto-subs \\`);
+  lines.push(`    --extractor-args youtube:player_client=web_embedded \\`);
+  lines.push(`    -f sb0 --write-info-json &lt;73 urls&gt;`);
+  lines.push('');
+  const start = Math.max(0, n - 22);
+  for (let i = start; i < n; i++) {
+    const [id, who, title] = MANIFEST[i];
+    lines.push(`<span style="color:${C.green}">OK</span> <span style="color:#6f6a62">${id}</span> <span style="color:${C.cream}">${who.padEnd(12, ' ').slice(0, 12)}</span> <span style="color:#a39d92">${title.slice(0, 26)}</span>`);
+  }
+  const term = el('term', '', `left:70px;right:70px;top:430px;font-family:'JetBrains Mono';font-size:25px;line-height:1.55;color:#cfc8bb;white-space:pre;`);
+  show(term, true);
+  term.innerHTML = lines.join('\n') + (Math.floor(t * 3) % 2 ? '' : ` <span style="background:${C.coral}">&nbsp;</span>`);
+  const fade = E.outCubic(prog(t, a, a + .3)) * (1 - prog(t, b - .3, b));
+  term.style.opacity = fade;
+  const hdr = el('termhdr', '', `left:70px;right:70px;top:260px;color:${C.cream};`);
+  show(hdr, true); hdr.style.opacity = fade;
+  hdr.innerHTML = `<div class="kicker" style="color:${C.mute};font-size:24px">Harvesting captions + frames</div>` +
+    `<div style="font-family:Anton;font-size:120px;line-height:1.1">${String(n).padStart(2, '0')}<span style="color:${C.mute}">/73</span></div>`;
+  // progress bar
+  const bar = el('termbar', `<div></div>`, `left:70px;right:70px;top:1700px;height:6px;background:#2a2725;`);
+  show(bar, true); bar.style.opacity = fade;
+  bar.firstChild.style.cssText = `height:100%;background:${C.coral};width:${(n / 73) * 100}%`;
+}
+
+function sceneTitle(t) {
+  const a = 7.0, b = 9.2;
+  if (t < a || t >= b) return;
+  bgColor(C.ink);
+  if (!TITLE_PTS) TITLE_PTS = textPoints(['ORBITAL', 'STRIKE', 'CANNON'], 250, 'Anton', 7);
+  const r = rng(7);
+  const k = E.inOutQuint(prog(t, a, a + 1.3));
+  const out = E.inExpo(prog(t, b - .45, b));
+  TITLE_PTS.forEach(([x, y], i) => {
+    const sx = r() * W, sy = r() * H, ang = r() * 6.283;
+    const px = lerp(sx, x, k) + Math.cos(ang + t * 2) * (1 - k) * 40;
+    const py = lerp(sy, y, k) + Math.sin(ang + t * 2) * (1 - k) * 40 - out * (r() * 900 + 300);
+    const third = y > 1170 ? C.coral : C.cream;
+    fx.fillStyle = third; fx.globalAlpha = (0.35 + 0.65 * k) * (1 - out * .6);
+    fx.fillRect(px, py, 4.2, 4.2);
+  });
+  fx.globalAlpha = 1;
+  const cap = el('titlecap', `<div class="kicker" style="color:${C.mute}">A research reel · Minecraft Java</div>`, `left:0;right:0;top:1480px;text-align:center;`);
+  show(cap, true); cap.style.opacity = E.outCubic(prog(t, a + 1.1, a + 1.5)) * (1 - out);
+}
+
+function sceneBuild(t) {
+  const a = 9.2, b = 21.0;
+  const gl = document.getElementById('gl');
+  if (t < a || t >= b) { gl.style.display = 'none'; return; }
+  gl.style.display = 'block';
+  bgColor('radial-gradient(120% 70% at 50% 40%, #24201d 0%, #0e0d0c 70%)');
+  const kb = E.inOutCubic(prog(t, a + 0.3, 17.0));
+  const placed = placeBlocks(kb, t);
+  // camera: slow 300° orbit + push-in, tilting up for the launch
+  const orbit = lerp(-0.6, 4.6, E.inOutCubic(prog(t, a, b)));
+  const launch = E.inOutCubic(prog(t, 18.6, 20.4));
+  const rad = lerp(58, 40, E.outCubic(prog(t, a, 17))) + launch * 8;
+  const camY = lerp(34, 24, prog(t, a, 17)) + launch * 4;
+  camera.position.set(Math.cos(orbit) * rad, camY, Math.sin(orbit) * rad);
+  camera.lookAt(0, lerp(2, 3, prog(t, a, 17)) + launch * 28, 0);
+  camera.fov = 40 - launch * 4; camera.updateProjectionMatrix();
+  // chunk tiles: lazy ring vs entity ticking
+  const tk = E.outCubic(prog(t, 15.2, 16.0));
+  tiles.forEach((m, i) => m.material.opacity = tk * (0.13 + 0.05 * Math.sin(t * 4 + i)));
+  // payload launch
+  const lk = prog(t, 18.9, 19.5);
+  const top = lerp(3.5, 160, E.inExpo(lk));
+  streak.material.opacity = lk > 0 ? (1 - prog(t, 19.5, 20.6)) * 0.9 : 0;
+  streak.scale.set(1, Math.max(0.01, top - 3.5), 1); streak.position.set(0, 3.5 + (top - 3.5) / 2, 0);
+  flare.material.opacity = Math.max(0, 1 - Math.abs(t - 18.95) * 4) * 0.8;
+  flare.scale.setScalar(1 + 2.2 * prog(t, 18.7, 19.2));
+  renderer.render(scene, camera);
+
+  // HUD
+  const hud = el('hud', '', `left:70px;right:70px;top:150px;color:${C.cream};`);
+  show(hud, true);
+  const fin = E.outCubic(prog(t, a, a + .5)) * (1 - prog(t, b - .3, b));
+  hud.style.opacity = fin;
+  hud.innerHTML = `<div class="kicker" style="color:${C.coral};font-size:24px">● Generating</div>` +
+    `<div style="font-family:'JetBrains Mono';font-size:30px;margin-top:14px;color:#cfc8bb">BLOCK ${String(placed).padStart(4, '0')} / ${String(NB).padStart(4, '0')}</div>` +
+    `<div style="height:4px;background:#2a2725;margin-top:18px"><div style="height:100%;width:${placed / NB * 100}%;background:${C.coral}"></div></div>`;
+  const caps = [
+    [10.2, 12.8, 'Propellant arrays', '×4 axes · ±X ±Z'],
+    [12.9, 15.0, 'TNT dupers', 'variable charge · 1–111 per batch'],
+    [15.1, 17.3, 'Lazy-chunk ring', 'entities frozen · knockback stacks'],
+    [17.4, 18.7, 'Payload in stasis', 'powder snow brake'],
+    [18.8, 21.0, 'Release.', 'one tick · any coordinate'],
+  ];
+  caps.forEach(([c0, c1, big, small], i) => {
+    maskLines('cap' + i, [big, `<span style="font-family:Inter;font-weight:500;font-size:30px;letter-spacing:1px;color:#b8b1a5;text-transform:none">${small}</span>`],
+      `left:70px;right:70px;top:1560px;color:${C.cream};font-family:Anton;font-size:92px;line-height:1.08;text-transform:uppercase;`, t, c0, c1, { inDur: .5 });
+  });
+  const tag = el('stylized', `<span class="mono" style="font-size:20px;color:#6f6a62">stylized voxel model · not a schematic</span>`, `right:70px;top:1850px;`);
+  show(tag, true); tag.style.opacity = fin;
+  // legend for tiles
+  const leg = el('legend', `<span class="mono" style="font-size:22px;color:${C.green}">■ entity-ticking</span>&nbsp;&nbsp;&nbsp;<span class="mono" style="font-size:22px;color:${C.lazy}">■ lazy</span>`, `left:70px;top:330px;`);
+  show(leg, true); leg.style.opacity = tk * fin;
+  // white flash at release
+  if (t > 18.9 && t < 19.4) { fx.fillStyle = '#fff'; fx.globalAlpha = (1 - prog(t, 18.9, 19.3)) * .35; fx.fillRect(0, 0, W, H); fx.globalAlpha = 1; }
+}
+
+function flapDigits(id, str, top, size, t, t0, color) {
+  // split-flap style: each digit cycles before settling, staggered left-to-right
+  const d = el(id, '', `left:0;right:0;top:${top}px;text-align:center;`);
+  show(d, true);
+  const r = rng(id.length * 31);
+  d.innerHTML = [...str].map((ch, i) => {
+    const settle = t0 + 0.12 + i * 0.09;
+    let shown = ch;
+    if (/\d/.test(ch) && t < settle) shown = String(Math.floor(r() * 10 + t * 37 + i * 3) % 10);
+    if (t < t0 + i * 0.04) shown = ' ';
+    const isDigit = /\d/.test(ch);
+    return `<span style="display:inline-block;${isDigit ? `width:${size * 0.56}px;background:#1d1a18;margin:0 5px;border-radius:10px;box-shadow:inset 0 -${size * .5}px 0 rgba(0,0,0,.18);` : ''}` +
+      `font-family:Anton;font-size:${size}px;line-height:1.2;color:${color}">${shown === ' ' ? '&nbsp;' : shown}</span>`;
+  }).join('');
+  return d;
+}
+
+function sceneRange(t) {
+  const a = 21.0, b = 25.0;
+  if (t < a || t >= b) return;
+  bgColor(C.ink);
+  const out = 1 - prog(t, b - .3, b);
+  maskLines('rk', [`<span class="kicker" style="color:${C.mute}">measured on Paper 26.3</span>`], `left:0;right:0;top:640px;text-align:center;`, t, a + .05, b);
+  const d = flapDigits('rd', '4,436', 720, 210, t, a + .15, C.cream);
+  d.style.opacity = out;
+  maskLines('rb', ['BLOCKS', `<span style="color:${C.coral}">IN ONE TICK.</span>`],
+    `left:0;right:0;top:1010px;text-align:center;color:${C.cream};font-family:Anton;font-size:140px;line-height:1.02;`, t, a + .6, b);
+  maskLines('rs', [`<span class="inter" style="font-weight:500;font-size:30px;color:#a39d92">6,000 TNT · lazy acceleration · 0.7393 blocks per TNT</span>`],
+    `left:0;right:0;top:1340px;text-align:center;`, t, a + 1.0, b);
+  // speed lines
+  const r = rng(99);
+  for (let i = 0; i < 60; i++) {
+    const y = r() * H, len = 200 + r() * 600, sp = 2500 + r() * 3000;
+    const x = ((r() * W * 2 + (t - a) * sp) % (W + len * 2)) - len;
+    fx.strokeStyle = i % 5 ? 'rgba(241,235,221,.10)' : 'rgba(229,103,59,.35)';
+    fx.lineWidth = i % 5 ? 2 : 3; fx.beginPath(); fx.moveTo(x, y); fx.lineTo(x + len, y); fx.stroke();
+  }
+}
+
+function sceneTarget(t) {
+  const a = 25.0, b = 29.0;
+  if (t < a || t >= b) return;
+  bgColor(C.coral);
+  const k = E.outExpo(prog(t, a, a + .9)), out = E.inOutCubic(prog(t, b - .35, b));
+  const cx = W / 2, cy = 860;
+  fx.save(); fx.translate(cx, cy); fx.rotate((1 - k) * -0.6 + (t - a) * 0.05);
+  fx.strokeStyle = C.ink; fx.globalAlpha = 1 - out;
+  [360, 260, 160, 70].forEach((rad, i) => {
+    const kk = E.outCubic(prog(t, a + i * .08, a + .7 + i * .08));
+    fx.lineWidth = i === 3 ? 6 : 3; fx.beginPath(); fx.arc(0, 0, rad, -Math.PI / 2, -Math.PI / 2 + kk * Math.PI * 2); fx.stroke();
+  });
+  fx.lineWidth = 3;
+  const ck = E.outCubic(prog(t, a + .3, a + 1));
+  [[0, -1], [0, 1], [1, 0], [-1, 0]].forEach(([dx, dy]) => { fx.beginPath(); fx.moveTo(dx * 400 * ck, dy * 400 * ck); fx.lineTo(dx * 420 * ck, dy * 420 * ck); fx.moveTo(dx * 30, dy * 30); fx.lineTo(dx * 400 * ck, dy * 400 * ck); fx.stroke(); });
+  fx.restore();
+  // impact: predicted (centre) vs actual (+0.22, +0.20) exaggerated 120x
+  const ik = E.outBack(prog(t, a + 1.0, a + 1.4));
+  fx.globalAlpha = 1 - out;
+  fx.fillStyle = C.ink; fx.beginPath(); fx.arc(cx + 0.218 * 120, cy + 0.198 * 120, 18 * ik, 0, 7); fx.fill();
+  fx.strokeStyle = C.cream; fx.lineWidth = 4; fx.beginPath(); fx.arc(cx + 0.218 * 120, cy + 0.198 * 120, 18 * ik + 30 * prog(t, a + 1.1, a + 1.8), 0, 7);
+  fx.globalAlpha = (1 - prog(t, a + 1.1, a + 1.8)) * (1 - out); fx.stroke(); fx.globalAlpha = 1;
+  maskLines('tk', [`<span class="kicker" style="color:${C.ink};opacity:.7">aimed (150, 90) · landed (150.22, 90.20)</span>`], `left:0;right:0;top:300px;text-align:center;`, t, a + .2, b);
+  maskLines('tb', ['0.22', `<span style="font-size:110px">BLOCKS OFF.</span>`], `left:0;right:0;top:1250px;text-align:center;color:${C.ink};font-family:Anton;font-size:230px;line-height:.98;`, t, a + 1.2, b);
+  maskLines('ts', [`<span class="serif" style="font-size:54px;color:${C.ink}">two-axis calibration matrix, solved &amp; fired</span>`], `left:0;right:0;top:1740px;text-align:center;`, t, a + 1.6, b);
+}
+
+function sceneChart(t) {
+  const a = 29.0, b = 34.0;
+  if (t < a || t >= b) return;
+  bgColor(C.ink);
+  const out = E.inOutCubic(prog(t, b - .35, b));
+  maskLines('ck', [`<span class="kicker" style="color:${C.mute}">knockback per TNT vs distance</span>`], `left:70px;right:70px;top:300px;`, t, a, b);
+  maskLines('cb', ['1 − d⁄8'], `left:70px;right:70px;top:360px;color:${C.cream};font-family:Anton;font-size:190px;line-height:1.1;`, t, a + .1, b);
+  const x0 = 110, y0 = 1500, w = 860, h = 760;
+  const pts = DATA.kb.filter(p => p[0] >= 1 && p[0] <= 7.5);
+  fx.globalAlpha = 1 - out;
+  fx.strokeStyle = '#3a3532'; fx.lineWidth = 2;
+  for (let g = 0; g <= 4; g++) { const y = y0 - g / 4 * h; fx.beginPath(); fx.moveTo(x0, y); fx.lineTo(x0 + w, y); fx.stroke(); }
+  const bw = w / pts.length;
+  pts.forEach(([d, v], i) => {
+    const kk = E.outExpo(prog(t, a + .5 + i * .06, a + 1.3 + i * .06));
+    const bh = v / 0.9 * h * kk;
+    fx.fillStyle = i % 2 ? C.coral : '#f08a63';
+    fx.fillRect(x0 + i * bw + 6, y0 - bh, bw - 12, bh);
+  });
+  // theory line drawn on top
+  const lk = E.inOutCubic(prog(t, a + 1.6, a + 2.6));
+  fx.strokeStyle = C.cream; fx.lineWidth = 5; fx.setLineDash([14, 10]); fx.beginPath();
+  for (let s = 0; s <= lk * 100; s++) {
+    const d = 1 + (6.5 * s) / 100, v = 1 - d / 8;
+    const x = x0 + ((d - 1) / 0.5) * bw + bw / 2, y = y0 - v / 0.9 * h;
+    s ? fx.lineTo(x, y) : fx.moveTo(x, y);
+  }
+  fx.stroke(); fx.setLineDash([]); fx.globalAlpha = 1;
+  maskLines('cx', [`<span class="mono" style="font-size:24px;color:#8a8378">d = 1.0 … 7.5 blocks   ·   bars: Paper 26.3   ·   dashes: theory</span>`], `left:70px;right:70px;top:1530px;`, t, a + .8, b);
+  maskLines('cs', [`<span class="serif" style="font-size:66px;color:${C.cream}">and it </span><span class="anton" style="font-size:66px;color:${C.coral}">stacks</span><span class="serif" style="font-size:66px;color:${C.cream}"> in lazy chunks.</span>`],
+    `left:70px;right:70px;top:1640px;`, t, a + 2.4, b);
+}
+
+function sceneChecklist(t) {
+  const a = 34.0, b = 39.4;
+  if (t < a || t >= b) return;
+  bgColor(C.cream);
+  const items = [
+    'Axis order: Y → major → minor', 'Lazy-chunk stasis', 'Cumulative knockback', 'Powder-snow brake (90%)',
+    'Stab-charge fuse order', 'Unloaded-chunk strike', 'Portal ticket: 3×3 + lazy ring', 'max-tnt-per-tick throttle',
+  ];
+  const n = items.filter((_, i) => t > a + .7 + i * .38).length;
+  maskLines('lk', [`<span class="kicker" style="color:${C.ink};opacity:.6">paper 26.3 · build 214 · headless</span>`], `left:70px;right:70px;top:230px;`, t, a, b);
+  const big = el('lbig', '', `left:70px;top:290px;color:${C.ink};font-family:Anton;font-size:200px;line-height:1.05;`);
+  show(big, true); big.innerHTML = `${n}<span style="color:#b9b0a0">/8</span>`;
+  big.style.opacity = 1 - prog(t, b - .3, b);
+  items.forEach((txt, i) => {
+    const t0 = a + .55 + i * .38;
+    const warn = i === 7;
+    const ok = t > t0 + .15;
+    maskLines('li' + i, [`<span style="display:inline-block;width:64px;height:64px;border-radius:50%;vertical-align:middle;margin-right:28px;text-align:center;line-height:64px;font-family:Inter;font-weight:800;font-size:36px;` +
+      `background:${ok ? (warn ? C.coral : C.ink) : 'transparent'};border:3px solid ${C.ink};color:${C.cream}">${ok ? (warn ? '!' : '✓') : ''}</span>` +
+      `<span style="vertical-align:middle;font-family:Inter;font-weight:800;font-size:44px;color:${C.ink};letter-spacing:-.5px">${txt}</span>`],
+      `left:70px;right:40px;top:${590 + i * 128}px;`, t, t0, b, { inDur: .45 });
+  });
+  maskLines('lf', [`<span class="serif" style="font-size:48px;color:${C.coral}">! Spigot caps TNT at 100/tick — raise it or the cannon mistimes.</span>`],
+    `left:70px;right:70px;top:1660px;`, t, a + 3.9, b);
+}
+
+function sceneMath(t) {
+  const a = 39.4, b = 43.0;
+  if (t < a || t >= b) return;
+  bgColor(C.ink);
+  maskLines('m1', ['PHYSICS'], `left:0;right:0;top:640px;text-align:center;color:${C.cream};font-family:Anton;font-size:250px;line-height:1.05;`, t, a + .05, b);
+  maskLines('m2', [`<span class="serif">is just</span>`], `left:0;right:0;top:920px;text-align:center;color:${C.coral};font-size:150px;line-height:1.05;`, t, a + .5, b);
+  maskLines('m3', ['MATH.'], `left:0;right:0;top:1080px;text-align:center;color:${C.cream};font-family:Anton;font-size:250px;line-height:1.05;`, t, a + .85, b);
+  // orbiting point ring — the lazy-chunk "stasis field"
+  const r = rng(5), out = 1 - prog(t, b - .3, b);
+  for (let i = 0; i < 900; i++) {
+    const th = r() * 6.283, ph = Math.acos(2 * r() - 1), R = 430;
+    let x = R * Math.sin(ph) * Math.cos(th + t * .5), y = R * Math.cos(ph), z = R * Math.sin(ph) * Math.sin(th + t * .5);
+    const tilt = .5, y2 = y * Math.cos(tilt) - z * Math.sin(tilt), z2 = y * Math.sin(tilt) + z * Math.cos(tilt);
+    const p = 900 / (900 + z2);
+    fx.globalAlpha = (0.15 + 0.5 * (z2 + R) / (2 * R)) * out * E.outCubic(prog(t, a, a + .8));
+    fx.fillStyle = i % 9 ? C.cream : C.coral;
+    fx.fillRect(W / 2 + x * p, 960 + y2 * p, 3.2 * p, 3.2 * p);
+  }
+  fx.globalAlpha = 1;
+}
+
+const thumbs = [];
+function sceneCredits(t) {
+  const a = 43.0, b = 46.4;
+  if (t < a || t >= b) return;
+  bgColor(C.ink);
+  const out = 1 - prog(t, b - .3, b);
+  // diagonal scrolling mosaic of real video thumbnails from the corpus
+  fx.save(); fx.globalAlpha = out * E.outCubic(prog(t, a, a + .4)); fx.translate(W / 2, 760); fx.rotate(-0.18);
+  for (let row = 0; row < 6; row++) for (let col = 0; col < 6; col++) {
+    const img = thumbs[(row * 6 + col) % thumbs.length]; if (!img || !img.complete) continue;
+    const dir = row % 2 ? 1 : -1, off = ((t - a) * 160 * dir) % 340;
+    const x = (col - 3) * 340 + off - 170, y = (row - 3) * 200;
+    fx.drawImage(img, x, y, 320, 180);
+  }
+  fx.restore();
+  const grad = fx.createLinearGradient(0, 1150, 0, 1500); grad.addColorStop(0, 'rgba(14,13,12,0)'); grad.addColorStop(1, 'rgba(14,13,12,1)');
+  fx.fillStyle = grad; fx.fillRect(0, 1150, W, 770);
+  maskLines('crk', [`<span class="kicker" style="color:${C.mute}">researched from the work of</span>`], `left:0;right:0;top:1420px;text-align:center;`, t, a + .2, b);
+  maskLines('crn', ['CUBICMETRE', `<span style="color:${C.coral}">TK.PAARMAA</span>`, 'THEEDUMBROCK', `<span style="color:${C.coral}">WMC</span>`],
+    `left:0;right:0;top:1480px;text-align:center;color:${C.cream};font-family:Anton;font-size:76px;line-height:1.08;`, t, a + .35, b, { stagger: .1 });
+}
+
+function sceneEnd(t) {
+  const a = 46.4;
+  if (t < a) return;
+  bgColor(C.ink);
+  maskLines('e1', [`<span class="kicker" style="color:${C.mute}">the orbital strike cannon</span>`], `left:0;right:0;top:760px;text-align:center;`, t, a + .1, 99);
+  maskLines('e2', ['RESEARCH', `<span style="color:${C.coral}">REEL.</span>`], `left:0;right:0;top:820px;text-align:center;color:${C.cream};font-family:Anton;font-size:200px;line-height:1.0;`, t, a + .2, 99);
+  maskLines('e3', [`<span class="serif" style="font-size:52px;color:#b8b1a5">rendered frame by frame from code · zero keyframes</span>`], `left:0;right:0;top:1270px;text-align:center;`, t, a + .8, 99);
+  // closing iris
+  const k = E.inOutCubic(prog(t, DUR - .6, DUR));
+  if (k > 0) { fx.fillStyle = '#000'; fx.globalAlpha = k; fx.fillRect(0, 0, W, H); fx.globalAlpha = 1; }
+}
+
+// global cut transitions: coral wipe bars between scenes
+const CUTS = [3.6, 7.0, 9.2, 21.0, 25.0, 29.0, 34.0, 39.4, 43.0, 46.4];
+function wipes(t) {
+  for (const c of CUTS) {
+    const k = prog(t, c - .18, c + .18);
+    if (k <= 0 || k >= 1) continue;
+    const e = E.inOutCubic(k);
+    for (let i = 0; i < 6; i++) {
+      const y = i * H / 6, d = i * 0.05;
+      const kk = clamp((e - d) / (1 - .25));
+      const x0 = kk < .5 ? -W + kk * 2 * W : 0, x1 = kk < .5 ? W : (kk - .5) * 2 * W;
+      fx.fillStyle = i % 2 ? C.coral : C.cream;
+      fx.fillRect(kk < .5 ? 0 : x1, y, kk < .5 ? kk * 2 * W : W - x1, H / 6 + 1);
+    }
+  }
+}
+
+window.renderFrame = function (t) {
+  hideAll();
+  fx.clearRect(0, 0, W, H);
+  sceneIntro(t); sceneTerminal(t); sceneTitle(t); sceneBuild(t); sceneRange(t);
+  sceneTarget(t); sceneChart(t); sceneChecklist(t); sceneMath(t); sceneCredits(t); sceneEnd(t);
+  wipes(t);
+  grain(t);
+};
+
+window.ready = (async () => {
+  MANIFEST = await (await fetch('assets/manifest.json')).json().catch(() => []);
+  DATA = await (await fetch('assets/data.json')).json();
+  for (let i = 0; i < 36; i++) { const im = new Image(); im.src = `assets/thumbs/${String(i).padStart(2, '0')}.jpg`; thumbs.push(im); }
+  await document.fonts.ready;
+  await Promise.all(thumbs.map(im => im.decode().catch(() => {})));
+  return true;
+})();
+</script>
+</body>
+</html>
