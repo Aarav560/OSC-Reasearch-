@@ -1,0 +1,65 @@
+{
+  "id": "xvpamcEayek",
+  "title": "A Viewer made my Copper Factory Obsolete",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211129",
+  "duration": 1214,
+  "view_count": 339910,
+  "like_count": 11524,
+  "description": "Literally less than a day after my previous video went live and somebody contacted me on discord with a more advanced theory of copper oxidization along with a layout that actually made my concept obsolete. So I teamed up with them to produce a design that should be perfectly viable in survival gameplay.\n\nSchematics of the two new copper fatory variants:\nhttps://www.mediafire.com/file/85jn7s8ziawjscg/Copper_Converter_Catalyzer_18Kph.litematic/file\nhttps://www.mediafire.com/file/kpvoman1470b3mg/Copper_Converter_Catalyzer_1800ph.litematic/file\n\nWorld Download:\nhttps://www.mediafire.com/file/gukgycm0bkjnq1c/Catalytic_Converter.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The new copper design",
+      "end_time": 161
+    },
+    {
+      "start_time": 161,
+      "title": "Oxidization mechanics",
+      "end_time": 313
+    },
+    {
+      "start_time": 313,
+      "title": "Solving the bottleneck",
+      "end_time": 493
+    },
+    {
+      "start_time": 493,
+      "title": "Designing the conveyors",
+      "end_time": 622
+    },
+    {
+      "start_time": 622,
+      "title": "System distribution",
+      "end_time": 720
+    },
+    {
+      "start_time": 720,
+      "title": "Piston mechanics",
+      "end_time": 861
+    },
+    {
+      "start_time": 861,
+      "title": "Merging the streams",
+      "end_time": 968
+    },
+    {
+      "start_time": 968,
+      "title": "Blast chamber integration",
+      "end_time": 1059
+    },
+    {
+      "start_time": 1059,
+      "title": "Practical application",
+      "end_time": 1214
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "oxidized copper",
+    "copper converter",
+    "blast chamber"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=xvpamcEayek"
+}

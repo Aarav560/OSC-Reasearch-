@@ -1,0 +1,22 @@
+[00:00] Hi guys, it's Cyclist. [music] &gt;&gt; I'm sorry if the total all takes too long. First get command block [music] and get structure block. [music] &gt;&gt; [music] &gt;&gt; and get button and temporary block and
+
+[00:33] TNT and fishing rod. &gt;&gt; First place structure [music] block on offset on [music] Y make it to
+
+[01:06] passive one and in size Y make it to passive one two on X and Z you can make it any [music] size you &gt;&gt; On the next step, place your temporary block just [music] like this. Make it a box. And the next step is [music] make your own style.
+
+[01:40] I make a style of box. &gt;&gt; Just like this. Now place a temporary block [music] on top of structure block and copy the chords. If you want to copy chords, just go to settings, scroll [music] down,
+
+[02:16] click creator. Just enable [music] copy coordinate UI. And next step, place command block. Just type [music] fill and paste your chords. And go to other side and copy chords again. Just paste [music] it and type redstone
+
+[02:50] block. Name [music] your structure block. You can name it anything. Just don't save it yet. Once I click the button, quickly save your [music] structure block and place four command block.
+
+[03:45] &gt;&gt; Repeat and always active. [music] Type test for fishing underscore hook. &gt;&gt; type / tag at SFV1. You can name it whatever you want. GN conditional and always active.
+
+[04:32] Type test [music] for a tag equals V1. V1 is your tag. So other cannot use your orbital strike cannon. Type execute as edit added. Type equals
+
+[05:08] fishing_hook [music] run structure load 125. The one there is your structure name. &gt;&gt; Change conditional is always active.
+
+[05:55] Heat. Heat. Heat. Heat. Hey, Heat. &gt;&gt; /ticking area at circle 4.
+
+[06:59] Now you can freely use orbital strike cannon anywhere you want. [music] Thank you for watching. I hope you enjoy watching. [music] Make sure to subscribe and like the video.
+

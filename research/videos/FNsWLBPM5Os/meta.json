@@ -1,0 +1,50 @@
+{
+  "id": "FNsWLBPM5Os",
+  "title": "Let's Build a Huney Crafter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20201106",
+  "duration": 769,
+  "view_count": 10071,
+  "like_count": 443,
+  "description": "A simple automated honey crafter designed to work perfectly with honey farms. Consumes 4000 honey bottles per hour at max speed. Be sure to let me know what you think of autocrafting, the more poeple who switch on the more pressure we put on devs to implement it.\n\nCrafter Schematic in case you wanted to build:\nhttp://www.mediafire.com/file/cpi9m19m5hfc4qe/Huney_Crafter.litematic/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The honey block challenge",
+      "end_time": 40
+    },
+    {
+      "start_time": 40,
+      "title": "System timing and logic",
+      "end_time": 179
+    },
+    {
+      "start_time": 179,
+      "title": "Refining input detection",
+      "end_time": 301
+    },
+    {
+      "start_time": 301,
+      "title": "Implementing item output",
+      "end_time": 441
+    },
+    {
+      "start_time": 441,
+      "title": "Automating bottle recycling",
+      "end_time": 680
+    },
+    {
+      "start_time": 680,
+      "title": "Honey farm integration",
+      "end_time": 769
+    }
+  ],
+  "tags": [
+    "autocrafting",
+    "redstone",
+    "minecraft",
+    "Scicraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=FNsWLBPM5Os"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "oHa3V9ct1JI",
+  "title": "Wavetechs Explosive Reaction Copper Farm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210921",
+  "duration": 1427,
+  "view_count": 225790,
+  "like_count": 7236,
+  "description": "In this video I introduce the Wavetech server and my very first project, an insane custom built copper farm which puts out 3500 copper ingots per hour. We'll also look at the mechanics behind the farm along with a much simpler general use design which anyone can use in their own game.\n\nWorld Download:\nhttps://www.mediafire.com/file/8b933mukcq4wd7e/Explosive_Copper_Farm.zip/file\n\n@gnembon 's video on reinforcement spawning:\nhttps://www.youtube.com/watch?v=n8_uN03GD_0&t=1171s\n@2No2Name 's video on the lag detector:\nhttps://www.youtube.com/watch?v=ZQ07RrfynwA&t=189s\nAndrew's spawner forcing:\nhttps://www.youtube.com/watch?v=OnsBTC5MNW8\n\nMobfarm Archive, for all your mobfarming needs:\nhttps://discord.gg/FDezNwZ3Rd\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 140
+    },
+    {
+      "start_time": 140,
+      "title": "Copper farming mechanics",
+      "end_time": 332
+    },
+    {
+      "start_time": 332,
+      "title": "General use copper farm",
+      "end_time": 671
+    },
+    {
+      "start_time": 671,
+      "title": "Explosive copper reactor",
+      "end_time": 989
+    },
+    {
+      "start_time": 989,
+      "title": "Server performance management",
+      "end_time": 1152
+    },
+    {
+      "start_time": 1152,
+      "title": "Rates and alternative methods",
+      "end_time": 1275
+    },
+    {
+      "start_time": 1275,
+      "title": "Build tips and conclusion",
+      "end_time": 1427
+    }
+  ],
+  "tags": [
+    "drowned farm",
+    "mobfarm",
+    "spawner",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=oHa3V9ct1JI"
+}

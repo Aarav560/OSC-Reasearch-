@@ -1,0 +1,46 @@
+{
+  "id": "qtkZyvmpRDE",
+  "title": "How to Farm Player Heads",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210202",
+  "duration": 998,
+  "view_count": 14734,
+  "like_count": 588,
+  "description": "Player head farm using 8gt TnT looting, compatible with 1.16+ versions of the game and very easy to build. Stick around for the rest of the video for a detailed tutorial.\n\nSchematics:\nhttps://www.mediafire.com/file/uqkri9yxghl3ikr/The_Guilotine.litematic/file\nhttps://www.mediafire.com/file/pvvz4qbrh7yxsxb/8gt_TnT_Looting.litematic/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction and concept",
+      "end_time": 109
+    },
+    {
+      "start_time": 109,
+      "title": "Operating the guillotine",
+      "end_time": 181
+    },
+    {
+      "start_time": 181,
+      "title": "Building the looting system",
+      "end_time": 350
+    },
+    {
+      "start_time": 350,
+      "title": "Arrow stasis and alignment",
+      "end_time": 617
+    },
+    {
+      "start_time": 617,
+      "title": "Final assembly and finishing",
+      "end_time": 998
+    }
+  ],
+  "tags": [
+    "redstone",
+    "scicraft",
+    "minecraft",
+    "player farms",
+    "TnT Looting"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=qtkZyvmpRDE"
+}

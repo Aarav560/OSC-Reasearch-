@@ -1,0 +1,38 @@
+{
+  "id": "IJTeOBo6fMk",
+  "title": "3 Simple Autocrafters for your Farms",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200921",
+  "duration": 292,
+  "view_count": 51994,
+  "like_count": 1022,
+  "description": "With the introduction of new features in 1.16 many of my old simple 1wt autocrafters became outdated. I also figured that a badly produce 20 minute long video is not a great way to introduce simple designs so I've made this short video showcasing some more compact applications of autocrafters for handling farm outputs.\n\nSkyrising's Quickcarpet (includes autocrafting table mod):\nhttps://github.com/DeadlyMC/QuickCarpet/releases/tag/v3.0.0\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 14
+    },
+    {
+      "start_time": 14,
+      "title": "Block Compactor",
+      "end_time": 127
+    },
+    {
+      "start_time": 127,
+      "title": "Item Converter",
+      "end_time": 271
+    },
+    {
+      "start_time": 271,
+      "title": "Outro",
+      "end_time": 292
+    }
+  ],
+  "tags": [
+    "redstone",
+    "minecraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=IJTeOBo6fMk"
+}

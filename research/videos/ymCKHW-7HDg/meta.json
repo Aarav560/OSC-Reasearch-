@@ -1,0 +1,44 @@
+{
+  "id": "ymCKHW-7HDg",
+  "title": "Two of Minecrafts Best Furnace Arrays",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220515",
+  "duration": 946,
+  "view_count": 439632,
+  "like_count": 13362,
+  "description": "Here is one of the projects I have been working on in the background, precision furnace arrays. With the introduction of cart yeeting mechanics I was finally able to get them completed to a level I am satisfied with, so I hope you find these furnace arrays useful.\n\nDrop full carts mod for version below 1.19:\nhttps://github.com/altrisi/DropFullCarts/releases/tag/1.0.1\n\nSchematics:\nhttps://www.mediafire.com/file/q5d0b2fcfjbnrzj/1728_Precision_Furnace_Array_3.1.litematic/file\nhttps://www.mediafire.com/file/wzc4hr823vwy01w/64_Precision_Furnace_Array.litematic/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to smelting",
+      "end_time": 21
+    },
+    {
+      "start_time": 21,
+      "title": "Principles of furnace arrays",
+      "end_time": 130
+    },
+    {
+      "start_time": 130,
+      "title": "64 furnace array design",
+      "end_time": 515
+    },
+    {
+      "start_time": 515,
+      "title": "1728 furnace array design",
+      "end_time": 855
+    },
+    {
+      "start_time": 855,
+      "title": "Advanced mechanics and setup",
+      "end_time": 946
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "super smelter"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=ymCKHW-7HDg"
+}

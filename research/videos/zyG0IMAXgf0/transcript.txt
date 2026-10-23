@@ -1,0 +1,146 @@
+[00:13] [Music] g'day ladies and gents cubic meter here
+
+[01:12] in this video we'll be going over a full build tutorial of the single dimension shulker farm now you might notice the design has changed quite a bit since the previous video this was to fix a few minor issues and make the farm slightly better in fact it now produces about 182 shells per hour this is due to the refinement of the shocker replacement mechanism which has drastically reduced the downtime of the farm when replacing shulkers the other change was to eliminate the stacking of minecarts which caused a lot of issues in fact you can literally see the problem
+
+[01:44] in the intro the new design uses a concept by command leo from the storage check community where the cart will snap to a curve rail and immediately get killed by the lava cauldron this also led to some refinement of the shulker distribution and the final point it turns out that to remove these stray shocker blocks that you get all the time we can just add these fire and lava sources around the cell containing our snow golems and they will simply burn the shocker bullets so apart from some minor changes the concept of the farm is still
+
+[02:18] fundamentally the same check out my previous video for a detailed walkthrough of the design process if you want to build the farm and do not have client mods such as light manager then stick around for the rest of the video for a full build tutorial we want to begin by breaking down the farm into its basic components we can remove all the large structural elements and focus on the core now a few notes on block pallets anywhere that you see a smooth stone slab you can use any other type of slab anywhere that you see white concrete you
+
+[02:50] can use any kind of full solid block anywhere that you see a glass block you can use any transparent full cube however it's quite handy having visibility of the inside of the farm whilst running and of course stone buttons can be replaced with any kind of wooden button or blackstone button or even levers however soul sand is used because it is one of the only blocks which behaves like a solid block but also repels shulkers in fact it is extremely important that
+
+[03:24] you get the types of blocks used in the breeding cell spot on if i were to do something as simple as forgetting a few buttons in specific locations dockers can now teleport to these spots and sit there comfortably this means that these shulkers cannot be removed by the minecarts and can prevent additional duplication attempts from occurring now that we've established the type of blocks that we can use we can look at the material list as you can see the farm is relatively inexpensive
+
+[04:03] now before you start make sure you pick the right location this is because there are some conditions in which our snow golems cannot survive for example don't build the farm in the nether and make sure to avoid building the farm in hot bones such as badlands savannas or deserts because these will also damage the snow golems you'll want to begin with a chest you'll then go one two three four five six seven eight nine hoppers up from these hoppers you'll want to start
+
+[04:34] building out platforms of slabs on this lower hopper we go in one direction one two three four five six seven blocks then expand it to free across at the end of the platform there will be a little hole where you'll put an open fence gate as well as a lava bucket and make sure to always remove helper blocks afterwards in the other direction from the very topmost hopper we'll want to go one two three one two three four and expand that out into a platform on
+
+[05:09] these three sides we'll want the overhanging soul sand with fire saucers on top and make sure that you put slabs on the underside of the soul sand blocks on this bottom layer we'll have also transparent blocks like so we want to make sure to button up the sides right in the center of this platform
+
+[05:43] we'll want to put our cobblestone walls and for this particular platform we'll have a redstone block right here and then the rest will all be glass we want to make sure that we keep this space completely open and going back this way we'll have more glass and only buttons at the very ends this is because we will in fact
+
+[06:15] have teleportation layers here so there will be slabs here eventually we'll also make sure that we include our buttons at the end here inside of this cell is where our snow golems will go we want to put a slab right here above the lava replace this wall with a block for the time being go up a layer and then place down some blocks to place down our snow golems against we'll also want to put some vines inside of here to try and mitigate some entity collisions
+
+[06:48] and now we can start piling snow golems into the chamber and once the snowglobes start dying that's when you know you have the right amount you just cap off the very top with a slab like so and make sure you any extra blocks you place to help you out and of course put back our wall in this
+
+[07:22] particular spot we'll have our redstone block which will control the trapdoor to control the line of sight between our snow golems and our shulker it will have button make sure you put a chain on this block because this block is going to move we cannot place buttons on it then we'll have small soul sand glass button and inside here is where our shocker bullet will go we want to make sure you put a button on the inside surface because a shogu can still decide to stick to this surface inside
+
+[07:54] of the cell we'll have a trapdoor and this particular trapdoor inside of the cell must be a top trap door like so in order to collect our minecarts we'll have a small platform right here we'll have our activator up here on top of the redstone block and then a normal rail which goes curve like so a cauldron right here with lava in it and two slabs like so just to block off
+
+[08:26] the spaces above the slabs and the cauldron will have some trapdoors make sure the shulker doesn't get ejected onto the cauldron or the slabs inside of this space right here on top of all these walls we'll have string and this is very hard to make out so make sure that you have string in each one of these spaces on top of the string we'll then go our observers surrounded by one two three four five with buttons on them then we'll
+
+[08:59] have slabs and more slabs around this side and just two more slabs on top of these two spaces right here we will have a piston put a chain here to prevent teleporting we'll have more glass in this space and a redstone block right here to power this rail want to make sure we put our buttons on the outside like so and then we'll have three more glass blocks here with buttons on these and these above the observers we just have our
+
+[09:32] solid blocks like so make sure to put the button on the end right here the more glass make sure not to forget the buttons a piston right here and a piece of string on this piston to prevent shulkers from sticking here in this spot just above the piston that controls our trap door will have some slabs and on top of all of these slabs goes some redstone dust at the very end right here we have a
+
+[10:05] targa block and a redstone torch and of course remember to teleport proof everything once you are done now that is the breeding cell pretty much done what we need to do now is go to this particular block right here and go 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 blocks out on this very last block we'll have soul sand a slab and then powered rails all the way into
+
+[10:39] our breeding cell on the other side we can start connecting everything up to our control circuitry we want a bridge on this side one two three four five six now on this side one two three four we will then make a little bend like so and to add on our cool down clock connecting this up with redstone looks like this we'll just have a slab going directly into the clock
+
+[11:12] and right here a redstone on one tick and two dust coming in we now want to scaffold up and get a block into this particular position two blocks below our cooldown clock we will go one two three four in this direction and one two in this direction on top of these blocks we'll go some powered rail in this little corner right here a sticky piston redstone block then we'll have an empty space
+
+[11:45] another sticky piston another redstone block like so as you build the farm you may also want to consider spawn proofing surfaces like so continuing in this direction we'll have a block with a repeater airing another block a comparator will be pointing into this block i have a redstone torch block let's turn dust and then it'll step up under here a little redstone torch right here and we'll have two hoppers pointing into
+
+[12:19] each other like so inside of this particular hopper we'll want exactly 12 items and then we'll put composters over the top of the hoppers to prevent them from accidentally collecting random junk that falls on top of them a comparator carrying a repeater on full ticks we'll simply be powering a block right here going back to our cooldown clock we'll have a piston right on top of this
+
+[12:51] rail and a block right here we'll want to have a glass block with a resident block on top of it and redstone dust leading all the way back to our breeding cell coming off of these rails right here we'll have one two three four five six seven eight observers we will then have a gap before having one two three four repeaters
+
+[13:22] all on four ticks at the very end i just have a piston pointing down like so connected to this dust be a sticky and then around it will just be some glass blocks which will transmit the signal which will turn on the farm right here we'll have a sticky piston which will push this observer in which will start the farm
+
+[13:53] from this point right here we'll go one two three four five six and cover all of this with redstone dust i've used an emerald block here to indicate that this is the on switch but realistically you could just use any solar block just place a lever on the resident torch and a lamp to indicate when the farm is on you can also add a little platform for the player to stand on as well as a roof to prevent phantoms
+
+[14:26] from spawning we're connecting up the on switch i'll just put some dust here and then we'll put a long delay cool down clock right here and just underneath we have an additional system which pretty much tells the farm not to send additional shockers to the middle if the farm is actually off then from
+
+[14:59] this point right here we'll then bridge out one two three four five six seven eight then staircase up and at this point we will have another hopper clock the two comparators facing outward like so two helpers pointing into each other two pistons like so block of redstone sorry a block of redstone
+
+[15:32] and then just redstone dust over the top of these and over here in this hopper right here we'll just have eight items now this line right here is where we tell the system to send a new shocker into the breeding cell from this point right here we want to bridge out exactly 37 times once you've done that you'll want to place a soul sand block at the very end with a repeater pointing into it and then one two three four five six seven eight
+
+[16:03] nine ten eleven twelve thirteen fourteen fifteen less than one two three four five six seven eight nine 10 11 12 13 14 15 dust again then a redstone torch right here exactly three blocks from this particular soul sand will then bridge out one two three four five now we come back to this chest we placed at the very
+
+[16:36] start we'll want to go in this direction 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 times we'll also want to place buttons on every single side of the composter at the very end here we'll just have a soul sand block then we'll have a dispenser and now we can just track backwards with hoppers underneath the dispenser we'll make a
+
+[17:11] little platform like so from this point we'll then bridge out one two three four 6 7 8 9 10 11 12 13 14 15 16 17 18 times and we should get to the very end right here we will have our shulker cache we want to make sure that we button up the sides of our dispenser like so and then we can have soul sand lab we'll put down our powered rails at the very end here we'll go two blocks
+
+[17:50] in either direction and then build out our platform one two five one two three four five like so standing inside of the shulker cache we want to place down the loop of soul sand then we'll have glass levers on these buttons on these
+
+[18:27] surfaces and then just cap it off with some glass at the top and make sure that while you're inside get two buttons on the ceiling like so that way the only place that shulkers can teleport to
+
+[18:59] are these spaces right here back on the outside you want to make sure we button up all of these surfaces back at our dispenser we'll just have a lever on the side of the soul sand and then an observer pointing into our dispenser we also want to make sure that we button around the observer and above the observer there will be 1 2 3 4 5 6 7
+
+[19:34] 8 9 10 11 12 13 stories of walls in practice you would ideally do all three of the walls for each layer at once at the very top you'll just place down the trapdoor now for the tricky part of staircasing with slabs you want to start by placing down this slab right
+
+[20:06] here and then we'll just put some helper blocks like so and simply scaffold with blocks that we can easily remove later once you reach the top you can just connect the slabs by your staircase and then of course once you're done
+
+[20:45] remove all of the scaffolding material on this side we'll have a slab soul sand slab and then a lever and then we can start placing down our powered rails and make sure that you have additional power sources to keep all the rails on at the very top here we'll go one two
+
+[21:20] three four break that rail place it the soul place around top put a lever right here and from this point right here just want to make a little bit of a platform and this will form a little bit of an enclosure for our shulker being kept here ready to be put into the breeder then we'll have a slope rail right here above this particular rail we'll have our fence gate and then we'll simply encase the whole thing in
+
+[21:53] seoul sand and just have a roof of slabs at the top just at the back here a single honey block and now it should be far less likely for our shoulder to accidentally start shooting at the player or our snow while is inside of that cell then from this corner right here we simply connect this up
+
+[22:28] to that redstone line this next bit will be a bit tricky because it will be our shocker distribution lines which aren't actually attached to anything we've built previously you want to scaffold up and find this exact location right here then you'll want to scaffold down one two three four five six seven and on the eighth you'll have a top slab if we then remove
+
+[23:03] the scaffolding material we now have a platform from which we can start building out the shulker distribution so making sure that you're in line with the shocker cache you'll want to make a little two by four platform going towards the farm we will want to bridge out exactly 30 slabs and be sure to repeat exactly the same process on the other once you have these bridges out you want to go exactly one
+
+[23:36] two three four five six seven eight nine blocks then start filling in the platform make sure you stop filling the platform one block from the very end at this end of the platform we'll have all sand blocks with slabs on top to spawn proof them then we'll have levers to power our powered rails we'll then fill in powered rails all the way to the end and at the very end we want to put down
+
+[24:09] our soul sand and we want to make sure that the activator rail slopes up like so we can cap it off with a slab and do exactly the same for the other activate a rail flip it up onto the sole tap it off with a slab where the rails remain unpowered you want to go over one block and go up place down a slab remove the then pair it with a lever and make sure
+
+[24:43] you repeat this or the other side and same again block lab lever block lab lever at the very end here we'll then have two levers like so to power our activator rails this means when the minecart mounts this it'll kick the shocker off onto these slabs right here now we can set up the killing chamber we
+
+[25:16] want to bridge with slabs in this direction for seven blocks hanging off the very end here we'll just have a ring of glass a soul sand block and make sure to button off all of these faces on the underside we'll just have a hopper and this will collect the shells from the farm in order to get the hopper minecart into the cell i want to place down a helper
+
+[25:52] put the cart onto a rail remove the rail remove the helper block and place down the dirt block above and just push the dirt block in using a piston and a button like so ideally you'll put a wither rose here because this will continuously damage the shulkers meaning that you won't have any build up of shulkers until they enter the cram because shockers are actually immune to things like fire meaning the only way to damage them is by using the willer effect
+
+[26:27] and it turns out that trying to kill a shock with a looting sword using the player does not work out very smoothly at all i might suggest just sticking to the willow rose once the rose is in we can now put in our rails and on this block right here we want to have an activator rail flip it up like so and remove the rail on top of the block now we can encase our killing chamber and also make sure to button everything
+
+[27:04] up that way our shockers cannot escape at the very end we'll then have a soul a slab and two more slabs like so and now the shocker distribution system is complete congratulations for making it this far into the video i reckon your brain might be a bit tired at the moment but here's some footage of 250 bees versus a wither
+
+[27:59] needless to say the bees didn't stand a chance alright back to the shulker farm now that you've completed the core there's still a fair bit of building to get done starting from the platform that we built for the shocker distribution you'll want to build some segments of slabs forking out like so you will have three coming from this end another three coming from the other end and there should be exactly three blocks
+
+[28:31] of space between them these segments will mark the repeated sections of the cart return so once i've gone through how to build one of them you should be able to finish all six of them we will start with the soul sand pillars which are exactly 30 blocks tall plus a slab on the very top and there will be torches placed on it on the way we will begin by scaling one two three four five six seven eight nine ten eleven twelve blocks
+
+[29:05] and then we'll start putting down torches we'll put that one torch every three blocks there we go one two three place down a torch one two three place down a torch and just repeat this process all the way to the top and once you reach the top you place down a slab in order to make sure that the space is spawn proof back down at the bottom we'll place down one two three soul sand with some slabs on top from this point we will have from one to 28 composters
+
+[29:41] in a straight line we'll put down one and keep bridging out until we run out of composters once we reach the end we want to make sure that we place down buttons on all of these composters just make sure not to forget the other right underneath the very last composter
+
+[30:19] you'll place a downwards facing hopper which points into a dropper pointing in this direction underneath our dropper will have a little platform like so and then we'll add a simple comparator clock as well as tiger block to power the dropper we can now get our hoppers and backtrack all the way to the very start once all your hoppers are in and facing
+
+[30:51] in the right direction we can put in the curved rail like so as well as the lava cauldron and just box it in with soul sand back at the other end of our dropper we'll place down some ice fall sand a top trap door and then boxes in with some glass from this block right here you will want to tower up exactly
+
+[31:22] 32 blocks ideally you would finish all four sides of the water elevator at once as you go up each layer once you've reached the height of the 32 block column this side will go up an initial two blocks this side one block and then simply close everything in like so in order to create the bubble column you'll place a trapdoor here break in through the top place down a
+
+[31:55] water bucket right here and swim all the way to the bottom place down some kelp then burn mill the living life out of it now break the kelp you should have a full wobble column like so now we need to build the dispenser tower starting at the water elevator go one two three four five six seven blocks across
+
+[32:30] and then scaffold directly upwards exactly ten blocks we will start by placing down the walls there case up this block right here place down the wall mount the wall break this block and now you can start stacking the walls on top of each other starting at the first layer of walls you want to go exactly 17 blocks up on this side and 18 blocks on this side now you can remove these dirt blocks
+
+[33:04] scaffold across then start scaffolding directly upwards starting at the very bottom we'll place down the observer dispenser then place buttons on the underside of both we'll then put buttons on the side of the observer and torches on the side of the dispenser as you go up you'll have two walls in this space right here and then two hoppers like so and as you go up
+
+[33:38] each layer you'll place down the observer dispenser then make sure you're putting torches on the sides of the dispenser and buttons on the sides of the observer then once again have our two walls like and our two hoppers and simply repeat this process until you get to the top then once you reach the very top we'll finish off the last observer and
+
+[34:10] dispenser pair place down a single hopper and a double chest like so and simply track backwards with the hopper until you reach bubba elevator just make sure that you place down composers on top of all these hoppers in order to reduce their lag and make sure that they can't collect random junk
+
+[34:42] that falls on top of them and of course once you've completed a slice of the dispenser stack be sure to remove your scaffolding material afterwards simply rinse and repeat this procedure another five times and you'll have all of your cart return systems now we want to come back over to our control circuitry and add the system which dispenses the from this sticky piston right here we want to go one two three four five six we will then place down an observer
+
+[35:15] pointing in this direction and then build out a line of top slabs across all of our cart return systems once all the slabs are in you can go through and add the trapdoors like so then we'll connect everything up using soul sand redstone dust on top make sure that you don't place any sole
+
+[35:49] sand in this space right here instead we'll just have some redstone dust which will receive the signal from also be sure to put a slab on the observer just to spawn proof it going from the other side we also connect up all these trapdoors and now if i were to power this observer all of our dispensers would dispense the minecarts at the same time
+
+[36:22] that's another important note as well you'll need to top up all of these chests with minecarts until the chests remain full they with me now we're on the home stretch all that's left to do now is to build up all the teleportation spaces now notice how every one of these platforms is more or less identical meaning i will show you how to build one then you simply repeat to do the rest each layer will begin at the dispensers we'll place down a top slab we'll place
+
+[37:02] going towards the center of the farm we'll then go one two three four five blocks place down a block of redstone and then go one two three four five again block of redstone then at the very end of the platform we'll place down stopping just short of the soul sand pillars after repeating this another two times we can now fill in the entire platform of slabs and make sure not to forget about this little nuke sitting out here just fill
+
+[37:36] this in as well that will be the very first platform that we lay out we want to make sure that we go underneath and teleport proof all of these redstone blocks by placing slabs underneath we also want to place buttons on these faces on the top of the and then place down our rail lines like going up to our next layer i'll repeat it one more time we go one two three four five six seven eight across the dispensers there we go
+
+[38:11] one two three four five redstone block one two three four five six every time you progress a layer be sure to teleport proof the redstone blocks and also place down lanterns on the underside of these redstone blocks this will light up our teleportation spaces preventing mobs from spawning inside the farm and interfering with the minecarts some layers might start to conflict with
+
+[38:43] the breeding cell it is important to note that in these cases what's place for the breeding cell take priority for example in this particular case we have a lava cauldron as well as two bottom slabs either side of it this is because we want to avoid the shulker from being booed off the minecart on top of these spaces right here instead we want the force for shock to get buried off into this space therefore we simply ignore the slabs that are placed here normally
+
+[39:15] and extend the platform this way this also explains why in the very first part of the video there were no buttons placed here because as you can see this is exactly where we place the slabs for this particular platform this is also why we use soul sand in this particular location of the breeding cell because this means that our shulkers will only teleport this face because if they teleport to
+
+[39:49] this face the shocker could open its shell and then block the minecart after repeating this and building up all of the layers that should be the shulker farm finally complete except there are a few more minor details to add for example these additional lanterns at the very top layer to keep it lit up as well as our minecarts for the shocker and finally we need to make sure that this chest that we place at the very
+
+[40:22] start it's full of minecarts in order to collect shulkers from our shocker buffer now you need to go ahead and grab some shulkers to put into the farm i already went through how to do this in detail in a previous video so check that out for all the dates all you really need to know that you need to get the shulker into a minecart somewhere near the farm and drop it onto one of these rails like so this chocolate will eventually make its way
+
+[40:55] into that chamber ready to be put into the farm when we turn it on all we need to do now is switch on the and see what happens there we go our shortcut buffer is now filled up and the farm is running stable so there you have it you made it all the way to the end of the video you should have a fully functional single dimension shocker farm
+
+[41:27] which produces about 180 shells per hour while only 40 minutes for you lads this tutorial has been several days of building the farm myself in survival just to understand the perspective of those building it as well as building it again for you on camera though this video has fulfilled your technical needs be sure to leave a like and consider subscribing because i'll be here pumping out more technical content over the coming weeks thank you very much for watching and i will see you next time
+

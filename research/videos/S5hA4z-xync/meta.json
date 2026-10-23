@@ -1,0 +1,50 @@
+{
+  "id": "S5hA4z-xync",
+  "title": "The New Self Assigning Super Bulk",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220119",
+  "duration": 823,
+  "view_count": 90081,
+  "like_count": 3520,
+  "description": "I've made some amazing upgrades to the Ultimate call based bulk system such as improvements to the wiring as well as the ability to assign slices automatically. This should make it, well, the most ultimate bulk storage designed thus far.\n\nWorld Download:\nhttps://www.mediafire.com/file/5wnstgkfro2v1tw/Assignable_Bulk_Test.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to bulk storage",
+      "end_time": 63
+    },
+    {
+      "start_time": 63,
+      "title": "Issues with the old design",
+      "end_time": 240
+    },
+    {
+      "start_time": 240,
+      "title": "Improving storage efficiency",
+      "end_time": 371
+    },
+    {
+      "start_time": 371,
+      "title": "New item counter design",
+      "end_time": 447
+    },
+    {
+      "start_time": 447,
+      "title": "Self-assigning mechanics",
+      "end_time": 643
+    },
+    {
+      "start_time": 643,
+      "title": "Final testing and conclusion",
+      "end_time": 823
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "storage tech",
+    "bulk storage"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=S5hA4z-xync"
+}

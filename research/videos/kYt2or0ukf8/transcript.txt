@@ -1,0 +1,56 @@
+[00:00] good day ladies and gents cute meter here with a video which has been well anticipated amongst those of you intrigued by order crafters just to clarify these autocrosses are true autocrafters only attainable using carpet mod features for more information i have other videos introducing these contraptions in detail however in this video i want to take you on a journey of the challenges in designing and building a redstone contraption but first here it is the universal autocrafter
+
+[00:32] now i'm not just going to showcase this design because of a few reasons first of all it was my very first technical build in the modern redstone meta and since then being a part of velvenga's patreon and then eventually being invited to scicraft i have learned a lot so the design is far from optimal second of all the design is not as user-friendly as it should be it is quite easy to break requiring player intervention making it unsuitable for use by players who do not have a technical understanding of how it works
+
+[01:04] so if you're wondering why this video took so long it was because every time i looked at this design i was rather disappointed having actually used this design as survival i knew it was a hassle and simply making a video showcasing it would not be enough so instead we're going to tear this down and start again here we actually have an advantage hours upon hours of qualitative data which will educate us on how to make the design better let's start here on the skybox server where we have been
+
+[01:39] using the autocrafter in survival for a few months now let's have a look at the interface for the current design it features nine inputs for shulker boxes of ingredients laid out in a line shocker boxes of dummy items are provided for slots to be skipped then the crafted items are loaded into boxes and sent to the output this is great for bolt crafting jobs of a single item in reality the items you want to craft
+
+[02:12] require several steps or you may want to craft different items in a single job for example one of the most common recipes is resident components such as repeaters and comparators these require redstone torches which often need to be crafted as well however the autocrafter can only handle a single item type for each job meaning you need to first craft the redstone torches then set up the next job manually this made the usage of the autocrafter quite prohibitive at times
+
+[02:44] another issue occurs when an invalid recipe appears at the input there are two reasons this can happen first of all if the player makes a mistake and puts the wrong item in a slot or if some boxes are only partially filled meaning that some slots run out before the others this results in the shock box loaders jamming as the invalid recipe forces the ingredients to be extracted from the cracking tables this requires the player to go through
+
+[03:17] the system and manually clean it out i actually tried to fix this by introducing a system which detects when the output has dissimilar items in it but this doesn't work reliably due to a bug making weighted pressure plates unreliable but let's put these frustrations aside for the time being and focus on making a new and better design [Music]
+
+[05:17] [Applause] oh now we've hit our first crossroads to
+
+[06:27] start with i've rebuilt the feed tech mechanism used in the current design this moves two sets of crafting tables every eight game ticks meaning the machine makes 18 000 crafting attempts every hour i then experimented with a way to make this faster using a smart piston engine this new feed tape is 1.5 times faster than before allowing the machine to make 24 000 grafting attempts every hour at first glance you might think that the
+
+[07:01] fast option would be better but we also need to consider other things from this we will learn that faster does not equal better first of all how are we going to get items from our input to the crafting tables for this we use droppers which shoot the items into the crafting tables at each stage of the recipe a dropper can handle an item every four game ticks however a hopper can only handle an item every eight game ticks but our new feed tape is moving every
+
+[07:34] six game ticks which is exactly halfway between these two values this makes things very awkward as the rate in which the crafting tales will consume items is greater than a single hopper but less than two hoppers combined so what we will have is an imbalance of items at our inputs we also must consider how we will remove the crafted items this is a much bigger issue due to crafting yields
+
+[08:06] which causes different recipes to craft at different speeds for example if i craft a piston nine items yields one piston this counts as a single crafting attempt but if you craft glass panes six items yields 16 glass panes and once again this is a single crafting attempt because each crafting attempt is done at hopper speed
+
+[08:40] yielding 16 items means you need 16 hoppers to collect the resulting items as you can see the hoppers extend far beyond the push limit of our feed tape fortunately this issue can be mitigated by using hopper minecarts here they are lined such that one hopper mine cart is in fact shared between four hoppers but even with this trick our faster setup becomes excessive there isn't even space for the dummy item filters
+
+[09:12] and we want a universal autocrafter which means it should handle any recipe so is the 50 boost in speed worth it in this case absolutely not so now we've determined the optimal crafting speed all the other components will fall into place and we can get a working machine built so
+
+[14:24] hey we're finally done well not quite are after about two hours i've completely rebuilt the universal auto crafter refining many of the components along the way for example the old design used these on my table shocker box unloaders not only can these not handle empty boxes but they can also interfere with each other which is why i opted for this design adapted from samus to sage you can handle empty boxes it also locks the input
+
+[14:58] only taking a box at a time some other refinements include reducing the amount of hopper minecarts in our item collection as well as a dummy item filters but also compactifying the shock box loaders a bit there are also two incompleted features for example here we have an automated shutter box stacker so this only works with the carpet rule of stackable shocker boxes whereas when you throw shocker blockers
+
+[15:32] on the ground they will in fact stack together and this way you can create stacks of 64 of empty shulker boxes in order to compactify the storage of empty boxes i also haven't fully connected up the dummy item return system so this would need to lead to some shocker box loaders that will load up some boxes of dummy items ready for the player to use them for a recipe now you might be wondering what this red circuit behind me indicates
+
+[16:05] this is the startup sequence this is a very important component of the autocrafter you see without a startup sequence all of our droppers start filled with our ingredients then when the feed tip begins to move all of our crafting tables are initially empty so every single ingredient goes into the first slot of the crafting table creating up to eight invalid recipes at the very beginning of the crafting job these invalid recipes result in garbage spewing out of the output
+
+[16:38] which clogs up our shulker box loaders in order to mitigate this issue we have a counter circuit which increments the signal strength of this redstone wire by 1 every time the feed take completes a cycle this incrementation is less perfectly synchronized with our feed tape so each time a crafting table moves a single block it powers a set of rails activating the observer attracting the composter unpowering the activator rail which was previously
+
+[17:14] locking the hopper mine cart which was holding back the ingredients corresponding to each crafting slot this ensures that there is a single crafting table somewhere in the feed tape which receives all the items in the correct order on startup this eliminates the potential for invalid recipes you also be wondering why we need this massive bulk off the back of the order crafter these are all the shulker box loaders
+
+[17:46] required to handle every single recipe in the game the issue is once again with the we need up to 16 hoppers per crafting table line which in total is 32 hoppers so around the back here this is a one wide tileable double hopper speed shulker box loader which i designed specifically for the order crafter because it's double speed and we require 32
+
+[18:19] hopper speeds worth we have 16 slices of the shulker box loader this additional module off the back of the short box loader it keeps track of which shulker boxes have items in them so that at the very end of the recipe once all of these clocks have completed which means that there are no more items to be loaded it will depower this line which will then trigger this observer
+
+[18:53] line and any slices which have partially filled boxes will automatically be ejected in order to handle any crafting yields from one item per crafting operation up to 16 items per crafting operation what will tend to happen is the inflow of items will be too much for a single slice to handle what will this hopper mine cart will fill up with items
+
+[19:26] and then the irons will flow over to the next slice and so on the issue with this is that as the items progress onwards each slice gets progressively less and less and less items so you get this very strange pattern with the shock box loading the first slice will fill up a box and then actually fill up a second box and then it will decay logarithmically as you go through all the slices until
+
+[20:01] you get to slices which never actually filled up a box this would have only had partially filled boxes until you get to the very end which barely received any items unfortunately there is no way to mitigate this without some complicated system however using the automated partially filled box detection the maximum amount of partially filled box you'll get from any crafting jobs
+
+[20:34] is equal to the crafting yields that you get from the recipe that you're using so in this case crafting iron bars there will be a maximum of 16 partially filled boxes that you'd need to merge their contents together after the crafting job finally let us ask ourselves what to do next unfortunately i'm out of time for this video so you'll have to wait until next time but here is what i have planned this
+
+[21:06] large space was previously taken up by the box loaders but now it's reserved for a system which will allow the user to schedule different recipes one after the other and program them such that each consecutive recipe receives the results from the previous this will also require shulker box mergers for our output to ensure that the crafted ingredients are balanced for the next recipe i'll also try to work on ways to detect and mitigate invalid recipes due to player error as these mistakes can cost a lot of resources if handling correctly thank you very much for watching stay
+
+[21:38] tuned for the next installment for an improved universal order crafter
+

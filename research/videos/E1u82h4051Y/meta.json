@@ -1,0 +1,53 @@
+{
+  "id": "E1u82h4051Y",
+  "title": "3x3 Dropper Crafter and More",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200505",
+  "duration": 1263,
+  "view_count": 3375,
+  "like_count": 96,
+  "description": "In this video we look at another really useful dropper crafter which can handle some 3x3 recipes. I also go through some of the techniques for aligning hopper minecarts and establishing a working system.\n\nWorld Download:\nhttp://www.mediafire.com/file/vvk3ltsodpdrgn9/Simple_Autocrafters.zip/file\n\n2x2 Crafter Schematic:\nhttp://www.mediafire.com/file/ub6hxna4xi3tl80/2x2_Crafter_18Kph.litematic/file\n\n3x3 Crafter Schematic:\nhttp://www.mediafire.com/file/a4cf9krr2cvt93v/3x3_Crafter_9Kph.litematic/file\n\nItem Blender Schematic:\nhttp://www.mediafire.com/file/2y938dwcv5anut3/Item_Blender_36Kph.litematic/file",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "3x3 crafting configuration",
+      "end_time": 168
+    },
+    {
+      "start_time": 168,
+      "title": "Dyeing system demonstration",
+      "end_time": 322
+    },
+    {
+      "start_time": 322,
+      "title": "Single item crafter",
+      "end_time": 467
+    },
+    {
+      "start_time": 467,
+      "title": "Two-slot blender crafter",
+      "end_time": 575
+    },
+    {
+      "start_time": 575,
+      "title": "Minecart alignment tutorial",
+      "end_time": 759
+    },
+    {
+      "start_time": 759,
+      "title": "Advanced loading techniques",
+      "end_time": 1022
+    },
+    {
+      "start_time": 1022,
+      "title": "System maintenance and review",
+      "end_time": 1263
+    }
+  ],
+  "tags": [
+    "redstone",
+    "crafting"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=E1u82h4051Y"
+}

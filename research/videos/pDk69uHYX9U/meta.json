@@ -1,0 +1,60 @@
+{
+  "id": "pDk69uHYX9U",
+  "title": "Mass-Crafting at 41.5M using Dolphins",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210820",
+  "duration": 1175,
+  "view_count": 147759,
+  "like_count": 5708,
+  "description": "One night I had a sudden realisation that dolphins could have more uses than I originally thought. In this video we go through the problems and solutions associated with designing and building an exremely powerful and compact mass crafting system for any kind of recipe.\n\nWorld Download:\nhttps://www.mediafire.com/file/wwi5lh7f1332le8/Dolphin_Mass_Crafting.zip/file\n\n@Andrews54757 Item Scroller Version for Optimal Mass Crafting:\nhttps://github.com/Andrews54757/itemscroller-crafting-fix/releases\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 45
+    },
+    {
+      "start_time": 45,
+      "title": "MassCrafting",
+      "end_time": 212
+    },
+    {
+      "start_time": 212,
+      "title": "Dolphins",
+      "end_time": 425
+    },
+    {
+      "start_time": 425,
+      "title": "Crafting",
+      "end_time": 648
+    },
+    {
+      "start_time": 648,
+      "title": "Crafting Speed",
+      "end_time": 742
+    },
+    {
+      "start_time": 742,
+      "title": "Chunk Loader",
+      "end_time": 890
+    },
+    {
+      "start_time": 890,
+      "title": "Box Loader",
+      "end_time": 1070
+    },
+    {
+      "start_time": 1070,
+      "title": "Conclusion",
+      "end_time": 1175
+    }
+  ],
+  "tags": [
+    "redstone",
+    "autocrafting",
+    "industrial",
+    "mass crafter"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=pDk69uHYX9U"
+}

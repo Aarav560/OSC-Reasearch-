@@ -1,0 +1,50 @@
+{
+  "id": "N5ksGRpnhAs",
+  "title": "I Invented Redstone Hacking",
+  "channel": "iPlayGames",
+  "channel_url": "https://www.youtube.com/channel/UCeFcBuBLFpU2mqtH8HNCSmw",
+  "upload_date": "20260601",
+  "duration": 634,
+  "view_count": 588118,
+  "like_count": 34205,
+  "description": "------------------------------------\n🌲 Get 30% OFF Your Minecraft Server Hosting With Pine Hosting! Use Code IPLAYGAMES Here - - https://pine.host/iplaygames1\n------------------------------------\n\nMassive thanks to Kuggo and Bringeis with help developing the hacker, as well as to everyone who helped in the video making process!\n\nIn this video I explain and showcase a hacking system for Cubicmetre's Orbital Strike Cannon.\n\nThe circuits shown here currently work from OSC 6.0 version on, including the 6.1 and the MS.\n\nMy Patreon: \nhttps://www.patreon.com/cw/iplaygamesx\n\nA download to the build: \nhttps://mega.nz/folder/1NQnXJYa#gUQQWjzE0ZlH9H9QLjZz2g\n\nOur Discord, EsoTech:\nhttps://discord.gg/xUueH3u2KY\n\nMain wireless redstone development hub, TickLink:\nhttps://discord.gg/UQfxrgvmRm\n\nThank you for watching, and I'm excited to release bigger things in the future ;)",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The concept of orbital hacking",
+      "end_time": 101
+    },
+    {
+      "start_time": 101,
+      "title": "Understanding cannon inputs",
+      "end_time": 131
+    },
+    {
+      "start_time": 131,
+      "title": "Sponsor message",
+      "end_time": 181
+    },
+    {
+      "start_time": 181,
+      "title": "Frequency and timing scanning",
+      "end_time": 322
+    },
+    {
+      "start_time": 322,
+      "title": "Priorities and signal decoding",
+      "end_time": 418
+    },
+    {
+      "start_time": 418,
+      "title": "Executing the attack",
+      "end_time": 524
+    },
+    {
+      "start_time": 524,
+      "title": "Building the circuit",
+      "end_time": 634
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=N5ksGRpnhAs"
+}

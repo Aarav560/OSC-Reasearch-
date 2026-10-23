@@ -1,0 +1,55 @@
+{
+  "id": "owoS_bgOIhQ",
+  "title": "Reliable Portal Based Shulker Farm [1.17 Java Edition]",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210127",
+  "duration": 1495,
+  "view_count": 49859,
+  "like_count": 1417,
+  "description": "The shulker warp has been patched so it's time to update and finalise the shulker farm. In this video you will also get a detailed tutorial of how to set up your own shulker farm.\n\nPLEASE NOTE I have switched out the schematics for a new and optimised version of the farm, this means the schematics will differ slightly from the video however the farm is mostly the same.\n\nSchematics For nether and overworld sides respectively:\nhttps://www.mediafire.com/file/cper13hs3ab9kxe/m%25C2%25B3%2527s_1.17_Shulker_Farm_NE_Mk2.litematic/file\nhttps://www.mediafire.com/file/bhu0x6nwwft8hrt/m%25C2%25B3%2527s_1.17_Shulker_Farm_OW_Mk2.litematic/file\n\nWorld Download:\nhttps://www.mediafire.com/file/h3aol4h0tq8be38/Shulker_Farm_1_17.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to design",
+      "end_time": 94
+    },
+    {
+      "start_time": 94,
+      "title": "Mechanics and theory",
+      "end_time": 384
+    },
+    {
+      "start_time": 384,
+      "title": "Site planning and setup",
+      "end_time": 690
+    },
+    {
+      "start_time": 690,
+      "title": "Construction specifics",
+      "end_time": 966
+    },
+    {
+      "start_time": 966,
+      "title": "Testing and refinement",
+      "end_time": 1093
+    },
+    {
+      "start_time": 1093,
+      "title": "Shulker transport",
+      "end_time": 1403
+    },
+    {
+      "start_time": 1403,
+      "title": "Final operation",
+      "end_time": 1495
+    }
+  ],
+  "tags": [
+    "scicraft",
+    "minecraft",
+    "caves and cliffs",
+    "mob farms"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=owoS_bgOIhQ"
+}

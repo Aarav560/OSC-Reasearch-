@@ -1,0 +1,91 @@
+{
+  "id": "c8_SdSeTvRM",
+  "title": "Indestructible* Blast Chamber - Supersede by New Designs!",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200403",
+  "duration": 1185,
+  "view_count": 11158,
+  "like_count": 355,
+  "description": "This is my first video ever so the quality might be a bit lacking in some places, also to make up for any details I may have missed in the video I'd suggest taking a look at the world download and/or the schematics.\n*Not Unbreakable in the sense that is doesn't jam if you play on a laggy server, use my latest design here:\nhttps://youtu.be/MteXeCMV7t8\n\nWorld Download:\nhttp://www.mediafire.com/file/85nmw2fyg7c5nx6/Improved_Blast_Chamber.zip/file\n\nSchematics(For use with Litematica mod):\n\nNon TnT Duping Variant:\nhttp://www.mediafire.com/file/2fwr1f4f20fvi67/m%25C2%25B3%2527s_Improved_Blast_Chamber%2528Non-Duping%2529.litematic/file\n\nTnT Duping Variant:\nhttp://www.mediafire.com/file/42672veg0l8gscu/m%25C2%25B3%2527s_Improved_Blast_Chamber%2528Duping%2529.litematic/file",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction and overview",
+      "end_time": 80
+    },
+    {
+      "start_time": 80,
+      "title": "TNT elevator mechanism",
+      "end_time": 157
+    },
+    {
+      "start_time": 157,
+      "title": "Prototype testing",
+      "end_time": 242
+    },
+    {
+      "start_time": 242,
+      "title": "Block conveyor design",
+      "end_time": 330
+    },
+    {
+      "start_time": 330,
+      "title": "Conveyor assembly",
+      "end_time": 505
+    },
+    {
+      "start_time": 505,
+      "title": "System testing",
+      "end_time": 540
+    },
+    {
+      "start_time": 540,
+      "title": "TNT priming system",
+      "end_time": 651
+    },
+    {
+      "start_time": 651,
+      "title": "TNT duper construction",
+      "end_time": 752
+    },
+    {
+      "start_time": 752,
+      "title": "Duper timing and wiring",
+      "end_time": 840
+    },
+    {
+      "start_time": 840,
+      "title": "Chamber timing circuit",
+      "end_time": 947
+    },
+    {
+      "start_time": 947,
+      "title": "Final system verification",
+      "end_time": 984
+    },
+    {
+      "start_time": 984,
+      "title": "Troubleshooting jams",
+      "end_time": 1047
+    },
+    {
+      "start_time": 1047,
+      "title": "Advanced timing adjustments",
+      "end_time": 1157
+    },
+    {
+      "start_time": 1157,
+      "title": "Conclusion",
+      "end_time": 1185
+    }
+  ],
+  "tags": [
+    "Minecraft",
+    "Scicraft",
+    "Redstone",
+    "Blast Chamber",
+    "ilmango"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=c8_SdSeTvRM"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "klsGsPY-Q9k",
+  "title": "Minecart Madness",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240822",
+  "duration": 947,
+  "view_count": 290366,
+  "like_count": 20523,
+  "description": "Mojang wants to improve minecarts with some recently added experimental features. In this video we explore these features and their implications for minecraft and the limitations of it's physics engine. Because it turns out when you make minecarts go faster, simulated aeodynamics become a significant limiting factor in their speed.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 45
+    },
+    {
+      "start_time": 45,
+      "title": "Distance vs Time",
+      "end_time": 255
+    },
+    {
+      "start_time": 255,
+      "title": "Continuous Motion",
+      "end_time": 303
+    },
+    {
+      "start_time": 303,
+      "title": "Conflict of Interest",
+      "end_time": 371
+    },
+    {
+      "start_time": 371,
+      "title": "Copper Powered Rail",
+      "end_time": 417
+    },
+    {
+      "start_time": 417,
+      "title": "Aerodynamic Drag",
+      "end_time": 611
+    },
+    {
+      "start_time": 611,
+      "title": "Computational Fluid Dynamics",
+      "end_time": 727
+    },
+    {
+      "start_time": 727,
+      "title": "Simulation Results",
+      "end_time": 877
+    },
+    {
+      "start_time": 877,
+      "title": "Outro",
+      "end_time": 947
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "snapshot 24w33a",
+    "1.21.2",
+    "minecart",
+    "redstone",
+    "rollercoaster",
+    "computational fluid dynamics"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=klsGsPY-Q9k"
+}

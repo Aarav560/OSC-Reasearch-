@@ -1,0 +1,45 @@
+{
+  "id": "tc178yheH08",
+  "title": "The New Copper Conversion Catalyzer",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20221116",
+  "duration": 605,
+  "view_count": 55929,
+  "like_count": 2428,
+  "description": "I recently did a full re-design of the catalytic converter copper oxidzer. This new beaut is now much easier to build and maintain with modular integration with the blast chamber multi-farm. Something tells me things won't stop here.\n\nSchematic Downloads:\nhttps://www.mediafire.com/folder/bjp4vh6tfefwotk,ok4tmo3sdf46gb3/shared\nSchematics to help with fixing problems:\nhttps://www.mediafire.com/folder/bjp4vh6tfefwotk,ok4tmo3sdf46gb3/shared\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The original copper farm",
+      "end_time": 109
+    },
+    {
+      "start_time": 109,
+      "title": "Designing the 2.0 version",
+      "end_time": 175
+    },
+    {
+      "start_time": 175,
+      "title": "How to use the farm",
+      "end_time": 281
+    },
+    {
+      "start_time": 281,
+      "title": "Fixing common issues",
+      "end_time": 578
+    },
+    {
+      "start_time": 578,
+      "title": "Final thoughts",
+      "end_time": 605
+    }
+  ],
+  "tags": [
+    "copper oxidiser",
+    "redstone",
+    "minecraft",
+    "copper oxidizer"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=tc178yheH08"
+}

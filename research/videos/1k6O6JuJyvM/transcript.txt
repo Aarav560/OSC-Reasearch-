@@ -1,0 +1,68 @@
+[00:00] [Music] ladies and gents cubic meeting here my next video about cigarettes drop of water crosses to begin with I'm excited to present this Universal two-by-two craft I have below me it can do 18000 operations per hour which obviously scales depending on the crafting yields for example crafting stone bricks which yield for license proper Asian this will go up to 72 thousand items per hour these rates are made possible using
+
+[00:34] hopper mine cards aligned to the bottom of the crafting table the remaining 5 sides each have a dropper pointing into them and that way we have enough slots for two ingredients a dummy item and two more ingredients so therefore we can do two by two recipes in here unfortunately there's no capacity for this particular setup to have additional dummy items in any of the other slots however this is acceptable for that 99%
+
+[01:09] of crafting recipes in order to be able to handle any recipe from 1 to 4 items for crafting operation I'm using these full-time shock box loaders that I designed and two of them stack next to each other so it uses moveable tile entities like so that way we can have full hoppers pulling from a hopper cart which is aligned such that it pulls from the hopper carts underneath our crafting
+
+[01:42] table and these hopper cast just above the loaders airlines such as they intersect in to the hitbox of the Pistons therefore we are able to use the sticky pistons to push the hoppers down and break the boxes once they're full I should definitely mention about this design is that it's highly directional it's also very dependent on the way in which you place these hopper carts I will start with the directionality we
+
+[02:15] actually use directional update order in order control which item is sent to which slot the graphing table so by only sending a single item type to each one of these dropper lines we can precisely control where that item goes in the recipe dummy owners are input from the Westside - bye - parting recipe slot starts from the north side then the upward side
+
+[02:51] then the Southside slot in the 4x4 crafting recipe is sent from the Eastside as for these hopper carts the oldest cart gets first pick or what items to remove from our crafting table every time these drop is fire they will fill five slots so we'll have a dummy item in this slot here and that item needs to be removed before we can get
+
+[03:27] our items out the way this is done is we have a filter cart here or tropical fish and it was placed first car gets priority it searches first for the cracking table looking for items that can collect once it finds the dummy item it will pull it out and in the same gain tick these two carts will then be scheduled to pull out the remaining items however
+
+[04:02] if there is a valid recipe in this slot they will prefer this slot and then pull out your crafted items the hypercar preference is also really useful for balancing the capacity of the Shocker box loaders as you can imagine if you're handling recipes that go from one to four items per operation designing a shocker box loader for any one of those cases can result in partially filled boxes
+
+[04:35] and this system waits until the box is full before ejecting it introducing a system to eject partially filled boxes adds complexity solve that issue happens is one of these carts will get preference so if you're only crafting one item per operation that item will continuously be pulled out preferentially to one side which will go to one of the shock box loaders it's like very interesting happens for
+
+[05:09] the special case of wood from logs before logs makes free wood I can imagine an imbalance like this in the input and output would be a disaster for my shocks loaders that rely on completely filled boxes however with the system I have here with the preferential order in which hopper carts pull out the items
+
+[05:45] what will happen is two items each operation will go to one of the Shocker box loaders so it operates at full capacity an additional one item per operation will then go to the other socket box loader and therefore it will operate a half capacity and the amount of items is perfectly balanced between the two so what will happen is this loader will eject twice and at the very end of the craft crafting operation this
+
+[06:20] will eject once so if I check off this quickly this side eject at once and now what we should see is they should both eject at a Foxit at the same time at the very end of the crafting operation there we go rafting is now done
+
+[07:00] we have it free perfectly filled boxes of Oakwood also known as some other example recipes I had you can craft things like books and also craft things that require specific order such as all Stuart of course stone bricks is an obvious choice I just showed you crafting Oakwood another really interesting case you can use this for is crafting fireworks stars I actually experimented with mixing up
+
+[07:34] the the items and the dyes in order to get a little bit of variation with the firework stars however the issue with this is at the current chakra box loaders cannot handle mixed items so what you get is a sort of random spread of firework stars at the output and they went load into the cycle boxes properly but luckily I will investigate making I'm
+
+[08:06] Sloat assistance specifically for this application another really interesting thing is you can craft pumpkin pie I'll just show you that quickly we need full times as many egg boxes because only sex is 16 but in our Punkins now eggs a turn on now we're doing one item per
+
+[08:41] operation client side you can actually see what's happening because we're both putting the filling the slots and emptying out the crafted items in the same game tick using the hopper carts so it may look like nothing's going on here but if I select this hopper cart here and see that we're crossing high there we have it pumpkin pies fresh out
+
+[09:39] of the owner crafter but if you have a good sauce or pumpkins and sugar also eggs raffle foods such as pumpkin pie could maybe be a viable food option might be wondering how exactly do we use synchro's dropper systems to do our 2x2 recipes here well robbers have a significant advantage over hoppers and that is very easy to control when they send items if you activate multiple droppers at the
+
+[10:12] same time they will actually insert the items in a specific order based upon a sub tech game order so what is this sub tech order that I speak of well in order for minecraft to function it runs in a game loop so every single game tick it adds up every event that occurs and executes them now what this means for redstone component is that depending on the configuration of the setup different components will be scheduled at
+
+[10:44] different times in the same game tick so what I have here is five droppers pointing into a single crafting table they all get powered in the same game tick however in order to separate them the game has a few biases towards specific configurations for example this drop at the top which gets directly powered by The Observer the game picks that as the first fire and so a positive Y sends an iron to the first slot here
+
+[11:22] these four droppers on the outside however they are powered by causing connectivity so they require an update from an adjacent block which is provided by these rails and so they get scheduled after our block they gets directly powered however there are still four droppers being powered in the same phase of the game tick and so the game needs to separate them further now the way it does this is it looks at the direction
+
+[11:54] that the dropper is facing the order in which directions of process is negative x positive X negative Z positive said and we can quickly verify this by looking into our crafting table so using subject order we can actually control the order in which items are sent to our crafting table now this is perfect for graphing systems we're recipes are very sensitive to the order in which items are sent and so
+
+[12:29] this is what we use for our synchronous dropper auto crafting systems so I should definitely touch on here is that making slight alterations to the configuration of your liquorice dropper auto crafter can produce drastically different results in the order in which items are sent so here I simply move the rail from the top of the droppers in our z-axis to next to them and understanding the change that this
+
+[13:04] makes like to give a big thanks to VK tech who explains this really well in his video on update order the top still gets powered first because it's directly powered by the observer however we've got two rails here one in the negative x-direction one in the positive x-direction the negative x-direction is preferred and so it powers first however there is a rail next to it and so it will suspend its update and
+
+[13:37] power this rail why's that there's no more rails to be powered the updates will then propagate back for the rail network this adjacent to two droppers which are being powered by quasi connectivity do they get powered in the same phase the game differentiates them based on the direction that they're facing so once again and negative X is preferred but now a negative Zed is the next to
+
+[14:12] fire so I can quickly verify this of why is the first to go there are negative X whether we're previously the positive x had fired we now have the negative Z filling the slot recipe which was strongly reliant on the order of this system and you made a simple change just going from rail on top of you drop up to next to it
+
+[14:46] your dummy item has moved from here all the way to down here and now your tuber to craft that doesn't work anymore be very careful that if you change the configuration of your synchronous drop or auto crafter that you check to make sure that you know which slot its dropper corresponds to so you can send the correct items to where they need to be there's a fun activity now what I'd like to do is use our knowledge of update
+
+[15:21] order see if we can predict the order of this setup this is actually the drop alone setup that I have inside of the heart of this 2x2 crafter and the reason that it's so much larger than it may need to be is because there needs to be space to route all the hoppers to these droppers in order to feed them all at two times hopper speed so to begin with we need to find our first block that gets powered which is
+
+[15:54] right here we have to raise B rails being powered at the same time the direction that the game will prefer first is the negative X do this we follow this line here now we've got these two rails being powered at the same time they facing relative to our power block got positive zed here and a positive x here for our positive x over our positive
+
+[16:28] said therefore ear fires first it's pointing into this here also gets powered and so this will be our first drop a line you get powered and so we will label this as our first slot there we go back to here we also have a poses dead direction
+
+[17:02] which gets powd and it will power this dropper here adjacent to this dropper is the one below which is negative y-direction drop it in the middle here which is an in our positive x-direction so what is preferred over positive excellent negative Y our positive X actually fires first and so
+
+[17:37] one here in the middle on you is our second slot and then a negative why fires this our third slot now let's go back to the being powered here so now for our positive z-direction
+
+[18:12] Reston's being fired here we got a negative Z and a negative X of course the game will prefer the negative X verse therefore propagates down to here this side will be our fourth slot and finally this line here would be our fifth slot now let's quickly verify this here we've got our negative Z so I'll
+
+[18:47] drop a line facing in the negative Z Direction is the first to fire then we've got our positive Y which is our second slot right here in the top negative X which is right here our third slot a positive z direction here it is finally our last slot positive X much for watching this has been a video
+
+[19:24] introducing some more advanced concepts behind synchronous dropper auto crafters I will be making some more videos regarding these systems which can do various other recipes also be doing some videos introducing concepts behind sick of hoarder crossing systems such as the universal auto crafter that we use on the scale book server if you want to be notified of when I release these videos feel free to subscribe and I will see you then good bye for now
+

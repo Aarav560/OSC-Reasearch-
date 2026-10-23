@@ -1,0 +1,112 @@
+[00:00] good day ladies and gents cuic met here it's Christmas on the wave Tech server yes it's that time of the year again where we dish out our secret Sanders and give each other presents and this year we have the one and only rofo roof is the master M behind such infrastructure as wave teex piston bolt Network as well as the perimeter printer machine which we use to automatically print out patterns in gigantic perimeters such as this one so so what could we possibly get for this amazing
+
+[00:33] genius well I have an idea but it involves some Minecraft voodoo magic so let me explain ruo is a man who appreciates good storage Tech however some individuals take storage Tech a little less seriously let me introduce you to jkm the Menace of storage Tech the drama begins in the end Dimension this right here are Quarry designs by minin and Redstone Jazz which were the first Quarry designs ever to be
+
+[01:07] conceived and what we have over here is what I like to call a storage Tech War crime a war crime committed by none other than jkm and the origin of the meme storage Tech is my passion top 10 storage Tech life hacks number three you can decide if you want a total storage or or a long storage how about combining the two if you make your storage look like a staircase you can easily access even the top perer did not appreciate this at all which is pretty obvious
+
+[01:41] given his response and once jkm got a taste for storage Tech war crimes he just kept on going like what even is this he's made a bloody Christmas tree out of chests and Hoppers and these Shenanigans aren't restricted to wave Tech in fact no server is safe oh oh my God J this this is not that's is
+
+[02:15] my this man is just out of control and must be stopped and this is where we can apply some voodoo magic to give rofo control over jm's Destiny this right here is my trusty TNT looting system inside of the core we have an arrow stasis chamber which you can load using a bow like so and if you hit this note block the arrow gets aligned and then stays within the stasis chamber
+
+[02:47] where it gets periodically pulsed by this piston to ensure that the arrow never despawns with an arrow loaded into the chamber we can now input blocks of TNT and have that TNT automatically ignited by The Flaming Arrow now you might be thinking what is the point of doing all this after all you can just duplicate TNT in Minecraft and then you won't have to go through all these Shenanigans of placing down the TNT blocks and using a flaming arrow to
+
+[03:18] ignite them well something that you may not realize is that TNT which is ignited by a flaming arrow that belongs to the player means that any damage done by that TNT is actually attributed to the player in order to demonstrate this odd behavior I've got the Target down there in the blast zone if I place down a TNT into the TNT looting system the TNT explodes and look at that the kill was actually attributed to my
+
+[03:55] player because I owned the arrow that ignited the TNT these kills even count for mobs so if I go ahead and place down a TNT in here this creeper will drop loot as if it was killed by a player so as you can see it drops XP we also got a single gunpowder but here's the really cool part if I give myself a wooden sword with a Max Level looting enchantment the blast of the TNT ke will
+
+[04:30] even apply the Looting effect if I'm holding the sword there we go as you can see we dropped way more gunpowder than usual because I've got this cheated looting enchant on the sword so any damage done by the TNT ignited by an arrow which belongs to a player will be attributed to that player and if that player happens to be holding a sword enchanted with the looting effect that blast damage will also apply the Looting
+
+[05:03] effect I should note however that this does not apply to blocks destroyed by the TNT so if I hold a pickaxe with silk touch as you can see it still dropped Cobble Stone however because the Damage Done to entities attributes to the player that the arrow belongs to if you can get your hands on an arrow that belongs to someone else you can do some pretty funky Vo magic so I've just set up another TNT looting system closer to the ground and I've got this carpet
+
+[05:36] bot of jkm using continuous on a bow I'm going to get him to release that bow now we can align the arrow and now we have a TNT looting system that creates TNT whose blast is attributed to jkm let's say that jkm is out for a lovely stroll let's ruin that for him by aring a bunch of Enderman using TNT ignited by his player oh yep they are
+
+[06:20] cranky voodoo magic at its finest oh let's say that JM is chilling out with his piglin bodies well a bit of TNT Ed by his Arrow damages another Pigman and then immediately all the other ones ago towards him or maybe we could even frame him for committing atrocities against villagers also here is a little known
+
+[06:54] fact about these TNT looting systems if I go ahead and place down a TNT in here what we will see is that when all these players take damage their knock back from that damage will be unanimously away from wherever jkm is currently located this means if you can obtain a player's Arrow Place it in an arrow stasis chamber and then use it in a TNT looting system you can effectively
+
+[07:29] train angulate their position at any time by simply using the knockback given by the TNT ignited by that Arrow isn't that amazing all right so we have a lot of options for how we can use our voodoo magic against jkm AG gr random mobs against him is pretty funny however the main issue with this is that jcam actually needs to be nearby the machine when it's activated for it to work this is because the mobs will only aggro to him if he is within line of sight and
+
+[08:03] within tracking distance of the mobs for example if Jim's all the way over here however we place down the Enderman all the way over here and then Agro them using the TNT the enen aggro for a moment however they lose Agro immediately because jkm is actually outside of their tracking range so unfortunately this would only
+
+[08:35] work if jkm happened to be within tracking distance of the Enderman so unfortunately not a reliable way to prank people however what if we summon a mob wearing Thorn's armor now the thing about Thorn's armor is that if I deal damage to this zombie they will do damage to me in propor ption to the amount of damage that I deal so if we damage our zombie using the TNT ignited by jm's Arrow I said if we use TNT ignited by
+
+[09:13] jm's Arrow unfortunately it does not seem like the blast damage can apply the THS effect dang nabbit that would have just been the ultimate prank if you could get a single Arrow then repeatedly ignite TNT with it and apply the fors effect to jkm no matter where he is on the server but unfortunately our TNT just does not seem to apply the THS effect however if I use the arrow
+
+[09:47] directly yes it does apply the THS effect if we omit the TNT looting section and just have the Aros stasis chamber we can just stockpile a whole heap of arrows and then release them one at a time using this entity filter here we are we're set up with another aasis chamber and we've got our zombie wearing Thorn's armor down here and jakim waiting over there let's trigger the arrows and see
+
+[10:23] what happens it works look at that and this should work at any range but unfortunately now I need to figure out how I'm going to get jkm to shoot hundreds of arrows into a stasis chamber without him suspecting what I'm up to that might be a little bit challenging but we'll figure out when we
+
+[10:55] get there a little while later and the voodo Machine has been constructed in survival it wasn't a very large or complicated machine so it did not take very long and the basic idea is that you can trigger the machine from the nether by hitting this note block this will send an item through the nether portal which chunk loads the other side and also triggers the machine to drop an arrow the multi-dimensional functionality makes this machine a bit more ergonomic because roof R will be able to trigger it without having to go
+
+[11:27] to it in the Overworld now the one last thing that we're missing is the recipient for our Arrow who will apply the THS effect and my choice is going to surprise a lot of you just over here is a historic site for the wave Tech server this is one of wave Tech's very first Iron Farms where we can find a handy supply of villagers but cubic why are using villagers why not use a zombie like you did in your creative test World well all of this will make sense in a
+
+[11:59] moment but right now all that matters is that we grab ourselves one of these villagers come on buddy I know you want to be my test subject God sometimes villagers can be pain to work with be nice if we had something like an emerald on a stick to control them there we go hey and away he
+
+[12:36] goes so hopefully if I've done everything correctly he'll drop right on top of that slab hey too easy a village is in position however he's going to need a few extra things in order to be useful to us in order to get those things we need to head to the end Dimension and fly over to wave teex villager trading Matrix so this right here is our void trading platform I'm just going to go inside and here is our villager trading Matrix there we go we need some THS
+
+[13:13] books and some Unbreaking boook so let's bring this guy over to the void Trader grab ourselves some emeralds some books and let's get to work there we go I can now grab our for's books and that's full that's what we need and I guess I'll grab an Infinity book while we're at it there we go four books is exactly what we
+
+[13:45] needed and there is our Unbreaking guy once again he pops up in the void Trader open his DUI and grab ourselves full Unbreaking book and another resource you want to avoid trade for is all these arrows of healing there we go we can open up the GUI and perform the trade without trade looking hey check that out
+
+[14:34] out all those trades in just one session this is why I love void trading all right that's everything we needed to finish off this Voodoo machine now here psych I bet you didn't know you can in fact put armor onto villagers using a dispenser there we go so now this villager is fully equipped with diamond armor with Unbreaking and
+
+[15:09] THS I also have this system I'm going to fill up with our arrows of healing which will periodically heal the Villager back up to full health every roughly 20 times that you activate the machine that means that we can get more multiple uses without killing our villager so now that we have our villager set up I'm going to drop an arrow in oh no that is a flaming arrow we don't want that aha I knew there was a
+
+[15:44] reason I got that Infinity book perfect loading it up again we can also test the nether side trigger all right the arrow dropped but there is a chance that the THS does not actually apply when the Villager takes damage so let's just load it up again and hopefully we don't get unlucky h no THS if I trigger it while I'm here yep that definitely works if we
+
+[16:17] trigger from the nether side nothing playing around AIT with a trolley it appears that it can work interdimensionally if there is a player loading the machine in the Overworld man some of these mechanics can be very quirky so essentially this machine will only work if you're in the Overworld with it when you activate it meaning this entire nether activation system is completely useless that sucks but it's not really much of an issue it just means that
+
+[16:50] roofle will have to go through the portal into the over World in order to use the machine so all rofer needs to do in order to activate the machine simply come over here to the overall side and hit this note block instead and this should work transdimensional as well all that's left to do now is wrap up this present and leave it under the tree for roof row there we go perfect of course we need the personalized Sher box and to write him a quick message and there we go the final piece of the
+
+[17:26] puzzle perfect with all the presents tued away under the tree it is now time to get everyone together and open their presents someone opens their present you have to guess who you think you got the present from building a slimy statue of myself speaking among of Among Us that short I uploaded a stream way too well do you want to build a sliman see we need to build the sliman Santa burns to death global warning people wake up oh no no more
+
+[18:01] Christmas piston tree oh piston tree why did someone build a myin summon uh [Music] pedestal Bunga quar and fing block but then the question is does it actually work does it summon myin I can summon myin give me the book you guys we have some guests some special guests here what is I'll bring them I'll bring them over bring them
+
+[18:37] over oh God they got party crashes oh CU very festive shorts uh can we get rid of the suppressed but everybody Welcome to the 2022 secret santa event thanks for everybody who participated should we get into it Max you go first oh all right then all right very cool I think V was back
+
+[19:12] here you know what I'm going to go to spectator I feel like everyone is going to be in oh true yeah oh an unsigned book this is very exciting coordinates these are the cord these cords are in main storage okay yeah I was going to say this is really this is great present I think that this is it right yeah oh wait I go inside it okay never mind hold on I that was amazing brain power new sound system oh wow oh my gosh this person
+
+[19:46] knows me so first present and we see Zoid entering a contractual agreement to build an encoded juke box for main storage this set the bar pretty high but things are about to get even more hectic Jill oh I'm next if it's not a Sher box of Enchantment tables I'm going to be disappointed oh great it's a [&nbsp;__&nbsp;] riddle a take it let the light blue conductor guide you I I feel like I know who this is already wait can I guess I guess yeah oh Kiku so I guess when everyone's ready I'll
+
+[20:19] go yeah I'm in yeah oh W okay wo wo oh oh yeah that's why I panicked last time because I landed and I [&nbsp;__&nbsp;] panicked that was like the plot twist of the ages this is not going how I expected it to this is great this is interesting B I like how excited that rck
+
+[20:53] yeah it's because I I recogniz that one thing I must ask why is there a tank why isn't there a tank rash has invaded W oh no no yeah know but then Jesus Christ that's a this is like compared to okay I'll be I'll be honest it's like I really should have put more thought into M I know a lot of these are making me realize that as well K built a freaking Christmas Fame roller coaster
+
+[21:26] for J Hill this is dynamic feel like a Ving machine wasn't enough however some presents were a bit more laidback [Laughter] probably wait what he actually uh what's this angry Among Us on a Swedish flag there we go SI I'm going to stand on top of it so no one can see present also had a second element
+
+[22:00] which was quite confusing at first but eventually tied everything together I can't tell what it is it caramel dson oh my God I know they the song My God struggling so much more mspt I need more mspt
+
+[22:35] more wait why do we need to load the bolts what because I was going in it I love how because the server is laging it like slowed down the song yeah it's like stuttering no all right look Charley look up oh my I wonder who made try's present I I I I'm pretty sure I know who
+
+[23:17] that was for oh my Lord I I know exactly because he told me right away I I oh yeah cuz I needed you to keep random away so here's what you can do now you can take a map and now we can clearly see where the iron from they point I love that this feels me you're not going to lie that
+
+[23:50] is also that floor pattern is wild I have I haven't seen the floor pattern made in Act Casey can't tell there was meant to be an iron farm there however it hasn't been built yet the present that came next then completely blew everybody's minds and colia all right well since you haven't gone you can go next like over my present yes or coordinates I think and some emeralds Y is that okay I have a very Mr Max
+
+[24:23] Munday Heavens no God god wow I know that is so cool I'm flattered I'm flattered You' guess me but like this is insane okay wait ni do you have a guess of who it is uh yeah I said it's Max Monday oh wait can someone else guess I guess it's not him well like never mind you had a here if you didn't see yeah it is
+
+[24:58] clearly a builder very good jkm maybe they got the build commissioned and then they just buil it froma yeah this looks like some crazy world technique oh Ang yeah that's what I was thinking too I was like there's a lot of really interesting geometry I'm like taking notes but then some people did not get the memo take that you go next wait wait what is this next person
+
+[25:31] first copper or what is this your entire present that's what was yeah I don't get it uh I guess someone is getting kicked today I think I know I have open I think I can guess who gave it I think I also know who gave it to you uh and I think this person is getting kicked today this is not acceptable yes somebody genuinely got kicked from the way server on Christmas however this person wasn't actively contributing to the community so we had
+
+[26:03] actually been considering this for quite a while Minecraft drama aside it was finally time to open my present cubic let's go cubic fine hey fine I think I saw your logo here that didn't say anything but oh yes do I get to keep the ancient debris I mean I did mine it goes back to storage I like how they put a block above it even though the Shuler box is upside down oh no somebody nicked the item
+
+[26:35] frame I got the item FR I can run where where is so much coal I didn't I didn't mind this ancient debris I can't keep it that is an insane amount of coal well at least I'll be to the furnace two stacks of Deep wait wait someone someone gave you the netherite block MERS once again what I got that last year reduce reuse recycle what's in the
+
+[27:12] book what I've been naughty again I gave you guys the main storage you haven't loed the coers are too wide I have a riddle okay go where the sun sets and the items stay main storage I guess probably main storage yes oh the it's not where the items are stored oh my God a to figure this out I
+
+[27:47] have a [&nbsp;__&nbsp;] you have signs here I think this is not just yet at your present just a quick stop good you manage to make your way to the career location now go where to the place where the animals are sacrificed cuic has to guess once he gets here oh my God yeah are there multiple RGB beacons in there yeah seems like it like it's like RGB oh it's this RGB
+
+[28:24] Beacon you guess who it is what does it say wait a minute the only person who knows about this design is trolley this has I don't think it's him mystery what who do who do you guess it is I guess it's trolley because you're the only one who knew about this old this older RGB Beacon design what do you yo so so cubic got trolley last year and then trolley got
+
+[28:58] cubic this year youan SE this but anyone can seen your video I mean I saw this when it was being sparkling Corona yeah get myself a bit of the ARA what do you think cuic this is amazing this is amazing pky trolley hey hey cubic can I have some can I have sparkling Corona yes there it's it's in
+
+[29:30] the it's in the SK key there is an extra netherite everyone's just everyone's just dying now this is delicious tried assassinating you assassin there's like a little there's like a little mural to all the um all the projects I'm working on so it's unfortunate that rofer isn't here on secret santa day to open his present however I do have jkm here to help me out St St is my passion yes yes
+
+[30:05] we we know we know hey what do I have to do all right let's just sneak into here so hopefully he'll be able to open his present soon and he'll actually have a completed present as well which is nice all right would you please come up to the top of the scaffolding yeah and just keep firing arrows into that terra
+
+[30:38] cotta so as many arrows as we can fit in there many all right I have no idea what we were planning it's better that it's better we keep it that way yep that's good right here we go thank you jkm oh wow you almost broke that bow I don't see any Storage St what what is that oh um ah it's R's present it's it's for
+
+[31:15] rer you seem concerned um I I am very confused there is a villager what why is there a villager oh yeah don't worry about him he's um he's just he's just an intern okay he just there to inspect the storage Tech I guess storage Tech is his passion as well nice yes indeed all right thank you jkm I'm sure rer will appreciate this I I'm I'm not even sure if I'm glad I helped or not that's why I'm just going to say see
+
+[31:49] you there we have it rofer can now punish jkim at any time and we receive this amazing Monument from trolley a huge thanks to all of the wave Tech members for making this year's secret Center such an awesome event and of course A Merry Christmas to all of you now I'll see you all again for the new year
+

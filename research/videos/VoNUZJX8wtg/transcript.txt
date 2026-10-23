@@ -1,0 +1,48 @@
+[00:00] Hi guys, in this video we're going to go through a new semi-instant optin farm. This farm produces about 106,000 obsidian per hour and is located in the end. This farm can be built in about 20 minutes and is very survival friendly. So guys, let's begin the tutorial. First of all, let's start to build the over part. This part is in a stronghold. You'll need to find one thanks to Is of Vender. If you already have found a stronghold, just follow this tutorial. Also, having killed the ender dragon is very recommended before starting this tutorial. The overall part is very easy to build. It only consists of a trip
+
+[00:33] hook trooper and a dropper which dispenses an item in the end portal every 10 game ticks. This make the end platform regenerate and therefore can be farmed there. To start the overall path, make sure the silverfish spawner is broken and try to make space above the end portal. When that's done, start by placing these cobblestone blocks. These blocks can be any solid blocks. Therefore, you can use dirts, planks, or every solid block that you have. The strip hook duper is essential for the farm, but it can be replaced by any duping method like sand dupers or even
+
+[01:07] carpet dupers. The only important thing is that items go through the end portal at least every 10 game ticks. If this is not done, the end platform won't generate enough, and therefore, the rate of the farm will be lower. In this drooper, using mud and a hopper minecart prevents every item from escaping. Therefore, you can collect every item and have a constant flow. You can use any fences or any doors. The only problem about this farm is that you might need a bit of iron. I'd recommend building Ian X04's instant iron farm. His farm will produce enough iron in less than an
+
+[01:42] hour. Hey there. To turn on and off the Jupiter, just use
+
+[02:21] the lever above the module. When the overboard is finished, head in the end. To start the build, look in the southeast direction. To do so, you can just press F3, go down five blocks, and place your first chest. After that, place eight more chest. Continue the build by placing hoppers above them. And do the same with
+
+[02:54] the remaining chest and hoppers just like this. Again, in this tutorial, I will be using cobblestone since I think it's one of the easiest block to obtain in survival. But if you want to use other solid blocks or only glass for example, you can also do so. Surrounding the collection system is very important just to make sure every item I collected. Placing a wall and water will force items to go in every hoppers. [Music] After finishing the storage system, make
+
+[03:43] a cobblestone platform right under the end platform. After that, surround the main platform by cobblestone. This will make sure that every items are collected. Finally, finish by adding a water bucket
+
+[04:49] so that items go in the right spot. Breaking a block or two would make it easier for you to play the water bucket. and also placing a row of temporary blocks. Make sure that the water separates evenly. Let's now begin the next part of the farm. First of all, look north. Build five temporary blocks and begin building the module. This module will be the exact same on the other side, just mirrored. In this module, skulls are used, but don't worry, they're really
+
+[05:23] easy to find. If you want to use skeleton skulls, just go and find some in ancient cities. And if you have extra wither skulls, just use them. This bar is a trunk loader detector and is made so that withers have two different targets. The way we do that is by making withers target one entity in the two first second that they are loaded. Then the targets are changed. Therefore, the main skull of the withers are still focused on that one target, but the side skulls shoot another target. This is made so that withers don't shoot main skulls and therefore no blue skulls.
+
+[05:55] Blue skulls are always a problem when you use withers in your farms. But with this method, you just remove the problem. Therefore, the farm is much easier to build and the smaller. As you can see, the redstone used is not complicated to follow at all. It's just a comparator, a repeater, and a bunch of redstone dust. And finally, trap doors are here to block vision between the target and the withers. Next part of this farm is what I like to
+
+[07:55] call the skull cages. These sort of cages are here to block every other skulls. This ensures that nothing will blow up when the farm is running that the targets won't get damaged too. Now that the north side of the farm is
+
+[08:42] done, do the exact same for the opposite side. We're now going to build the wither
+
+[11:00] cages. These are very easy tank color and grindstone cages. Now, let's begin the damaging system.
+
+[11:45] We're using coralless TNT dupers. This will ensure reliability since TNT always damages the same way and is not random like snowballs. Using medium amethyst buds are very important since they're the only block that have a perfect alignment for this farm. After that, just follow the tutorial. For safety reasons, we're not placing the TNT just yet. For this part, if you don't have any
+
+[14:12] slime for the sticky piston, you can just use a lever on the side of the oak door. Withers can only break blocks every 20 game ticks or every second. So damaging them precisely every 20 game ticks is very important. That's why we just build a 20 game tick clock. Now, illustrate the TNT. The TNT setup
+
+[14:52] is just a normal TNT and observer facing the middle of the farm. We are now going to make the entity alignments for each side of the farm. Look at the center of the farm to align each chest boats. Push the boats until they are fully blocked by the skulls and the side blocks. And finish blocking the chest boat by placing a lightning rod.
+
+[15:24] Do the exact same on the other side of the farm. Again, facing the center of the farm. We are now going to lure Enderman in the
+
+[16:02] farm. To do so, make a dirt path like this one and make a sort of staircase which can only be used by the player. Head to the main island thanks to the third path. Then look two enderman in the eyes and run back to the farm. When doing that, try and keep as much distance as you can and use the staircase to go above them. Avoid going too close to them since they'll try to damage you. If they don't want to get trapped in the boats, just go above the trap doors and the enderman will automatically go in the boats. After doing that for the first side, do the exact same for the other side. Now, to make the chunk loader
+
+[16:46] detector actually work, activate one side of it thanks to a lever or a button and make sure one trap door is closed while the other one is open. And make also sure this is done on both sides. On the west side side of the main island, make a wall to prevent withers from looking other targets. If withers targets other entities, the farm could break. We're now going to spawn the withers. It is the hardest step, but it's very easy to follow. First of all,
+
+[17:19] break the obsidian blocks under the grindstones and replace them by stone cutters. Making a dirt path for you to escape when the withers are spawned is very recommended. You now need to be ready to spawn the
+
+[18:09] full withers in less than 2 seconds. If you're a bit longer than that, it's not a big issue, but it could break the farm if you are really unlucky. After spawning the withers very quickly, place water on their head and run in safety. When the last wither exploded, say quit your world as fast as possible. You can now log back into your world. You just need to do that so that withers target their right entities. We now just need to pick up the water
+
+[18:50] and the farm is done. We are now going to make a chunk loader able to load the earboard part. Pressing F3 plus G can help to know what chunk needs loading. Go down eight blocks, place a soul sand and seven water source blocks. Then throw an underpull. If you can't use underpool loaders, just use a normal trunk loader.
+
+[19:23] They work just the same and are very easy to set up. Now, let's begin farming obsidian. After starting the trip hook duper, go in the end. If you're not in 1.21 21. Withers shouldn't shoot at you since the end have been loaded by items going through the end portal. So, you will be perfectly safe. Try to access the TNT dupers and start them to damage the withers every 20 game ticks and leave the farm to avoid damage. Finally, to start the farm, start the TNT duper and
+
+[19:55] the trip hook duper. And this is about it for this video. I would highly recommend checking the description of this video since you will learn much more about this farm and how it works. Anyway guys, I hope this video helped you. If so, please leave a like and subscribe. And if you have any advice, leave a comment. Anyway, guys, see you in the next one.
+

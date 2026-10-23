@@ -1,0 +1,70 @@
+{
+  "id": "mu1I1Rt87pk",
+  "title": "Let's Build a Simple Shulker Crafter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240317",
+  "duration": 997,
+  "view_count": 133264,
+  "like_count": 7684,
+  "description": "We've been doing a lot of complex redstone, and even trying to scratch the surface of my design process is extremely exhausting. So in this video we switch things up by tackling a redstone problem that is relatively simple and breaking it down like a professional tech player.\n\nLitematic of the Shulker Crafter:\nhttps://www.mediafire.com/file/m1ke5r2qnfrc4av/Simple_Shulker_Crafter.litematic/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The problem with shulkers",
+      "end_time": 77
+    },
+    {
+      "start_time": 77,
+      "title": "Designing the crafter",
+      "end_time": 146
+    },
+    {
+      "start_time": 146,
+      "title": "Automating components",
+      "end_time": 289
+    },
+    {
+      "start_time": 289,
+      "title": "Optimizing crafting speed",
+      "end_time": 335
+    },
+    {
+      "start_time": 335,
+      "title": "Perfecting timing and order",
+      "end_time": 450
+    },
+    {
+      "start_time": 450,
+      "title": "Storage and logic errors",
+      "end_time": 562
+    },
+    {
+      "start_time": 562,
+      "title": "Advanced features and clocks",
+      "end_time": 686
+    },
+    {
+      "start_time": 686,
+      "title": "Final batch logic",
+      "end_time": 779
+    },
+    {
+      "start_time": 779,
+      "title": "Safety circuits",
+      "end_time": 907
+    },
+    {
+      "start_time": 907,
+      "title": "Finalizing the build",
+      "end_time": 997
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "basic redstone tutorial",
+    "autocrafting",
+    "technical minecraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=mu1I1Rt87pk"
+}

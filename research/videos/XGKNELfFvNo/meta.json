@@ -1,0 +1,61 @@
+{
+  "id": "XGKNELfFvNo",
+  "title": "Single Dimension Shulker Farm [1.17 Java Edition]",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210612",
+  "duration": 792,
+  "view_count": 52282,
+  "like_count": 1663,
+  "description": "For so long I admantly refused to believe that a single dimension shulker farm would ever be viable. So I decided I would try and actually build one to demonstrate how terrible they are, however I was pleasantly suprised to find that with a few innovations the farm produces a decent 160 shells per hour.\n\nPLEASE NOTE, the litematic has been updated to the shulker farm Mk2 which fixes a few issues with the minecart collection and also obtains slightly higher rates at 182/h!!!\n\nLitematic:\nhttps://www.mediafire.com/file/cya4j7ekc6hgazx/m%25C2%25B3%2527s_1.17_1D_Shulker_Farm_Mk2.litematic/file\n\nWorld Download:\nhttps://www.mediafire.com/file/7xgifrpfimvd12p/1D_Shulker_Farm.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The challenge of 1D farms",
+      "end_time": 52
+    },
+    {
+      "start_time": 52,
+      "title": "Detection and automation",
+      "end_time": 140
+    },
+    {
+      "start_time": 140,
+      "title": "Identifying design flaws",
+      "end_time": 235
+    },
+    {
+      "start_time": 235,
+      "title": "Refining entity detection",
+      "end_time": 332
+    },
+    {
+      "start_time": 332,
+      "title": "Minecart management",
+      "end_time": 457
+    },
+    {
+      "start_time": 457,
+      "title": "Prototype testing and issues",
+      "end_time": 520
+    },
+    {
+      "start_time": 520,
+      "title": "Final design optimization",
+      "end_time": 692
+    },
+    {
+      "start_time": 692,
+      "title": "Performance and conclusion",
+      "end_time": 792
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "Scicraft",
+    "caves and cliffs",
+    "mob farms",
+    "1.17"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=XGKNELfFvNo"
+}

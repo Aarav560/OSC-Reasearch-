@@ -1,0 +1,35 @@
+{
+  "id": "F02Ru9aYm_M",
+  "title": "how to get orbital strike canon with commands (For JAVA ONLY!)",
+  "channel": "KOblade",
+  "channel_url": "https://www.youtube.com/channel/UCGDnT0AzTRe7JxWnoY_Te-w",
+  "upload_date": "20251221",
+  "duration": 216,
+  "view_count": 133225,
+  "like_count": 1805,
+  "description": "nuke shot command:/give your name fishing_rod[attribute_modifiers=[{id:\"entity_interaction_range\",type:\"entity_interaction_range\",amount:-50000,operation:\"add_value\"}],custom_name='\"Nuke shot\"',custom_data={longrange:1b},damage=63,item_name='\"Nuke shot\"']                   \n\n also when you delete the .your name. and put your username make sure to copy it so you can paste it at the end of the tutorial ( :\n\n\n\n\n\ndata pack:mediafire.com/file/rarzrgv9obzqide/orbital_strike.zip/file\n\n\nSUBSCRIBE FOR A COOKIE🍪🍪💥💥💥💥💥\n\nhope you enjoyed the video!                                                             ╰(*°▽°*)╯",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to nuke",
+      "end_time": 27
+    },
+    {
+      "start_time": 27,
+      "title": "Using commands",
+      "end_time": 88
+    },
+    {
+      "start_time": 88,
+      "title": "Installing the data pack",
+      "end_time": 163
+    },
+    {
+      "start_time": 163,
+      "title": "Executing the command",
+      "end_time": 216
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=F02Ru9aYm_M"
+}

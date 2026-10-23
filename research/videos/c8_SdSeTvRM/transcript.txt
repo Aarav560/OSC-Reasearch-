@@ -1,0 +1,64 @@
+[00:01] [Music] good eh ladies and gents getting me to here with an awesome blast chamber design that does not explode when it gets jammed he's based upon your man goes to 50 blocks between two blast chamber it's of course of the design that enabled the insane 270,000 Basel per hour blast
+
+[00:34] chamber that I designed of him over on the snapshot so it's a short working I have a simple use case of a concrete maker set up at the top here like do it slick this lever and place down blocks as you can see there are four separate block streams these are fed in from the center so a block comes in every for Game six and it's separated into four separate conveyors slowing it down to 16
+
+[01:09] games eggs per conveyor this is important slowing everything down allows more time to process blocks improving the reliability enormous Lee you might notice like very strange there's actually no tnt dispensing system in the center that's because in order to solve the issue of the chamber exploding we've actually moved the entire team he set up to the underside so once this triggers the system is primed and TNT will be dispensed into this water elevator it then gets launched up and exposed during the bloc
+
+[01:44] 36 phase and all the items are collected off of the top of the water elevator this chamber runs at the same speed as a lingers blast chamber which is 2 times hopper speed so you at least need to hoppers receiving items like so so command block setup here just to show the way that the layers get filled up as you can see push them from the side so gradually blocks make the way to the center before our full block connects as
+
+[02:17] that iron bar observer can detect that and the entire piston roof fires at the same time pushing an entire layer down in case you were wondering I have a TNT duping design which is compatible with this water elevator that's set up over on the scale book test server so we can
+
+[02:49] just pop over and have a look at that so here I am over on the sky book test server this is the area where I've been developing many of my designs we'll also find a lot of other community projects such as the dirt factory there's also many projects that we may cover in a later date and over here is quite interesting these are all various auto crafters for different applications and I definitely want to cover these in other videos but for now what we're
+
+[03:26] after is over here these are my blast chamber prototypes so I've started here with El mangos super efficient blast chamber his original design at the logic system and I started by adding the elevator so that it couldn't explode and this is the TNT duping setup which is compatible with the elevator so we can just copy this and then head back over
+
+[03:59] to my single-player world so here I've copied over the duping setup from the test server I'll be showing you how to implement that in a working system later on but for now what I want to do is a quick with tutorial breaking down the heart of the block conveyor system we start with the very center of the machine we have a buttered piston setup so what this will do is the instant of both effects is piston it will send an output
+
+[04:42] so instant this system detects a block it sends a pulse out here above here we have a zero ticked Pistons which spiral like so and this will separate the incoming blocks into four separate block conveyors so all these Pistons will be connected via the same wire and zero ticked in synchronous here we'll have a zero tick
+
+[05:33] generator a quick note make sure that your redstone wire stays out of the way of the block conveyors over here you just have two Pistons which update the zero tick generator allowing it to be
+
+[06:05] non locational so it will work anywhere all right now if I send an update to this piston all the boss gets zero ticked into four different directions now that we have our block separators we need to establish where the blocks are going to be sent to what we have here next to this central
+
+[06:43] position you will have one two three four Pistons pointing inwards and for each conveyor make sure that lines up with the front of these pistons now conveyor will go down across down and get pushed back in towards the center because we've slowed down the blockchain we can use these simple conveyors now
+
+[07:34] once the blocks it pushed in here we're going to use a note block which sends an update to the observer when the block underneath is changed and what will happen is pushing in from the outside in this way will fill up until it cannot push anymore and then I'll move to this layer and so on and I suggest at the end here for each side
+
+[08:14] just have some obsidian to block the blocks as they get pushed into the layer alright just copying it on off all sides you get the full conveyer setup you can that just test it quickly by going into the center place it down the blocks as you can see chamber starts to fill up
+
+[08:52] in a spiral pattern now for the TNT priming system make sure you have it lined up with your instant wire to the onions underside place down simple binary counter repeater on full delay then we have a hopper clock here and
+
+[09:33] instead of torches this hopper has one two three four five six seven eight nine items in it to get the correct timing and this side has just a comparative reading two repeaters one of them is on full delay there are two Pistons it's over here this piston will prime our
+
+[10:12] instant wire for the instant wire we just use a notebook sandwich between the redstone block and sticky piston the instant that buckets retracted anywhere in the line the entire line will respond instantaneously at any launching set up with a dispenser has one two three four five six repairs and full delay plus an additional repeater on setting one the dispenser however is powered immediately
+
+[10:47] by redstone wire the elevator is nine blocks from the first source block to the very top source block now I will show you how to make the duping setup see whether it's a bit more involved start by making a u-shape with terracotta here we have a slime launcher launches the TNT to walls
+
+[11:30] a fence gate and our TNT goes here now we need to build the joopa separate separated so we start with these 2 L shapes that aren't quite touching it our coral will go here
+
+[12:09] rail minecart a stone wall now the system is ready to be combined just power this piston eritrean combines together and D powering the piston TNT gets duplicated now we need to set up the relative timings for our shipping system start with the slime launcher piston which needs one two three four
+
+[12:42] five Peters on next delay then one additional repeater on setting free make sure we line up for is the wire system so we just have this block disconnecting the redstone here when the system is
+
+[13:16] extended and here we have more instant wire powering the joopa one thing I should note is up here a slight change need to make on the dispenser version this repeaters on setting 1 for the TNT duper this repeater has to be on setting free so you just test it quickly works perfectly so there's just one more
+
+[14:01] circuit that needs to be added to complete the blast chamber right here this circuit ensures that the piston roof always fires during the block 36 phase so what is needed is one two three four five six seven eight nine repeaters on setting for the very last repeater is just on setting to some redstone here
+
+[14:35] taking the output from the observer a component to redirect the redstone so it doesn't power this piston and over here we need just a simple short pulse generator up at the top here I'll install a simple system to demonstrate that it's working so what we do is we bud power this dropper gets detected by this observer transmitted by the rails
+
+[15:11] and it loops around so this is a ballgame tick clock assures that we always place blocks at the right time there you go TNT system is primed and it works perfectly
+
+[15:46] so just to verify now that the duping version is also working there we go TNT is primed gets gypped launched into the elevator
+
+[16:19] explosion earring block 36 phase so just some warnings we're going the blast chamber even though it cannot explode it can get jammed and this can happen if you send blocks in consistently for example if I stand here and just randomly place blocks like so I keep doing this eventually a conveyor will get jammed if this happens all you need to do is remove the excess blocks and ensure that
+
+[16:53] the conveyor can move freely again so here I've deliberately calls the jam just turn off the machine remove excess blocks from all the conveyors and remove the blockage and it should run fine again some of you might want to use a timing
+
+[17:31] other than for Game six to send blocks say for example you have a Basel generator or cobblestone generator that can't quite keep up with the default for this blast chamber what you need to do is change the amount of items in this hopper to ensure that everything is timed properly let's say for example we change to a six game two o'clock the amount of items that we put in the hopper must obey this equation here which is I equals 3.75 times GT minus 6 where I is the amount of items in the
+
+[18:04] hopper and GT is the clock cycle our case is free observers to game six each makes six game ticks in total that demands sixteen point five items however we can't get half an item each of these items is worth 16 game ticks which means half an item is worth 8 games except delay 8 game 6 of delay is precisely equal to a full delay repeater simply replace
+
+[18:37] this with a block and you have the correct timing so now all I need to do is activate the chamber again and you will see that it runs perfectly so the entire column moves at the same time that's what the timing requires goodness that's the end of my very first
+
+[19:19] video ever thank you very much for watching I'd like to give a special thanks to a manga for including me in some of his projects and of course his diverse patient community on the Skywalk server who really inspired me to do these videos I have some plans to make videos about Auto crafting systems in the future so if you want to be notified of when there's a release feel free to subscribe and I'll see you then but for now goodbye
+

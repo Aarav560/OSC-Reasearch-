@@ -1,0 +1,75 @@
+{
+  "id": "FudXz6tqlbA",
+  "title": "Let's Build an Encoded Multi Item Sorter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210315",
+  "duration": 1244,
+  "view_count": 142798,
+  "like_count": 4956,
+  "description": "In this video we'll design an encoded multi item sorter capable of drastically improving sorting speeds for all of those pesky item types that you don't need a large storage for.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nWorld Download:\nhttps://www.mediafire.com/file/qrws1bjhhir8fhu/Encoded_Multi_Item_Sorter.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The storage challenge",
+      "end_time": 53
+    },
+    {
+      "start_time": 53,
+      "title": "Multi-item sorter concepts",
+      "end_time": 87
+    },
+    {
+      "start_time": 87,
+      "title": "Parallel sorting idea",
+      "end_time": 125
+    },
+    {
+      "start_time": 125,
+      "title": "Designing the encoder",
+      "end_time": 208
+    },
+    {
+      "start_time": 208,
+      "title": "Testing and troubleshooting",
+      "end_time": 336
+    },
+    {
+      "start_time": 336,
+      "title": "Solving technical issues",
+      "end_time": 487
+    },
+    {
+      "start_time": 487,
+      "title": "Debugging the sorter",
+      "end_time": 735
+    },
+    {
+      "start_time": 735,
+      "title": "Final encoder breakdown",
+      "end_time": 880
+    },
+    {
+      "start_time": 880,
+      "title": "System integration",
+      "end_time": 940
+    },
+    {
+      "start_time": 940,
+      "title": "Automatic box processing",
+      "end_time": 1047
+    },
+    {
+      "start_time": 1047,
+      "title": "Final tests and conclusion",
+      "end_time": 1244
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "storage tech",
+    "Scicraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=FudXz6tqlbA"
+}

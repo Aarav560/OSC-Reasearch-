@@ -1,0 +1,60 @@
+[00:00] [Music] so bye
+
+[00:51] [Applause] [Laughter]
+
+[05:09] g'day ladies and gents cubic meter here on the hammer technical server where i have been outsourcing sidecross ingenuity in a villager trading hall project to start with village is a very resource demanding for a server they have sophisticated ai for pathfinding and interacting with one another which was great for most players for immersive gameplay it's terrible for technical players who prioritize optimization the crisis for technical gameplay is that villagers require player
+
+[05:40] interaction which is then time constrained by trade locking this makes villager trading a rather mundane task in the later game when players will prefer to dedicate their time to working on large-scale projects which require large amounts of materials therefore in order to circumvent trade logging players will simply populate the server of large amounts of villages with the required trades into compact storage systems this exacerbates the lag problem further resulting in problems such as what we
+
+[06:11] experience on sky block our villager training hall causing enormous lag spikes whenever else loaded there are two solutions to this making trading automated which in my opinion is not very interesting because we already have this mechanic for piglets plus it's nice to have a mob that requires player interaction to produce useful resources after all villagers are people too and need your love the other solution is to prevent trade but how does one accomplish this trade
+
+[06:44] locking represents the fact that villagers have finite resources for a set time period this is fine for early game players and encourages players to immerse themselves with the gameplay of assigning workstations and managing time but what options are available late game and gateways on hammer we have opted for an end based training hall in order to build our painted void trader this was a mechanic discovered by both me and another hammer member dr rush the strange part is that we came up with the idea
+
+[07:15] independently at the same time on hammer we have built a fully integrated system using this concept you start by picking the villager you want to trade with then they arrive in the center select the destination for them here we want to use the trading system and we send them on their way they
+
+[07:58] arrive at the piston bolt you simply enter the minecart and the villager will be sent after you play is automatically dismounted villager gets sent through and he'll quite hilariously arrive right here ready to trade with any item that i want from this villager
+
+[08:34] all i need to do is get some emeralds enter this water stream which pushes me into the portal once i'm on the other side of the portal i can make the trade all i have to do is hit this chest and repeat the process as you can see when i arrive on the
+
+[09:08] other side of the gateway i can do the trade again this system actually prevents trade it works by warping the player away so the village is left in unloaded chunks thus when you trade with the villager the game is unable to change his entity data the implication for this is quite significant as technical servers no longer need to spam villages in order to satisfy the supply demands
+
+[09:39] of trades i started experimenting with the concept on the skyblock server my first design was this system which moves the villager back and forth the player would hit this lever and interact with the villager make the trade and then promptly follow the villager through the end gateway as you can see this is very slow and tedious but for my second design i decided i would move the player instead all i have to do is sit in this minecart activate a clock then interact with the
+
+[10:13] villager once i'm on the other side of the gateway i can make the trade and once i'm done i can open this trapped chest in order to send me back this system was then nerfed in 1.16 as mojing added a cool down timer to antis moving through gateways the minecart would need to wait 30 seconds before it could go back through the gateway the only option left was to move the player but this presented another issue whenever the player is moved this
+
+[10:46] information is sent across the internet to your computer then you get to see yourself moving in the game this delay between calls and effect between the server and the client can cause the player's position to go out of sync with redstone contraptions by the way this is also very annoying if you live in australia and have a 300 ping this is why player launch is required to sit in a minecart the minecart is processed entirely on the server and the player is constantly teleported to the minecart wherever it goes we can't use a minecart but fortunately
+
+[11:18] there's another player action that is processed server side whenever the player is forced into a one block high space they go into crawl mode amazingly this is processed on the server which is why there is no client-side control for it this means a contraption can reliably use the change in the player's hitbox despite what the client is experiencing so for my final design the player is forced to appear in a one block space opening the trapped chest will retract the piston causing the player to stand
+
+[11:50] up before they are pushed into the gateway it's important to note how you control where the player lands when going through an end gateway the end gateway will look for the furthest block that forms a solid collision box within a five block square radius of the gateway block if i place down a random block of a full hitbox like this redstone block go through the gateway as you can see
+
+[12:24] i land on top of it if i place it outside this red region it will completely ignore it you can place blocks that don't have a solid collision blocks like for example soul sand stairs and slabs also top slabs aren't counted as well as bedrock but anything that forms a full block apart from bedrock
+
+[12:59] such as pistons the player will be teleported to them if they are higher than anything else which means if i want the player to teleport to this green wall here i'm not allowed to have any solid blocks within this red region at a height greater than this green wall block as you can see if i go through the gateway i will end up on this highest wall block i have to remove
+
+[13:31] all of these in order to be teleported to this green wall block and now i will always land on top of this block you may also notice that this design has a large emphasis on aesthetics so the restriction of not being able to put any solid blocks within an area around the gateway was a massive restriction and so you'll notice here that many of these blocks a non-sold blocks like the stairs slabs and honey blocks this prevents the player from teleporting to any random
+
+[14:05] blocks and ensures they always land on this yellow concrete block right here in case you're wondering i'm using bsl shaders made by captain tatsu in this video to make things look spectacular now that you've seen our trading hall secret weapon let's look at some of the storage tech involved to start with here is the cell that we use in the villager trading hall the hall features four wings each featuring 24 of these cells means we have
+
+[14:38] 96 of these total in the entire storage we opted for a two-way tileable design the reason for this is because it's more reliable it doesn't rely on glitches and pathfinding that could be patched in later versions and it also generally just looks nicer for the aesthetics we start at the input where we use a simple t flip flop it can be set to either state so depending on the directionality of the rails
+
+[15:10] and the direction that your input is coming in you can simply change the state when you build it here i've got the rail set to the accepting state it's awaiting for a villager to enter watching the villager enter in slow motion is thus by activating the detector rail this changes the state to rejecting as it boots the villager off the mine cart the minecart continues into the cell and gets sucked through the sole sand a delay will then trigger a piston to pull the villager in afterwards
+
+[15:42] the villager is now standing in the cell the minecart is stored at the bottom of the cell against the fence gate in order to be used later if you want to collect the villager again all you have to do is hit the button this opens defense gate the minecart rolls up picks up the villager and the villager buggers off out of your storage let's now look at the heart of the trading hall the central console it functions in the same way as the storage cells with a soul sand block that sucks out
+
+[16:15] the minecart which is stored as the villager stands free the lectern features three different locations you can send the villages this will send signal strength to a comparator line which goes through two stages of single strength reduction which will first of all flip this rail then i'll flip this rail and if both rails are flipped the villager will just go straight back into the cells under the floor we have these conduits their purpose is to ensure that if there
+
+[16:50] is a minecart being stored and a villager in the center and i send another villager it will automatically boot them out of the center this is particularly useful for swapping villages and their cells as i'll now demonstrate as you can see we have two villages in the wrong cell what i do is i send the villager that's in the cell which is farthest from storage's input once that villager arrives in the center
+
+[17:28] i can then send the other villager and i'll automatically pick up the first one and send him this cell if i want to zombify the villagers in order to get trade discounts all i need to do is select the destination and hit the button this will dispatch the villages up to the very top where a system similar to the cells or pull them into a chamber with a
+
+[17:59] zombie a delay will activate giving it time to convert before it is dropped into the center again with a splash potion of weakness now all you need to do is grab a gable perform the curing process now i can send him back to a cell
+
+[18:32] in order to complete the process and of course the great thing about having a 2y towable design is that it keeps the villagers separated though it's perfectly safe to have your zombified villagers stewing away in their cells and in case you want to dispose of your villagers we have this secret little button around the back where if you hit it it will drop the villager into our ravager feeding pit
+
+[19:09] lovely thank you very much for watching i would of course like to thank the members of hammer for helping with the build timelines as well as dr russia put in a lot of work gathering the materials including villages for the cells and the ravages for added effect this project has taken a long time to make the optimal trading hall there are many changes to end gateways stuffing up the trading system the enduring threat of being patched immediately upon release i'm hoping this mechanic will spell the end of frustration with the limitations of villagers
+
+[19:41] it was challenging to make a technical build like this not only be functional but be aesthetically functional and she's one hell of a beauty to finish off here here's a showcase of the finished design me
+
+[21:40] you
+

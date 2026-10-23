@@ -1,0 +1,60 @@
+{
+  "id": "zyG0IMAXgf0",
+  "title": "How to Build the Portal-less Shulker Farm [1.17 Java Edition]",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210619",
+  "duration": 2515,
+  "view_count": 59980,
+  "like_count": 1959,
+  "description": "It's finally here! A full build tutorial for the single dimension shulker farm. The design has been tweaked a bit and now produces 180 shells per hour. Be sure to watch the full tutorial to get every detail of the build process before asking questions.\n\nWorld Download:\nhttps://www.mediafire.com/file/7xgifrpfimvd12p/1D_Shulker_Farm.zip/file\n\nLitematic:\nhttps://www.mediafire.com/file/cya4j7ekc6hgazx/m%25C2%25B3%2527s_1.17_1D_Shulker_Farm_Mk2.litematic/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Farm overview and changes",
+      "end_time": 151
+    },
+    {
+      "start_time": 151,
+      "title": "Breeding cell construction",
+      "end_time": 616
+    },
+    {
+      "start_time": 616,
+      "title": "Control circuitry setup",
+      "end_time": 869
+    },
+    {
+      "start_time": 869,
+      "title": "Shulker distribution lines",
+      "end_time": 1357
+    },
+    {
+      "start_time": 1357,
+      "title": "Killing chamber assembly",
+      "end_time": 1647
+    },
+    {
+      "start_time": 1647,
+      "title": "Cart return and transport",
+      "end_time": 2100
+    },
+    {
+      "start_time": 2100,
+      "title": "Teleportation space build",
+      "end_time": 2248
+    },
+    {
+      "start_time": 2248,
+      "title": "Final assembly and testing",
+      "end_time": 2515
+    }
+  ],
+  "tags": [
+    "1.17",
+    "Scicraft",
+    "caves and cliffs",
+    "mob farms"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=zyG0IMAXgf0"
+}

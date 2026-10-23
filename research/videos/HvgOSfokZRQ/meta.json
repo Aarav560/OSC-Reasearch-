@@ -1,0 +1,79 @@
+{
+  "id": "HvgOSfokZRQ",
+  "title": "Full Auto Oxidized Copper Factory",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211124",
+  "duration": 1238,
+  "view_count": 38228,
+  "like_count": 2033,
+  "description": "With so many projects underway, here's one I prepared eariler. A fully automatic copper block oxidizer capacble of bulk converting copper blocks for the player. We get to look at some interesting technical challenges and solutions involving some mathematics, science and redstone engineering to produce a beautiful piece of redstone technology.\n\nWorld Download:\nhttps://www.mediafire.com/file/ocansq256nc6u07/Copper_Block_Factory.zip/file\nSchematic:\nhttps://www.mediafire.com/file/jkk9xlupcuw2zgv/Copper_Block_Factory.litematic/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 23
+    },
+    {
+      "start_time": 23,
+      "title": "How it works",
+      "end_time": 39
+    },
+    {
+      "start_time": 39,
+      "title": "Challenges",
+      "end_time": 91
+    },
+    {
+      "start_time": 91,
+      "title": "Testing Platform",
+      "end_time": 155
+    },
+    {
+      "start_time": 155,
+      "title": "Empirical Data",
+      "end_time": 335
+    },
+    {
+      "start_time": 335,
+      "title": "Powdered Snow",
+      "end_time": 738
+    },
+    {
+      "start_time": 738,
+      "title": "Time Intervals",
+      "end_time": 785
+    },
+    {
+      "start_time": 785,
+      "title": "Results",
+      "end_time": 848
+    },
+    {
+      "start_time": 848,
+      "title": "Translating Results to Factory",
+      "end_time": 906
+    },
+    {
+      "start_time": 906,
+      "title": "Velocity",
+      "end_time": 965
+    },
+    {
+      "start_time": 965,
+      "title": "Rate",
+      "end_time": 1015
+    },
+    {
+      "start_time": 1015,
+      "title": "Fast Mode",
+      "end_time": 1238
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "block farms"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=HvgOSfokZRQ"
+}

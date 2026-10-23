@@ -1,0 +1,55 @@
+{
+  "id": "Tv7uVHM43Bw",
+  "title": "Origins of the Reliable Shulker Farm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20201112",
+  "duration": 1108,
+  "view_count": 34799,
+  "like_count": 945,
+  "description": "*PLEASE NOTE* This farm no longer works as the shulker warp has been removed as of the 1.17 release, for a new and improved shulker farm which works in 1.17 please refer to my followup video:\nhttps://youtu.be/owoS_bgOIhQ\n\nAfter the snapshot hit we were excited to experiment with the new features, especially the renewable shulkers. However many players may come accross some frustrating issues when experimenting with farm concepts so I decided to implement solutions to these issues on the farm designe by the Scicraft crew and our friends.\n\nLitematics, these are for the new version of the farm that works in 1.17, so they differ slightly to the video:\nhttps://www.mediafire.com/file/538ozk7dn8tf2j7/m%25C2%25B3%2527s_1.17_Shulker_Farm_NE_Mk2.litematic/file\nhttps://www.mediafire.com/file/bhu0x6nwwft8hrt/m%25C2%25B3%2527s_1.17_Shulker_Farm_OW_Mk2.litematic/file\n\nPeople who contributed to the farm:\nhttps://www.youtube.com/channel/UCXfjk8C1Hvkax10rrmmjM2Q\nhttps://www.youtube.com/channel/UClj74snrgG-4OaPU4vpX0NQ\nhttps://www.youtube.com/channel/UCOh4ZQQNhfjj7ICZ-OG5viQ\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to shulkers",
+      "end_time": 92
+    },
+    {
+      "start_time": 92,
+      "title": "Shulker spawning mechanics",
+      "end_time": 261
+    },
+    {
+      "start_time": 261,
+      "title": "Optimal farm layout design",
+      "end_time": 475
+    },
+    {
+      "start_time": 475,
+      "title": "Automating shulker spawning",
+      "end_time": 630
+    },
+    {
+      "start_time": 630,
+      "title": "Collection system setup",
+      "end_time": 720
+    },
+    {
+      "start_time": 720,
+      "title": "Portal teleportation glitch",
+      "end_time": 959
+    },
+    {
+      "start_time": 959,
+      "title": "Shulker warping applications",
+      "end_time": 1108
+    }
+  ],
+  "tags": [
+    "1.17",
+    "Scicraft",
+    "caves and cliffs update",
+    "mob farms"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=Tv7uVHM43Bw"
+}

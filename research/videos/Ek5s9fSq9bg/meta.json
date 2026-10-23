@@ -1,0 +1,82 @@
+{
+  "id": "Ek5s9fSq9bg",
+  "title": "Introducing the Instant Kill Hypersonic Claymore",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240312",
+  "duration": 1213,
+  "view_count": 904667,
+  "like_count": 46233,
+  "description": "In a previous video we investigated what it would take to oneshot a fully geared player then proceeded to blunder on the design of a cannon meant to deliver hypersonic arrow sprays to a designated target. Well in this video we will work around the lmitations we discovered and make the ultimate anti-personel arrow cannon in minecraft.\n\nDownloads, and no this will not work in Paper or bedrock Edition:\nhttps://www.mediafire.com/folder/2ileqsvi14rvj/Claymore\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The deadly trap revealed",
+      "end_time": 126
+    },
+    {
+      "start_time": 126,
+      "title": "Designing the Claymore",
+      "end_time": 234
+    },
+    {
+      "start_time": 234,
+      "title": "Cannon mechanics explained",
+      "end_time": 308
+    },
+    {
+      "start_time": 308,
+      "title": "Damage and survivability",
+      "end_time": 353
+    },
+    {
+      "start_time": 353,
+      "title": "Player detection system",
+      "end_time": 417
+    },
+    {
+      "start_time": 417,
+      "title": "Concealed TNT delivery",
+      "end_time": 510
+    },
+    {
+      "start_time": 510,
+      "title": "Optimizing arrow trajectory",
+      "end_time": 637
+    },
+    {
+      "start_time": 637,
+      "title": "Testing and hit probability",
+      "end_time": 792
+    },
+    {
+      "start_time": 792,
+      "title": "Installation and terrain",
+      "end_time": 907
+    },
+    {
+      "start_time": 907,
+      "title": "Sensor network setup",
+      "end_time": 1018
+    },
+    {
+      "start_time": 1018,
+      "title": "Chunk loading mechanism",
+      "end_time": 1100
+    },
+    {
+      "start_time": 1100,
+      "title": "Advanced cannon features",
+      "end_time": 1213
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "tnt cannon",
+    "arrow trap",
+    "oneshot weapon",
+    "redstone",
+    "stealth cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=Ek5s9fSq9bg"
+}

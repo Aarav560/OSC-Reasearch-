@@ -1,0 +1,4 @@
+[00:00] No time to explain. I need to get through this hailstone of arrows and rename that creeper without taking any damage. Fortunately, I have the power of laggy redstone to give me super speed. Or I guess in this particular case, give the entire universe super slowness. Here we go. And mission accomplished. To show you that I'm legit. Now, why am I able to do this? Well, redstone dust is very laggy. When turning on, the dust will force just 25 of these processes. Turning off, however, each dust will
+
+[00:33] force up to 375. This means our simple grid here requires 13,000 processes every time I flip this lever on and off. Then using an auto clicker, I can amplify this by 100 and freeze the game momentarily. With even a basic observer clock, you can get an appreciable increase in the amount of lag. However, trying the same game-breaking tactics with any other kind of redstone component, you'll see no lag whatsoever. So, hopefully redstone dust can be fixed.
+

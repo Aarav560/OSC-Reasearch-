@@ -1,0 +1,46 @@
+[00:00] Good day, ladies and gents. Cubic Meter here. The auto crafting table is great and all, but some recipes are especially difficult. The honey block in particular is a 2 by 2 recipe, meaning not only does it require a dummy item, it also leaves behind items in the crafting grid after the operation. This makes things very challenging for an auto crafter because you need to detect when to put in the dummy item, then you need to remove the dummy item,
+
+[00:35] remove the honey block, and then remove the glass bottles. So, let's see if we can build a honey crafter. To begin with, I want to make this system passive, which means if I was to completely fill this hopper with honey bottles, it would run continuously and automatically off of the feeding of this hopper. To make things easier, we can use glass bottles as our dummy item. So, once we put in two honey bottles, we can then dispense the glass bottle
+
+[01:09] between the cool down of our hopper, and therefore the next two items will go into the correct 2 by 2 grid. Fortunately, we can detect the fill level with a comparator. So, when there's one honey bottle, then you get a signal strength of one. Two honey bottles and it bumps up to three. I think that is interesting with the new 1.16 redstone mechanics is that this piston won't actually get powered until the signal strength goes past one.
+
+[01:46] As you can see, the instant I put the second item in, this piston has extended. So, with this setup here, the instant that our signal strength goes past one, this will extend and then the observer will power our dropper. Ah, that's not the correct order. Okay, so we need to look at the timings here. This comparator has a two game tick delay before it detects an item in the inventory. This piston will then have a two game
+
+[02:19] tick delay before the observer begins to activate. The observer itself has a two game tick delay. So, now we have 2 + 2 + 2 = 6 game ticks. And then our dropper has its own four game tick delay, which means 6 + 4 = 10 game ticks in total. And then the issue is this hopper has only an eight game tick delay. Means by time our dropper has fired, that third item has already been
+
+[02:54] injected by the hopper. Aha, success. So, all we need to do was remove two game ticks worth of delay from the observer. So, now what happen is there we go. Dummy item is in the correct slot. So, if we look at our delays now, got the two game ticks from the comparator, two game ticks from the piston, redstone block arrives, and will then bud power this dropper,
+
+[03:28] which gets the update from the light block. So, in total we have 2 + 2 + 4 = 8 game ticks exactly. But, we still have a lot to go cuz if I was to just constantly fill this hopper, yeah. It needs to stop here. So, here we got the system that detects when it crosses the threshold. If I just put a stack of items in like so, instant it gets to correct fill level, it will bump this signal strength
+
+[04:02] being read by this comparator up to eight. So, be aware that it's this dust which is powering this block, and it always takes the highest signal strength that's powering the block. And slightly less kind of annoying is that you can't get exactly seven levels from a composter cuz it will the instant it gets up to seven, it will then go up to level eight automatically. So, I've just added this bit of extension to bring the signal strength down to seven. Subtract that. So, the
+
+[04:35] instant that this goes to eight, 8 - 7 = 1. And then we just bud power this piston, which pushes the redstone block, which locks our input hopper. Now, the issue is now we've detected that the recipe is in, instant I take out an item, it will just unlock the hopper and do that. Fortunately, it turns out it's quite easy to fix. All I need to do is put a piston here, and then connect it up to the output
+
+[05:10] from this comparator. So, what will happen now is the instant that our comparator crosses the threshold, it will output power here, remove this block, dropping signal strength to zero. Which means if I was to put a stack in here, there we go. It's locked the system when the correct recipe is in. I now remove this glass bottle.
+
+[05:44] So, right now the signal strength has dropped down one level. However, because we are removing signal from side of this comparator that's on subtract, it will not unlock this hopper until it's empty. Perfect. Now, if we figured out how to get our items in, we need to figure out how to get them out. We need to first remove our glass bottle, then we need to remove the honey block, then we need to remove the remaining
+
+[06:17] glass bottles. One of the easiest ways for an auto crafter to remove only the items that you want to craft is by using an item filter. This is just your bog standard one. However, the issue is we have two different item types that will come out, the glass bottles and the honey blocks. However, these bog standard item filters can't really handle a single one of
+
+[06:48] these. So, I guess what we want here is something like a double item filter. So, if I input these honey bottles, oh my god, it's actually working. Crafting honey blocks. Oh, I'm amazed that just worked the first time. Ah, but then how are we going to get these items out of the hopper? So, I
+
+[07:22] think here we can get away with using some special hopper mechanics. The obviously one big issue is that I can't just pull the items out from underneath because it's going to try and empty out this slot before it even touches the honey Unless I restrict this hopper to only pulling out honey blocks. Ah, yes.
+
+[07:57] So, okay, so what I've done here is I filled up this dropper with honey blocks and then left a single slot open. This hopper is also backed up with honey And now we're getting a continuous fill level of honey. Yep, there we go. Okay, so we can remove the honey blocks this way. But, then the question is how are we going to get the glass bottles out? Oh, of course.
+
+[08:31] These glass bottles are in the first slot, so they're going to be the first one selected to be pushed by this Means if I put an inventory in front, should see now that it will it will only try to put the glass bottles into this dropper. Yep. Oh, hang on. Why are we losing glass bottles?
+
+[09:09] So, I figured out why we kept losing It was because even though it was pulling in glass bottles from the recipe as it was pushing them out, every time it pulled the honey block, it would also push an additional glass bottle. Meaning we always lost a single glass bottle each time. However, this seems to solve the problem. So, what we do is just have a dropper pointing back into the hopper,
+
+[09:41] and we push another glass bottle into it um every single time a crafting operation finishes. We put the bottles in, drops down to seven. we activate the dropper, and just put another glass bottle back into our filter. But then the issue is how do we get these glass bottles out of here because if I was to just pull them out with a hopper directly, then we would have no glass bottles in
+
+[10:13] the dropper when we power it. Unless when we power the dropper, we lock this hopper briefly. See. No, we're still losing bottles. We need to somehow keep an item in this dropper at all times. Ah, yes, I got it. Okay. So, it turns out if we just
+
+[10:45] keep this hopper locked until we detect items coming in, we sort of like catch up a little bit of items in this dropper, and so each time the crafting cycle completes, we replenish that glass bottle that we lost. So, if we look at this dropper, we can see we've got Yep, and then the glass bottle gets shot back into our item filter. Perfect. All right, I think we're finally done,
+
+[11:18] and she's a beauty. All that's left to do was to connect everything up. Make sure you can recycle the bottles. What this means is that you can easily incorporate this auto crafting into your honey farm. So, you can imagine you got your bog standard honey farm right here. Empty glass bottles in the dispenser. The instant it fills up with honey, you'll get a trickle of honey bottles coming into the crafter. Crafter will take them in, convert them into your honey blocks,
+
+[11:51] then recycle the empty bottles back into the honey farm. Therefore, you get fully autonomous honey blocks out of the system. And in case you want to use this crafter on your own honey farm, keep in mind that its max speed is 1,000 honey blocks per hour. This means the maximum amount of honey bottles it can accept is 4,000 honey bottles per hour. So, as long as your honey farm produces either 4,000 or less honey bottles per hour,
+
+[12:24] this honey crafter should do the trick. And of course, if you have some insane honey farm that produces more than 4,000 honey balls per hour, you could always just build multiple of them. So, there we have it. Fully autonomous honey blocks straight from the bees' teats. Hope you enjoyed this little episode going to some technical redstone for auto crafting, and I will see you next time.
+

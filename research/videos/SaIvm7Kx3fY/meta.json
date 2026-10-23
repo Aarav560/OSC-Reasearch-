@@ -1,0 +1,49 @@
+{
+  "id": "SaIvm7Kx3fY",
+  "title": "Designing the Ultimate Bulk Storage",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210408",
+  "duration": 1312,
+  "view_count": 95276,
+  "like_count": 2826,
+  "description": "In this video we take a closer look at the bulk system from How to Kill a Chest Monster and have a crack at expanding the bulk to 3x the capacity in the same footprint.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nWorld Download:\nhttps://www.mediafire.com/file/9bs39spdvy176lu/Mega_Bulk.zip/file",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Hopper lag analysis",
+      "end_time": 269
+    },
+    {
+      "start_time": 269,
+      "title": "Designing for capacity",
+      "end_time": 468
+    },
+    {
+      "start_time": 468,
+      "title": "System building components",
+      "end_time": 794
+    },
+    {
+      "start_time": 794,
+      "title": "Item sorting logic",
+      "end_time": 949
+    },
+    {
+      "start_time": 949,
+      "title": "System configuration",
+      "end_time": 1133
+    },
+    {
+      "start_time": 1133,
+      "title": "Results and testing",
+      "end_time": 1312
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "item sorting",
+    "scicraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=SaIvm7Kx3fY"
+}

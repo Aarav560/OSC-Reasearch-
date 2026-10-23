@@ -1,0 +1,69 @@
+{
+  "id": "9RdNkTyxHS0",
+  "title": "Let's Build a Super Shulker Unloader",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220413",
+  "duration": 1112,
+  "view_count": 162213,
+  "like_count": 7036,
+  "description": "The 1.19 snapshots have introduced some gamechanging mechanics involving minecarts. In this video we explore a potential use in what is to become Minecrafts fastest shulker box unloader that does not delete the box.\n\nSchematic(1.18.1 Ported):\nhttps://www.mediafire.com/file/rxxvz7m5c232klp/2M_Hoppercart_Yeeter_Unloader.litematic/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Project introduction",
+      "end_time": 25
+    },
+    {
+      "start_time": 25,
+      "title": "Initial design attempts",
+      "end_time": 91
+    },
+    {
+      "start_time": 91,
+      "title": "Switching to flat rails",
+      "end_time": 172
+    },
+    {
+      "start_time": 172,
+      "title": "Finding the right blocks",
+      "end_time": 321
+    },
+    {
+      "start_time": 321,
+      "title": "Designing the unload cycle",
+      "end_time": 440
+    },
+    {
+      "start_time": 440,
+      "title": "Optimizing machine speed",
+      "end_time": 573
+    },
+    {
+      "start_time": 573,
+      "title": "Achieving extreme speeds",
+      "end_time": 716
+    },
+    {
+      "start_time": 716,
+      "title": "Fixing bugs and stress test",
+      "end_time": 845
+    },
+    {
+      "start_time": 845,
+      "title": "Reliability improvements",
+      "end_time": 1004
+    },
+    {
+      "start_time": 1004,
+      "title": "Edge cases and conclusion",
+      "end_time": 1112
+    }
+  ],
+  "tags": [
+    "Minecraft",
+    "redstone",
+    "storage tech"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=9RdNkTyxHS0"
+}

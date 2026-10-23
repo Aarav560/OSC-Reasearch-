@@ -1,0 +1,24 @@
+[00:27] This is an orbital strike cannon. where you can just blow up your friend's base or builds or just give them a mental breakdown and top it off with adding holes next to their houses or onto them. And this tutorial is very easy to make in Bedrock Edition, probably to me, not you guys. but they won't be so hard to
+
+[01:00] make with my tutorial. Now, let us begin the tutorial you've been waiting for. [music] So, you'll need these for items and more. &gt;&gt; [music]
+
+[02:46] &gt;&gt; Let's [music] test it. It works, but it covers the screen with [music] command feedback. Let's remove that. Now this detects the fishing hook and continues the command. We can confirms this by adding
+
+[03:38] comparator. Before we continue, we need to add a scoreboard to add realistic delay. First, we need to add a tag so the effect won't go to a random player, making it multiplayer friendly.
+
+[04:36] I added keyboard shortcuts. [music] Pause to read and copy down. This command adds a count to the scoreboard. Then when a specific [music] amount 20 reaches, which is 20 ticks or 1 second, it kills the fishing hook and continues the command. This resets [music] the tick timer,
+
+[05:28] making it reusable again. This removes the fishing rod. Make sure it matches the same data of the fishing rod. This makes a break [music] SFX, making
+
+[06:22] it more realistic of a broken fishing pointing the axis to see its cut. Mine is one. This fills a place one block in its direction. Make sure you see what
+
+[06:54] [music] axis is pointing it. Do not copy this one. Now let's test it once more. This [music] redstone block will activate another command we will be placing making it 10x half a second for more realism. Adding another delay command, speeding
+
+[07:42] it up. The only difference is that it's 20 ticks. Besides this one, this tags every current [music] XP orb because the XP or we will soon summon will be important. This summons the XP orb of the player
+
+[08:26] with the tag. This aligns the XP orb with the player's view and rotation. [music]
+
+[09:52] &gt;&gt; This is ray casting. Basically the aiming part of the orbital cannon. The command teleports the XP orb until it interacts with a block high. Pretty sure The part of tag equals OC is where they
+
+[10:38] exclude the XP odd that already [music] existed.
+

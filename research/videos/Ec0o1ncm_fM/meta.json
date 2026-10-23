@@ -1,0 +1,131 @@
+{
+  "id": "Ec0o1ncm_fM",
+  "title": "Minecraft's Universal Smart Crafter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240516",
+  "duration": 3453,
+  "view_count": 776413,
+  "like_count": 28911,
+  "description": "It's finally here! After 3 years since the original universal autocrafter which used the autocrafting table mod, we now have autocrafting in the vanilla game. So in this video we will use our extensive knowledge of minecrafts technical mechanics to make a new universal crafter fit for the modern day technical server. Its bigger, its better, it made me scream profanities for hours on end, it's the new and improved universal smart crafter for the modern minecraft meta.\n\nWorld download containing the fully functional crafter, Please do not try to build this in survival:\nhttps://www.mediafire.com/file/v7jxj2swprq41rt/New_Universal_Crafter.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "System overview and history",
+      "end_time": 101
+    },
+    {
+      "start_time": 101,
+      "title": "Initial design challenges",
+      "end_time": 183
+    },
+    {
+      "start_time": 183,
+      "title": "Engineering the new crafter",
+      "end_time": 312
+    },
+    {
+      "start_time": 312,
+      "title": "Designing the layout",
+      "end_time": 427
+    },
+    {
+      "start_time": 427,
+      "title": "Stabilizing minecart stacks",
+      "end_time": 561
+    },
+    {
+      "start_time": 561,
+      "title": "Item distribution testing",
+      "end_time": 681
+    },
+    {
+      "start_time": 681,
+      "title": "Refining item delivery",
+      "end_time": 866
+    },
+    {
+      "start_time": 866,
+      "title": "Extraction and dummy items",
+      "end_time": 976
+    },
+    {
+      "start_time": 976,
+      "title": "Item collection and water",
+      "end_time": 1181
+    },
+    {
+      "start_time": 1181,
+      "title": "Refining collection mechanics",
+      "end_time": 1354
+    },
+    {
+      "start_time": 1354,
+      "title": "Parameters for the design",
+      "end_time": 1517
+    },
+    {
+      "start_time": 1517,
+      "title": "Dummy item filtering",
+      "end_time": 1720
+    },
+    {
+      "start_time": 1720,
+      "title": "Error detection and restocking",
+      "end_time": 1855
+    },
+    {
+      "start_time": 1855,
+      "title": "Cart storage and input",
+      "end_time": 1948
+    },
+    {
+      "start_time": 1948,
+      "title": "Sequential crafting setup",
+      "end_time": 2043
+    },
+    {
+      "start_time": 2043,
+      "title": "Prototype and functionality",
+      "end_time": 2215
+    },
+    {
+      "start_time": 2215,
+      "title": "Sequential crafting workflow",
+      "end_time": 2441
+    },
+    {
+      "start_time": 2441,
+      "title": "Hopper minecart example",
+      "end_time": 2660
+    },
+    {
+      "start_time": 2660,
+      "title": "Execution of complex recipe",
+      "end_time": 2818
+    },
+    {
+      "start_time": 2818,
+      "title": "Shulker box loading",
+      "end_time": 3057
+    },
+    {
+      "start_time": 3057,
+      "title": "Perfect box management",
+      "end_time": 3181
+    },
+    {
+      "start_time": 3181,
+      "title": "System intelligence and future",
+      "end_time": 3453
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "crafting system",
+    "autocrafter",
+    "factory"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=Ec0o1ncm_fM"
+}

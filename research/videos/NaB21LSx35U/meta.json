@@ -1,0 +1,48 @@
+{
+  "id": "NaB21LSx35U",
+  "title": "Let's Build the Industrial Smart-Crafter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20201029",
+  "duration": 1423,
+  "view_count": 16212,
+  "like_count": 603,
+  "description": "We finally have a universal autocrafter capable of handling mixed items and scheduled recipe's. Granted the system can only store the first 7 recipe's as dependent on items from previous recipe's, but this is a significant improvement over the previous design.\n\nTry out the world download and let me know what you think about autocrafters:\nhttp://www.mediafire.com/file/ckqql0ubh1g2k52/Let%2527s_Build_-_Autocrafter.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Auto crafter improvements",
+      "end_time": 135
+    },
+    {
+      "start_time": 135,
+      "title": "Fixing partially filled boxes",
+      "end_time": 220
+    },
+    {
+      "start_time": 220,
+      "title": "Developing the recipe scheduler",
+      "end_time": 516
+    },
+    {
+      "start_time": 516,
+      "title": "Programmable memory system",
+      "end_time": 743
+    },
+    {
+      "start_time": 743,
+      "title": "Complex logic and wiring",
+      "end_time": 1012
+    },
+    {
+      "start_time": 1012,
+      "title": "Testing and final demonstration",
+      "end_time": 1423
+    }
+  ],
+  "tags": [
+    "redstone",
+    "scicraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=NaB21LSx35U"
+}

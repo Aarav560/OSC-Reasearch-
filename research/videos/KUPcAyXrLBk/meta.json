@@ -1,0 +1,75 @@
+{
+  "id": "KUPcAyXrLBk",
+  "title": "Minecrafts Greatest Storage Systems",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220629",
+  "duration": 1552,
+  "view_count": 159319,
+  "like_count": 4943,
+  "description": "I decided to take a look at some of the storage tech innovations making waves in the storage tech community and try to judge their strengths and weaknesses. I also have a crack at implementing my own solutions.\n\nBoyenn's video on the PEIS:\nhttps://youtu.be/NpKJ5sPUCeo\n\nGangles Grand MIS\nhttps://drive.google.com/file/d/13SB90Ft1Fhnbce1o-2x60AbSkpm18qUe/view?usp=sharing\n\nWorld Download:\nhttps://www.mediafire.com/file/spw6h5g5e18oszp/Minecraft_Item_Sorters.zip/file\n\nMrMaxMondays:\nhttps://www.youtube.com/channel/UCmJRQK0-y7jNtq__l8cdYSQ\n\nStorage tech dicord:\nhttps://discord.gg/JufJ6uf\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Fast shulker unloading",
+      "end_time": 182
+    },
+    {
+      "start_time": 182,
+      "title": "Automated filter system",
+      "end_time": 385
+    },
+    {
+      "start_time": 385,
+      "title": "Dedicated box loaders",
+      "end_time": 427
+    },
+    {
+      "start_time": 427,
+      "title": "Dolphin storage 2.0",
+      "end_time": 648
+    },
+    {
+      "start_time": 648,
+      "title": "Dolphin sorting limits",
+      "end_time": 805
+    },
+    {
+      "start_time": 805,
+      "title": "Multi-item sorting",
+      "end_time": 862
+    },
+    {
+      "start_time": 862,
+      "title": "Hybrid storage design",
+      "end_time": 1008
+    },
+    {
+      "start_time": 1008,
+      "title": "Modified hybrid sorter",
+      "end_time": 1185
+    },
+    {
+      "start_time": 1185,
+      "title": "Main storage update",
+      "end_time": 1241
+    },
+    {
+      "start_time": 1241,
+      "title": "Parallel entity sorting",
+      "end_time": 1420
+    },
+    {
+      "start_time": 1420,
+      "title": "Advanced hybrid sorter",
+      "end_time": 1552
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "storage tech",
+    "item sorter"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=KUPcAyXrLBk"
+}

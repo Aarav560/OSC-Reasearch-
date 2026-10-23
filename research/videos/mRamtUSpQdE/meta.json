@@ -1,0 +1,45 @@
+{
+  "id": "mRamtUSpQdE",
+  "title": "Introducing, The Movable Wither Cage",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211201",
+  "duration": 748,
+  "view_count": 66230,
+  "like_count": 3151,
+  "description": "What is this? A movable wither cage! Well, it's a bit more complicated than that. But still and awesome idea and technical challenge to potentially use movable wither cages in slimestone contraptions. I'm not much of a slimestone engineer myself so instead I show off how this new wither cage concept can be used to make a survival friendly obsidian end platform farm capable of producing up to 129 thousand obsidian per hour!\n\nWorld Download:\nhttps://www.mediafire.com/file/ng72i8xr5h2r23a/Obsidian_Farm_New.zip/file\n\nWither Tech Archive:\nhttps://discord.gg/wd594eEtfm\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Developing a wither cage",
+      "end_time": 115
+    },
+    {
+      "start_time": 115,
+      "title": "Refining the wither design",
+      "end_time": 311
+    },
+    {
+      "start_time": 311,
+      "title": "Obsidian farming application",
+      "end_time": 502
+    },
+    {
+      "start_time": 502,
+      "title": "Setup and remote signaling",
+      "end_time": 641
+    },
+    {
+      "start_time": 641,
+      "title": "Final results and conclusion",
+      "end_time": 748
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "obsidian farm",
+    "flying machine",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=mRamtUSpQdE"
+}

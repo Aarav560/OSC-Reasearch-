@@ -1,0 +1,60 @@
+[00:00] g'day ladies and gents cubic meter here with a fun little contraption you can use to farm your own noggin you will of course need the vanilla tweaks data pack which allows players to drop their head when killed by another player normally this means either killing them or trying to catch your own arrows however this contraption uses tnt to automatically kill the player and obtain their head the users are the mechanic whereas a tnt ignited by the will count as their kill which you will see when i shoot this tnt with this flame bow i've also got this sword with a 32k
+
+[00:34] loading effect and you also see that the explosion applies the looting effect through the flaming arrow if i were to just ignite the tnt with redstone like so you'll see that no xp drops and we don't get the looting effect in order to ensure that the tnt ignition is attributed to a player we use a tnt looting system which has an aristasis chamber it uses an arrow which belongs to the in order to ignite the tnt the stasis
+
+[01:09] chamber keeps the arrow moving every now and then to make sure it doesn't despawn so whenever i input a tnt or enter the chamber ignite the tnt and that tnt's explosion will now be attributed to the player here i'm welding a 32k sword in my main hand and tnt in my off hand if i place down tnt in here and let it be ignited by my arrow down here we'll see a creeper which will apply our looting effect
+
+[01:43] this tnt looting system is also insanely fast capable of receiving a tnt every eight game ticks in order to use the guillotine you'll want to first click this lever in order to add an arrow to the stasis chamber once your arrow is on that terracotta you hit that note block and it'll automatically align the arrow into the then you can start using the machine request some tnt set your spawn at this bed and place down the tnt
+
+[02:16] on this observer's face the machine will then automatically kill you and harvest your head every time it kills you it will dispense a new tnt for you to place so if you have a macro that can automatically respawn and place down the tnt you can fully afk this farm after running this for a while you should have a decent amount of your own noggin although you will of course consume tnt in the process so if you're in need of heads and have
+
+[02:50] plenty of tnt to spare it should be the perfect farm for you i will be leaving schematics for both of these machines down in the description but assuming that we have heaps of time we may as well go into a little tutorial to begin with we want to build the tnt looting system for this we use sticky pistons because they can zero tick blocks into place which simply moves things around faster so we have a piston the zero tick the tnt
+
+[03:21] so that it gets ignited another piston to zero tick the terracotta back in place so that the arrow doesn't just fall through the hole after the tnt in order to provide the zeratic we'll use this configuration where we have this block get powered first before this piston starts extending meaning we send a zero tech to the sticky piston and we just mirror it on the other side using zero tigs both ways so that both
+
+[03:56] the activation and the reset is as fast as possible rails on the top will provide the correct update order in order to provide our zero tick we also add some additional observers in order to reset these sticky pistons on this particular piston put some obsidian so that the block conveyor doesn't overextend if anything goes wrong you'll see now
+
+[04:32] i trigger this rail here in the correct order so i have to make sure i trigger the rail closest to the center because the update will propagate to the end and this rail will power first meaning that this block receives the power first and you will see the tnt gets zero ticked in the trigger this terracotta gets zero tick back again in order to detect the incoming tnt we use a buttered piston because this
+
+[05:05] will begin to move the very instant that tnt starts moving giving us a very fast response time we want to make sure that the rail is powered in the correct order using some wrists and dust like so and make sure that the terracotta replacement is activated on the return just with another observer line we also want to add a system in order to reset this block detection all you want to do is have an observer carrying this piston that now
+
+[05:45] it'll automatically reset let's add the arrow stasis in order to do this we want to have a lava source in this space right here and make sure that our lava doesn't flow out using a fence gate this will make sure that our arrow is constantly kept on fire
+
+[06:18] we'll also have a piston this is what accelerates our arrow up and then down again in order to ignite the tnt this piston will also nudge the arrow every now and then in order to make sure it doesn't despawn all we need to do connect this piston up so that it starts retracting as we throw the tnt in in order to force this piston to retract every now and then to prevent the arrow from despawning i want to add a system which redirects
+
+[06:51] the dust on a clock and the issue is when you redirect us like this it doesn't send a block update what you need to do is place down a rail make sure the rail is in the correct orientation like so now whenever this piston retracts that pistol will also retract above this sticky piston will simply have
+
+[07:23] a hopper clock that's for around 30 seconds in order to get about 30 seconds we can just put half a stack of items in there and this should do the trick there we go the hopper clock is just reset and you just saw this tiger block
+
+[07:56] retracts unpowers that piston for a short moment and cause it to retract and nudge the arrow a bit now we can add our arrow alignment all we need to do is use honey blocks pushed by sticky pistons with the correct timings and this will automatically align our arrow in the corner of the stasis chamber so it gets affected by this piston it also intersects this lava keeping it on fire
+
+[08:29] [Music] the delays go like this so full take repeaters and then a single two-tick repeater to distinguish them then you have your observer and note block and this will align any arrow that you throw onto this block right here now the chamber is actually ready to receive tnt
+
+[09:02] in order to make sure that we don't send into faster than 8 game ticks at this configuration for detecting when the player places it down and then we just power a piston so the player can hold down the right mouse button and will automatically place down tnt every 8 game ticks and before i forget to probably also add a system to make sure that tnt is aligned to the center of the block
+
+[09:36] all you need to do is make sure that this space where the terracotta is is blocked off of these two sides and in order to get the tnt to collide with these walls you can put escape in and open the fence gate now when we place tnt in it'll be aligned to the center of this block now that we have the basic tnt looting
+
+[10:10] system done we can now add on the additional modules in order to turn it into the head loading system we want to start with the conveyor to deliver tnt into the tnt looting system we also want to make sure that we encase the tnt and some blocks so it doesn't get hit by projectiles catch fire anything nasty that could cause an explosive reaction you'll simply use block conveyor extension like so
+
+[10:48] and that way the conveyor will start at the top and push tnt down into the system now we want to work out where our floor level is to start with this i want to move this up one block like so now that would be our floor level where that note block is simply stack up the tnt and this is where we will place tnt and have it get pushed down they have a piston observer
+
+[11:23] picky piston observer and we qc this piston every time we place down tnt and it immediately enters the chamber now we want to control where the player spawns or relative to the machine we do this using a bed placed in front of where we place our tnt we want to make sure that the only block which is valid for the player to spawn on is this block right at the foot of the bed so the player should always spawn here
+
+[11:54] facing towards that observer you want to make sure that we put copper underneath where the player spawns and just cap it off with a trapdoor or anything that the hopper can suck items for in order to collect the heads we're just going to have a hopper line leading away and in order to dispense tnt to the player we'll just have a dropper with a comparator reading when the head passes through this hopper
+
+[12:36] line so we'll just have piston we'll extend this observer whenever the header is detected i also have the input for tnt just sticking out the side right here in order to return the collected heads up to floor level or just have a simple little dropper elevator
+
+[13:09] it will raise them up into this chest just detect items in this dropper using a comparator let's start this observer clock just like so all right now all that's left to do is actually get the tnt up to the player to start this process we'll have a butted piston
+
+[13:50] which will get powered whenever an entity touches this string you'll then have some scaffolding that the tnt can get launched through without colliding now water elevator will be right here now unfortunately this water elevator does not quite line up with where the player stands so we need to do a bit of redirection first we fire the tnt through some
+
+[14:22] scaffolding and then detect it using string piston will then fire pushing the tnt over another piston will push in this fence gate underneath this iron trapdoor which will push our tnt into another water elevator without needing to worry about any water spillage
+
+[14:55] right in here we'll have all sand and our second water elevator but when we detect the tnt come through we'll send power straight to this piston then have a bit of delay before we activate this one the last thing you want to do at the
+
+[15:28] very top is have a little containment area for your that way it's not going to do any block damage they place that a water bucket in here make sure to block it off so the water doesn't flow everywhere there we have it tnt will now appear right here in that space there it is and if you want to manually
+
+[16:01] request ent from this dropper just place a slab on top of it button on top of the slab this will now power the dropper this will also prevent the item from flying around when it gets dispensed there we have it decorate however you want and then you have a way to farm your own head thank you very much for watching have fun farming your noggin i'm sure the ain't gametek tnt looting will be very useful for many mob farms
+
+[16:34] i hope you liked this tutorial and i'll see you next time
+

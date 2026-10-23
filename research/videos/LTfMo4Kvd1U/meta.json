@@ -1,0 +1,65 @@
+{
+  "id": "LTfMo4Kvd1U",
+  "title": "Villager Matrix Trading Hall",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20221207",
+  "duration": 1100,
+  "view_count": 188971,
+  "like_count": 6708,
+  "description": "A lot has changed since I first introduced the villager trading matrix so it's time to have another look and do a complete re-design to make it better and more resilient than ever.\n\nMax Made a Hogwarts themed deco for the Matrix:\nhttps://www.youtube.com/watch?v=8OLzXqe3f5g\n\nWorld Download (schematics included in the world file):\nhttps://www.mediafire.com/file/gnuewu3q07bf89o/New_Villager_Trading_Matrix.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 28
+    },
+    {
+      "start_time": 28,
+      "title": "New Wiring Scheme",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "New Features",
+      "end_time": 373
+    },
+    {
+      "start_time": 373,
+      "title": "Automatic Breeding",
+      "end_time": 503
+    },
+    {
+      "start_time": 503,
+      "title": "Sending Villagers",
+      "end_time": 676
+    },
+    {
+      "start_time": 676,
+      "title": "Automated Stocking",
+      "end_time": 734
+    },
+    {
+      "start_time": 734,
+      "title": "Switching Villagers",
+      "end_time": 860
+    },
+    {
+      "start_time": 860,
+      "title": "Void Trading",
+      "end_time": 1071
+    },
+    {
+      "start_time": 1071,
+      "title": "Outro",
+      "end_time": 1100
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "villager trading hall",
+    "villager breeder",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=LTfMo4Kvd1U"
+}

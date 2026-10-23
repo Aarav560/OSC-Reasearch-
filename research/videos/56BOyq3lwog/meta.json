@@ -1,0 +1,58 @@
+{
+  "id": "56BOyq3lwog",
+  "title": "Minecraft's Arrow Airburst Claymore",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260704",
+  "duration": 412,
+  "view_count": 157893,
+  "like_count": 10526,
+  "description": "In this video we will learn about a tiny windcharge cannon that can accelerate a volley of arrows over a large area to deadly speeds. This new device takes the concepts we learned from a previous video about the portal claymore and applies them to a single dimension device with a diverse range of options to fine tune the arrow spread. We will also learn fundamental concepts of damage and armour to maximise the potential for using this device as a defensive weapon in PvP contexts such as on Lifesteal or Unstable SMP.\n\nSchematic:\nhttps://www.mediafire.com/file/6m8p9ycuju3kgdw/Airburst_Launcher_1.2.litematic/file\n\nWorld Download:\nhttps://www.mediafire.com/file/qq6vh04y0upcy5w/Airburst_Launcher.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Design concepts and origins",
+      "end_time": 33
+    },
+    {
+      "start_time": 33,
+      "title": "Firing mechanism explained",
+      "end_time": 62
+    },
+    {
+      "start_time": 62,
+      "title": "Aiming and tuning the device",
+      "end_time": 130
+    },
+    {
+      "start_time": 130,
+      "title": "Projectile spread mechanics",
+      "end_time": 205
+    },
+    {
+      "start_time": 205,
+      "title": "Strategy and trade-offs",
+      "end_time": 258
+    },
+    {
+      "start_time": 258,
+      "title": "Optimization and damage",
+      "end_time": 345
+    },
+    {
+      "start_time": 345,
+      "title": "Construction and final tips",
+      "end_time": 412
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "arrow railgun",
+    "instant death",
+    "redstone trap",
+    "wind charge cannon",
+    "minecraft claymore"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=56BOyq3lwog"
+}

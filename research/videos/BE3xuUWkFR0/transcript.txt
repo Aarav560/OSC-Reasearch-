@@ -1,0 +1,72 @@
+[00:00] g'day ladies and gents cubic meter here for the past few episodes we've been making some huge advances in storage tech however all of these have been proven concepts designed and creative meanwhile i've been getting a lot of complaints about the storage system that we have here on a manga's patient on the server it uses the box sorting method i introduced in storage second you check that out if you want more details basically this method of sorting boxes is very flawed we need to regularly clean out the storage system due to boxes of items landing in the incorrect slice
+
+[00:32] the need for these enormous splitters also adds a lot of redundant complexity and sorting time the storage system from how to kill a chess monster uses a similar box order which completely eliminates the splitter a very nice it also completely fixes the reliability issues because it not only uses one item filler at the top here uses a second item filter to unload the box preventing any items from getting into the wrong slice so if you've already gone and built this system it should serve you very well
+
+[01:05] the only drawback of the storage is the amount of redundant storage capacity that we have for items that you never really have large amounts of we covered this issue and its solution when we designed the encoded multi item sorter but despite all of this domengo's patreon server was in desperate need of a brand new storage system before my birthday i assembled the entire patreon crew and we spent 24 hours straight tearing down the old storage system and building up the new design all right
+
+[01:39] ladies and gents we all know why we're here it's far overdue that we got this storage sorted out i don't have to keep on fixing it exactly in fact if we look at it now can we see any busted slices wait let me see i i i usually go out and fix every slice after storage runs so like every slice that um broke how long does it usually take to break um it breaks every time it runs usually
+
+[02:11] i just um eject a shulker box in the specific slices that broke that time and then just leave the rest well i have to congratulate the lumber because i can't find any broken slices hey oh yeah i mean i just do a quick check um what won it when it booked the being done running i just look down the line of um red bone blocks and if any of them are out of place i look in that slice
+
+[02:43] yep but it looks like you've done a very good job in fixing up the storage yeah so what we need to do today is we are just removing the splitter and item sorter as well as all of the mechanisms of the storage halls the storage halls they only begin at this point right here and if you load up your schematic you'll notice that the new holes line up perfectly with the old ones all right
+
+[03:15] what i'm going to start with is going over to the box order and disabling it um you finished everything in single player right that's why it looked unfinished in cmp uh it's technically still not finished but it doesn't really need to be because we can simply add on the item sorter and the item filters later on all right i've gone and disabled the box order
+
+[03:46] which means that any items that come in or any items that get lost should get collected by this which is also pretty nice so we shouldn't lose anything let's get started three two one oh my god what was that i've got i've got particles disabled as well but it's like this rock is just an invisible diff that was weird you accelerated to the
+
+[04:20] wrong side i hit you this way and you accelerated to the left because his internet's so bad that he his client thinks that you're somewhere else when you hit him according to the top bar um we have i have full internet i don't what maybe all right three two one go [Music]
+
+[05:22] is hey tell me tell me i
+
+[06:04] am [Applause] six five draw one
+
+[07:42] silence face do
+
+[09:13] got me thinking about the good times not a single bad time wishing that you were still mine you got me thinking bout you and all the things that i should say but i gotta stop and look the other way i used to think that you're the only one for me there is no one else i know that seems crazy every day i'm missing you there's nothing that you can do to stop me but i know that love ain't easy it sometimes hurts i
+
+[10:01] you left me feeling some type of way you knocked me around i'm feeling upside down trying not to remember the things we did
+
+[11:05] together everything reminds me of you i hate that you've got me tied down to you when i can't be free i will find someone else you just wait and see every day you're on my mind think about you all knew it was too good to be true
+
+[11:45] and i know it's time to start save my love and guard my heart feeling upside down you i'm feeling upside
+
+[13:30] upside down no no no like for to make this objective here what was the action it is it was custom like you know the command right custom that is minecraft.com oh you have it you have a um a challenger
+
+[14:04] atheist are you going to get me started oh my god god he's sure his score is going are you sure speck okay [Laughter] yeah cubic sorry cubic no one gives a [&nbsp;__&nbsp;] about your storage anymore it's all about getting so broken yeah this has become a dick measuring
+
+[14:38] contest oh it's the beautiful symphony 877 315. wait who removed my not block you're so lazy
+
+[15:25] we all need to aim do i do you really want me to fill in my inventory okay i'm gonna get a full inventory of that one oh my god 79 blocks get away from me get away from me he's just walling himself in no hello all right
+
+[16:05] the new story system is now fully built off and isn't she a beauty you might notice that she's a lot more compact than the previous design in fact you won't find any fancy box orders here that's right for this storage system we're going to be using parallel entity sorting i've already introduced this sorting method in a previous video the only issue is that the concept that i derived for it is flawed the failure mode for these assignable unloaders is really bad and sucks to fix the other issue
+
+[16:38] is that this concept requires the boxes to be split by a splitter and of course i want to avoid using splitters i tried designing a new concept for an assignable variable unloader the issue is that it needs to be able to handle unstackables 16 stackables and 64 stackables all in the same item filter but i simply couldn't get this to work but then it hit me i already have an assignable box unloader which can handle
+
+[17:09] unstackables and 16 stackables it turns out the encoded multi-item sorter which i designed previously is in fact perfect for the application of a parallel entity sorter because what i can do is i can assign sets of items to these chests to ensure the same item is only ever being unloaded by one slice at a time so instead of using a variable encoding like the previous parallel entity sorter this system uses a fixed encoding an
+
+[17:42] issue that we encountered however in the design of the encoded multi-item sorter is that in order to unload the boxes we would need a special kind of box on loader which would only take out the first item that it uses to form a filter in a variable unloader and this two wire tileable design that i came up with is very slow and unreliable fortunately however storage tech community is full of lots of bright minds if you can't solve a problem yourself
+
+[18:15] i'm sure as hell they can from that nerd the original creator of the shulker box splitter we have this a b tileable design which can handle unstackables as well as stackables however it is very slow and also quite bulky the thing is we don't need to be able to handle unstackables for most of the items because most of the unloaders work on the assignment of these chests which can only use stackable items any
+
+[18:47] boxes containing unstackables or in fact any item not found in our hard encoding we'll just go straight through the system into an overflow which is that nerd system is perfect for under the assumption that we do not need to handle unstackables for the majority of the slices we get this amazing compact fast and one way tolerable design made by buoyan i'll post a link down to his video on the system down the description this right here is the item sorter that
+
+[19:20] i have designed for patreon's new main storage all i need to do to make it a parallel entity sorter is simply unload the items into a water stream and ensure that the items were in stack sizes but they could be collected reliably by an item filter in order to reliably stack the items we dispense them into a chamber and then release it into a water stream for trapdoor or they get aligned to a wall just to make sure that they're stacked and then they're dropped into the water
+
+[19:52] stream which will carry them to our item sorters anything which doesn't have a match found in the multi-item sorter ends up at the end here in that node system which can handle unstackables as well and if you look here you can see the parallelized item entity unloading in action the one last thing to talk about how on earth do we decide what to put in these chests imagine if we had all the very most common types of items that we're sorting
+
+[20:25] encoded to this very first slice that means that we'll get a ton of full boxes piling up all into the one unloader so what we want to do for a parallel entity item sorter is make sure that we separate as many of the most common item types that we find as possible in order to inform me of what items i should expect to be the most common i collected data from about eight technical survival multiplayer servers
+
+[20:58] the data was collected using a program called mcscanner designed by skyrising a fellow scicraft member collecting all of this data and analyzing in matlab we can indeed confirm that stone is the most common item at about 64 million stone blocks stored between eight servers and an important thing to note is that this program did not include player inventories or ender chess which is probably why netherright blocks which would be stored
+
+[21:34] likely in people's zander chess comes out as the least common item however we're designing the item sorter for omega's patreon server and it just happens that i have the exact data that we need from omenges patreon server all i need to do is just analyze this data and it should give me a list of items to put in our encoder chest plotting our distribution of items gives us useful details such as the amount of items that need to go on specific storage types this green line represents the point at
+
+[22:06] which we would fill a double chest with a particular item type on this horizontal axis we just have the id of all the items and we can clearly see that at least half of our item types will fit in a double chest that is exactly what we have done in the new storage halls as you can see we have accessible box loaders on the sides here plus double chests for our items that we don't have that much of this means that we have cut the total
+
+[22:40] length of all of our storage holes in half we've also included the mega box system in our new storage design despite its massive size it should give us all the flexibility we need to store our items and as for assigning our chest encoders i've just gotten matlab to print out these 20 lists each one containing the contents of a particular chest as you can see we have sand at the top in this one that was one of the most common items we
+
+[23:12] had at the top here we have netherwart nt and so on then i can punch these lists straight into friggin storage tech aid and it will automatically print out the chess of the assigned items the result should look a lot like this but we have as many of the unloaders being utilized at any given time as possible we pretty much want to ensure that every single unloader gets the same amount of items
+
+[23:46] on average using the items that are obtained from the world download of the hermitcraft and comparing against the tests we did on how to kill chess monster we can see that this new parallel entity disorder is about half the speed of the massive system that we use for how to kill a chess monster but that system is absolutely massive in comparison so i reckon it's definitely worth it for the smaller system which is simpler and easier to build oh my
+
+[24:18] goodness that's enough storage tech for me today thank you very much for watching and be sure to subscribe if you want to keep up to date with the latest tech we still have a lot of work here to do on the main storage of omega's patreon such as assigning storage slices and installing the item sorter for our input next time we can hopefully look into combining everything we've learned into the perfect storage system so i will see you then
+

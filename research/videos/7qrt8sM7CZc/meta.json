@@ -1,0 +1,85 @@
+{
+  "id": "7qrt8sM7CZc",
+  "title": "Introducing the Instant Kill Arrow Turret",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250405",
+  "duration": 1403,
+  "view_count": 440277,
+  "like_count": 23554,
+  "description": "Turns out you can get the player's view angle from wind charges. This will have substantial ramifications for the population of Minecraft servers. In this video we discover new revolutionary cannon tech and understand the dynamics of explosion interactions and how we can use wind charges combined with TnT mechanics to make the ultimate instant kill railcannon.\n\nPlease note that this build has been broken as of 1.21.5:\nhttps://www.mediafire.com/file/1zh80q14wed2kre/The_Orbital_Railcannon.litematic/file\n\n@squibble111's video about the mirror pylon:\nhttps://www.youtube.com/watch?v=FnUE-ZaALLw\n\nContaria's Anglesnap mod now implements a camera snap feature that can help with aiming the cannon:\nhttps://modrinth.com/mod/anglesnap\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to mechanics",
+      "end_time": 62
+    },
+    {
+      "start_time": 62,
+      "title": "Designing the cannon",
+      "end_time": 142
+    },
+    {
+      "start_time": 142,
+      "title": "Proof of concept",
+      "end_time": 265
+    },
+    {
+      "start_time": 265,
+      "title": "Automating wind charges",
+      "end_time": 367
+    },
+    {
+      "start_time": 367,
+      "title": "Precision alignment",
+      "end_time": 498
+    },
+    {
+      "start_time": 498,
+      "title": "Hypersonic weaponry",
+      "end_time": 571
+    },
+    {
+      "start_time": 571,
+      "title": "Using snowballs for aiming",
+      "end_time": 717
+    },
+    {
+      "start_time": 717,
+      "title": "Fine-tuning dynamics",
+      "end_time": 858
+    },
+    {
+      "start_time": 858,
+      "title": "Arrow spread control",
+      "end_time": 1006
+    },
+    {
+      "start_time": 1006,
+      "title": "Testing and calibration",
+      "end_time": 1104
+    },
+    {
+      "start_time": 1104,
+      "title": "Final demonstration",
+      "end_time": 1176
+    },
+    {
+      "start_time": 1176,
+      "title": "Limitations and usage",
+      "end_time": 1228
+    },
+    {
+      "start_time": 1228,
+      "title": "Conclusion and setup",
+      "end_time": 1403
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "arrow railgun",
+    "tnt cannon",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=7qrt8sM7CZc"
+}

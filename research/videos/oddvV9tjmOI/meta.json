@@ -1,0 +1,74 @@
+{
+  "id": "oddvV9tjmOI",
+  "title": "Hermitcraft vs Main Storage Item Sorter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220219",
+  "duration": 1742,
+  "view_count": 143830,
+  "like_count": 4680,
+  "description": "It's finally here, the 8gt encoded multi item sorter. This brand new piece of storage tech can tear through the toughest of sorting jobs. But how much of a match is it against the rampant chest monsters of the Hermitcraft server? In this video we will discover unique ways to analyse the game we play and optimise our item sorting to the extreme.\n\nI should also point out that the demi-bolt I attributed to Carbsna was in fact originally concieved by Inspector Talon, his video on the design can be found here:\nhttps://youtu.be/Q1lRxx2MukM\n\nStorage Tech Archive:\nhttps://discord.gg/JufJ6uf\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 21
+    },
+    {
+      "start_time": 21,
+      "title": "MultiItem Sorter",
+      "end_time": 158
+    },
+    {
+      "start_time": 158,
+      "title": "Hopper Speed Encoder",
+      "end_time": 325
+    },
+    {
+      "start_time": 325,
+      "title": "Temporal Mapping",
+      "end_time": 425
+    },
+    {
+      "start_time": 425,
+      "title": "Hopper Speed",
+      "end_time": 610
+    },
+    {
+      "start_time": 610,
+      "title": "Chest Monsters",
+      "end_time": 869
+    },
+    {
+      "start_time": 869,
+      "title": "Baseline Test",
+      "end_time": 917
+    },
+    {
+      "start_time": 917,
+      "title": "Encoder Test",
+      "end_time": 1193
+    },
+    {
+      "start_time": 1193,
+      "title": "Encoder Example",
+      "end_time": 1404
+    },
+    {
+      "start_time": 1404,
+      "title": "Bin Packing",
+      "end_time": 1607
+    },
+    {
+      "start_time": 1607,
+      "title": "Testing",
+      "end_time": 1742
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "storage tech",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=oddvV9tjmOI"
+}

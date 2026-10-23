@@ -1,0 +1,74 @@
+{
+  "id": "dvbk1EA98MA",
+  "title": "How to Make Instant Hoppers [MTE Tech]",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20201007",
+  "duration": 1559,
+  "view_count": 29589,
+  "like_count": 1100,
+  "description": "I have finally built up the courage to showcase some profoundly interesting tech which is made possible with moveable block entities. Instant Item Sorting will allow us to send complex insutructions to our contraptions without resticting latency as you scale the system up.\n\nUltimate Redstone's Magical Storage System:\nhttps://www.youtube.com/watch?v=uOhYlh-RAuE\nExtra Research by Palla Palla:\nhttps://www.youtube.com/watch?v=ksfBEgLSpA0\n\nWorld Download:\nhttp://www.mediafire.com/file/1rnvnoto9oy8n2p/Instant_Smart_Storage.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to instant sorting",
+      "end_time": 68
+    },
+    {
+      "start_time": 68,
+      "title": "The problem with long storage",
+      "end_time": 266
+    },
+    {
+      "start_time": 266,
+      "title": "Building an instant line",
+      "end_time": 423
+    },
+    {
+      "start_time": 423,
+      "title": "Automating with movable entities",
+      "end_time": 543
+    },
+    {
+      "start_time": 543,
+      "title": "Smart storage applications",
+      "end_time": 659
+    },
+    {
+      "start_time": 659,
+      "title": "Binary redstone potential",
+      "end_time": 759
+    },
+    {
+      "start_time": 759,
+      "title": "Instant sorter mechanics",
+      "end_time": 842
+    },
+    {
+      "start_time": 842,
+      "title": "Hopper tick execution",
+      "end_time": 1042
+    },
+    {
+      "start_time": 1042,
+      "title": "The instant transmission loop",
+      "end_time": 1205
+    },
+    {
+      "start_time": 1205,
+      "title": "Replenishing dummy items",
+      "end_time": 1442
+    },
+    {
+      "start_time": 1442,
+      "title": "System recap and future",
+      "end_time": 1559
+    }
+  ],
+  "tags": [
+    "storage tech",
+    "redstone",
+    "moveable tile entities"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=dvbk1EA98MA"
+}

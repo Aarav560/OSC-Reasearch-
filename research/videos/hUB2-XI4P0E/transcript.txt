@@ -1,0 +1,6 @@
+[00:00] I have been working on this project on and off for over a year now. It's a long range amable cannon. However, after eating copious amounts of suspicious stews before bed last night, I had a massive realization. All of this has been a waste of precious time and resources because there's a much simpler way to accomplish this. Let me show you. We first start with the most basic of TNT Ken designs. We're going to modify it to make it long rangeable anywhere in the world. First things first, we need to replace these dispensers. Using TNT to propel our payload can be effective,
+
+[00:32] but I have something better in mind. We will need to replace the TNT propellant with a willing volunteer. I said with a willing volunteer. With our volunteer in place, we now need to replace this TNT payload with instead a command block. You see, command blocks can run /tp to any point in the world. And this is how we will aim our cannon. Type the command using the name of our volunteer and the coordinates you wish to fire. Now all we have to do is pull the lever. I remember to give him the TNT in Flint and Steel, right?
+
+[01:06] Yep, there it is. It's beautiful.
+

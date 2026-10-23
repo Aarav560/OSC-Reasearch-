@@ -1,0 +1,32 @@
+[00:00] Hi guys. In this video, I'm going to go through a new instant obsidian farm, which can produce about 36,000 obsidian per hour. This farm is portal based and can be built in 5 to 10 minutes. It's a very survival friendly farm and doesn't break when you reload your world. You can easily use this farm in single player and on a server. So guys, let's begin the tutorial. First of all, the item list. These are the items needed for the overload part. As you can see, they are not hard to obtain at all. You also need to bring two villagers to the farm. Let's now talk about the location of the farm. First of all, go to your
+
+[00:31] notion, then head to your video settings and lower your render distance to two chunks and press F3 plus G to show chunk borders. Thanks to a boat, leave the coast and go out three to four chunks away. If done correctly, you shouldn't be able to see any land all around you. I would recommend gathering a sack or two of dirt or any temporary block. They will help you a lot when building parts of the farm. So guys, this is going to be the location of your farm. Go to the southeast corner of the chunk and begin by pillaring up to the surface. Then, go six blocks out west and three blocks north. We are now going to start
+
+[01:03] building the collection system. It's just six hoppers and six barrels, but they can be replaced by any sorting system. This farm can also be built above sea level for it to be easier to add any storage system. After following these steps, continue by making a cobblestone layer. This will be the part which collects the items. Next, place four water buckets. If the
+
+[02:47] entire platform was done correctly, water should stop right here, like in the video. Next, we're going to build the Wither Skull Catcher. This part is very easy to
+
+[03:19] build. Just line yourself up and make a box from iron or copper trapdoors and cobblestone. This cage was also in my last farm and prevents any black skulls from escaping. We're now going to move on to the more
+
+[04:09] interesting part of the farm, the target swapper. This part is made so that our wither targets two different entities at once. In our case, the entities are going to be villagers, but we're going to talk about them later in the video. Targeting different entities prevent withers from shooting main skulls. This is very convenient because blue skulls, which break any blocks, are main skulls. The mechanic behind this module is just trapdoors, which will shut themselves after a second when loading the farm. This makes the main head target an entity which it can't shoot at since it can't see it anymore. The side heads will then change target and they will be
+
+[04:41] the only one which shoots skulls. Now, let's begin building the damaging
+
+[05:37] system. It's just a TNT duper which damages the wither every 20 game ticks or every second. This will make the withers break a 3 by 3 by 4 area around them. This mechanic allows farming obsidian since the nether portal will spawn right behind them. We're now going to place and align two
+
+[07:40] chest boats. These are very important for the farm, but are very easy to set up. Just place yourself right here, look south, and place a chest boat right under you. Then, push it in the corner of the setup, and do the same thing for the other side. Placing two copper rods will also help since they are going to prevent the boats from moving. When adding to make the villagers go in
+
+[08:15] the farm, to bring the villagers next to your farm, I would highly recommend using a lead and a boat. When you arrive at your farm, make a temporary staircase. I would highly recommend building a staircase very similar to the one built in the video. After building up the staircase and
+
+[08:48] behind the boats, be sure to place two composters. This will lure the villagers in the farm. When the staircase is done, just break the boat and wait for the villagers to go in the farm. You might need to push the villagers in the boat since sometimes they get stuck, but it shouldn't be hard at all. When this step is done, proceed by breaking both composters and the dirt staircase. Now let's spawn the Withers. To do so,
+
+[09:42] just follow the steps in the video and prepare yourself to spawn both Withers in less than 2 seconds. Building a safe zone from temporary blocks is also recommended. After spawning both Withers, place water at their head level right under the grindstone and go in the safe zone. After both Withers exploded, seven quit your world as fast as you can. Try to do it in less than 2 seconds. After that, relog on your world. Wait 2 to 3 seconds for the Wither to retarget on new entities and finish the farm by claiming out the water sources. Let's now begin the nether portal. Right
+
+[11:23] before building this module, note the coords of the targeted block and divide these coords by eight. Replace the sandstone by obsidian and then a portal. After finishing the portal, head in the nether. Now, go above the nether roof and get to the new divided cords when I'm going to build the trip hook duper and follow the exact tutorial. Also, something to note is that the portal needs to be facing north and south. If this is not done correctly, portals won't spawn correctly
+
+[11:57] and break your farm. This trip hook duper produces about 7.2 million items per hour. Even if we only need 3.6 million of them, it's not a big problem. We're now going to build a nether chunk
+
+[13:25] loader. Note that this chunk loader can break when you unlock your world, but it shouldn't be an issue since you can always make it run again. To start the farm, begin by starting the
+
+[14:11] tripwire duper. After waiting for a second or two, head in the overworld. If everything was done correctly, items should get out of the portal. The final step of running this farm is just flicking this lever. It will start the damaging system and therefore the farm. There you have it, a working obsidian farm. If you want to have slightly higher rates, just make it easy hopper minecart collection system in the nether. Anyway, guys, I hope this video helped you and that this tutorial was easy to understand. If you have any advice or ideas for new farms, feel free to comment the video and like and subscribe. Anyway, guys, see you in the next one.
+

@@ -1,0 +1,155 @@
+{
+  "id": "El-2MOwb6kg",
+  "title": "How to Build the Ultimate Storage System",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210716",
+  "duration": 2079,
+  "view_count": 601289,
+  "like_count": 13477,
+  "description": "With 4 main storage concepts under our belt, we can finally have a crack at designing the ultimate main storage and item sorter for 1.17.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nWorld Download:\nhttps://www.mediafire.com/file/ol6ihebod7ckcua/The_Ultimate_Storage.zip/file\n\nItem Layout Documentation:\nhttps://www.mediafire.com/file/to37p5ocic1pfk2/1.17_Items.zip/file\n\n@Firigion's Storage Tech Aid:\nhttps://youtu.be/2PZjUQCN4_k\n\n@Skyrising's MC Scanner:\nhttps://github.com/skyrising/mc-scanner\n\n@CommandLeo's Item Randomizer:\nhttps://youtu.be/EuKzIyFd44Y\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 21
+    },
+    {
+      "start_time": 21,
+      "title": "Past storage designs",
+      "end_time": 78
+    },
+    {
+      "start_time": 78,
+      "title": "Storage flexibility",
+      "end_time": 140
+    },
+    {
+      "start_time": 140,
+      "title": "Over-engineered systems",
+      "end_time": 196
+    },
+    {
+      "start_time": 196,
+      "title": "Latest design concepts",
+      "end_time": 247
+    },
+    {
+      "start_time": 247,
+      "title": "Defining system parameters",
+      "end_time": 300
+    },
+    {
+      "start_time": 300,
+      "title": "Inventory scanning",
+      "end_time": 382
+    },
+    {
+      "start_time": 382,
+      "title": "Item layout planning",
+      "end_time": 483
+    },
+    {
+      "start_time": 483,
+      "title": "Designing the slice",
+      "end_time": 539
+    },
+    {
+      "start_time": 539,
+      "title": "Refining the slice",
+      "end_time": 645
+    },
+    {
+      "start_time": 645,
+      "title": "Tiling the system",
+      "end_time": 709
+    },
+    {
+      "start_time": 709,
+      "title": "System conduits",
+      "end_time": 792
+    },
+    {
+      "start_time": 792,
+      "title": "Building the interior",
+      "end_time": 843
+    },
+    {
+      "start_time": 843,
+      "title": "Multi-item sorter",
+      "end_time": 964
+    },
+    {
+      "start_time": 964,
+      "title": "Sizing and timing",
+      "end_time": 1056
+    },
+    {
+      "start_time": 1056,
+      "title": "Managing lag",
+      "end_time": 1187
+    },
+    {
+      "start_time": 1187,
+      "title": "Assigning items",
+      "end_time": 1266
+    },
+    {
+      "start_time": 1266,
+      "title": "Configuring filters",
+      "end_time": 1354
+    },
+    {
+      "start_time": 1354,
+      "title": "Input interface",
+      "end_time": 1419
+    },
+    {
+      "start_time": 1419,
+      "title": "Box recycling",
+      "end_time": 1502
+    },
+    {
+      "start_time": 1502,
+      "title": "Bulk storage",
+      "end_time": 1592
+    },
+    {
+      "start_time": 1592,
+      "title": "Assigning filters",
+      "end_time": 1676
+    },
+    {
+      "start_time": 1676,
+      "title": "System completion",
+      "end_time": 1745
+    },
+    {
+      "start_time": 1745,
+      "title": "Testing and lag check",
+      "end_time": 1809
+    },
+    {
+      "start_time": 1809,
+      "title": "Troubleshooting",
+      "end_time": 1883
+    },
+    {
+      "start_time": 1883,
+      "title": "Sorting demonstration",
+      "end_time": 1940
+    },
+    {
+      "start_time": 1940,
+      "title": "Results and conclusion",
+      "end_time": 2079
+    }
+  ],
+  "tags": [
+    "storage tech",
+    "redstone tutorial",
+    "item sorter",
+    "1.17"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=El-2MOwb6kg"
+}

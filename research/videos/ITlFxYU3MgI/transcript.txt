@@ -1,0 +1,34 @@
+[00:00] g'day ladies and gents meter here for a quick little video about a handy contraption for moving between two locations quickly this behind me is a bank of one wide tileable enderpearl stasis chambers it exploits a new mechanic in 1.16 where ender pearls can float indefinitely in water elevators the reason why tile ability is useful here on our manga's 1.16 patreon server is that we have many people who need to move back and forth between the witch-hunt perimeter and the gold farm in order to repair tools of xp so the
+
+[00:32] tileable units can be stacked next to one another and each one assigned to a player in order to show it in action let's head over to the witch hut parameter which we're almost finished digging i've set up another bank of these stasis chambers at the sorting system where we take big inventory dumps while digging in order to prime the system all i need to do is align myself chuck it in the pill and hit this note block now the end up hell is in the water elevator where it will stay there
+
+[01:05] indefinitely until this soul sand block is removed meanwhile the stasis chamber over at the gold farm is ready to be triggered in order to trigger the system all i need to do is log out and then log back in and suddenly i'm at the gold farm over 5000 blocks away
+
+[01:39] all you do is prime this end again log out log back in and back at the witch farm so the reason why i am able to go back and forth so quickly
+
+[02:10] because the stasis chamber has two states which you can alternate between if this light is off then it will wait until it has been triggered twice before teleporting the player however if this light is on it will teleport you the instant that is triggered as you just saw you can simply flip the state by hitting this note block on the floor i should also note that for this
+
+[02:42] demonstration both the witch-hunt perimeter and gold farm are being loaded by carpet bots however another option is of course use portal chunk loading like we have in the trunk loading grid for the main storage and starbucks server this has the benefit of not spawning mobs and filling up the mob cap compared to using accounts in case you're wondering the system is triggered using wireless cat stone discovered by 202 name this makes use of a really neat mechanic where a cat sitting on a chest will
+
+[03:14] prevent comparators from receiving inventory updates and the player the cat belongs to logs off the cat will sit and the comparator then turns off when the player logs back in comparator switches back on this means with a tamed cat you can send a signal anywhere on the server that is loaded by simply logging off and logging back in it's important to note that you need to update the comparator each time to turn it on or off this can be done by
+
+[03:48] having a partially filled hopper with one item type underneath a chest with a single of a different item type demonstrate the interchange between two systems i have two slices in opposing states i can prime both of them quickly they are now storing and the pearls in the bubble columns if the player logs out the cats will sit down attracting these observers and sending
+
+[04:20] the signal nowhere that way the system remains idle whilst the player is offline the instant the player logs in however the cats will stand up both slices will get triggered however because they are in opposing states one of them will trigger the system that retracts the soul sand while the other one will just ignore that so if i prime this slice again you can
+
+[04:56] see they've now switched states player logs out logs back in and now i'll teleport to the other slice and they've exchanged back to where they started it's important to note that every single time the player logs out then logs back in or goes into another dimension then comes back to the same dimension that the cat is in every single one of these systems that
+
+[05:29] is being chunk loaded at that instant will be triggered so whenever you want to link two stasis chambers together you need to keep in mind the order in which you set them up for example if this is in the receiving next state then i prime it then duck away into the nether to get to where the other chamber is located
+
+[06:00] the instant i come out of the portal you get to this stasis chamber it's going to teleport me to this one therefore here to make sure if you're going to be using the nether this stasis chamber needs to be in the off state then if i go to the nether
+
+[06:34] triggering the system i've now come back out of the nether and i'm going to go set up this chamber i want to make sure that this one is set in the opposing state once i've come out of the portal then i can set up this one and now they are properly linked and i can transfer between them indefinitely until i either run out of enderpearls
+
+[07:05] or want to stop using them for each stasis chamber that you have on a server you must have a cat standing in the system the issue is when cats stand up they will attempt to teleport to the player if they get too far away that is why i have them on leads here because that prevents them from teleporting however mojang was supposed to have patched this but whenever the chunks get loaded and the player is far enough away to
+
+[07:38] cause them to teleport they can sometimes break the leads and teleport the player anyway now if you don't want this to happen what i suggest is setting the counter down whenever the system's not in use that way when the chunks get loaded and unloaded the cats won't attempt to teleport and it should be fine in case you want to build these yourself they're quite cheap requiring not a lot
+
+[08:12] of resources for each slice and of course you can substitute the white stained glass and white concrete i should note however that this particular block here must be some kind of transparent block that can't be powered and i've used seven block tool water elevators here however you can adjust this height to whatever performs best for your system and just one last look if you want to build this yourself it's a one more towable design so you can get all the information you
+
+[08:44] need just by looking at this image thank you very much for watching i hope you enjoyed this short video one of the many handy little contraptions we'll run into playing 1.16 in survival
+

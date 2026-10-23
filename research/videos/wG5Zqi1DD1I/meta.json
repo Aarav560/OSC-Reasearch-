@@ -1,0 +1,61 @@
+{
+  "id": "wG5Zqi1DD1I",
+  "title": "Solving Minecraft's Storage Problem",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250904",
+  "duration": 698,
+  "view_count": 120808,
+  "like_count": 7972,
+  "description": "We're gonna be talking about the COPPER GOLEM and trying to figure out the best ways to utilise it's item sorting abilities. In this video we explore the finer nuances in making a functional storage and some of the minor decisions needed to make a storage system synergise well with the new copper golem's sorting capabilities.\n\nWorld Download with Fully Functional Storage:\nhttps://www.mediafire.com/file/16nrnqynr014d3y/Golem_Sorter_Completed.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Copper golem sorting challenge",
+      "end_time": 19
+    },
+    {
+      "start_time": 19,
+      "title": "Planning and data preparation",
+      "end_time": 86
+    },
+    {
+      "start_time": 86,
+      "title": "Analyzing golem behavior",
+      "end_time": 156
+    },
+    {
+      "start_time": 156,
+      "title": "Designing the sorting mechanism",
+      "end_time": 236
+    },
+    {
+      "start_time": 236,
+      "title": "Overcoming filtering challenges",
+      "end_time": 327
+    },
+    {
+      "start_time": 327,
+      "title": "Finalizing the sorter build",
+      "end_time": 411
+    },
+    {
+      "start_time": 411,
+      "title": "Stress testing the system",
+      "end_time": 606
+    },
+    {
+      "start_time": 606,
+      "title": "Downgrading and final analysis",
+      "end_time": 698
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "copper age",
+    "redstone",
+    "item sorter",
+    "inventory"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=wG5Zqi1DD1I"
+}

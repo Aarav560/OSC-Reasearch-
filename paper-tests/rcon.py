@@ -1,4 +1,5 @@
 """Minimal Source-RCON client for driving a Paper test server."""
+import os
 import re
 import socket
 import struct
@@ -6,7 +7,8 @@ import time
 
 
 class Rcon:
-    def __init__(self, host="127.0.0.1", port=25575, password="osctest"):
+    def __init__(self, host="127.0.0.1", port=None, password="osctest"):
+        port = port or int(os.environ.get("RCON_PORT", 25575))  # 25576 = vanilla A/B server
         self.s = socket.create_connection((host, port), timeout=30)
         self.rid = 0
         self._send(3, password)
@@ -34,8 +36,22 @@ class Rcon:
         return rid, data[8:-2].decode(errors="replace")
 
     def cmd(self, c):
+        """Run a command; responses over 4 KB arrive split, so a marker request (an empty
+        command, answered by both Paper and vanilla with its own id) ends the read."""
         self._send(2, c)
-        return self._recv()[1]
+        cid = self.rid
+        if os.environ.get("RCON_MARKER", "1") == "0":  # vanilla drops clients that pipeline
+            return self._recv()[1]
+        self._send(2, "")
+        mid = self.rid
+        parts = []
+        while True:
+            rid, body = self._recv()
+            if rid == mid:
+                break
+            if rid == cid:
+                parts.append(body)
+        return "".join(parts)
 
     def cmds(self, *cs):
         return [self.cmd(c) for c in cs]

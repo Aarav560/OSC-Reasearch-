@@ -1,0 +1,157 @@
+{
+  "id": "2O223xMu65Y",
+  "title": "We Made Helldivers in Minecraft",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20241213",
+  "duration": 3595,
+  "view_count": 354324,
+  "like_count": 18531,
+  "description": "In this video we create the ultimate trial chamber experience with flying hellhogs, wireless redstone magic and computational redstone. We will learn the complicated mechanics of building a pig cannon in minecraft capable of dropping the player into trial chambers helldivers style.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\n@MythicalPingu makes great slimestone content, check them out:\nhttps://www.youtube.com/@MythicalPingu/videos\n\nSchematics:\nhttps://www.mediafire.com/folder/ndrpqiusaplex/Trialdivers\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 69
+    },
+    {
+      "start_time": 69,
+      "title": "The concept",
+      "end_time": 116
+    },
+    {
+      "start_time": 116,
+      "title": "Entity collision mechanics",
+      "end_time": 203
+    },
+    {
+      "start_time": 203,
+      "title": "Lazy acceleration",
+      "end_time": 328
+    },
+    {
+      "start_time": 328,
+      "title": "Lazy linking",
+      "end_time": 448
+    },
+    {
+      "start_time": 448,
+      "title": "Propulsion system",
+      "end_time": 568
+    },
+    {
+      "start_time": 568,
+      "title": "System controls",
+      "end_time": 634
+    },
+    {
+      "start_time": 634,
+      "title": "Trial chamber logistics",
+      "end_time": 780
+    },
+    {
+      "start_time": 780,
+      "title": "Binary encoding",
+      "end_time": 935
+    },
+    {
+      "start_time": 935,
+      "title": "Targeting coordinates",
+      "end_time": 1098
+    },
+    {
+      "start_time": 1098,
+      "title": "Rom storage",
+      "end_time": 1264
+    },
+    {
+      "start_time": 1264,
+      "title": "Wireless redstone",
+      "end_time": 1395
+    },
+    {
+      "start_time": 1395,
+      "title": "Tile events",
+      "end_time": 1502
+    },
+    {
+      "start_time": 1502,
+      "title": "Ordered timing",
+      "end_time": 1624
+    },
+    {
+      "start_time": 1624,
+      "title": "Wireless transmission",
+      "end_time": 1721
+    },
+    {
+      "start_time": 1721,
+      "title": "Signal isolation",
+      "end_time": 1856
+    },
+    {
+      "start_time": 1856,
+      "title": "System automation",
+      "end_time": 1953
+    },
+    {
+      "start_time": 1953,
+      "title": "User interface",
+      "end_time": 2029
+    },
+    {
+      "start_time": 2029,
+      "title": "Mission execution",
+      "end_time": 2165
+    },
+    {
+      "start_time": 2165,
+      "title": "Breach cannon",
+      "end_time": 2262
+    },
+    {
+      "start_time": 2262,
+      "title": "Resource farming",
+      "end_time": 2360
+    },
+    {
+      "start_time": 2360,
+      "title": "Build time-lapse",
+      "end_time": 2476
+    },
+    {
+      "start_time": 2476,
+      "title": "System test",
+      "end_time": 2565
+    },
+    {
+      "start_time": 2565,
+      "title": "Automated breeding",
+      "end_time": 2693
+    },
+    {
+      "start_time": 2693,
+      "title": "Trial dive test",
+      "end_time": 2935
+    },
+    {
+      "start_time": 2935,
+      "title": "Operation trialdiver",
+      "end_time": 3522
+    },
+    {
+      "start_time": 3522,
+      "title": "Conclusion",
+      "end_time": 3595
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "pig cannon",
+    "orbital strike",
+    "helldivers 2",
+    "wireless redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=2O223xMu65Y"
+}

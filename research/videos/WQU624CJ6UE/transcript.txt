@@ -1,0 +1,52 @@
+[00:00] [Music] this
+
+[00:56] so uh
+
+[01:43] [Applause] good day ladies and gents cubic meter
+
+[02:44] here on omega's new 116 patreon server where a communist party of technical players have been working hard for a week now to find all the technical niches of the latest meta to start with we all began in the nether which initially seemed challenging nice is it boys oh god oh my god that was i mean at least there's not an angry uh hoglands or
+
+[03:17] anything and for a while it was challenging moving a foot in another is very dangerous and confusing okay we have like the blue thing in the north that's what porous should we be making gold should we be making gold armor before we start trading or i already did we should but we can't oh my god uh if anybody wants boots oh man 193. we got another answer
+
+[03:54] yeah okay you can get pork chops from the hoglands but they're quite dangerous okay kind of yeah food's gonna be an issue i guess just mushrooms usually another huggling cavity that's true oh come on in do we have to make mushrooms do them oh my god i'm so low in health we're getting one just die wait can somebody help me trap a uh yeah okay i'm about to die there we go
+
+[04:29] man that's half and piglets were not very helpful they're basically just spawn items okay good oh yes we got however in less than an hour we found a bastion and stole enough obsidian to make a portal and we were back to the overworld man with the obsession he's here
+
+[05:06] and save your voice a lot my god he uh we already have a start over there jesus christ okay enough there's a hobby on the tree yeah whatever oh hello just leave it be all right down to the hole hopefully you can fall down there oh my god overwhelmed who will be the first one no no oh i made it behold
+
+[05:53] what we have accomplished in only a week first we got the wall then we got the beds then we get the debris then we get the gear although i may have glossed over some details involving villagers as well many of the players diverge into specific projects such as the quad witch huts however i should note that this server is lightly modded making some resources renewable tile entities movable and crafting tables work automatically
+
+[06:30] in light of these features with disabled tnt jipping which means our first perimeter for the quad witch huts will be manually dug not sure about you but i'm not much of a digger instead i like to direct my focus to problem solving and we needed large amounts of xp for tool repair the best way to do this is with a gold farm above the nether roof but you may have noticed from the intro that our nether is a bit higher than usual in fact our nether is 256 blocks tall exactly
+
+[07:04] and you can't build anything above the nether roof here we have a gold and xp farm that cranks 1 200 gold blocks per in order hour obtain such rates you must limit spawning in other places because all spawning attempts must obey the mob cap count of all mobs loaded by the player this prevents mobs from spawning endlessly and crashing your game but this also means that if mobs spawn anywhere but your mob farm it will eventually stop working you
+
+[07:37] could go and dig a ridiculously overpowered perimeter like over on scicraft but that is way too much work and requires heaps more resources than we have on the patreon server so instead i decided to investigate a mechanic indicated by nembon when merging implements some changes to mob spawning in certain nether bibles to start with i looked at a biomap for a soul sand valley large enough to encompass the player's despawn sphere here is where we spawned initially and you can follow the path from the
+
+[08:10] intro as so oh what we're really interested in is this large soul sand valley right here this is large enough to encompass the player's despawn sphere but it also has this little peninsula of netherlands right here that way we can align a player such as despawn sphere just encompasses a very small region of another waste for those of you
+
+[08:43] wondering what a despawn sphere is it is a spherical region 128 blocks in radius in all directions which mods will instantly despawn if they're outside of it here we've got a bot steve set up in the center of an enormous sphere as so if i move towards that spawning platform my dear spawn sphere will begin to spawn in mobs and the mob cap will begin to fill if i then go into spectator mode my despawn sphere will vanish completely and we'll see the
+
+[09:15] effects of our bots ds1 sphere on its own as you can see all the mobs just instantly vanished and the mob cap is now at zero the reason why the bombs are important is because they have their own spawning rules we want to spawn zombie pigmen because they drop gold and xp when killed that's our spawning platform should be in another waste but with a 256 high nella we have a big problem in the fact that put the player anywhere in another waste biome
+
+[09:49] and that will load so many spawning spaces that the bobcat will be completely decimated but put the player in a soul sand valley and you get very different results as you can see there is plenty of spawning spaces around me but the mob cap is nowhere near being full this is because the salsa and valley has its own spawning rules in spite of the mob cap if you look at any mob in the soul sand valley
+
+[10:20] you'll see that it is very lonely for example you can see these skeletons here is standing on its own this is because this skeleton is actually suppressing spawns in a region around him this means that the instant that anymore spawn in the soulsand valley they suppress additional spawns and therefore the mob cap is never even reached even though there are plenty of spawning
+
+[10:51] spaces available we can exploit this mechanic in order to make an insane gold farm without even needing to dig a perimeter here are our spawning spaces the use of portals ensures that the instant any pigments spawn they are transported to the overworld before they affect the bobcat as you can see our spalling spaces are just inside a despawn sphere centered on our player who is over here right in the middle of a sulcen valley
+
+[11:26] with the spawning limitations here mob cap is free to spawn mobs in our farm as if we're in a perfect perimeter giving us incredible spawn rates without even needing to spawn proof anything then we encounter another issue regarding the height map here is the rate of the farm if we just built the spawning platforms for the portals and nothing else as you can see it is quite pathetic a measly 150 gold blocks per hour
+
+[12:01] the height map refers to how the spawning algorithm chooses where to spawn a mob it starts by searching a column of blocks it will then identify the highest non-air block and randomly pick a location from y 0 to the location of that highest block in order to attempt a mob spawn and even if the block is non-spawnable the game will simply waste a spawning attempt this means the block at y0 has a 100
+
+[12:34] chance of spawning a mob at why one 50 chance y2 33 chance and this progression continues in an inverse exponential all the way up to build limit and even if there are spawnable blocks in the same column probability of the highest block will be evenly distributed through all here is a simple demonstration two spawning platforms at y0 one has a glass roof above it at build
+
+[13:06] limit the other one has completely empty space if i activate mob spawning you'll clearly see that way more mobs spawn on the one with empty space above it this is because the height map on this platform is reducing the probability that mobs will spawn here compared to our platform at y0 which is air above it when you do the math you get an 800 percent boost in efficiency by reducing the height map of this spawning setup
+
+[13:38] however in order to obtain this you must remove every block above the spawning spaces digging the hole was quite easy about 40 minutes of insuming netherrack between me and skyking and it was done the issue was the bedrock ceiling we needed to remove about a thousand bedrock blocks which took about five hours of however it's still much easier than
+
+[14:24] spending months making a three million block of void perimeter like we are in i would of course also like to thank panda for helping with the bedrock breaking now all that's left to talk about is our item and xp collection to start with here's a cutaway view of the killing chamber designed it only gives a very small proportion of the xp to the sword wielder while the rest gets dumped into the water streams this is important to prevent xp build up which will eventually crash a server
+
+[14:57] in order to collect xp players can simply stand in these booths where excess xp is burned by the fire and then if unused the xp will continue in this water stream and get destroyed by the fire at the end along with our unwanted items and finally with autocraft enabled on the server the item filters will automatically compact gold nuggets and gold ingots into gold blocks to be used at the output there you have it the most powerful nether mob farm you can make if
+
+[15:31] you're a lazy git like myself hope you enjoyed this introduction to omega's new 116 patreon server where there'll be many more projects and contraptions to report on in the coming weeks but for now sears
+

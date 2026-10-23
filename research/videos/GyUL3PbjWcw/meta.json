@@ -1,0 +1,116 @@
+{
+  "id": "GyUL3PbjWcw",
+  "title": "The Crisis in Storage Tech",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250828",
+  "duration": 2087,
+  "view_count": 275698,
+  "like_count": 18431,
+  "description": "So Mojang wants to fix Minecraft's inventory problem, but what would it actually take? In this video we learn to understand Minecraft's gameplay loop through the perspective of Thermodynamics and using Entropy to characterise the problem of inventory management. Using detailed historical data from the Hermitcraft series we perform detailed analysis of Minecraft's history and the challenges with keeping the player's inventory organised. By the end of this video, I hope that people will gain a new appreciation for the field of storage technology and start to think critically about the solutions that Mojang provides for the Minecraft community.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The problem of inventory",
+      "end_time": 64
+    },
+    {
+      "start_time": 64,
+      "title": "Understanding entropy",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "Defining storage entropy",
+      "end_time": 286
+    },
+    {
+      "start_time": 286,
+      "title": "Measuring container entropy",
+      "end_time": 376
+    },
+    {
+      "start_time": 376,
+      "title": "Calculating total arrangements",
+      "end_time": 484
+    },
+    {
+      "start_time": 484,
+      "title": "Accounting for empty slots",
+      "end_time": 561
+    },
+    {
+      "start_time": 561,
+      "title": "Refining the entropy formula",
+      "end_time": 622
+    },
+    {
+      "start_time": 622,
+      "title": "Visualizing entropy with heatmaps",
+      "end_time": 724
+    },
+    {
+      "start_time": 724,
+      "title": "Analyzing server storage",
+      "end_time": 823
+    },
+    {
+      "start_time": 823,
+      "title": "Bulk storage and efficiency",
+      "end_time": 912
+    },
+    {
+      "start_time": 912,
+      "title": "High entropy containers",
+      "end_time": 1000
+    },
+    {
+      "start_time": 1000,
+      "title": "Hermitcraft data analysis",
+      "end_time": 1111
+    },
+    {
+      "start_time": 1111,
+      "title": "Entropy trends in Minecraft",
+      "end_time": 1214
+    },
+    {
+      "start_time": 1214,
+      "title": "The crisis in storage tech",
+      "end_time": 1338
+    },
+    {
+      "start_time": 1338,
+      "title": "Potential solutions",
+      "end_time": 1451
+    },
+    {
+      "start_time": 1451,
+      "title": "Better sorting systems",
+      "end_time": 1555
+    },
+    {
+      "start_time": 1555,
+      "title": "Copper golem analysis",
+      "end_time": 1729
+    },
+    {
+      "start_time": 1729,
+      "title": "Advanced golem sorting",
+      "end_time": 1818
+    },
+    {
+      "start_time": 1818,
+      "title": "Thermodynamics of sorting",
+      "end_time": 2087
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "storage tech",
+    "copper golem",
+    "item sorter",
+    "minecraft storage system"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=GyUL3PbjWcw"
+}

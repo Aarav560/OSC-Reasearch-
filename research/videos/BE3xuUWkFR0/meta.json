@@ -1,0 +1,52 @@
+{
+  "id": "BE3xuUWkFR0",
+  "title": "New Storage on the Block",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210504",
+  "duration": 1487,
+  "view_count": 43078,
+  "like_count": 1175,
+  "description": "The main storage of ilmango's patreon server has been plagued with issues from the very beggining, it's about time we completely removed the old design and build up a brand new, more advanced storage system in it's place.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nBoyenn's First Item Unloader:\nhttps://youtu.be/125LUiq2MBA\n\nSkyrising's mc-scanner:\nhttps://github.com/skyrising/mc-scanner\n\n7Venth12, music used in the build timelapse:\nhttps://www.looperman.com/users/tracks/1528225?page=2\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Issues with current storage",
+      "end_time": 98
+    },
+    {
+      "start_time": 98,
+      "title": "Tearing down the old system",
+      "end_time": 242
+    },
+    {
+      "start_time": 242,
+      "title": "Chaotic construction phase",
+      "end_time": 961
+    },
+    {
+      "start_time": 961,
+      "title": "Designing the new sorter",
+      "end_time": 1213
+    },
+    {
+      "start_time": 1213,
+      "title": "Optimizing item distribution",
+      "end_time": 1457
+    },
+    {
+      "start_time": 1457,
+      "title": "Future plans and conclusion",
+      "end_time": 1487
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "Scicraft",
+    "ilmango patreon",
+    "storage tech",
+    "redstone",
+    "item sorter"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=BE3xuUWkFR0"
+}

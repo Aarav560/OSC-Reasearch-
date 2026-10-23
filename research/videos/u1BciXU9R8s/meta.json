@@ -1,0 +1,79 @@
+{
+  "id": "u1BciXU9R8s",
+  "title": "let's Build a Crazy Azalea Tree Farm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210706",
+  "duration": 1008,
+  "view_count": 102841,
+  "like_count": 3814,
+  "description": "In this video we try and make the fastest possible azalea tree farm using a single central moss block to generate the plants. This involves inventing an extremely fast system to cycle through plants using 2no2name's method shown in his video:\nhttps://www.youtube.com/watch?v=5VVCbzT_vog\n\nSchematic:\nhttps://www.mediafire.com/file/27r0u2k9rlacyof/m%25C2%25B3%2527s_Crazaelia_Tree_Farm.litematic/file\n\n@Ilmango's moss farm:\nhttps://www.youtube.com/watch?v=irpeoBCfmsc\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Autonomous tree farm concept",
+      "end_time": 29
+    },
+    {
+      "start_time": 29,
+      "title": "Detecting azalea growth",
+      "end_time": 64
+    },
+    {
+      "start_time": 64,
+      "title": "Quasi-powering mechanics",
+      "end_time": 177
+    },
+    {
+      "start_time": 177,
+      "title": "Block update detector",
+      "end_time": 232
+    },
+    {
+      "start_time": 232,
+      "title": "Dust redirection and issues",
+      "end_time": 300
+    },
+    {
+      "start_time": 300,
+      "title": "Optimizing farm clock speed",
+      "end_time": 339
+    },
+    {
+      "start_time": 339,
+      "title": "Complete azalea module",
+      "end_time": 421
+    },
+    {
+      "start_time": 421,
+      "title": "Tree harvesting mechanism",
+      "end_time": 508
+    },
+    {
+      "start_time": 508,
+      "title": "Dual core efficiency",
+      "end_time": 604
+    },
+    {
+      "start_time": 604,
+      "title": "Blast chamber design",
+      "end_time": 780
+    },
+    {
+      "start_time": 780,
+      "title": "Chunk loading and setup",
+      "end_time": 890
+    },
+    {
+      "start_time": 890,
+      "title": "Minecart alignment",
+      "end_time": 1008
+    }
+  ],
+  "tags": [
+    "1.17",
+    "minecraft",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=u1BciXU9R8s"
+}

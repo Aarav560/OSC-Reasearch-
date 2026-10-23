@@ -1,0 +1,55 @@
+{
+  "id": "tl9kagcGflU",
+  "title": "An Introduction to Minecraft Storage Tech",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20201228",
+  "duration": 1191,
+  "view_count": 131155,
+  "like_count": 3161,
+  "description": "In this video I try to explain the basics of storage tech and illustrate why overthinking a storage system can be quite dangerous. In the second half of the video I showcase parallel entity sorting and how it can easily improve existing designs.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nWorld Download:\nhttps://www.mediafire.com/file/up3wvgapgx93zaj/Storage_Tech.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to Storage",
+      "end_time": 73
+    },
+    {
+      "start_time": 73,
+      "title": "Basic storage components",
+      "end_time": 223
+    },
+    {
+      "start_time": 223,
+      "title": "Advanced shulker systems",
+      "end_time": 359
+    },
+    {
+      "start_time": 359,
+      "title": "Box splitters and efficiency",
+      "end_time": 509
+    },
+    {
+      "start_time": 509,
+      "title": "Troubleshooting sorters",
+      "end_time": 751
+    },
+    {
+      "start_time": 751,
+      "title": "Parallel entity sorting",
+      "end_time": 1027
+    },
+    {
+      "start_time": 1027,
+      "title": "System demo and conclusion",
+      "end_time": 1191
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "Scicraft",
+    "item sorter"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=tl9kagcGflU"
+}

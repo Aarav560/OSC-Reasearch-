@@ -1,0 +1,65 @@
+{
+  "id": "UhcGtxQ6K3k",
+  "title": "The INSANE Engineering of Wavetech's Pistonbolt Network",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220411",
+  "duration": 1321,
+  "view_count": 257051,
+  "like_count": 9800,
+  "description": "Wavetech has one of the most advanced pistron bolt networks in minecraft. This piece of infrastructure is one of the core elements of the server providing transportation of players and resources around the map. It was designed by veteran member Ruthro and has gone through significant development to produce an extremely robust and well thought through system.\n\nBug Report on Minecart Inconsistencies:\nhttps://bugs.mojang.com/browse/MC-248655\n\nRuthro made a followup demonstration video for the pistonbolt network:\nhttps://www.youtube.com/watch?v=71QTdUc51To&ab_channel=Ruthro\n\nWorld Download:\nhttps://www.mediafire.com/file/glre0lqagtsvppo/piston_bolt_demo_world.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to piston bolts",
+      "end_time": 86
+    },
+    {
+      "start_time": 86,
+      "title": "Hub and station navigation",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "Remote farm resource pickup",
+      "end_time": 266
+    },
+    {
+      "start_time": 266,
+      "title": "Automated cart loading system",
+      "end_time": 435
+    },
+    {
+      "start_time": 435,
+      "title": "Hub routing and storage",
+      "end_time": 614
+    },
+    {
+      "start_time": 614,
+      "title": "Technical challenges and fixes",
+      "end_time": 826
+    },
+    {
+      "start_time": 826,
+      "title": "Constructing new bolt lines",
+      "end_time": 1036
+    },
+    {
+      "start_time": 1036,
+      "title": "Adding junctions and stations",
+      "end_time": 1204
+    },
+    {
+      "start_time": 1204,
+      "title": "Farm storage integration",
+      "end_time": 1321
+    }
+  ],
+  "tags": [
+    "Wavetech",
+    "redstone",
+    "minecart",
+    "rail"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=UhcGtxQ6K3k"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sBNuqZKa_Lw",
+  "title": "The Wonderful World of Wireless Redstone",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220114",
+  "duration": 1448,
+  "view_count": 520821,
+  "like_count": 23098,
+  "description": "It's about time we formalise the foundations of wireless redstone to make the concept more accessible to the wider technical community. In this video we build conventions for wireless redstone from the ground up to obtain an understanding not only of the mechanic itself but how to apply and communicate the terminology of the subject.\n\nWireless Redstone Discovered by @2No2Name:\nhttps://www.youtube.com/watch?v=hr-twzxs6FM\n\nWorld Download:\nhttps://www.mediafire.com/file/wuvecj872bqzjbi/Wireless_Redstone.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to wireless",
+      "end_time": 96
+    },
+    {
+      "start_time": 96,
+      "title": "Understanding tick mechanics",
+      "end_time": 382
+    },
+    {
+      "start_time": 382,
+      "title": "Using tile sets for timing",
+      "end_time": 607
+    },
+    {
+      "start_time": 607,
+      "title": "Item entity communication",
+      "end_time": 756
+    },
+    {
+      "start_time": 756,
+      "title": "Synchronizing and protocols",
+      "end_time": 1041
+    },
+    {
+      "start_time": 1041,
+      "title": "Protocol design limitations",
+      "end_time": 1165
+    },
+    {
+      "start_time": 1165,
+      "title": "Binary encoded teleportation",
+      "end_time": 1375
+    },
+    {
+      "start_time": 1375,
+      "title": "Reliability and conclusion",
+      "end_time": 1448
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=sBNuqZKa_Lw"
+}

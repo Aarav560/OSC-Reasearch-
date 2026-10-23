@@ -1,0 +1,66 @@
+{
+  "id": "zhsSW1q3t2I",
+  "title": "Trading with the Void",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200910",
+  "duration": 1301,
+  "view_count": 224320,
+  "like_count": 7632,
+  "description": "In this video I team up with the players on Hammer SMP to design the optimal villager trading hall, this hall features new tech to vastly improve the trading meta using endgame features.\n\nShader: BSL v7.2 by Capt Tatsu\n\nSchematic File:\nhttps://www.mediafire.com/file/e0s1p1uhcdrcsvz/Trading_Hall_1.4_%25281.16_Fix%2529.litematic/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 309
+    },
+    {
+      "start_time": 309,
+      "title": "The villager trading problem",
+      "end_time": 378
+    },
+    {
+      "start_time": 378,
+      "title": "Seeking solutions",
+      "end_time": 421
+    },
+    {
+      "start_time": 421,
+      "title": "The end gateway system",
+      "end_time": 557
+    },
+    {
+      "start_time": 557,
+      "title": "Refining the design",
+      "end_time": 713
+    },
+    {
+      "start_time": 713,
+      "title": "Gateway mechanics",
+      "end_time": 859
+    },
+    {
+      "start_time": 859,
+      "title": "Storage cell technology",
+      "end_time": 965
+    },
+    {
+      "start_time": 965,
+      "title": "Central console and workflow",
+      "end_time": 1149
+    },
+    {
+      "start_time": 1149,
+      "title": "Conclusion and showcase",
+      "end_time": 1301
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "villager",
+    "HammerSMP",
+    "infinite trades",
+    "trading hall"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=zhsSW1q3t2I"
+}

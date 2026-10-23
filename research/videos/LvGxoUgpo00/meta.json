@@ -1,0 +1,105 @@
+{
+  "id": "LvGxoUgpo00",
+  "title": "Minecraft's Next Evolution of Automatic Perimeter Design",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230207",
+  "duration": 2124,
+  "view_count": 443706,
+  "like_count": 16143,
+  "description": "Decorative builds in minecraft are always a tradeoff between detail and scale, well not anymore! In this video we introduce the Perimeter Printer, a machine capable of using a redstone computer to automate the process of building enormous but intricately detailed floors for perimeters. We will also cover how you can use an external program to convert a build from inside the game into the printer that can create it automatically.\n\nCredits for the Printer:\nRuthro:       Lead designer\ncubicmetre:      Shulker based ROM\nPunchster & glowsquid:  Floor placer\nxoid, kikugie and mexiscool:  Help with coding\nExample Patterns: \ncookies4you, spey and mrmaxmondays\n\nFiles for the Perimeter Printer:\nhttps://www.mediafire.com/folder/ttvgdl13v9sjh/Perimeter_Printer\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ\n\n00:00 Starting a Printer in Survival\n01:38 History of the Printer\n04:40 Introduction to the Printer\n08:58 Choosing Your Pattern\n10:45 Generating the Printer\n12:08 Setting up the Floor Placer\n15:00 Aligning the Printer\n15:51 Instantwire Building\n17:42 Setting up Block Conveyors\n19:30 Storage Based ROM Setup\n21:39 Priming the Memory\n21:56 Gathering Print Materials\n24:24 Final Checklist Before Starting\n26:57 Starting the Print\n29:00 Setting up for Another Layer\n33:50 Finishing Touches\n34:12 Outro",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Starting a Printer in Survival",
+      "end_time": 98
+    },
+    {
+      "start_time": 98,
+      "title": "History of the Printer",
+      "end_time": 280
+    },
+    {
+      "start_time": 280,
+      "title": "Introduction to the Printer",
+      "end_time": 538
+    },
+    {
+      "start_time": 538,
+      "title": "Choosing Your Pattern",
+      "end_time": 645
+    },
+    {
+      "start_time": 645,
+      "title": "Generating the Printer",
+      "end_time": 728
+    },
+    {
+      "start_time": 728,
+      "title": "Setting up the Floor Placer",
+      "end_time": 900
+    },
+    {
+      "start_time": 900,
+      "title": "Aligning the Printer",
+      "end_time": 951
+    },
+    {
+      "start_time": 951,
+      "title": "Instantwire Building",
+      "end_time": 1062
+    },
+    {
+      "start_time": 1062,
+      "title": "Setting up Block Conveyors",
+      "end_time": 1170
+    },
+    {
+      "start_time": 1170,
+      "title": "Storage Based ROM Setup",
+      "end_time": 1299
+    },
+    {
+      "start_time": 1299,
+      "title": "Priming the Memory",
+      "end_time": 1316
+    },
+    {
+      "start_time": 1316,
+      "title": "Gathering Print Materials",
+      "end_time": 1464
+    },
+    {
+      "start_time": 1464,
+      "title": "Final Checklist Before Starting",
+      "end_time": 1617
+    },
+    {
+      "start_time": 1617,
+      "title": "Starting the Print",
+      "end_time": 1740
+    },
+    {
+      "start_time": 1740,
+      "title": "Setting up for Another Layer",
+      "end_time": 2030
+    },
+    {
+      "start_time": 2030,
+      "title": "Finishing Touches",
+      "end_time": 2052
+    },
+    {
+      "start_time": 2052,
+      "title": "Outro",
+      "end_time": 2124
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "printer",
+    "auto building machine"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=LvGxoUgpo00"
+}

@@ -1,0 +1,82 @@
+[00:00] [Music] goodnight ladies and gents cubic meter
+
+[00:51] here now I've teamed up with the one and only smokey dingo himself who designed one of the most anticipated breakthroughs and blast chamber technology which will see the end of TNT GOP as you may have seen from the introduction while sama technology has come a long way it all started with research done by little mouse into the random nature of TNT looking at the maximum range of blocks that TMT can destroy versus the minimum range that a
+
+[01:25] single piece of TNT can destroy and finding the optimal shape or a blast chamber in order to maximize your efficiency without the blast chamber ceasing using this research the little mouse actually went and built a really nice design for a blast chamber that does 230 blocks for TNT the most amusing part is the way that the TNT is dispensed in my opinion and then of course there's El mangos super efficient designs shown here in the skull of dirt factory and despite what many people
+
+[01:57] believe this blast chamber does not blow up all the time in fact I tested this blast chamber under the same conditions as my blasts chambers and no matter how erratic the feed rate was bloody sky rats as I was saying a mangas design does not explode because it's flawed in fact that's mainly due to play error and the reason I know this is because I have tested this blast chamber continuously under the same apocalyptic conditions that assess my own blast chambers and I
+
+[02:29] simply could not get this to fail but my own blast chamber on the other hand will be in following the channel then yeah you'd know the story but then as the one got 16 snapshots began to come out the blast chamber arms races began but I teamed up with Phil mango to make this insane 270,000 fatal per hour factory using the concepts that I learned from my designs Oh mango and I were pretty confident that we had the best blast chamber for making basil but then suddenly a wild card appears mochi
+
+[03:04] dingo want supper for me and Maggie with this insane five hundred and nineteen thousand basil for our factory achieves an efficiency of five hundred and seventy six blocks per TNT that's more than twice the efficiency of all the previous designs so the obvious solution was to team up with him and make a blast chamber capable of achieving such efficiencies but universally for all farms with a single stream output and that is exactly what we did here this is mine and Smokey's big brain blast
+
+[03:39] chamber it has a chamber with a capacity of about a thousand blocks which allows you to utilize the entire explosion radius of the TNT they've obtained 600 blocks per TNT blast but that into perspective I'm standing here on a stack of TNT and behind me of all the double chests filled with items that you could create using just this stack of TNT in
+
+[04:13] this blast chamber this is 11 double chess in total making about 38,000 items behind us here are all those items in block form imagine how much building you could get done using one of these blasts chambers be a concrete converter yep cobble generator your Basel generator or your tree farm the amount of blocks that
+
+[04:46] you could generate with only a stack of TNT is insane normally I would make a duping variant for my boss chamber designs but in this particular case Mickey and I decided that if you really can't be bothered to craft a tnt required to fuel this thing then it's really not worth building at all but how would you hook up your farms with this blast chamber fortunately for you I've already done this behind me here is is setup you get every
+
+[05:22] kind of lock input that you might need into this blast chamber we have the mangoes Universal tree farm which can do acacia spruce oak birch and jungle but essentially all the basic log types but this set up you can send it straight to the blast chamber and get your logs easy it's also block converter right here just this booth a cobblestone generator
+
+[05:58] and also an option to convert it the basil if I just show you back here this is a cobblestone generator that I borrowed from the mangos original blast chamber and I really like the design but I decided to convert it to basil system so right now just water it's it'll just make all stone and just
+
+[06:34] flip this lever here and these double piston extenders underneath and now you can generate bezel you got your cobblestone and basil in the same machine you this lever here is for the boss chambers shutdown sequence I should inform you that it's not exactly necessary to shut down the bass
+
+[07:07] chamber every time a shutdown sequence only matters if you want to retrieve the last few stacks in the blast chamber otherwise you can just stop start the boss Channel willy-nilly and it really doesn't care point out is that these none of these farms will actually start unless the blast chamber switched on like so
+
+[07:44] I'm just going to start the basil and immediately we start sending Bay's up to the blast chamber and it'll start filling up and then converting the base up to block form so you can easily collect it and store it the blocks just enter the block stream or pile into the center and then get split the four different ways
+
+[08:18] I can switch this off underneath the controls I have a lockout system so I can't accidentally turn on another farm while my else is running I can switch this off it's fine there is there is no input condition which can cause this blast chamber to seize up Moki and I have made absolutely sure of converter switch this on all I have to
+
+[08:54] do that I want to convert into island form don't suggest putting Tintin here because a block conveyors will actually power the blocks but while it is a funny joke this particular setup grab some concrete I to do is stand in this booth I can of items do is hold right click and I'll send the
+
+[09:30] blocks into the boss chamber here I'm using it as a concrete converter we've got that that changed the 1.16 switch off what converter it will lock itself out and I can activate the tree
+
+[10:04] file well let's do grab a sapling and then use a mango so universal tree farm as he instructs in his video guess what else changes in 1.16 it turns out that mangas Truphone relied
+
+[10:38] on some mechanics which ended up being changed one to 16 for example in previous versions this redstone dust in here Bend right here going up into this transparent block would actually power this block us power this piston however we're in one of 16 now and so the redstone needs to directly power the piston up here same issue this restaurant dose is supposed to power this block here airing these
+
+[11:13] double extenders who crushed the leaves and power these pistons properly all you need to do is redirect the redstone like so and the farm should work perfectly fine now take it for a spin now the tree phones active when you do is grab a sapling and you might notice that in 1066 moving actually a lot larger to the
+
+[11:55] client than they were in previous versions now hopefully this gets changed because for a blast chamber like this it can get quite unbearable see working fine now now if you want to shut down any of the farms you have a few options available to you first of all for the tree farm all you need to do is stop placing
+
+[12:27] saplings and walk over to the control panel first of all you can just switch off the farm that's fine all that will happen is any items that have been left inside the chamber will remain there you can try and collect them manually or you can activate a shutdown sequence by flipping this lever here now you can either continue using the same farm that you're using or switch to another farm
+
+[12:59] such as the cobblestone and then use the renewable blocks in order to flush out the items here I'm filling it with cobblestone and the boss Jam is about to fill up once it's full our output signal comes
+
+[13:36] out and it will automatically shut down any of the farms that are running will not allow any of the farms to start up again until look this lever but be aware that arms are activated the instant that you flip this lever will activate the TNT sequence that concludes the basic introduction of this
+
+[14:10] design in case you are still curious about how it works I strongly suggest sticking around for the second half of this video where I explained things in detail otherwise you can stop here down the schematic I'll take a gander at the world download either way I hope you enjoyed this video and find this design useful for achieving the target of zero duping in your own worlds yeah I have a layout to illustrate how the blast chamber works it all starts in the center at the top here where we have our single stream of blocks coming in
+
+[14:45] this stream can go up to 18,000 blocks per hour and is split four ways like with my previous blast chamber designs each of the four paths goes to a separate side where blocks enter the blast chamber starting on the outside and then working their way towards the center to ensure that the entire blast chamber is full we only dispense TNT once all four sides
+
+[15:19] are overflowing with blocks at once all blocks can enter the blast chamber I'll begin to overflow into the overflow pathways Tec that as the blast chamber being full now that presents another issue where these blocks need to go somewhere so they come down to the bottom here the four sides of the overflow I merged together and then split apart again
+
+[15:53] this is to account for the randomness of the TNT because if we did not merge the overflows together one side may have more blocks to fill than another and will therefore take longer before blocks began overflowing meanwhile another side which fills up more quickly begin overflowing early and therefore more blocks will end up in its overflow and this imbalance can build up over time and cause some serious issues with
+
+[16:27] the blast chamber so emerged the full-size together split them apart again that way all full sides of the buffers are evenly distributed here we have the block storage for the buffers he explodes and there is space made available inside the blast chamber the blocks in these buffers will actually get dumped back into the chamber that way no blocks are ever wasted st.
+
+[17:02] quite hilarious that smoke you discovered is that you can actually use T and T in this blast chamber as then use teens here to convert T and T into an item here we have our good friend L Mambo placing down TNT blocks and they're gradually filling up the chamber because the TNT gets converted into Bach v6 form on the push when the explosion happens the TNT can't actually be ignited you see how blast Jam is full and our buffers will begin to fill up
+
+[17:39] with blocks and then once the TNT goes off wasps get dumped back into the chamber now this overflow buffers are actually oversize as you can see anywhere that there is a leaf block are spaces which have not actually been used yet all these spaces has have had a block at some stage every now and then you get stacks of items they get glitched out like this in a moment the
+
+[18:14] chamber will fill up and demonstrate how we actually deal with this we give the entire block column a shake and then a second shake of a good measure and then finally the TNT goes off now because we're using the entire explosion radius of the TNT our items are actually left inside the cavity as a result of the explosion and the honours won't actually
+
+[18:47] make it into the center where they can be collected until blocks into the blast chamber and push them now because the items actually get left inside the blast chamber and will not actually be collected until it is full I have introduced the system here which is the shutdown sequence this will over TNT system and instead forced a chamber to shut down the instant that it's full
+
+[19:23] as you can see chambers filling up again however it will start overflowing start filling up the buffers and then it will shut down by output and then shutting down your block input like so that way you can always turn off the blast chamber and receive your items now
+
+[20:00] this blast chamber likes to run hot and I'll get into more detail as to why exactly lost Hamid likes to run hot when take a look at the blast chamber stats I've ran ten-hour tick warps on this blast chamber running at various speeds due to the system is chamber by nature runs perfectly reliably under any input
+
+[20:36] conditions however there is a slight caveat regards to the efficiency and that it relates to the fact that our items get left in the chamber every time the TNT goes off and as a result can actually despawn if it takes too long or blocks to answer the chamber let's have a look at the stats yeah I've tested it at five different speeds the maximum speed 18,000 per hour off that
+
+[21:11] speed at 9,000 per hour 7,200 per hour this is quite a critical point in the boss Chambers operation and plus two more at 6000 and 4500 the observed rate is the amount of items that I got out from these tests but here we have our input this is our output and you can see the numbers are very close within eighteen thousand and nine thousand however we start to deviate from our input rate as we get to the
+
+[21:47] third test and this is because 7,200 per hour is the exact rate at which it takes five minutes or the 600 block can be left by the TNT to be filled that means at the very moment that the cavity left by the TNT is full and the items are all pushed into the center is also the moment where the islands will begin to de-spawn see this very clearly in the resulting
+
+[22:19] efficiencies running hot the blast chamber actually is a lot more efficient and we're talking always a highly upset inefficient here we have ninety-nine point nine six percent efficiency running at max speed and then nine nine point nine one running it off that speed so nine thousand however the answer that you get to our third test here at 7,200 per hour see that the efficiency drops dramatically and then below that speed it drops even further and it becomes effectively unusable so beware any farms that you hook up to this blast
+
+[22:54] chamber should be faster than 7,200 blocks per hour and I can assure you I've run several tests very close to these speeds just above 7,200 per hour and you'll be looking at effectively this efficiency here thank you very much for watching this Boston was a massive project in the works for many weeks so I'd like to give a special thanks smoky dog whose expertise was invaluable for making this machine possible as well as little mouse who initiated the field of blast chamber
+
+[23:28] tech I'm surfing there are still more breakfast to be made I look forward to exploring them with you but for now over inside craft we're getting ready to launch a new one door 16 survival patreon server which I really look forward to so I can use some of these desires and survival so I'll see you then
+

@@ -1,0 +1,82 @@
+{
+  "id": "mwTi076OVwk",
+  "title": "The INSANE Engineering of Minecrafts Largest Shulkerfarm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211213",
+  "duration": 2472,
+  "view_count": 274325,
+  "like_count": 8453,
+  "description": "It's finally done! Wavetech's ultimate shulker farm offers a universally compact portal based shulker farm module with the ability to expand the rates of a shulker farm indefinitely.\n\nIntro by The Dark Flame Master, check out his music on Looperman:\nhttps://www.looperman.com/users/tracks/1801113\n\nWorld Download:\nhttps://www.mediafire.com/file/rb9msbzuo23r90h/Ultimate_Shulker_Farm.zip/file\n\nThe Introduction combines Seus PTGI HRR 2.1 developed by Sonic Ether:\nhttps://www.sonicether.com/seus/\nWith a high resonlution texture pack, Stratum, developed by Continuum Graphics:\nhttps://continuum.graphics/\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 168
+    },
+    {
+      "start_time": 168,
+      "title": "Farm Overview",
+      "end_time": 435
+    },
+    {
+      "start_time": 435,
+      "title": "Farm Rates",
+      "end_time": 741
+    },
+    {
+      "start_time": 741,
+      "title": "Trash Muppets",
+      "end_time": 948
+    },
+    {
+      "start_time": 948,
+      "title": "Module Construction",
+      "end_time": 1325
+    },
+    {
+      "start_time": 1325,
+      "title": "Module Tiling",
+      "end_time": 1589
+    },
+    {
+      "start_time": 1589,
+      "title": "Wiring the Farm",
+      "end_time": 1781
+    },
+    {
+      "start_time": 1781,
+      "title": "Looting Mechanics",
+      "end_time": 1961
+    },
+    {
+      "start_time": 1961,
+      "title": "Storage and Setup",
+      "end_time": 2118
+    },
+    {
+      "start_time": 2118,
+      "title": "Chunk Loading",
+      "end_time": 2247
+    },
+    {
+      "start_time": 2247,
+      "title": "Farm Operation",
+      "end_time": 2407
+    },
+    {
+      "start_time": 2407,
+      "title": "Conclusion",
+      "end_time": 2472
+    }
+  ],
+  "tags": [
+    "mobfarm",
+    "shulker shucker",
+    "shulker shells",
+    "minecraft",
+    "redstone",
+    "build timelapse"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=mwTi076OVwk"
+}

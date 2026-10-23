@@ -1,0 +1,45 @@
+{
+  "id": "dkiAOyMr2TQ",
+  "title": "Experimenting with Quantum Entangled Items in Minecraft",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211110",
+  "duration": 644,
+  "view_count": 79715,
+  "like_count": 3761,
+  "description": "In preparation for projects on the Wavetech server, we're going to make our lives easier using some quantum mechanics in Minecraft. Quantum Entangled item stacks allow you to manipulate items inside the inventory of the player from within storage tech machines! This leads to a whole array of possibilities.\n\nUpdate Suppressor Designed by JKM and JoaBro:\nhttps://www.mediafire.com/file/dz9ixpmnmk2pd1t/The_simplest_update_suppressor_supressor.litematic/file\n\nItem Shadowing by Fallen Breath and PR0CESS:\nhttps://youtu.be/i8_FPyn20ns\nhttps://www.youtube.com/watch?v=mTeYwq7HaEA\n\nUpdate Suppression by Xcom and Kayleigh:\nhttps://www.youtube.com/watch?v=IJhZpK-8p54&t=1867s\n\nCrafting Station used in the video:\nhttps://www.mediafire.com/file/179xf4kg6q5zmg2/8gt_Crafting_Station.litematic/file\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction and preparation",
+      "end_time": 126
+    },
+    {
+      "start_time": 126,
+      "title": "Update suppressor mechanics",
+      "end_time": 303
+    },
+    {
+      "start_time": 303,
+      "title": "Building the item shadow station",
+      "end_time": 415
+    },
+    {
+      "start_time": 415,
+      "title": "Implementing item shadowing",
+      "end_time": 586
+    },
+    {
+      "start_time": 586,
+      "title": "Final setup and conclusions",
+      "end_time": 644
+    }
+  ],
+  "tags": [
+    "fear the shadow",
+    "storage tech",
+    "minecraft",
+    "wireless item transfer"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=dkiAOyMr2TQ"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "eya_Q1TDG2Y",
+  "title": "Minecrafts Ultimate Omnifarm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20221107",
+  "duration": 1235,
+  "view_count": 168871,
+  "like_count": 7056,
+  "description": "It's time to pay off an old debt to Xisuma after I crushed his spirits with my first ever blast chamber design. In this video we look at the ultimate omnifarm featuring concrete converters, cobble and basalt generators, and a universal tree farm all in the one compact unit. We also look at the amazing utilities such as fault detection and diagnostic systems which make this farm ideal for players who are sick and tired of having to fix things they don't understand.\n\nOmnifarm Schematic, includes 4 variants within the sub regions of the schematic:\nhttps://www.mediafire.com/file/cws9alixnq0pg1z/Dustless_Omnifarm_and_Smart_Blast_Chamber.litematic/file\n\nXYYan's Compact UTF:\nhttps://youtu.be/FCyojvMjcRI\n\nFloppy's Dustless Smart Piston:\nhttps://youtu.be/6AFK9UxF9v0\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Old blast chamber failures",
+      "end_time": 69
+    },
+    {
+      "start_time": 69,
+      "title": "Designing a reliable system",
+      "end_time": 141
+    },
+    {
+      "start_time": 141,
+      "title": "Fault detection mechanism",
+      "end_time": 200
+    },
+    {
+      "start_time": 200,
+      "title": "Item filter reliability",
+      "end_time": 294
+    },
+    {
+      "start_time": 294,
+      "title": "Multi-farm complex design",
+      "end_time": 387
+    },
+    {
+      "start_time": 387,
+      "title": "Reducing lag with dustless",
+      "end_time": 435
+    },
+    {
+      "start_time": 435,
+      "title": "Repairing the blast chamber",
+      "end_time": 508
+    },
+    {
+      "start_time": 508,
+      "title": "Fixing block conveyors",
+      "end_time": 571
+    },
+    {
+      "start_time": 571,
+      "title": "Schematic verification",
+      "end_time": 699
+    },
+    {
+      "start_time": 699,
+      "title": "Tree farm malfunction",
+      "end_time": 858
+    },
+    {
+      "start_time": 858,
+      "title": "Operating the Omni farm",
+      "end_time": 1032
+    },
+    {
+      "start_time": 1032,
+      "title": "Advanced farm features",
+      "end_time": 1150
+    },
+    {
+      "start_time": 1150,
+      "title": "Stripping logs automatically",
+      "end_time": 1235
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "cobblestone generator",
+    "basalt generator",
+    "tree farm",
+    "concrete converter",
+    "blast chamber"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=eya_Q1TDG2Y"
+}

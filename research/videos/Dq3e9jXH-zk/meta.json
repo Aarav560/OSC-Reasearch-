@@ -1,0 +1,76 @@
+{
+  "id": "Dq3e9jXH-zk",
+  "title": "Let's Build a Moss Farm (1.17)",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210206",
+  "duration": 1026,
+  "view_count": 28206,
+  "like_count": 1075,
+  "description": "A bit of friendly competition between Scicrafters and suddenly we have ourselves the moss farm war. Potentially a self sustaining moss farm provided mojang doesn't nerf it severly.\n\nSchematic:\nhttps://www.mediafire.com/file/ytptgm93114jul7/Self_Sustaining_Moss_Farm.litematic/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to moss farming",
+      "end_time": 69
+    },
+    {
+      "start_time": 69,
+      "title": "Designing the stone generator",
+      "end_time": 171
+    },
+    {
+      "start_time": 171,
+      "title": "Overcoming generation issues",
+      "end_time": 240
+    },
+    {
+      "start_time": 240,
+      "title": "Moss generation mechanics",
+      "end_time": 335
+    },
+    {
+      "start_time": 335,
+      "title": "Detection and timing systems",
+      "end_time": 431
+    },
+    {
+      "start_time": 431,
+      "title": "Finalizing the farm circuits",
+      "end_time": 555
+    },
+    {
+      "start_time": 555,
+      "title": "Optimizing for higher speed",
+      "end_time": 618
+    },
+    {
+      "start_time": 618,
+      "title": "Advanced overdrive mechanics",
+      "end_time": 732
+    },
+    {
+      "start_time": 732,
+      "title": "Instant repeater integration",
+      "end_time": 865
+    },
+    {
+      "start_time": 865,
+      "title": "Collection system and results",
+      "end_time": 944
+    },
+    {
+      "start_time": 944,
+      "title": "Final farm review and summary",
+      "end_time": 1026
+    }
+  ],
+  "tags": [
+    "cave and cliffs",
+    "1.17",
+    "redstone",
+    "scicraft",
+    "tutorial"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=Dq3e9jXH-zk"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kYt2or0ukf8",
+  "title": "Let's Build an Industrial Autocrafter",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200812",
+  "duration": 1304,
+  "view_count": 9535,
+  "like_count": 315,
+  "description": "We've all heard of a let's play, but how about a let's build? Too often have technical players just showed off a design as a finished product. So no wonder the general community think we are just wizards who make these contraptions appear out of thin air. So hopefully this can offer some insight into the engineering process behind the machines.\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction and problems",
+      "end_time": 86
+    },
+    {
+      "start_time": 86,
+      "title": "Current design analysis",
+      "end_time": 384
+    },
+    {
+      "start_time": 384,
+      "title": "Designing a faster system",
+      "end_time": 588
+    },
+    {
+      "start_time": 588,
+      "title": "Rebuilding the crafter",
+      "end_time": 864
+    },
+    {
+      "start_time": 864,
+      "title": "Advanced features and plans",
+      "end_time": 1304
+    }
+  ],
+  "tags": [
+    "redstone",
+    "crafting",
+    "carpet mod"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=kYt2or0ukf8"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "1k6O6JuJyvM",
+  "title": "2x2 Autocrafter and Synchronized Dropper Mechanics",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200418",
+  "duration": 1194,
+  "view_count": 4530,
+  "like_count": 110,
+  "description": "In this video I am excited to showcase a universal 2x2 autocrafter which uses synchronized dropper mechanics to achieve extremely fast speeds.\n\nI will be showcasing some more designs for different recipes so let me know which ones you would like tutorials for.",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Universal 2x2 crafter",
+      "end_time": 72
+    },
+    {
+      "start_time": 72,
+      "title": "Shulker box loaders",
+      "end_time": 123
+    },
+    {
+      "start_time": 123,
+      "title": "Directionality and logistics",
+      "end_time": 252
+    },
+    {
+      "start_time": 252,
+      "title": "Balancing capacity",
+      "end_time": 384
+    },
+    {
+      "start_time": 384,
+      "title": "Practical examples",
+      "end_time": 593
+    },
+    {
+      "start_time": 593,
+      "title": "Dropper update mechanics",
+      "end_time": 743
+    },
+    {
+      "start_time": 743,
+      "title": "Configuring update order",
+      "end_time": 915
+    },
+    {
+      "start_time": 915,
+      "title": "System analysis and wrap-up",
+      "end_time": 1194
+    }
+  ],
+  "tags": [
+    "Redstone",
+    "Crafting"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=1k6O6JuJyvM"
+}

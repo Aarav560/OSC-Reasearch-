@@ -1,0 +1,59 @@
+{
+  "id": "o011aLiSo54",
+  "title": "Let's Build an Instant Kill Death Ray",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220401",
+  "duration": 767,
+  "view_count": 281322,
+  "like_count": 12330,
+  "description": "It's April fools day, so time to tap into our inner trickster and make a contraption to be the dread of all players who come upon it. In this video we investigate how we can make the most effective area denial weaponry in minecraft, all from a basic idea that, well, doesn't work out the way we expected.\n\nMr Scratchcat's 280 TnT cannon:\nhttps://youtu.be/ebCQ05W_TzE\n\nWorld Download:\nhttps://www.mediafire.com/file/9s0v5pw6afl5sfe/instant_death.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The instant kill portal idea",
+      "end_time": 153
+    },
+    {
+      "start_time": 153,
+      "title": "Switching to TNT mechanics",
+      "end_time": 204
+    },
+    {
+      "start_time": 204,
+      "title": "Building the arrow aligner",
+      "end_time": 262
+    },
+    {
+      "start_time": 262,
+      "title": "Testing the propulsion system",
+      "end_time": 351
+    },
+    {
+      "start_time": 351,
+      "title": "Fixing the efficiency issues",
+      "end_time": 456
+    },
+    {
+      "start_time": 456,
+      "title": "Embracing random spread",
+      "end_time": 513
+    },
+    {
+      "start_time": 513,
+      "title": "Designing the final weapon",
+      "end_time": 630
+    },
+    {
+      "start_time": 630,
+      "title": "Final testing and results",
+      "end_time": 767
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "tnt cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=o011aLiSo54"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "fRZF2sD6WEI",
+  "title": "Introducing the Infinibore",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230605",
+  "duration": 1228,
+  "view_count": 352509,
+  "like_count": 14009,
+  "description": "After some time away we're back, and with something very special. A truly automatic mining machine that chops through water and lava like a V8 AU Falcon on the interstate. In this video we make our first demonstration of the power of TnT warping technology with a cannon to put tunnel bores to shame. A cannon that can blast out a hole to infinity from a standstill with minimal maintenance or supervision.\n\nIntro track is Vinyl Sunset by The Dark Flame Master:\nhttps://www.looperman.com/tracks/detail/199476\n\nDark made a much more compact and simpler variant of this system on his channel:\nhttps://youtu.be/5hq4TwvVp6o\n\nWorld download of the new and improved design, be sure the check out the video about the new system to learn more about its improvements, BE AWARE that the cannon WILL NOT work on different editions of the game such as paper/spigot, purpur or Bedrock edition::\nhttps://www.mediafire.com/file/9fuqr80k22316ay/Ultimate_Infinibore.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The infinity ball concept",
+      "end_time": 124
+    },
+    {
+      "start_time": 124,
+      "title": "Understanding the technology",
+      "end_time": 204
+    },
+    {
+      "start_time": 204,
+      "title": "Chunk alignment setup",
+      "end_time": 306
+    },
+    {
+      "start_time": 306,
+      "title": "Entity separator mechanics",
+      "end_time": 408
+    },
+    {
+      "start_time": 408,
+      "title": "Control platform settings",
+      "end_time": 535
+    },
+    {
+      "start_time": 535,
+      "title": "Optimization and materials",
+      "end_time": 720
+    },
+    {
+      "start_time": 720,
+      "title": "Batch processing efficiency",
+      "end_time": 819
+    },
+    {
+      "start_time": 819,
+      "title": "Chunk loading strategies",
+      "end_time": 918
+    },
+    {
+      "start_time": 918,
+      "title": "Running the machine",
+      "end_time": 1099
+    },
+    {
+      "start_time": 1099,
+      "title": "Results and future use",
+      "end_time": 1228
+    }
+  ],
+  "tags": [
+    "tunnel bore",
+    "redstone",
+    "mining machine",
+    "minecraft",
+    "tnt cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=fRZF2sD6WEI"
+}

@@ -1,0 +1,78 @@
+[00:00] good eh ladies and gents cubic meter here with a video covering the basics of Auto crafting so a simple setup here to demonstrate some of the mechanics involved I'm of course using the auto crafting table feature in carpet mod I'll start by filling up this crafting table here so what happens is the crafting table gets changed into an inventory like a chest so you can store items in it and containers such as hoppers and droppers can move items in
+
+[00:35] and out of the crafting table the crafting tables will fill and empty in the same direction as writing which is start in the top left move across to the right then go to the next row as you can see so it's fairly intuitive as each slot gets a single item in it a cross
+
+[01:11] spawning signal strength will be read by the comparator so you get zero to nine slots gets translated to a range of 0 to 15 signal strength and that way you can always monitor how many slots are filled and this is invariant to the amount of items in a single slot as you can see another detail I should point out so if you have the same item entering a
+
+[01:46] crafting table repeatedly instead of stacking like it would in a normal inventory the item will move to the next slot in the crafting table this is an important point when considering whether or Dirk rotting is overpowered or not merging is concerned that if they introduce auto crafting into the vanilla game it would remove the player from the process of crafting however that is
+
+[02:20] definitely not the case because say for example either player wanted a stack of pistons I'll just walk up to the table and do that end boom stack of pistons instantly in order to do this of autocrossing you'll need some complicated machine with some limited speed because we can't stack items automatically like the player can and so it actually becomes prohibitive for the player to use order crafting for small scale applications but what if either
+
+[02:55] player now wanted to craft an entire box of Pistons well now what happens is we reach a limitation regarding the players inventory the player cannot actually hold enough items to craft an entire soccer box with piston in a single operation instead what the player will have to do is do a repeated process of gathering resources from some storage and using the crafting table and just to
+
+[03:30] demonstrate I'm going to craft entire soccer walks of business right here [Music] and with my goodness there was an entire
+
+[05:09] shocker box of pistons manually crafted in just six minutes just for reference the general auto craft over on the scale box server could do that same operation in five minutes although obviously I'm not using the optimal setup here just a bunch of shocker boxes I'd immediately manually search the inventories there are auto crossing systems which will automatically bring the items to the player for crafting which can obviously do this a lot faster but in terms of Auto crafting it's just a generally more
+
+[05:43] satisfying experience being able to scale processes such as crafting so that for small scale player interaction is the better option and for large scale just avoiding the case of say for example I wanted to craft an entire double chest of chakra boxes or Pistons that would stop begin to become prohibitive requiring the player to do so I'd much rather just get double chests of chakra boxes of each
+
+[06:15] ingredient put that in a machine and let it run so now we have a basic understanding of how Auto crafting works in the carpet mod we can start using it for some useful operations this is a very simple one white Tyler ball item splitter so some items actually have multiple outputs for each input such as block of iron like a gold bone bone blocks etc and so what will happen is if
+
+[06:51] I put a stack of these in one block of iron obviously makes the nine iron ingots we're feeding in blocks of iron at one times hopper speed but we're taking the ingots out at all so one times hopper speed and so in order to balance the input and output we need a system that detects that the crafting table is full and looks the input and so that's exactly what this piston does the instant this comparator detects that there is an item in in the crafting
+
+[07:25] table it will lock preventing any more items from falling in if it does not do this it will just overflow and the recipe doesn't work and instead it just starts pulling out the identity input so an important thing to note is this comparator will only read items in these nine slots it does not care about items in the output slot so I can demonstrate
+
+[07:58] this quickly by putting a single iron ingot in as you can see the instant we start pulling from the output when you can know like a get back our iron block and these actually stay in the crafting table however the comparator does not read them and this is interesting because we can actually input the next item in the crafting slot while the
+
+[08:35] output is being emptied so we have just seen a very simple item splitter here is an item combiner now this will only work for combining up to nine items so for making blocks of bone and the various resource box so just compacta fiying everything so I can demonstrate quickly say you're very rich and what will
+
+[09:11] happen is the instant this gets the full signal strength it will then allow this hopper to pull the items out because otherwise this hopper underneath can actually pull items out of the crafting grid so if I remove this redstone block and unlock the hopper as you can see it inputs our resources and also just pulls them straight back out again but if you keep it locked it will wait until the table
+
+[09:49] is full and then pull out the full resource block now if you want to do single item recipes that combine the items however in a way that they don't use the full free by free grid you will need to use a system such as this so this will automatically balance both the input and the output this is very useful for recipes such as combining sugarcane
+
+[10:26] to make paper because as you can see you need one to free sugarcane however this also makes free paper so you need to balance both the input and output so if I just put some sugarcane in here what it does it will wait until it has free slots and this is achieved by using a variable signal strip to activate these observers so free slots in the crafting
+
+[11:02] table is equal to 1/6 of F of 5 so using this composter and comparator I keep the signal strength at 4 over the instant that goes up to 5 the system changes and it will lock the input unlock the output and take out the paper once the papers been started taking out it removes the artists and the input and it just keeps going balancing the input and output so continuously craft paper
+
+[11:34] so let's now have a look at some of the uses for these auto crafters now book being one wide table means that if one isn't good enough to handle the output or one of your farms then just simply stack them up next to each other and that's what I've done here I've got this awesome sugarcane farm that L manga designed which uses the flying machine that acts like a combine harvester and just gradually harvest the sugarcane as it
+
+[12:07] grows that gets collected by these hopper carts which then sends the sugarcane to these auto crafters and these two automatically turn it into paper the paper gets sent to this water stream where it gets filtered out you can probably already guess what's going on paper and gunpowder here I've got this is a special auto crafter which
+
+[12:44] will automatically combine two different item types in announcing sequence here I've got it set up to make rockets today as you can see gunpowder and paper get fired into the table in the same gain tick and you make free Rockets and this will make about ten thousand Rockets per hour which is a lot so if you have an issue with using a light raise on your
+
+[13:19] SMP server this is definitely the kind of setup for you so to get gunpowder all you need is a simple creeper farm but make sure you balance the output I've gunpowder the paper so you're not wasting anything and you automatically making yourself rockets so just taking a closer look at the synchronous dropper
+
+[13:52] auto crafter I have here this is a one wide tolerable design that can handle two different items it will combine them in an alternating pattern in order to handle two different types of items need to make sure that you have both of the items in order to start crafting which is why there's an N gate system here as you can see it has paper but it does not have gunpowder if I give this gunpowder quickly this comparator reads that it
+
+[14:28] activates this system here this piston fires pulling a block up allowing this comparator to read that it has paper that the a case is torch allowing the clock to run the timing of this clock varies depending on what you're crafting in my case here I am crafting fireworks which for each pulse from the clock we craft three items so in order to ensure that the hopper can keep up with that
+
+[15:05] our clock needs to send a pulse every one third of the hoppers collection cycle so I've got a 12-game tick clock here which is multiplied by two by the binary counter making 24-game ticks which is eight-game ticks is a Hoppus collection cycle multiplied by three is twenty-four game ticks meaning this will craft fireworks at one time popper speed now
+
+[15:41] there is another interesting application for this particular design it can in fact craft TNT automatically if the two items are gunpowder and sand and we actually have that set up over on the survival sky block server so we can just pop over and have a look at that Here I am over on the Skywalk survival world as you can see we've been quite busy here adding new transportation routes and in
+
+[16:15] fact after the first piston bolt has been built here heading out to where mangos been developing all the B projects well we're interested in is our creeper and TNT farm so here is another Rock Factory and over here is our creeper farm and this enormous Tower you see here this is the sand farm and that actually crashes my client because its
+
+[16:50] weight produces way too much sand so I won't be turning that on you might cover that at a later date well what I want to demonstrate is these guys these are the one whitetail ball TNT crafters we have three of them to handle the output of the creeper farm which is about 27,000 gunpowder per hour and so if I come up here got a box
+
+[17:25] little sand this should already be full of gunpowder all I need is some sand so once it detects that it has enough of both items it gets to work so I'll just show you quickly inside of the crafting table it will inject gunpowder and sand at the same time at
+
+[17:59] the very end because gunpowder is always the first item it will continue continuously alternate and then the very last item because there's an odd number of slots a nine the very last slot will also be a gunpowder and what will happen is the dispensed the dropper pushing the sand it will get to this slot and the cocking tables full and so the dropper will just not push the item at all which is quite nice so you can get this out an ink pattern for
+
+[18:34] the TNT and it crafts automatically so of course having this on your server is really good for moving away from TNT chipping because it's obviously a little bit cheaty and having access to things like movable tile to these makes using dispensers with TNT a much better option so you'll see on all our new projects we always use dispensed TNT crafted with using this system here so it's just on
+
+[19:12] my way to demonstrate another case where we've found the simple auto crafters be very useful and for I should just appreciate some of the work that one of our members Helga has put into upgrading the transportation hubs she's added heaps of new ice roads and these color-coded gateways tell us where to go what we're looking for is our new with a score farm and this is it has in fact become our new source of bone meal for
+
+[19:45] the server and this farm features a sorting system which will automatically craft up all the output items that we want such as bones get turned into bony mill and into bone blocks and coal get automatically compacted into coal box so here is the sorting system as you can see there are a lot of hoppers here in fact most of
+
+[20:20] these are just bones because one of the main issues with the item splitter so got a simple combined system this is the ironist splitter moment that an item enters this crafting table it will do power this torch and with mobile tanta tees it'll actually pull the hopper away so enough it's items into the cracking table so as soon as a bone comes through it will wait until it gets removed from the crafting table in the form of bone
+
+[20:54] meal before sending another one and the issue of this is that that means that because each bone produces free bone meal the system will run at one third hopper speed so we need three times the amount of bone filters in order to keep up with the flow of items however this is offset by the fact that this farm
+
+[21:28] will output the bone mill in the form of bone blocks so that's the second stage here where the bone meal just gets compacted instant this gets the full signal strength it will pull in hopper collect the bone block and then drop it into the item collection at the end here we have some filters for coal and these are simply just the compactor
+
+[22:02] automatically compact everything it's a coal box so these are just some examples of the uses for takata's as you can see they are very handy automatically handling outputs of farms you know and transforming items into a form where they are more usable so thank you very much for watching this has been a video simply introducing some of the basic principles of the Otto crafting along
+
+[22:35] with some simple designs that can help out with your various projects so I hope you found some of these useful and I'll be implementing these in some of your projects I will be covering some more sophisticated designs and later videos such as the synchronous dropper crafters which can handle various different items to buy to free by free crafting recipes along with keeping items in order crafting specific recipes and so forth
+
+[23:11] so if you want to be notified or when I do those videos be sure to subscribe and I'll see you then good bye
+

@@ -1,0 +1,86 @@
+{
+  "id": "1pHXCvc0j-I",
+  "title": "How to Build the Ultimate Storage",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20251121",
+  "duration": 1825,
+  "view_count": 290392,
+  "like_count": 14359,
+  "description": "It's time for that video again, you know what I mean. Storage tech is changing and I have spent months researching advanced methodologies to help classify and organize the items in Minecraft's ecosystem. We introduce powerful tools that have the potential to put designing the ultimate storage into the hands of the average person. Elevating our individual ambitions for storage tech by helping the player make important decisions towards making their ultimate storage a reality.\n\nMinecraft Item Set Builder:\nhttps://mis-builder.cubicmetre.net/\n\nKikugie's Statfetch mod:\nhttps://modrinth.com/mod/statistics-fetcher\n\nModified Litematica Fork for Material List Features:\nhttps://github.com/cubicmetre/stormatica-extension/releases/tag/1.21.10\n\nDownloads for the Storage and Item layouts:\nhttps://www.mediafire.com/folder/zgfhe35qurdt2/Golem_MIS\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to Golem Sorting",
+      "end_time": 80
+    },
+    {
+      "start_time": 80,
+      "title": "Golem AI behavior",
+      "end_time": 244
+    },
+    {
+      "start_time": 244,
+      "title": "Item interaction mechanics",
+      "end_time": 331
+    },
+    {
+      "start_time": 331,
+      "title": "Analyzing sorting speeds",
+      "end_time": 400
+    },
+    {
+      "start_time": 400,
+      "title": "Experimental data and layouts",
+      "end_time": 578
+    },
+    {
+      "start_time": 578,
+      "title": "The ultimate sorting design",
+      "end_time": 752
+    },
+    {
+      "start_time": 752,
+      "title": "Building and setting up filters",
+      "end_time": 892
+    },
+    {
+      "start_time": 892,
+      "title": "Deploying the copper golems",
+      "end_time": 942
+    },
+    {
+      "start_time": 942,
+      "title": "Item clustering theory",
+      "end_time": 1081
+    },
+    {
+      "start_time": 1081,
+      "title": "Item set builder web app",
+      "end_time": 1351
+    },
+    {
+      "start_time": 1351,
+      "title": "App features and optimization",
+      "end_time": 1594
+    },
+    {
+      "start_time": 1594,
+      "title": "Gathering materials and logistics",
+      "end_time": 1761
+    },
+    {
+      "start_time": 1761,
+      "title": "Final setup and conclusion",
+      "end_time": 1825
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "storage room",
+    "item sorter",
+    "copper golem"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=1pHXCvc0j-I"
+}

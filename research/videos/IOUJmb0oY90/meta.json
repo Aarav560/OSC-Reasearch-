@@ -1,0 +1,50 @@
+{
+  "id": "IOUJmb0oY90",
+  "title": "Orbital strike Cannon totorial",
+  "channel": "Cylist ",
+  "channel_url": "https://www.youtube.com/channel/UCfcEfupF_6f4lppvcMzk46w",
+  "upload_date": "20251012",
+  "duration": 441,
+  "view_count": 77055,
+  "like_count": 1323,
+  "description": "",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Gathering materials",
+      "end_time": 59
+    },
+    {
+      "start_time": 59,
+      "title": "Configuring structure block",
+      "end_time": 82
+    },
+    {
+      "start_time": 82,
+      "title": "Building the structure",
+      "end_time": 146
+    },
+    {
+      "start_time": 146,
+      "title": "Setting up the cannon",
+      "end_time": 210
+    },
+    {
+      "start_time": 210,
+      "title": "Programming command blocks",
+      "end_time": 306
+    },
+    {
+      "start_time": 306,
+      "title": "Implementing strike mechanics",
+      "end_time": 355
+    },
+    {
+      "start_time": 355,
+      "title": "Finalizing and testing",
+      "end_time": 441
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=IOUJmb0oY90"
+}

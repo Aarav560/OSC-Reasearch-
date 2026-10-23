@@ -1,0 +1,59 @@
+{
+  "id": "YkcGbCGz4JM",
+  "title": "Let's Build a High Efficiency Dirt Farm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20221201",
+  "duration": 1939,
+  "view_count": 341239,
+  "like_count": 10992,
+  "description": "The omnifarm will encompass all farms in minecraft, well, not for a while anyway. In the meantime lets begin our journey to implement one of minecrafts most convoluted block conversion mechanics by creating a super efficient dirtfarm. In this video we take a close look at all the quirks and challenges in building a technically challenging dirt farm.\n\nWorld Download:\nhttps://www.mediafire.com/file/e9nnurbsi4an8b1/Efficient_Dirtfarm.zip/file\n\nDrakePHOSE and his work on blast chamber compatible farms:\nhttps://www.youtube.com/watch?v=HMmNuno43bI&t=436s\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Farm update and goals",
+      "end_time": 63
+    },
+    {
+      "start_time": 63,
+      "title": "Dirt generation analysis",
+      "end_time": 358
+    },
+    {
+      "start_time": 358,
+      "title": "Designing the tree farm",
+      "end_time": 620
+    },
+    {
+      "start_time": 620,
+      "title": "Podzol extraction mechanics",
+      "end_time": 921
+    },
+    {
+      "start_time": 921,
+      "title": "Optimization and throughput",
+      "end_time": 1126
+    },
+    {
+      "start_time": 1126,
+      "title": "Stone generation and cleanup",
+      "end_time": 1332
+    },
+    {
+      "start_time": 1332,
+      "title": "Timing and automation",
+      "end_time": 1702
+    },
+    {
+      "start_time": 1702,
+      "title": "Final build and testing",
+      "end_time": 1939
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "dirt farm"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=YkcGbCGz4JM"
+}

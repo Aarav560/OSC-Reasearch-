@@ -1,0 +1,52 @@
+{
+  "id": "9yiPpXS--as",
+  "title": "Intelligent TnT Efficient Blast Chamber",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210701",
+  "duration": 1075,
+  "view_count": 69622,
+  "like_count": 3351,
+  "description": "It's exactly a year since I posted my first decent video about the maximum efficiency blast chamber. To celebrate I decided to dive back into the world of blast chambers and develop a brand new, intelligent blast chamber with simple self diagnostics allowing it to detect when something is wrong, shut down then alert the player.\n\nLitematics:\nNon-Duping:\nhttps://www.mediafire.com/file/qisdw3bgnvqxucf/m%25C2%25B3%2527s_New_and_Improved_Blastey_%2528Non-Duping%2529.litematic/file\nhttps://www.mediafire.com/file/1tgb3cu4l2zcddv/m%25C2%25B3%2527s_New_and_Improved_Standalone_%2528Non-Duping%2529.litematic/file\n\nDuping:\nhttps://www.mediafire.com/file/05q53vlnbl0i4cg/m%25C2%25B3%2527s_New_and_Improved_Blastey_%2528Duping%2529.litematic/file\nhttps://www.mediafire.com/file/p2zyp06ed6q0zi4/m%25C2%25B3%2527s_New_and_Improved_Standalone_%2528Duping%2529.litematic/file\n\n@Ilmango's blast chamber:\nhttps://www.youtube.com/watch?v=ACaEa-TE1E8&t=308s\n\nWorld Download:\nhttps://www.mediafire.com/file/yxhkeo4caudp7kt/New_and_Improved_Blast_Chamber.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 18
+    },
+    {
+      "start_time": 18,
+      "title": "Design",
+      "end_time": 188
+    },
+    {
+      "start_time": 188,
+      "title": "Block Shaper",
+      "end_time": 369
+    },
+    {
+      "start_time": 369,
+      "title": "Testing",
+      "end_time": 840
+    },
+    {
+      "start_time": 840,
+      "title": "Blast Chamber Design",
+      "end_time": 1023
+    },
+    {
+      "start_time": 1023,
+      "title": "Outro",
+      "end_time": 1075
+    }
+  ],
+  "tags": [
+    "cobblestone generator",
+    "concrete converter",
+    "TnT blast chamber",
+    "redstone",
+    "Scicraft",
+    "Minecraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=9yiPpXS--as"
+}

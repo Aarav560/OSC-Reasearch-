@@ -1,0 +1,40 @@
+[00:00] g'day ladies and gents cubic meter here over the past week we've seen a range of shulker farm designs marching from the infinite ocean of youtube content and i've been working frantically to keep my designs up to date but the problem is there's not much to improve upon we've already obtained the fastest possible individual module for a shulker farm which produces exactly 523 shells per hour that's a shocker box every 14 seconds which really should be sufficient for most players but of course we want to push the limits of what is
+
+[00:34] possible in this game but let's go on a journey to see just how far we can push this shulker breeding mechanic to start with we need to simply add more modules it turns out that it's very easy to scale up the overworld side of the portal base farm the portal-based system loses shulkers very rarely in fact it will take on average 7.5 hours for each module to lose a shocker and have to replace it therefore we can rely on a single centralized shulker buffer
+
+[01:07] to restock all of our additional modules and stacking the modules vertically we obtain a very elegant solution for distributing the shulkers if i go down to this third module and punch out the shulker the module has its own lost shulker detection meaning if this circuit was to unpower due to a shocker being lost in this module it'll power this torch carrying this line
+
+[01:40] pushing in this powered rail the second component we utilize is this bubble column the dispenser picks up the water source block in a bucket forcing the bubble column to collapse we can detect this at the very top to activate this system dispensing a minecart to pick up a new shulker and immediately sending this case shulker into the module that is requesting it so if i were to simulate this module
+
+[02:12] requesting a shulker like so we can see a new one gets dropped down almost immediately and once that shock is in it should reactivate this circuit disabling the request an added bonus is that we can also use the bubble column to deliver the minecarts back to the top so the farm is easy to expand in the overworld but unfortunately this is not the case for the nether collection system due to the increased traffic of
+
+[02:45] minecarts in this collection system we've had to ramp up the amount of rails significantly looking back at the same setup for the single module we can see that far less minecarts are needed and of course with more minecarts means more congestion which means more probability of the cards jamming fortunately with a lot of design adaptations i found a layout which works reliably most of the time however if you brutally load and unload the system for long
+
+[03:17] enough you'll find that it does eventually just fail okay it didn't fail that time i think we need to push it harder there we go we finally got it to fail as you can clearly see the system is extremely resistant to unloading fortunately all we need to do is kill the minecarts put them back into the distribution system so the overworld piece of cake but the
+
+[03:50] nether drowning in minecarts nevertheless with this very simple to build five model design you obtain about 2 500 shells per hour this is cool but we can push it way further i present the mother of all shulker farms 84 breeding modules supplemented by its own single dimension farm as a buffer this farm reaches the limit of what the game can handle
+
+[04:21] producing 56.8 000 shells per hour wait a minute 56.8 000 divided by 84 modules means we're getting about 676 shells per per module and why is it that we're no longer sending shockers back to the to stock up a buffer system considering with just the five module farm that produces 2 500 shells per hour we already need 40 minecarts in the nether ramping this up to 56.8 000
+
+[04:54] will need almost 1 000 minecarts transporting the shulkers this would simply be impossible so instead we just kill the shockers as quickly as possible using our good old friend ent and of course because we no longer have the shulkers coming back from the nether we instead have a single dimension shulker farm supplementing an additional buffer which we use to restock any of the 84 that happen to lose the shulker and the
+
+[05:29] reason we're getting additional drops per module is because this is no ordinary tnt this is in fact tnt ignited by a flaming arrow this is a variable timing tnt looting system which works in 117. i've already covered this system in a previous video so check that out if you want all the details normally you'll use a player's arrow for one of these looting systems however this makes the kill a player kill which means that the mobs will drop
+
+[06:02] xp which increase the lag output of the system in order to solve this issue but still obtain the looting effect all we need to do is obtain a piglen with a crossbow and force it to shoot one of its arrows once we have the arrow put a piston underneath it and align the arrow so that it's pointing straight up we can then transport the arrow
+
+[06:36] all the way to the aristasis chamber and once it arrives we can align it and drop it straight in now any tnt ignited by this arrow will be attributed that piglen what we want to do now is give the piglen a sword with the looting enchantment but the problem is it won't pick up the sword because it already has a crossbow fortunately you can completely disarm
+
+[07:08] the piglen by forcing it to shoot arrows until the crossbow breaks and once the crossbow breaks all you need to do is hand it the sword and it will pick it up now every kill from this arrow will be attributed to the piglen who is also holding a looting sword because the piglet is not a player the kills will not drop xp so now we obtain a more lag efficient looting system
+
+[07:40] that applies the looting effect and we need all the performance we can get because the instant i start up this farm we can see it go from 16 mspt all the way up to 40 mspc so we do in fact run into a server performance limit we simply couldn't make the farm faster because then we'll start lagging the server and in order to make sure that we do not lose any shells with this tnt right underneath this ancient debris
+
+[08:11] we have a layer of hopper minecarts which instantly collect the items the moment that the shulkers die you might ask who on earth is ever going to need 57 000 shells per hour well probably no one but this was still a really cool project to work on just to show how far we can push the shocker breeding mechanic and i highly doubt that anyone but the most insane technical servers would ever put this much effort into a shulker farm if you want to try and run the farm yourself
+
+[08:43] i'll be leaving a world download down in the description in order to start the farm make sure you are in this little booth and flick this lever right here to start the trunk loading system you'll then grab some tnt go to the overworld click the farm on go back to the nether and start placing down the tnt [Music] in a little while you'll see the
+
+[09:16] shockers all coming in you should be placing down tnt by then in order to prevent their numbers from growing exponentially to turn the farm off again simply stop placing tnt go back to the overworld click the lever off go back to the nether continue placing tnt until all the shulkers are removed
+
+[09:49] and no more shockers are coming in and now you can safely stop placing tnt again and switch off the farm so there we have it the absolute mother of all shulker farms using the vanilla mechanic from 117. i hope you enjoyed witnessing this insanity with me now i'll be leaving schematics of the much more reasonable 5 module farm down the description thank you very much for watching and i'll see you
+
+[10:22] next time
+

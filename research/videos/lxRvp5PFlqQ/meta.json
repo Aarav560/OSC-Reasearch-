@@ -1,0 +1,86 @@
+{
+  "id": "lxRvp5PFlqQ",
+  "title": "Let's Build the Ultimate Quarry Storage",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220110",
+  "duration": 1505,
+  "view_count": 149899,
+  "like_count": 4734,
+  "description": "Wavetech has a rather unhealthy obsession with Quarries as they are opping up all over the place. The only problem is that these quarries are produce a jumbled mess of resources that need to be sorted efficiently. So in this video we design a brand new sorting concept to solve the quarry sorting crisis.\n\nStorage Tech Archive:\nhttps://discord.gg/JufJ6uf\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to the quarry",
+      "end_time": 85
+    },
+    {
+      "start_time": 85,
+      "title": "The need for storage",
+      "end_time": 158
+    },
+    {
+      "start_time": 158,
+      "title": "First item unloader design",
+      "end_time": 302
+    },
+    {
+      "start_time": 302,
+      "title": "Self-assigning box sorting",
+      "end_time": 423
+    },
+    {
+      "start_time": 423,
+      "title": "Handling unstackable items",
+      "end_time": 509
+    },
+    {
+      "start_time": 509,
+      "title": "Controlling machine timing",
+      "end_time": 634
+    },
+    {
+      "start_time": 634,
+      "title": "Parallel sorting logistics",
+      "end_time": 741
+    },
+    {
+      "start_time": 741,
+      "title": "Testing the sorting concept",
+      "end_time": 847
+    },
+    {
+      "start_time": 847,
+      "title": "Application specific design",
+      "end_time": 972
+    },
+    {
+      "start_time": 972,
+      "title": "Silo and recycling systems",
+      "end_time": 1135
+    },
+    {
+      "start_time": 1135,
+      "title": "Final testing and results",
+      "end_time": 1265
+    },
+    {
+      "start_time": 1265,
+      "title": "Refining the sorting process",
+      "end_time": 1415
+    },
+    {
+      "start_time": 1415,
+      "title": "Conclusion and optimization",
+      "end_time": 1505
+    }
+  ],
+  "tags": [
+    "storage tech",
+    "redstone",
+    "quarry tech",
+    "minecraft",
+    "mining machine"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=lxRvp5PFlqQ"
+}

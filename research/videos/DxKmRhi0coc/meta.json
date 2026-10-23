@@ -1,0 +1,58 @@
+{
+  "id": "DxKmRhi0coc",
+  "title": "Basics of Autocrafting + Rocket Factory",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20200409",
+  "duration": 1401,
+  "view_count": 23563,
+  "like_count": 535,
+  "description": "With this video I present some simple designs to vastly improve farm outputs as well as our first more complicated synchronous dropper crafter which we use for crafting TnT. I also demonstrate ways in which simple crafters can be combined to make a fully autonomous rocket factory.\n\nI have an idea for what I might want to do for an opening sequence but really need some help from someone experienced with doing simple animations. Also let me know what you think of my videos, I am open to suggestions.",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to auto crafting",
+      "end_time": 143
+    },
+    {
+      "start_time": 143,
+      "title": "Efficiency and scaling",
+      "end_time": 381
+    },
+    {
+      "start_time": 381,
+      "title": "Simple item splitters",
+      "end_time": 521
+    },
+    {
+      "start_time": 521,
+      "title": "Item combiners and balancers",
+      "end_time": 694
+    },
+    {
+      "start_time": 694,
+      "title": "Practical farm applications",
+      "end_time": 828
+    },
+    {
+      "start_time": 828,
+      "title": "Synchronous dropper design",
+      "end_time": 965
+    },
+    {
+      "start_time": 965,
+      "title": "Real-world TNT production",
+      "end_time": 1151
+    },
+    {
+      "start_time": 1151,
+      "title": "Advanced sorting and conclusion",
+      "end_time": 1401
+    }
+  ],
+  "tags": [
+    "Minecraft",
+    "Redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=DxKmRhi0coc"
+}

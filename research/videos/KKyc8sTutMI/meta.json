@@ -1,0 +1,51 @@
+{
+  "id": "KKyc8sTutMI",
+  "title": "Learning the Ways of the Wind in Minecraft 1.21",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240904",
+  "duration": 1057,
+  "view_count": 159469,
+  "like_count": 8247,
+  "description": "After starting to experiment with cannon tech in 1.21, I realised that I needed to know more about the wind charge in order to use it properly in cannons. In this video we will follow my investigation into the detailed mechanics of how the wind charge works and what behaviours you might encounter that could cause stress and frustration. Hopefully with this learning experience under our belt, using the wind charge in redstone contraptions will become a breeze.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 12
+    },
+    {
+      "start_time": 12,
+      "title": "Breeze Wind Charge",
+      "end_time": 90
+    },
+    {
+      "start_time": 90,
+      "title": "Explosion Power",
+      "end_time": 318
+    },
+    {
+      "start_time": 318,
+      "title": "Explosion Interactions",
+      "end_time": 565
+    },
+    {
+      "start_time": 565,
+      "title": "Explosion Origin",
+      "end_time": 766
+    },
+    {
+      "start_time": 766,
+      "title": "Motion",
+      "end_time": 1057
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "wind charge",
+    "cannon",
+    "science"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=KKyc8sTutMI"
+}

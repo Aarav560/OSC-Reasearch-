@@ -1,0 +1,40 @@
+{
+  "id": "v4JBldaP-F0",
+  "title": "How Dolphins can upgrade your Storage System",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20210804",
+  "duration": 1275,
+  "view_count": 241540,
+  "like_count": 10496,
+  "description": "Can you believe that dolphins can be used to sort items? This time instead of focussing on making the ultimate main storage, we take a step back and figure out a much better compromise for a simple and fast storage system for the casual player.\n\nStorage Tech Archive, a place where you can find all kinds of storage tech solutions:\nhttps://discord.gg/JufJ6uf\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ\n\nWorld Download:\nhttps://www.mediafire.com/file/hwe8wq9lh85wbxi/Dolphin_Sorter.zip/file\n\nSchematic:\nhttps://www.mediafire.com/file/8754v69o83reg9u/m%25C2%25B3%2527s_Dolphin_Storage.litematic/file",
+  "chapters": [
+    {
+      "start_time": 0,
+      "end_time": 421,
+      "title": "<Untitled Chapter 1>"
+    },
+    {
+      "start_time": 421,
+      "title": "First Prototype for a Dolphin-Based Item Sorter",
+      "end_time": 653
+    },
+    {
+      "start_time": 653,
+      "title": "Storage Input",
+      "end_time": 687
+    },
+    {
+      "start_time": 687,
+      "title": "Item Box Filter",
+      "end_time": 1275
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "storage tech",
+    "redstone",
+    "chest hall"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=v4JBldaP-F0"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "x4DWCcQwFO4",
+  "title": "Minecraft's Totem Busting Hypersonic Claymore",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260611",
+  "duration": 1865,
+  "view_count": 197537,
+  "like_count": 12948,
+  "description": "In this video we uncover new mechanics to bring back the instant kill hypersonic claymore but smaller and deadlier than ever. We learn to wield the interactions of arrow entities with nether portals to make a deadly weapon that can bypass prot IV, totems and god apples in an unstoppable mega death ray.\n\nSchematics and World Downloads:\nhttps://www.mediafire.com/folder/agwb45vhizwh3/Portal_Claymore\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to mechanics",
+      "end_time": 90
+    },
+    {
+      "start_time": 90,
+      "title": "Analyzing arrow movement",
+      "end_time": 167
+    },
+    {
+      "start_time": 167,
+      "title": "Portal teleportation physics",
+      "end_time": 287
+    },
+    {
+      "start_time": 287,
+      "title": "Designing the claymore",
+      "end_time": 457
+    },
+    {
+      "start_time": 457,
+      "title": "Wind charge alignment",
+      "end_time": 626
+    },
+    {
+      "start_time": 626,
+      "title": "Fixing mechanism timing",
+      "end_time": 801
+    },
+    {
+      "start_time": 801,
+      "title": "Circumventing damage frames",
+      "end_time": 977
+    },
+    {
+      "start_time": 977,
+      "title": "Enchanted arrow armature",
+      "end_time": 1125
+    },
+    {
+      "start_time": 1125,
+      "title": "Entity order management",
+      "end_time": 1240
+    },
+    {
+      "start_time": 1240,
+      "title": "Customizing the claymore",
+      "end_time": 1471
+    },
+    {
+      "start_time": 1471,
+      "title": "Optimization and setup",
+      "end_time": 1637
+    },
+    {
+      "start_time": 1637,
+      "title": "Final assembly and conclusion",
+      "end_time": 1865
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "trap",
+    "death ray",
+    "rail gun",
+    "claymore",
+    "redstone",
+    "arrow cannon",
+    "portal trap"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=x4DWCcQwFO4"
+}

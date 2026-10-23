@@ -1,0 +1,60 @@
+{
+  "id": "XYsnE54qE7E",
+  "title": "Binary Encoded RGB Gaming Beacon in Minecraft",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220128",
+  "duration": 1342,
+  "view_count": 377905,
+  "like_count": 16904,
+  "description": "I recently discovered the magic of rainbow beacons, of course this means we should overengineer a binary encoded solution to make the rainbow beam thicc. In this video we will learn about some quirky redstone mechanics that can make some mechanisms normally believed to be impossible, possible.\n\nRGB Beacon Concept by ptefar:\nhttps://www.youtube.com/watch?v=ARxZsGXabmM\n\nWorld Download:\nhttps://www.mediafire.com/file/udii8gmivumpcpv/Binary_Beacon.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Binary encoded beacon",
+      "end_time": 66
+    },
+    {
+      "start_time": 66,
+      "title": "Quasi connectivity issues",
+      "end_time": 240
+    },
+    {
+      "start_time": 240,
+      "title": "Zero ticking for smooth colors",
+      "end_time": 372
+    },
+    {
+      "start_time": 372,
+      "title": "Sub-tick mechanics",
+      "end_time": 512
+    },
+    {
+      "start_time": 512,
+      "title": "Memory system implementation",
+      "end_time": 656
+    },
+    {
+      "start_time": 656,
+      "title": "Color sequence compression",
+      "end_time": 844
+    },
+    {
+      "start_time": 844,
+      "title": "Binary counter integration",
+      "end_time": 973
+    },
+    {
+      "start_time": 973,
+      "title": "Analog circuit design",
+      "end_time": 1106
+    },
+    {
+      "start_time": 1106,
+      "title": "Final beacon functionality",
+      "end_time": 1342
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=XYsnE54qE7E"
+}

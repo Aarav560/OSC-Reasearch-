@@ -1,0 +1,72 @@
+[00:00] ok ladies and gents cueing me - here with a follow-up to my video introducing synchronous dropper Auto crafters in the last episode I demonstrated a 2x2 Auto crater which can do 18000 operations per hour in this episode I want to show some additional configurations they can have specific applications which can be quite useful and I'll also go through a tutorial building them up from the show local box loaders to align the minecarts and then finally setting up all of the storage
+
+[00:35] tech over the top to start with in my opinion is perhaps the most useful Sukhram stroke oil crafter this can handle free by free recipes however it has the restriction that the recipes have to be rarely symmetric they can only do four different item types surrounding one central item which essentially restricts it to this pattern where the first slot is repeated in the six slot the second slot is
+
+[01:08] repeated in the seven slot the third slot is repaired in the eighth slot and the fourth slot is repaired in the knife slot the middle item is of course assigned to the middle slot and this means we can do some very useful recipes such as dyeing concrete dyeing glass or dyeing terracotta and these recipes actually output eight items per operation so we can actually do these recipes at seventy-two thousand
+
+[01:42] items per hour it can also handle any recipe in which you have a common item type surrounding a central item for example you do lanterns golden apples and also you can craft do boxes to fuel your furnace or a the reason we are restricted and what free by free recipes we can do is of course because we are limited to accessing only five sides of the crafting table actually have to have the speed of this
+
+[02:17] particular crafter over to craft a witch that does 18,000 operations per hour this one only does 9,000 operation per hour however with access to recipes that yield 8 items per operation we actually get the rates back up to 72 thousand and which of course still demands our eight times hopper speed chocolate box loaders now I will demonstrate the
+
+[02:50] system working I think that needs to be understood about this is that our four slots here these will unload at two times hopper speed a middle slot on the other hand because we're doing 9,000 operations per hour the middle slot is only used every operation these slots however use twice per operation so you will need to put twice as many items in these slots as you put in the central slot which means
+
+[03:27] we need double speed unloaders for our outer slots and you only actually need a single speed unloader or the middle slot I can turn this on now the way this works is because we can only put in five items at a time we actually keep a collection system locked for the first five slots then the instant we filled
+
+[04:01] the next four slots we then unlock it and the items get pulled out and in order to prevent the middle item from firing twice it is of course kept at the end of the other four so we have our four items for the outer slots that fire first and then central item flies into the center in the next operation these four slots get filled our central item
+
+[04:34] will then overflow over to here where there isn't actually a slot and that way we always maintain that we use one of the central items every operation and once again our striker box loaders keeps everything in balance as you can see we're making white concrete powder here at the end of this crossing operation we should have eight boxes of concrete powder now that sound
+
+[05:08] means our crafting is now done there you can switch it off and there we have it eight boxes of concrete powder wondering about these crafters here right in my opinion these are slightly less useful than our Universal systems because there's a very application specific for example this one here is a single item converter this means is that it can only handle a
+
+[05:40] single slot and it can only handle a single item preparation actually does 72,000 operations per hour so it reaches the maximum capacity of our shocker box loaders with only a single slot and a single item per operation the way we achieve this is we have four droppers each being loaded at two times hopper speed these are all clocks which are offset by one game tick
+
+[06:15] and the result is a machine that is very satisfying to turn on but despite this satisfaction it does have some significant flaws with its operation and I'll get into that shortly this particular design is that crafting a single item every game tick the handle pulling a single item every
+
+[06:51] game tick ever shock box loaders can only handle half that rate so with the preferential hopper cart system one of the hopper carts will actually pull the items at faster then the loader can handle it and will actually back up while the other loader isn't actually offering it all yet but once this overflows this will start picking up the excess and the result is that you get slightly
+
+[07:25] more items in total in here then you get in this side and therefore at the very end of your crafting operation you get partially filled boxes so you're required to have this system here which actually forces the Box be ejected at the very end of the crafting operation if the designer like to call the blender this is because it is a two slot crater which combines two different item types its primary use as blending dies
+
+[07:58] together however I will consider this design as superior to this one here because not only can it handle to two different item types and two slots it can also act as a single item converter so instead of having to build your two separate machines you can only build the one machine and you can use it for both applications on now here we just have to separate observer
+
+[08:31] clocks which activate to gain takes apart we have two pairs of droppers which fire at the same time as you can see it blends the dyes together very quickly it actually looks quite impressive if you look in the crafting grid in this setup we're only doing half as many operations for our is this machine over here so this is only achieving 36,000 operations per hour however when blending dyes together you
+
+[09:04] actually get a crafting yield of two so once again the rate gets back up to 72 thousand islands preparation you can see that by the fact that up to Shaka box loaders are both being used to the full capacity and of course because we're doing two items pression it's once again getting split evenly between a hopper carts what I'd like to do now is go into
+
+[09:37] detail on how to build these in your own world I won't be doing a block by block tutorial there'll be a world download that you can get the machines from over there are some tricky processes involved such as the lining the hopper cast which I want to show you here now I strongly suggest that if you want to do complicated redstone in Minecraft that you get a light Madoka client mod this allows you to render schematics of machines here I want to load a schematic eight times moveable silently loader and here it renders a bunch of gloss
+
+[10:12] blocks showing me what needs to go where if I activate hit boxes of f3 plus B it will even show me how entities such as hopper cast need to be aligned in the machine unfortunately though schematics will not show you how to get these hopper carts in these particular positions and that's what I want to show you so here we have the Mobile's haunted loader without the sticky pistons in the top here because we need to get the hopper
+
+[10:44] minecart in before we can add the sticky pistons do this as we put down some solid blocks and some rails like so uppercuts on top of the rails I'm pushing them so they're right up against the hitbox of our chess because this gives the minecart a slight offset so they could intersect the collection area
+
+[11:17] of multiple hoppers at the same time just align them to one axis so they can be pulled from by these two hoppers I break these rails I can just get my body in there and then push the minecart over like so so it bumps up against these chests here stun you can remove chess move the blocks underneath and as you can see they rests on top of the head box of the soul sin which is slightly shorter than a full block that way they're just
+
+[11:50] within the collection area of these four hoppers underneath in order to get your sticky pistons in you need to push them in from above because having an entity here means you can't actually play solid blocks there we go our Pistons in there so that it hitbox intersects with the minecart however that's fine
+
+[12:40] another thing I suggest doing is encasing these minecart sandglass the reason being that mobs and animals can the carts and then put them out of alignment over if you encase them in blocks or blocks like so that ensures that no entities can get access to them here I can bump right up against the glass and they're perfectly safe
+
+[13:18] the great thing about this shocker box loading setup is that it's compatible with all of the cinco strip order crosses that require any amount of output from 1 to 8 x hopper speed we've just got the schematic for the 2x2 Universal crafter loaded on top of it and I'm going to show you how to line these minecarts here in the middle able to begin by figuring out where our center is which is the cracking table right here
+
+[13:51] underneath weather cup crafting tables position we just want a slab and in order to get the minecart in we start by putting two solid blocks like so and we stack up n rods these emeralds will allow us to align our mine carts so if I look at where the directions that el rato is facing we've got our filter car on this side it has to be pointing in the positive z direction
+
+[14:26] and it's important that our filter cut is the first cart that's placed therefore it gets preference for the items that could pulled out of the crafting table here we just have our item collection carts doesn't matter which order these to a place because either way or either prefer one load or the other in order to align our carts to the center underneath our crafting table we need to use a mob head that's because its hitbox is
+
+[15:03] exactly half a block therefore if I get a piston like so I want to power this piston and then destroy the piston before it retracts here I extend the piston and break it the minecart rests perfectly up against our mob head and the other way this time we can just use this cart to line these two as you can see
+
+[15:38] all line perfectly now we can remove one two three four end rods go off our carts down so they rest on top of the slab there at these n rods and what I suggest doing is just encasing them in some more glass here we have them sitting nice and snug
+
+[16:37] within our system now we need to set up this island filter all that's needed is you can just place this detector rail so that it intersects with the hitbox of our filter car and then you can simply build this filter circuit using the schematic - sup another moveable tiles the shocker box loader note that I should make is that you do
+
+[17:10] not rotate these schematics these machines are highly directional so they had to be facing in a particular direction and by default the schematic should load with them facing the correct orientation here I have the 9000 operations per hour free by free crafter that does specialized recipes requiring items surrounding a central item hopper carts for this I'm much simpler because they're just simply sitting on
+
+[17:42] an activator rail and align to some iron bars all that's needed is activator rail new place down two carts and then give him a bump with an entity there you have it collect items and this setup is common for also and the two slot by blender
+
+[18:16] you might notice some more hopper carts up here in the machines where the Shocker boxes get unloaded my entire ball double-speed shock box unloaded that I really like to use it's not quite as good for one white ailable applications because putting them next to each other means that if one slice ejects the box at the wrong time it can cause another slice to fail to place another box whether this is very rare and in cases where
+
+[18:50] subjection is synchronized such as in order crafters it's not really an issue the way I generally installed these systems as I start with top part and I'll align the cart underneath to achieve as much hopper speed as I require what I generally do is a hopper cart will be aligned underneath this piston is bump the cart like so align it to
+
+[19:27] parcel block I think about partial hitbox make to the majority of its illness activate around because what will happen is here ensures that the car remains LOX when the box is empty so there'll be a comparator here that comparator will sit on top of a hopper you and then what will happen is when a box
+
+[20:03] gets ejected it will go into this hopper and when this this tool should be powered the instant the box is empty which will ensure this rails powered and it'll lock this hopper cut the Box doesn't get collected by your item stream much for watching hope you enjoyed these synchronous trap order craft designs and find them useful for your in builds I apologize if you were expecting more detailed tutorials and how to build these however I have like half an hour footage doing a pocketbook tutorial for simply the 2x2 Universal crafter and it
+
+[20:37] wasn't even free causal way done so it's not they look quite excessive if you actually want to see what could work tutorials for these designs just let me know let me know it'll be worth my time and I really sent separate videos about those in the meantime I want to start making videos about the cyclical order crafters cuz I'm getting a lot of demand for those particular designs I'm gonna be notified when I release this video is just feel free to subscribe and I'll see you then good bye
+

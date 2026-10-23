@@ -1,0 +1,40 @@
+{
+  "id": "TTreJCFfJNE",
+  "title": "Wireless Redstone Networking in Minecraft",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220620",
+  "duration": 1269,
+  "view_count": 97297,
+  "like_count": 3868,
+  "description": "We return to the wonderful world of wireless redstone where we take a deep dive into sending wireless binary signals within redstone telemetry networks. Wow, that is a lot of technical language, be sure to check out the video to learn all about Binary encoded wireless redstone in minecraft.\n\nWorld Download:\nhttps://www.mediafire.com/file/wuvecj872bqzjbi/Wireless_Redstone.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "System refresher",
+      "end_time": 146
+    },
+    {
+      "start_time": 146,
+      "title": "Fixing reliability issues",
+      "end_time": 338
+    },
+    {
+      "start_time": 338,
+      "title": "Binary encoding explained",
+      "end_time": 672
+    },
+    {
+      "start_time": 672,
+      "title": "Troubleshooting build errors",
+      "end_time": 791
+    },
+    {
+      "start_time": 791,
+      "title": "Expanding bit capacity",
+      "end_time": 1269
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=TTreJCFfJNE"
+}

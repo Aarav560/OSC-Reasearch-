@@ -1,0 +1,32 @@
+[00:29] You probably thought that was fake cuz like [music] come on me pulling a fishing rod and then TNT summoning out of nowhere. I had to use mods or commands, right? Nope. Absolutely not. That was 100% legit. And I'll show you how I did it. First, you need to find a relatively flat area. [music] Now, I would build it in the air, but I'm not building it in the air. [music] So, now turn on chunk borders by using F3 plus G. And also, if [music] you already watched the video before this,
+
+[01:03] go to the number that's on screen. [music] Now, let's continue with the video. Dispenser, [music] snow bucket. Put smooth stone like that. It should be a 4x4. Now, put walls on the outside like this. and grab [music] a slab and replace it like that. Now place walls like that that [music]
+
+[01:36] are back. Then break these blocks. Now place a comparator right here and another dispenser at the back. [music] Now get an oak trap door and place them like this. And place them like this. Then put a smooth stone on the top Now put water inside. Now break these two blocks. Now get a redstone dust. Then a redstone torch. Place another redstone dust. Two like
+
+[02:10] that. You place redstone like this. Then place a sticky piston like that. Now [music] place a repeater. And then put two redstone like this. Then put anything except TNT inside this dispenser, the one [music] with the comparator. Now get an observer and make it so it's the face is going [music] out. Then place another observer. However, the face is going that way. [music]
+
+[02:45] Now put an observer on the main one that has the sandstone inside. [music] Then place one away from it again with the face going towards the other face. So they're kind of looks like they're looking at each other. Then get a sticky piston, a repeater, and just place five of them and put them all on the max tick. [music] Then get some redstone dust and move it like that.
+
+[03:17] Then get one [music] more repeater. Put it at the max. Keep adding redstone until it's up to here. Then add a lever. Then add make a portal. Activate [music] the portal. Then you are done making the first step of the orbital cannon. Next is the
+
+[03:52] fishing rod mechan the wireless fishing rod activation. Get soul sand, water, ender pearl, normal piston, and smooth stone and redstone dust. Then build up to the height of the portal. Then go [music] up two more. Then put a like box around it except the side that's on the chunk border. [music] You want to make sure this is on a chunk
+
+[04:24] border. Keep in mind now you [music] do it again. Add soul sand at the bottom and then add more walls. Now break the back part and replace it with and then move the back part back one. So then it should be two on this side
+
+[04:57] and then four on this side. Then add a wall right here, a piston right here, and then a pressure plate like this. Now fill up just the back part with water. Just the back part though. Now at the very bottom add one layer. Then two layers. Then right here add a third one but only on the second side of this chunk border.
+
+[05:32] So right here where the piston is. Add the third one. Then add a fourth one. And then right next to it on the fourth one, so outside the chunk border, go down one and add so add water. Now add a add a pearl right next to the piston and see if it moves to the side. If it starts moving this way, then that's a good thing. Now, with this dispenser with the water
+
+[06:07] above it, this is the acceleration one and this is the payload. For the payload, put as much TNT as you want or but I would recommend just two stacks [music] because it could lag your game game if you had more. Now, for the acceleration, for every 32 TNT you add, it will go one chunk. So, [music] if I added 32 TNT, it would go right here. If it was a stack of TNT, it would go right here. A stack [music] and 32. And then
+
+[06:41] so on and so on. You would want to go and put ender pearls all around these chunks except the chunk that has the powdered snow. Now, if you're in survival, then this is going to be a bit more different. First, what you would do is you would put a fishing rod bobber on the pressure plate that's outside the chunk border. Then you would place one smooth stone, put a pearl in,
+
+[07:19] then break the smooth stone. And the test if it would work when you pull that, it should go outside the chunk. If you were in survival, then you would pull this lever, go in the Nether portal. I would recommend going in here and then then pull that like at the same time. Then you would wait for the time that's [music] on screen for every TNT you put in the accelerator. So if it was 32 TNT, it would be this many seconds up on screen. Then again, if you're on
+
+[07:53] carpet, then you just do carpet creative players load chunks to false. Then activate the machine and make sure your acceleration and payload has everything inside. Now, just so you don't accidentally activate it, I'd recommend putting your fishing [music] rod away. Now, finally, this step is very important. Make sure your render distance is at two.
+
+[08:28] And the fishing rod mechanism will not work if your acceleration only has one chunk in it. It has to be at least two chunks. Well, two stacks. Now, when you pull the fishing rod and then wait a second, you will finally have an orbital strike cannon. As you can see, the explosion went off. Here is a small disclaimer, though. Like
+
+[09:06] I said, I haven't really upgraded this design [music] much. So, the fishing rod doesn't uh work all the time, but it does mostly work. You just got to put in the ender pearl correctly. And with that, that concludes the video.
+

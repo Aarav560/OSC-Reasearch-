@@ -1,0 +1,62 @@
+[00:01] g'day ladies and gents cubic meter here with autocrafter 2 redstone boogaloo in my previous video we rebuilt the universal autographer from a mango skybox server from scratch with many design improvements we also looked into ways in which we could improve it after having actually used the design in survival in case you haven't seen that video here's a quick summary firstly our item collection could not handle mixed items which meant if a recipe failed for any reason the shockbox loaders would jam secondly boxes loaded at the output would be partially filled
+
+[00:32] if the recipe yields more than one item per operation and finally we could only do a single recipe at a time because there's no way to distinguish between recipes but in this episode we will address all these issues with our new auto crafter capable of better automating bulk crafting jobs to start with the easiest problem to solve was the shock box loaders at the output in the previous design we're restricted to using these double speed loaders which cannot handle mixed items the best solution was to switch to a mixed item loader
+
+[01:03] however this is not as easy as you think this is due to how mixed box loaders work instead of ejecting a box when it's full you wait until it overflows then detect that overflow however this breaks completely if you saw unstackables fortunately sounds to sage made this really nice design for a double speed mix box loader however i needed to modify the design slightly because you only eject boxes when they start overflowing if you have a box that is full it will
+
+[01:36] remain in the machine until you tell it to eject the box i had to add this system which first detects if the loader has been activated at any point and then connects it to a line that you activate at the end of the crafting operation which will then eject all the boxes that are needed and there we have it even if a recipe fails no permanent damage will be done to the crafter because our output can now handle the mixed items and just spit them back out at the
+
+[02:08] player and i certainly don't want to be one of those guys who messes up the recipe now onto partially filled boxes the solution is to add an additional system which completely empties partially filled boxes and then completely fills another box an issue i found with samus's mix box loader is that with unstackable specifically and the autocrafter items would sometimes be spat out into the shocker box output so first we want to separate normal
+
+[02:41] items from shulker boxes normal items will bypass the whole system and go straight to the box loader meanwhile any shulker boxes get sent to this filter which separates partially filled boxes from completely full boxes completely full boxes will then bypass all the way into the output as partially filled boxes make their way to this unloader they're completely unloaded and then refilled so i can just demonstrate it working
+
+[03:13] here with this chest filled with various boxes and items and what we should get is completely filled boxes at the end there we have it completely full boxes at the end of the operation now here comes the hardest part of the project scheduling recipes here's how it works if we want to craft
+
+[03:47] repeaters but don't have any redstone torches we want to set up the recipe for repeaters then flag the empty slots which are dependent on the next recipe we schedule we will then set up the recipe for redstone torches ensuring we craft enough torches to be evenly distributed in our repetitive recipe so for this case the amount of tortures we must craft is any multiple of two in order to evenly fill the slots in our repeater recipe to clarify we use a full shulker box of items as our minimum unit quantity
+
+[04:20] because this makes it worthwhile using an autocrafter over manually crafting things what's needed is a basic computer system in order to handle the scheduling in case you haven't noticed i'm more of a mechanical engineer than a computer engineer so this will be interesting [Music] foreign
+
+[06:18] so as you can tell this build involved a
+
+[08:16] lot of trial and error adding and then removing components or modifying them in some way in fact many of these refinements occurred outside of recording but this is exactly why i love the autographing table its limitations in spite of its strengths motivates innovation because here we have a basic computer memory system is capable of storing recipes as you schedule them and evenly distributing shulker boxes based on that programming
+
+[08:48] to begin with we lock all the inputs to our crafting slots then we can program slots that are dependent on ingredients that are crafted in previous recipes so right now this particular slot is accepting items so if i send items they will now appear in the program slot in order to keep track of which recipes require which slots to be dependent i have this feed tape of barrels which
+
+[09:22] acts as sort of a hard drive when a slot is selected it will then power one of these droppers holding items just shoot the item into the barrel which i'll demonstrate and now this recipe has been programmed for the first slot to be dependent on now if we look at our torches this slot is now accepting
+
+[09:54] so if i was to program three slots let's say this slot this slot and this slot and you can see those three torches have turned off so we've got three slots requesting and six items in this hopper we'll wait for all three slots to receive the items
+
+[10:26] then the system will reset and now if we look at our slots we've got two two and two perfectly balanced as all things should be in order to cycle through the recipes i have two controls triggering this input will progress the feed tape forwards so now our programmed recipe has now
+
+[11:01] moved into this slot and we've got a new set of barrels to program another recipe into let's say the order crafter has just finished a crafting recipe it will trigger this input this will reset all of our program slots and progress the feed tape backwards and then request whatever programmed recipe we have in this set of barrels and load that into the memory
+
+[11:34] if we trigger this twice in a row it will then clear all of our barrels of recipes so now the bars that previously had items with it have gone on top of these hoppers which will then effectively clear the memory that's cool we have a computer which can automatically distribute items from one recipe to the next but i should note this is limited to only direct sequences of recipes for example we couldn't have the system
+
+[12:08] craft resin blocks into dust then iron blocks into ingots and combine both of those to make pistons our computer is not smart enough to remember more than the most recent recipe but this is still very powerful for our order crafter so what's next well we need to incorporate our computer into our input then make sure that the crafter can keep track of recipes craft items stop distribute then start up again all on its own this will require a lot of complex logic
+
+[12:40] as well as wiring to ensure that all the components can talk to each other so here we go again my oh
+
+[16:47] hey but for real this time it actually works how about we just take it for a quick test run here's some nice example recipes that the older crafter can handle one of the most difficult recipes crafting bows than dispensers is quite interesting however to give the best demonstration of his capabilities i'm going to be doing portraits to repeaters and then torches to comparators all in the one operation it all starts here at the interface
+
+[17:19] make sure you have boxes of all your ingredients and if you need slots to remain empty you can grab dummy items from here now you want to schedule the recipes with your very last recipe first very last recipe i want is comparators so i'll start by doing a dummy slot then i'll assign this slot to receive torches another dummy slot torches sports more torches
+
+[17:54] and just stone stone stone once i've set up a recipe in order to move to the next one i just hit this button on the green concrete and the auto crafter will keep track of the amount of recipes scheduled by the fill level of this dropper but now i can set the torches we need to make sure we craft three units of torches in order to fill the free slots of the
+
+[18:26] comparator and we put dummy items in the slots which need to remain empty there we go that's our torches now let's start the repeater recipe our first slot for the repeater are redstone torches then we have a redstone dust more torches stone
+
+[19:01] bone and more stone now move to the very first recipe we want to craft which is the torches for the repeaters we need to craft two sets in order to fill the two slots of the repeater and there we have it our recipe is now set up now all is needed is to start the auto crafter by hitting this button and we should begin crafting redstone
+
+[19:36] torches all right here we go about to switch to the next recipe so i've just crafted the wrist and torches now we want to do repeaters what will happen is this feed tape will retract at the same time as our computer's memory and we will load the next recipe and so it will evenly distribute the torches and we'll start crafting there it goes now loaded the recipe in
+
+[20:12] here come out shulker boxes and they go place down the boxes and restart the crafter now we're making repeaters now the repeaters are done it will now switch to crafting the torches for our comparators so the repairs are completely unrelated to the comparators and they'll just bypass system and end up in our overflow storage
+
+[20:49] and now it's reset our redstone torches for the comparators aren't accepting any items from the previous recipe so now we should be crafting redstone the torches for our comparators are almost done we can see already that our repeaters have been delivered to this storage system and our wrestling torches are just being stored right here these lights indicate that this side of
+
+[21:24] our storage is currently locked and receiving items from the current when we switch the crafting comparators this side of the storage will unlock dispatching our redstone torches to the comparator recipe meanwhile this side of the storage will then lock and it will receive the comparators from here we go our torches are done we're about to switch the comparators now so we'll see the memory system will then
+
+[22:00] move back another notch and load our dependent slots for the comparators there it goes as you can see here are our free dependent slots they'll now receive their items then we'll place down our boxes and the ornament crafter starts once more and we're doing our final recipe which is comparators
+
+[22:36] all right the comparators are just about done and should be receiving them any moment now they've already got our repeaters if you look in here there they are our comparators easy and people say that repeaters and comparators are some of the hardest components to craft there we have it autocrafter 2 redstone boogaloo there are so many recipes to try for this new design if you want to try them yourself i'll
+
+[23:08] leave it well downloaded in the description just make sure you have carpet installed with autocrafting table and removal block entities enabled you're free to tweak the design maybe add your own features and ideas and it could evolve over time autocrosses have been a passion of mine since i began in technical minecraft so let everyone know what you think of the autocracking table and whether it should be implemented for now i'll be working to improve the interface of this older crafter working with players experience with a computer tech to hopefully make a smarter system but until then sears
+

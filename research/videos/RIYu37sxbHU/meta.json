@@ -1,0 +1,70 @@
+{
+  "id": "RIYu37sxbHU",
+  "title": "Let's Build a Redstone Shop",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20220922",
+  "duration": 1405,
+  "view_count": 77812,
+  "like_count": 4169,
+  "description": "I've almost wrapped up another semester of my engineering degree and I'm in the mood for some redstone engineering. In this video we focus on my perspective as I explore the problem of partially filling shulker box slots for a shop display and we learn how to tackle complex redstone problems in minecraft like a real engineer.\n\nWorld Download:\nhttps://www.mediafire.com/file/zw2e5gvvq2xn6et/Shop_Box_maker.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The problem with restocking",
+      "end_time": 33
+    },
+    {
+      "start_time": 33,
+      "title": "Designing the auto-reloader",
+      "end_time": 88
+    },
+    {
+      "start_time": 88,
+      "title": "Overcoming technical limits",
+      "end_time": 183
+    },
+    {
+      "start_time": 183,
+      "title": "Developing the mechanism",
+      "end_time": 319
+    },
+    {
+      "start_time": 319,
+      "title": "Advanced system design",
+      "end_time": 443
+    },
+    {
+      "start_time": 443,
+      "title": "Inventory and full detection",
+      "end_time": 611
+    },
+    {
+      "start_time": 611,
+      "title": "Shulker box unloader",
+      "end_time": 804
+    },
+    {
+      "start_time": 804,
+      "title": "Building the box maker",
+      "end_time": 952
+    },
+    {
+      "start_time": 952,
+      "title": "Global control system",
+      "end_time": 1033
+    },
+    {
+      "start_time": 1033,
+      "title": "Final assembly and testing",
+      "end_time": 1383
+    },
+    {
+      "start_time": 1383,
+      "title": "Conclusion and download",
+      "end_time": 1405
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=RIYu37sxbHU"
+}

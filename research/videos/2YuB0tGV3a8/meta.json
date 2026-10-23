@@ -1,0 +1,81 @@
+{
+  "id": "2YuB0tGV3a8",
+  "title": "A Very Cubic Christmas (with storage tech)",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20211224",
+  "duration": 2159,
+  "view_count": 75729,
+  "like_count": 2533,
+  "description": "It's a Cubic Christmas Special on the Wavetech server. To celebrate the holidays the server members and I participated in a secret santa, and of course being a technical server our gifts had a sprite of technicality. To make the ultimate present we resort to a little bit of good old storage tech.\n\nTrolle's twitch channel:\nhttps://www.twitch.tv/trollestreamar\n\nWorld Download of the Toolbox Maker:\nhttps://www.mediafire.com/file/yr0na6stqcj3fjw/Toolbox_machine.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://github.com/Fallen-Breath/tweakermore\nhttps://masa.dy.fi/mcmods/client_mods/?mcver=All\nhttps://github.com/gnembon/fabric-carpet\nhttps://github.com/Andrews54757/itemscroller-crafting-fix\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Christmas project goal",
+      "end_time": 107
+    },
+    {
+      "start_time": 107,
+      "title": "Initial machine concept",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "Precision filling mechanics",
+      "end_time": 296
+    },
+    {
+      "start_time": 296,
+      "title": "Tiling the modules",
+      "end_time": 422
+    },
+    {
+      "start_time": 422,
+      "title": "Centralized control system",
+      "end_time": 551
+    },
+    {
+      "start_time": 551,
+      "title": "Wiring and pulse testing",
+      "end_time": 643
+    },
+    {
+      "start_time": 643,
+      "title": "Debugging box transfer",
+      "end_time": 843
+    },
+    {
+      "start_time": 843,
+      "title": "Finalizing the design",
+      "end_time": 1024
+    },
+    {
+      "start_time": 1024,
+      "title": "Building in survival",
+      "end_time": 1111
+    },
+    {
+      "start_time": 1111,
+      "title": "Automated crafting setup",
+      "end_time": 1340
+    },
+    {
+      "start_time": 1340,
+      "title": "Machine operation",
+      "end_time": 1475
+    },
+    {
+      "start_time": 1475,
+      "title": "Secret santa reveal",
+      "end_time": 2159
+    }
+  ],
+  "tags": [
+    "christmas",
+    "minecraft",
+    "redstone",
+    "wavetech",
+    "storage tech"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=2YuB0tGV3a8"
+}
