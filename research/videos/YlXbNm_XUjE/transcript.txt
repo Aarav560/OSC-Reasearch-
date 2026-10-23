@@ -1,0 +1,74 @@
+[00:02] Okay. Hello everybody. I am back and I have something even better. Some of y'all were asking for uh what was it? Oh, right. Rings. And uh how do I put it? Oh, wait. Yeah, I got it. I got it. Also, thanks to uh Mr. Penguin guy
+
+[00:38] and as well as another person, Spirit Attack, um ever heard of Grammarly? I'm just saying. Today I'm actually going to do a proper tutorial and a showcase of a new and improved orbital strike cannon that I call the hollower. Essentially, your target will perish. End of story. So, got your uh
+
+[01:12] Damn it. Which one of these are Oh, it's this one. You got your You got your schematic in the world. your schematic. So you mainly whenever you paste into the schematic, one thing that I would prefer to do or would be best to do is do it on the floor first. And whenever you go to a chunk, you want to make sure these green, lime green are aligned on a chunk like this. This dark green is in a chunk alone with
+
+[01:46] the pressure plate. And then the red should be in a chunk alone with nothing else. No loaders of any kind in this area. Nothing should load this chunk right here. With that said, whenever you paste it into the world, I would just find a random chunk, count one, two, three, four blocks, and then you can just paste into Now, whenever you want to build this, build it at about 100 blocks high. You could do 80, but you might get
+
+[02:20] mountains might be in the way. So 100 blocks is preferable and would probably work best. I think I need to stop about here as center of the orbital strike cannon is about Oh, one more block. There we go. 156. That is your sensor. Now, you're going to build the schematic in your world. Now, one thing I would also like to say is that I didn't really put any platforms. That that's because I I was
+
+[02:53] going to let y'all figure out how to like make your own setup, make an enclosure. Oh, one thing I do have to say is that I tried to make it to where snow couldn't harm the build, but I don't think it's 100% foolproof. So, you might need to build a roof over it. Simple one at best. Though, I have another orbital strike cannon to show you that's even smaller than my smallest one, which that will be coming out in another video. So, uh stay
+
+[03:26] tuned for that. Oh, and I'm going to do the annoying thing. Let me type this out. is okay. I did the thing. I'm probably not going to do that again for a while. Another thing I would like to say is the original original calculator that I provided should work for this. If it doesn't, I will reconfigure it, but it should work for
+
+[04:01] Canon indeed does use uh powdered snow. Now, someone mentioned using water instead of powdered snow. I'm still testing that as I think I saw a bug going on with it. So, I might not be able to use it just yet, but we might be able to use it later on. And I'm also thinking of building an orbital item. Think that's a cool idea? Say yes. Not. Sorry. My ideas are horrible. But as you can see, we got the little uh
+
+[04:34] fishing rod thing. Why not? And I might have overused the target blocks, but that's all right. So, you want to paste this into your world for me in that case. Make sure everything's in order. And you got to you could have just a stack of TNT, but it won't do as much damage. Maximum damage, you could do nine stacks and then one TNT. From what I can tell is that you could put multiple TNT in here, but I don't
+
+[05:08] think that would work. I haven't tested it. I probably should have tested it, but I didn't. One thing I will do is go ahead and set the game rule. few game rules. So, spectator mode generates chunks false. As if you watched Cubic Meter's video on how orbital strike cannons work, he did mention this. But if you don't load the chunks in spectator mode, then the cannon could actually work. The cannon should at least need one TNT in here, a couple TNT in here, and then your desired location amount of wind charges in the dispenser. I also
+
+[05:43] added a double chest. So, you got a lot of storage. So, that's 9, five, and then what? 52 in here. But yeah, y'all could have The range is pretty far from what I can tell. A full stack in each of these could accomplish a full stack or just nine stacks in here possibly could accomplish about 1k blocks traveled. or a little more than that. Go pretty far from what I can see
+
+[06:17] and you got a bunch of storage and wind charge farms are actually pretty easy compared to TNT farms which can't really farm those without duping. So without further ado, I already got wind charges in here. Thing I'd like to say, the reason why there's buttons up here is to reset the powder snow. It doesn't do it automatically. Sorry about that. But whenever you're you want to launch the cannon, there should not be powdered snow right here whatsoever at all. And yep, also another thing for the
+
+[06:52] calculator. If you walk in this direction and your coordinate changes, for me that's my Z coordinate changing. You put that in as your Z. So whatever these coordinate whatever this changes the whatever this changes the axis is the coordinate is the axis you're going to use for calculating calculator. Just wanted to throw that out there. So if this if it's inverted you're going to type it in inverted. So like if this is your Z and this is oh sorry this is
+
+[07:26] yeah this is your Z and this is you're actually going to do it the opposite way. So I got stack in here. The stack goes decent length, but as you'll see, time to show you the hollower. I'm going to turn up this tick rate because I'm not patient and I know y'all aren't either. Usually, this would probably take around 2 minutes, 2 to 3 minutes as this alone takes about I think 80 seconds.
+
+[08:01] No, no, no, no. Sorry. Not 180. Something along the line, but it doesn't take all too long. Oh. I don't know what just happened there. That's fine. I'll show you the fishing rod. I'll show you fishing rod setup later. Do I touch it? Sorry about that. Okay, now I'm going to go ahead and go into spectator mode. Oh,
+
+[08:36] here's the mistake you're going to come across. You need pearls right here. Without pearls, it won't work. So, it might be weird to set it up, but it's actually pretty easy. You go on this side, go to here, aim right down at this corner, and throw the pearl. I don't know why I did that. Do the same thing over here. You shouldn't be able to hit the pearl. Then go ahead and Sorry. And then go ahead and aim for that. Then your pearl should be right
+
+[09:10] there. Make sure that they aren't both the pearls aren't in like this chunk cuz it can load two chunks [snorts] though. It's like very rare that can happen, but that is possible. So now whenever I do it, it dispenses the TNT. So now whenever I turn the tick rate up for y'all, you would have to wait unless you're going to test it. And it launches the wind charges and then it dispense the powdered snow now.
+
+[09:46] So now, whoops. Click rate is at 20. And whenever I go ahead and load the chunks, here is the payload ready to launch. Now, you may be wondering, why do I call it the hollower? Here's why I call it the hollower. You see this? See this area? This area is gone. Now, whoever was standing here in this spot or in these
+
+[10:21] few spots, you're dead. And why I say this is simply because this is about nine stacks of TNT exploding and then de and then basically eradicating this area right here. But a cool little feature that say you want to make another orbital strike cannon. So you go in the world, build a few blocks up, but oh no, you didn't build exactly seven 100 blocks up
+
+[10:57] in the air. Maybe you did like half [clears throat] that. Let me show you what happens. snapshots in Minecraft, especially for cubic meter uh cannon, which if cubic meter finds my video, watch it. But horizontal stab shots. Oh, I got ahead of myself. That's fine. Well, that's the gist. It's a horizontal stabshot. What is that? Great question. I just
+
+[11:31] found out about it. See, fun little effect TNT cannon does is that it doesn't align perfectly at all. So, let me just go ahead and do this because I think the effect that you're about to see will be um shocking to few is that here's what happens whenever it's not correctly load loading the floor.
+
+[12:08] I want you. I told you that it's a horizontal orbital strike cannon, but guess how much damage it can do. Well, you're probably wrong because this is damage it can do. As you just saw, that thing obliterated four chunks. Not four entire actually. Yeah, this is about a chunk. One chunk here, one chunk here, one chunk here, and one chunk here.
+
+[12:40] So thing is is that it's kind of random, but that's the point. The issue with orbital strike cannons nowadays is that it's either one of two things. One, it's just a ring. So all you got to do is this, and then you avoid the orbital strike cannon. This one on the other hand or even a snapshot launches stab shot. Oh, and you're safe. This one is different.
+
+[13:17] It launches TNT like this. Now, that may confuse you, but let me simplify it. TNT for a like normal ring would be something like this. If you get the gist, it's a circle or an attempt of a circle. You get what I mean? But that's actually the point. This is an
+
+[13:49] oval. My thing launches an oval or a semi- oval. I think that's the correct name. Why is that interesting? Well, it's the exact point of the cannon not being perfect. The TNT launches the cannon outwards, but if it hits a block incorrectly, from what I've done or from what I've tested from this cannon, say there it's two blocks up, say you hit a mountain
+
+[14:24] and it explodes, you're not just going to get like it going horizontal or just digging down a little. It is most likely going to go vertical like this. or it's going to go down or it's going to go to the side or it's just going to go in the air. It will essentially be completely random. But the main part is that it will take out the target effectively and immediately. Another thing is that if you launch the orbital strike can in the same spot twice. So
+
+[14:56] say you have an orbital strike can configure to the same spot twice. So for example this one, I will just use this one. One thing, say the orbital strike cannon is a little too high, 100 blocks in the air. That one it probably wouldn't do much. But for this one, the one a little close to the floor, it will do a lot of things. Now, let me demonstrate the uh also you needing to reload the cannon. Whenever you reload the cannon or just want to get it ready, you put one wind charge in each of these. Oh, sorry. Got you put at least one TNT inside of
+
+[15:32] here. one TNT inside of here for your next shot. Go up to here, put one wind charge, put another wind charge. Then check if the uh powdered snow is still here. If not, then you're fine because sometimes it might actually just pick up the powdered snow on its own and that's because of wind charges, but it won't actually be that effective to Or actually what I just did is that I it
+
+[16:05] kind of picked up the the snow powdered snow because I accidentally did it wrong. So that that was actually not the thing that was So now that you got it ready, what you're going to do is you're going to go ahead and put your next payload. So do the Whoops. Do your norm. There you go. We've got 32 in here, 32 in here, 32 in here. Then you're going to go ahead and put your payload. This is the accelerant, by the way. And
+
+[16:39] then we're going to go ahead and launch into the same spot. Now, you're probably asking, what's so special about launching into Well, let me just show you. Oh, we launched it to the same spot. Man, I I wonder what could possibly go wrong. That can Oh, it's like a little You think it Oh. Oh, boy. Man,
+
+[17:13] you see I call it the hollowerer cuz kind of refers to, you know, Gojo's holo purple if anyone caught the reference. But another reason is because it could do these straight lines or it could do these small straight lines but effectively more power. So really this cannon has settings. You could have multiple cannons blind in one row all doing different power. These cannons are fairly cheap, too.
+
+[17:48] From what I from the material list itself, these are all my other Oh, shoot. Sorry. The material list itself, it's 139 items. And most of these items you could just replace for building blocks. For example, this the white light gray wool. You could just replace that for a building block. And the more complicated the only complicated part to get is probably the
+
+[18:25] soul sand for uh No, not even that. It's probably just the piston observer. And I'm going honestly say this, you could probably build this in a survival world on the first week. Not that great at the game. So, and you're also probably wondering, oh wait, how do I set this little arrow, the little fishing rod thing? That's actually pretty simple. Make sure you have a dispenser in here. Get your fishing rod. Nifty fishing rod.
+
+[18:58] But before you do anything, go into the Nether. build at least make sure that the exit is correct. So if you enter through here, it should be right here. Place two blocks right here. Block this part off. Get two powered rails, one redstone torch, and you're done. That is the entire Nether Nether portal
+
+[19:31] side. Now I go back. I could go ahead and do fish. Load the cannon. Put the fishing rod in. And then now I could go ahead and use a cannon wherever I want in the world. The only thing that I do have to say is that payload is kind of expensive, but from what you can see, it gets the
+
+[20:04] job done. Nine stacks of TNT, and if you have everything coordinated in a PvP fight, you could absolutely kill somebody if they're not using a totem. So, there we have it. That was the Orbital Hollower or Mark III aka the hollower. If you have any questions, let me know. Please subscribe because I have more
+
+[20:37] orbital cannons. I think we have three more to go as I'm working with a friend to make these. The ones that we're making right now. And we're also considering orbital arrow cannon. Might not work, but we'll consider it. see
+

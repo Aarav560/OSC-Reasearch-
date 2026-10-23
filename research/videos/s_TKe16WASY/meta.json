@@ -1,0 +1,49 @@
+{
+  "id": "s_TKe16WASY",
+  "title": "Introducing the Orbital Strike TnT Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230301",
+  "duration": 599,
+  "view_count": 1173295,
+  "like_count": 61531,
+  "description": "It's time to introduce Minecrafts weapons of mass destruction. The orbital strike cannon is capable of accurately hitting targets thousands of blocks away using any entity that can be propelled by TnT. In this video we will witness the destructive power of lazy acceleration and how this enables delivery of a payload to anywhere in your minecraft world.\n\nWorld Download and Fire Control Script, BE AWARE that the cannon WILL NOT work on different editions of the game such as paper/spigot, purpur or Bedrock edition:\nhttps://www.mediafire.com/folder/88qrgise22lax/Orbital_Strike_Cannon\n\nWavetech Server Discord where you can reach me for questions about this project:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to cannon",
+      "end_time": 33
+    },
+    {
+      "start_time": 33,
+      "title": "Orbital cannon mechanics",
+      "end_time": 124
+    },
+    {
+      "start_time": 124,
+      "title": "Anvil cannon demonstration",
+      "end_time": 343
+    },
+    {
+      "start_time": 343,
+      "title": "Bunker buster TNT test",
+      "end_time": 430
+    },
+    {
+      "start_time": 430,
+      "title": "Testing against players",
+      "end_time": 496
+    },
+    {
+      "start_time": 496,
+      "title": "Capabilities and constraints",
+      "end_time": 599
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "tnt cannon",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=s_TKe16WASY"
+}

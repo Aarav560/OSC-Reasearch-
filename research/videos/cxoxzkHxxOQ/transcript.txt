@@ -1,0 +1,42 @@
+[00:00] Hello everybody. And in this video, I'm going to show you guys how to set up the orbital strike cannon. Uh let's get in with it. So firstly, you're going to have to find a chunk divisible by 16. Well, yeah, a chunk. So that's going to there's going to be about a million chunks in the um uh chords sheet. I'll share in the description, but other than that, let's just start off with here. So, right now, now that we're here, we can load in the um orbital strike cannon.
+
+[00:32] The downloads are in the description. as you can see, it's kind of big. Now, this is unrealistic about what we're about to do, but it's a tutorial, so it'll really help um me and probably you guys understand in general. So, we're just going to remove a big old chunk of land. Not too much. And then what we're going to do is we're
+
+[01:04] just going to paste it in. Now you want to get flint and steel, though. We're not going to use it currently. It's for later. And go in uh one of these portals and then break it. Don't break the corner. Well, you can if you want, but it's just better if you don't. Just make sure the portal is not active. Now, because the cannon is out at 00, you want to TP to 0, but also I suggest TP to 150 to get to the Nether
+
+[01:38] route. And then obviously load in the um Nether portal schematic um right on here. So once you paste that in, um, go through the portal and then flip the switch and check if it's working. You can see and if the boat's coming back, then that means it's working. Do the same for this guy. Even though the other guy is working, you still always want to make sure. Yep. So this part is really important. Just flip that switch over. Now let's move on to the pin part.
+
+[02:18] Um, yeah, hold up. Let me pull it up. So, what you want to do for this part is it's not even that hard, which is nice. So, it is going to be pretty easy to understand. So, do you see this um area right here, the brown one? So basically this row right here is 1 2 3 4 5 6 7 8 9 10. So right now the pin the passcode is at 9 for over here. So right now it's
+
+[02:52] currently entered but if it's like if you want to enter in a different passcode uh from the ones um down and over here then you can totally do that. I'm just showing you guys how it works. So that if you want to input one, you can very easily do so. So for the code 940, you have um one, two, and five aren't selected, but three and four are. So 1 2 3 4 those two are selected. Six. What I mean six is selected. So six and then 8 n 10 are also selected. Boom.
+
+[03:26] Pretty easy. You are now um done with this part, which is nice. So, let's go ahead and find ourselves a place to go, which if I'm I forget where it is. Um, let's go to a village, but this village is kind of nearby the cannon. And you, one thing you don't want to be in your render distance is the cannons because it won't work. It actually can't work. Even though there's junk loaders loading
+
+[03:58] it in constantly, it's just not how it works, sadly. to make sure that it works for me. Um, I'm just going to lower my render distance by half just so I can show you guys how to do all this. So, what you want to do, like this place is good. So, press F3 and G on your keyboard to show the chunk borders and then simply uh go ahead and load in the control panel. Now, see this um corner right there? look directly up and
+
+[04:32] then um why won't this move um and then move it over to this corner too. So this corner should be here. So all you have to do is make sure that the that this green line is in the chunk that you're currently in or the one that you pasted in. Don't rotate the control panel because that could break stuff. So simply um paste it in. Pretty simple. And then this is where the flint and steel comes in.
+
+[05:08] Why is everything so blurry? I don't know. Um, now what you want to do is get some, depending on where you spawn, get some netherrack. If there's already netherrack right next to the portal, that's okay. Um, place down netherrack and light it up. It burns forever, so that's why. Turn on this guy. Obviously, still check. Yep. And you're good with that. You can also remove the um uh chunk borders. And now um let's pull up that guy again.
+
+[05:43] So, this is your pin. So, you want to enter that in first. You don't have to worry about it since you only have to enter it in once unless you're changing the pin. And boom. There we go. Now, let's say we wanted to um blow up the village kind of. Um what you're going to want to do is go over to your place of choice. let's go ahead and do this house. So, I suggest doing SL set block and
+
+[06:18] then it gives you the um cords. Make sure to save those. We can put it in there. And then just simply go back to the um cannon. I mean, not the cannon. Sorry, the um control panel. Sorry, not good at remembering where it is. So once you're back over with those cords, oh, also the origin spot is where you place the cannon. So make sure to set that. So our target is -31.
+
+[06:53] 72457. But as you can see, changed. Sorry, I was going to say that for something else, but besides that uh where's I'm flying way too fast. My bad. So, all you got to do is just enter in the passcode. That that that that that that. Also, if you're having trouble with it,
+
+[07:26] see how this has a corner like right there and that guy's right next to it. You should look for things like that. So then, oh, you can't find where this is. It's like right here. Place this guy down and then you'll have the easy location. So that that that that that that. And guys, please always double check. If
+
+[08:01] you're setting up for the first time, you should definitely always double check. And even if you're using it in general. Yeah, we're good. So now, um, let me lower my render distance just to make sure it works. So all I got to do is just press the button, read the code and then
+
+[08:35] it'll get to sun. If this does not blink, that is not that's not good since if it doesn't blink, that means it didn't connect to the cannon. I also suggest getting a animal spawn egg or anything really for later since you'll see why. So, if it's flashing, obviously that sign says it's going to be working. So, yeah, I will skip to when it finishes. All right, it's done. So, you'll see it
+
+[09:09] stopped blinking. as you can see, that sheep spawned down. Now, that should have meant it's done. Cuz the reason why I grabbed out the spawn egg is normally it freezes the game. So the spawn egg is for it like if you So once that light starts rinking, you
+
+[09:41] should spawn or try to spawn some mobs to see if it um worked. So let's take freeze real quick. So then when we go over there, it doesn't immediately like blow up. And let's go over to the um house. This one. Now, if you look in the sky, there isn't anything. There should be a TNT. that's the house. As you can see, it works. So, pretty
+
+[10:15] cool, right? Um I'm So, that's how it works. And I saw for the last video I saw a lot of people having trouble getting to the um spreadsheet. So I'm going to show that. So let me go ahead and pull that up real quick. Never mind. Um I'm just going to skip to me pulling it up. So here it is. Um I'm going to leave this link in the description. Um so if you don't want to look at in the description, here it is.
+
+[10:49] And basically um this is where the um control like uh file is for this. Um but for this one where all the chords are I'm just going to leave this in the description. I'm going to I'm just going to have a drive link for it. But this is where you get all the schematics and where you get um the PDF file. Yeah. What am I saying PDF file? I mean the sheet file. My bad. Um, so yeah, I know it looks like a weird format, but it's it. Um, and if you don't know how to import it into Drive, just click on
+
+[11:24] file, import, go to upload, and then upload your file. Pretty simple. Um, but yeah, that's how you set up the orbital strike cannon. Um, if you'd like to consider subscribing, I'd really appreciate it. Um, I just recently hit 2,000 subscribers. Um, but I'll see you all next time.
+

@@ -1,0 +1,121 @@
+{
+  "id": "q78LRgHt_zU",
+  "title": "Minecraft's Most Advanced TnT Weapon is Here",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250301",
+  "duration": 4394,
+  "view_count": 2389384,
+  "like_count": 67388,
+  "description": "It's finally here, the orbital strike cannon Mk.6. After witnessing creators from lifesteal anarchy such as @OnlyASquid, @wemmbumc and @minutetechmc attempt world domination with my older designs. I was inspired to make a brand new design boasting an array of features to make minecraft's ultimate weapons platform. We make use of advanced technologies like wireless redstone, redstone computing and some of the most insane TnT explosion interactions that will blow your mind. In this video we go fully into detail on the cannon and how to implement its design on a server environment, with tips and tricks for how to build the orbital strike cannon and maintain its dominance over your world. This is the orbital strike cannon 6.0, minecraft's ultimate tnt super weapon.\n\n@JKM115's Latest Wavetech update video, be sure to catch up on the last one for info about the perimeter cannons:\nhttps://youtu.be/KCu0ZPjddFo?si=CIdmCHqHJOoULCHL\n\nEntity Collision Method Bug Report:\nhttps://bugs.mojang.com/browse/MC/issues/MC-260743\n\nDownloads:\nhttps://www.mediafire.com/folder/p9dugihg28wnr/Orbital_Strike_Cannon_6.0\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ\n\n0:00:00 Intro Cinematic\n0:02:33 Introducing the Cannon\n0:04:18 Working Environment\n0:06:39 The collision method problem\n0:13:08 How to use Litematica\n0:17:46 Cannon environment overview\n0:18:34 Where to build the cannon\n0:25:04 Test and Build the cannon\n0:34:35 Material List and Building Tips\n0:37:47 Descibing the cannons core components\n0:40:59 How the cannon communicates\n0:44:03 How to interface with the cannon\n0:49:32 How to fire multiple shots\n0:52:38 How to configure the wireless network\n0:55:39 How the cannon stores information\n0:59:26 Introducing the new warhead builder\n1:01:33 How the stab charge works\n1:04:40 How the nuclear warhead works\n1:09:58 Cannon utility\n1:12:16 Orbital strike cannons 2 year anniversary",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro Cinematic",
+      "end_time": 153
+    },
+    {
+      "start_time": 153,
+      "title": "Introducing the Cannon",
+      "end_time": 258
+    },
+    {
+      "start_time": 258,
+      "title": "Working Environment",
+      "end_time": 399
+    },
+    {
+      "start_time": 399,
+      "title": "The collision method problem",
+      "end_time": 788
+    },
+    {
+      "start_time": 788,
+      "title": "How to use Litematica",
+      "end_time": 1066
+    },
+    {
+      "start_time": 1066,
+      "title": "Cannon environment overview",
+      "end_time": 1114
+    },
+    {
+      "start_time": 1114,
+      "title": "Where to build the cannon",
+      "end_time": 1504
+    },
+    {
+      "start_time": 1504,
+      "title": "Test and Build the cannon",
+      "end_time": 2075
+    },
+    {
+      "start_time": 2075,
+      "title": "Material List and Building Tips",
+      "end_time": 2267
+    },
+    {
+      "start_time": 2267,
+      "title": "Descibing the cannons core components",
+      "end_time": 2459
+    },
+    {
+      "start_time": 2459,
+      "title": "How the cannon communicates",
+      "end_time": 2643
+    },
+    {
+      "start_time": 2643,
+      "title": "How to interface with the cannon",
+      "end_time": 2972
+    },
+    {
+      "start_time": 2972,
+      "title": "How to fire multiple shots",
+      "end_time": 3158
+    },
+    {
+      "start_time": 3158,
+      "title": "How to configure the wireless network",
+      "end_time": 3339
+    },
+    {
+      "start_time": 3339,
+      "title": "How the cannon stores information",
+      "end_time": 3566
+    },
+    {
+      "start_time": 3566,
+      "title": "Introducing the new warhead builder",
+      "end_time": 3693
+    },
+    {
+      "start_time": 3693,
+      "title": "How the stab charge works",
+      "end_time": 3880
+    },
+    {
+      "start_time": 3880,
+      "title": "How the nuclear warhead works",
+      "end_time": 4198
+    },
+    {
+      "start_time": 4198,
+      "title": "Cannon utility",
+      "end_time": 4336
+    },
+    {
+      "start_time": 4336,
+      "title": "Orbital strike cannons 2 year anniversary",
+      "end_time": 4394
+    }
+  ],
+  "tags": [
+    "orbital strike cannon",
+    "redstone",
+    "tnt cannon",
+    "tnt nuke",
+    "minecraft"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=q78LRgHt_zU"
+}

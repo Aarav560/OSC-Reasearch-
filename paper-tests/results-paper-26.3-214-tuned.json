@@ -1,0 +1,12 @@
+{
+  "max_tnt_per_tick": {
+    "spawned": 300,
+    "tnt_alive_per_tick": [
+      300,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

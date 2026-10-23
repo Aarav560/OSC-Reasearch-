@@ -1,0 +1,64 @@
+{
+  "id": "PPfJJH0_dBM",
+  "title": "Introducing Orbital Skybender",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260927",
+  "duration": 2490,
+  "view_count": 1166824,
+  "like_count": 32312,
+  "description": "With new technology comes new possibilities. In this video we discover the exceptional capabilities of wind charge technology and use it to design a new kind of orbital cannon. One that can be linked directly to the player and enable them to harness power of TnT and have it flow through them, into a Minecraft world with the power of redstone.\n\nWorld Download and Schematics:\nhttps://www.mediafire.com/folder/8k2xnz31xw56q/Orbital_Skybender\n\nSkybender Anglesnap mod to control the cannon:\nhttps://github.com/cubicmetre/skybender-anglesnap/releases\n\nProjectile tech discord where you can find innovations like the nano pylon:\nhttps://discord.gg/QGaPM8zEzX\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction and concepts",
+      "end_time": 118
+    },
+    {
+      "start_time": 118,
+      "title": "The mirror pylon interface",
+      "end_time": 304
+    },
+    {
+      "start_time": 304,
+      "title": "Encoding and control systems",
+      "end_time": 650
+    },
+    {
+      "start_time": 650,
+      "title": "Payload and acceleration",
+      "end_time": 946
+    },
+    {
+      "start_time": 946,
+      "title": "Collision and physics tweaks",
+      "end_time": 1311
+    },
+    {
+      "start_time": 1311,
+      "title": "Wiring and system integration",
+      "end_time": 1587
+    },
+    {
+      "start_time": 1587,
+      "title": "Testing the Sky Bender",
+      "end_time": 1826
+    },
+    {
+      "start_time": 1826,
+      "title": "Building and operating guide",
+      "end_time": 2490
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "orbital strike cannon",
+    "wemmbu",
+    "unstable smp",
+    "tnt cannon",
+    "wind charge cannon",
+    "tnt railgun"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=PPfJJH0_dBM"
+}

@@ -1,0 +1,441 @@
+{
+  "axis_order": {
+    "cases": {
+      "free flight": {
+        "motion": [
+          9,
+          0,
+          9
+        ],
+        "block": null,
+        "pos_after_1_tick": [
+          16009.5,
+          100.0,
+          9.5
+        ],
+        "delta": [
+          9.0,
+          0.0,
+          9.0
+        ]
+      },
+      "|X|=|Z|, block on X-first leg": {
+        "motion": [
+          9,
+          0,
+          9
+        ],
+        "block": [
+          16005,
+          100,
+          0
+        ],
+        "pos_after_1_tick": [
+          16004.509999990463,
+          100.0,
+          9.5
+        ],
+        "delta": [
+          4.01,
+          0.0,
+          9.0
+        ]
+      },
+      "|X|=|Z|, block on Z-first leg": {
+        "motion": [
+          9,
+          0,
+          9
+        ],
+        "block": [
+          16000,
+          100,
+          5
+        ],
+        "pos_after_1_tick": [
+          16009.5,
+          100.0,
+          9.5
+        ],
+        "delta": [
+          9.0,
+          0.0,
+          9.0
+        ]
+      },
+      "|Z|>|X|, block on X-first leg": {
+        "motion": [
+          8,
+          0,
+          9
+        ],
+        "block": [
+          16005,
+          100,
+          0
+        ],
+        "pos_after_1_tick": [
+          16008.5,
+          100.0,
+          9.5
+        ],
+        "delta": [
+          8.0,
+          0.0,
+          9.0
+        ]
+      },
+      "|Z|>|X|, block on Z-first leg": {
+        "motion": [
+          8,
+          0,
+          9
+        ],
+        "block": [
+          16000,
+          100,
+          5
+        ],
+        "pos_after_1_tick": [
+          16008.5,
+          100.0,
+          4.509999990463257
+        ],
+        "delta": [
+          8.0,
+          0.0,
+          4.01
+        ]
+      },
+      "|X|>|Z|, block on Z-first leg": {
+        "motion": [
+          9,
+          0,
+          8
+        ],
+        "block": [
+          16000,
+          100,
+          5
+        ],
+        "pos_after_1_tick": [
+          16009.5,
+          100.0,
+          8.5
+        ],
+        "delta": [
+          9.0,
+          0.0,
+          8.0
+        ]
+      },
+      "Y first: block above start": {
+        "motion": [
+          9,
+          5,
+          0
+        ],
+        "block": [
+          16000,
+          103,
+          0
+        ],
+        "pos_after_1_tick": [
+          16009.5,
+          102.01999998092651,
+          0.5
+        ],
+        "delta": [
+          9.0,
+          2.02,
+          0.0
+        ]
+      },
+      "NBT clamp: Motion x=12": {
+        "motion": [
+          12,
+          0,
+          0
+        ],
+        "block": null,
+        "pos_after_1_tick": [
+          16000.5,
+          100.0,
+          0.5
+        ],
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "lazy_stasis": {
+    "charges": [
+      {
+        "after_shot": 1,
+        "payload_pos": [
+          16177.5,
+          100.0,
+          8.5
+        ],
+        "payload_motion": [
+          0.6247916449888092,
+          -0.01275616300012475,
+          0.0
+        ],
+        "payload_fuse": 200.0
+      },
+      {
+        "after_shot": 2,
+        "payload_pos": [
+          16177.5,
+          100.0,
+          8.5
+        ],
+        "payload_motion": [
+          1.2495832899776185,
+          -0.0255123260002495,
+          0.0
+        ],
+        "payload_fuse": 200.0
+      },
+      {
+        "after_shot": 3,
+        "payload_pos": [
+          16177.5,
+          100.0,
+          8.5
+        ],
+        "payload_motion": [
+          1.8743749349664278,
+          -0.03826848900037425,
+          0.0
+        ],
+        "payload_fuse": 200.0
+      }
+    ],
+    "release": {
+      "pos_before": [
+        16177.5,
+        100.0,
+        8.5
+      ],
+      "pos_per_tick": [
+        [
+          16179.374374934967,
+          99.96173151099963,
+          8.5
+        ],
+        [
+          16181.211262406985,
+          99.92422839104934,
+          8.5
+        ],
+        [
+          16183.011412164598,
+          99.88747533278276,
+          8.5
+        ]
+      ]
+    }
+  },
+  "powder_snow": {
+    "cases": {
+      "control (no snow)": [
+        {
+          "pos": [
+            16325.5,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            4.900000095367432,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16330.400000095367,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            4.802000186920168,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16335.202000282288,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            4.705960274772649,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16339.90796055706,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            4.611841159036265,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "powder snow at +5": [
+        {
+          "pos": [
+            16325.5,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            4.900000095367432,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16329.909999969006,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16329.909999969006,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pos": [
+            16329.909999969006,
+            100.0,
+            0.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "stab_charge_order": {
+    "batches": "10 TNT fuse 2 (a) + 10 TNT fuse 1 (b)",
+    "cases": {
+      "long-fuse batch spawned FIRST": {
+        "survivors(a)": 10,
+        "a_motion": [
+          0.0,
+          -1.925779379422018,
+          0.0
+        ],
+        "a_pos": [
+          16488.5,
+          149.96,
+          8.5
+        ]
+      },
+      "long-fuse batch spawned SECOND": {
+        "survivors(a)": 10,
+        "a_motion": [
+          0.0,
+          0.022952209360825676,
+          0.0
+        ],
+        "a_pos": [
+          16488.5,
+          150.02342062134093,
+          8.5
+        ]
+      }
+    }
+  },
+  "unloaded_chunk_explosion": {
+    "propellant": 400,
+    "payload_motion": [
+      295.7288009884876,
+      2.852363682501519,
+      0.0
+    ],
+    "predicted_landing_x": 17112.228800988487,
+    "landing_chunk_loaded_before": false,
+    "payload_alive_after": 0,
+    "landing_chunk_loaded_after_tick": false,
+    "grass_blocks_destroyed_9x9": 66,
+    "step_wall_time_s": 0.212
+  },
+  "max_tnt_per_tick": {
+    "spawned": 300,
+    "tnt_alive_per_tick": [
+      300,
+      200,
+      100,
+      0,
+      0
+    ]
+  },
+  "long_range_flight": {
+    "propellant": 6000,
+    "payload_motion": [
+      4435.93201482743,
+      42.78545523644511,
+      0.0
+    ],
+    "expected_x": 22372.43201482743,
+    "payload_left_origin": true,
+    "pos_found_at_landing": [
+      22372.43201482743,
+      342.7854552364451,
+      8.5
+    ],
+    "step_wall_time_s": 0.211,
+    "paper_mspt": "\u00a76Server tick times \u00a7e(\u00a77avg\u00a7e/\u00a77min\u00a7e/\u00a77max\u00a7e)\u00a76 from last 5s\u00a77,\u00a76 10s\u00a77,\u00a76 1m\u00a7e: \u00a76\u25f4 \u00a7a8.2\u00a77/\u00a7a0.1\u00a77/\u00a7c67.1\u00a7e, \u00a7a10.5\u00a77/\u00a7a0.1\u00a77/\u00a7c67.7\u00a7e, \u00a7a4.0\u00a77/\u00a7a0.1\u00a77/\u00a7c77.7"
+  },
+  "portal_ticket": {
+    "overworld_loaded_before": false,
+    "items_arrived": 1,
+    "chunk_states": {
+      "chunk +0": "entity-ticking",
+      "chunk +1": "entity-ticking",
+      "chunk +2": "frozen",
+      "chunk +2 knockback probe": {
+        "pos": [
+          19232.5,
+          120.0,
+          8.5
+        ],
+        "motion": [
+          0.6872000100333026,
+          -0.016836400573498413,
+          0.0
+        ]
+      }
+    }
+  }
+}

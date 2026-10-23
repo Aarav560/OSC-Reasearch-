@@ -1,0 +1,66 @@
+{
+  "id": "v68XeidVQKU",
+  "title": "The Orbital Chaos Cube Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260825",
+  "duration": 1077,
+  "view_count": 251971,
+  "like_count": 10441,
+  "description": "Could the sulfur cube become the ultimate nuke? In this video we design a sulfur cube cannon with the potential to rival the orbital strike cannon. However you might find that while the sulfur cube offers some interesting perks, it also comes with some significant tradeoffs. Join cubicmetre as he investigates the capabilities of the sulfur cube in the context of TnT cannon technology.\n\nOrbital Strike Fire Control:\nhttp://osc-fire-control.cubicmetre.net/\n\nWorld Download:\nhttps://www.mediafire.com/file/9szvlhbps89ap0w/Sulfur_Cube_Cannon.zip/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Orbital strike cannon basics",
+      "end_time": 98
+    },
+    {
+      "start_time": 98,
+      "title": "Sulfur cube potential",
+      "end_time": 141
+    },
+    {
+      "start_time": 141,
+      "title": "Entity-based acceleration",
+      "end_time": 237
+    },
+    {
+      "start_time": 237,
+      "title": "Payload control systems",
+      "end_time": 441
+    },
+    {
+      "start_time": 441,
+      "title": "Supply chain bottlenecks",
+      "end_time": 591
+    },
+    {
+      "start_time": 591,
+      "title": "Tick-precise timing",
+      "end_time": 716
+    },
+    {
+      "start_time": 716,
+      "title": "Targeting and automation",
+      "end_time": 839
+    },
+    {
+      "start_time": 839,
+      "title": "Construction requirements",
+      "end_time": 974
+    },
+    {
+      "start_time": 974,
+      "title": "Performance evaluation",
+      "end_time": 1077
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "sulfur cube",
+    "chaos cubed",
+    "orbital strike cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=v68XeidVQKU"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "lUCXQC0PdaY",
+  "title": "Addressing the Unstable SMP Slop Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260514",
+  "duration": 1060,
+  "view_count": 851825,
+  "like_count": 35177,
+  "description": "Wemmbu made a video about the Orbital Strike Cannon on the Unstable SMP which has led to a lot of confusion about the cannon and what it is actually capable of. In this video we will debunk the mystery of the cannon and explore the actual survival mechanics that make the cannon possible. As a sidequest we will also explore pearl cannons and why Grian pranking the Hermits on Hermitcraft by launching pearls thousands of blocks is actually a really bad idea for the health of your minecraft world.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The myth of the cannon",
+      "end_time": 81
+    },
+    {
+      "start_time": 81,
+      "title": "Aiming and physics constraints",
+      "end_time": 220
+    },
+    {
+      "start_time": 220,
+      "title": "Code analysis of TNT behavior",
+      "end_time": 424
+    },
+    {
+      "start_time": 424,
+      "title": "Designing the firing mechanism",
+      "end_time": 608
+    },
+    {
+      "start_time": 608,
+      "title": "Risks of pearl-based cannons",
+      "end_time": 786
+    },
+    {
+      "start_time": 786,
+      "title": "Chunk loading for distance",
+      "end_time": 871
+    },
+    {
+      "start_time": 871,
+      "title": "The fishing rod dilemma",
+      "end_time": 1060
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "wemmbu orbital strike cannon",
+    "unstable smp",
+    "ender pearl cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=lUCXQC0PdaY"
+}

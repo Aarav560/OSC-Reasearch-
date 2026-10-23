@@ -1,0 +1,46 @@
+{
+  "id": "PI_xXZxV6tY",
+  "title": "The Orbital Strike Cannon just got a Huge Upgrade",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260408",
+  "duration": 662,
+  "view_count": 366949,
+  "like_count": 19068,
+  "description": "It's time to reveal some new tools and design theories around the orbital strike cannon to provide improvements of user engagement with Minecraft's most powerful super weapon. In this video we adopt design principles, informed from the experiences of users such as @minutetechmc and @rekrap2 from the lifesteal SMP, and unveil a new website hosting a major upgrade to the orbital strike platform.\n\nThe New and Improved Orbital Strike Fire Control:\nhttp://osc-fire-control.cubicmetre.net/\n\nYou can find the github repo for the web app at:\nhttps://github.com/cubicmetre/osc-fire-control\n\nSchematics of the Minimal Signature variant of the Orbital Strike Cannon:\nhttps://www.mediafire.com/folder/ykwaocnz7cslg/Orbital_Strike_Minimal_Signature\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "State of the project",
+      "end_time": 66
+    },
+    {
+      "start_time": 66,
+      "title": "Identifying design gaps",
+      "end_time": 244
+    },
+    {
+      "start_time": 244,
+      "title": "Minimal signature variant",
+      "end_time": 486
+    },
+    {
+      "start_time": 486,
+      "title": "New fire control application",
+      "end_time": 588
+    },
+    {
+      "start_time": 588,
+      "title": "Personal update and closing",
+      "end_time": 662
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "tnt cannon",
+    "tnt nuke minecraft",
+    "orbital strike"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=PI_xXZxV6tY"
+}

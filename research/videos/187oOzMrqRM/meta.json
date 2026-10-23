@@ -1,0 +1,75 @@
+{
+  "id": "187oOzMrqRM",
+  "title": "Introducing Minecrafts Precision TnT Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230129",
+  "duration": 1200,
+  "view_count": 333715,
+  "like_count": 18709,
+  "description": "It's finally here! A TnT cannon that can aim and shoot using dirt cheap redstone mechanics, but it turns out to make something as simple to build and powerful as the Smart Artillery requires some super advanced mathematics outside of the game to give us our firing options. In this video we will learn about the ballistics of TnT cannons and how we can model these ballistics using advanced software.\n\nKikugie's Unnamed Cannon Setup Mod (ucsm) for giving the player firing options in game:\nhttps://modrinth.com/mod/unnamed-cannon-setup-mod\n\nSmart Artillery Resources:\nhttps://www.mediafire.com/folder/yci3ip29bpu36/Smart_Artillery\n\nLearning Resources, Grant Sanderson did an amazing series about linear algebra on his channel 3blue1brown:\nhttps://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab\n\nTnT archive:\nhttps://discord.gg/vPyUBcdmZV\n\nSpey's Channel:\nhttps://www.youtube.com/watch?v=o5ppKDQ6eGc\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to Smart Art",
+      "end_time": 64
+    },
+    {
+      "start_time": 64,
+      "title": "Combat demonstration",
+      "end_time": 147
+    },
+    {
+      "start_time": 147,
+      "title": "Analysis of damage",
+      "end_time": 201
+    },
+    {
+      "start_time": 201,
+      "title": "Village demolition",
+      "end_time": 302
+    },
+    {
+      "start_time": 302,
+      "title": "How it works",
+      "end_time": 483
+    },
+    {
+      "start_time": 483,
+      "title": "Targeting challenge",
+      "end_time": 562
+    },
+    {
+      "start_time": 562,
+      "title": "Data collection",
+      "end_time": 745
+    },
+    {
+      "start_time": 745,
+      "title": "Ballistics modeling",
+      "end_time": 861
+    },
+    {
+      "start_time": 861,
+      "title": "Simulating trajectories",
+      "end_time": 972
+    },
+    {
+      "start_time": 972,
+      "title": "Point cloud visualization",
+      "end_time": 1122
+    },
+    {
+      "start_time": 1122,
+      "title": "Final conclusion",
+      "end_time": 1200
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "tnt cannon",
+    "redstone",
+    "minecraft war machine"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=187oOzMrqRM"
+}

@@ -1,0 +1,20 @@
+[00:00] is this it's come to my attention that I think I completely forgot to show y'all how to set up the old ray cannon. So, just to show y'all here's how you make it. First, you get the schematic. So, you get the schematic. Then, see this powdered snow right here? This has to be alone in an independent chunk. Example own independent Do that, you just go to a chunk. Two blocks from the corner
+
+[00:34] schematic and then then you go up in the sky. Preferably Y level 140 or 130 should work. Place it. Paste the schematic in. How to use it, what you also need to do if you're playing on a paper server or not with cheats, you must make an
+
+[01:08] ender pearl loader. This Place soul sand, water, honey. Aiming at this corner of the honey block more down towards Then, you go to the other chunk. This one. Specifically the chunks with the dispensers So, you go to this one. Do this Do the ender pearl loader. You also go to this one. And Then, once you have the both the ender
+
+[01:44] pearl loaders you can then fire the cannon. Fire the cannon, you would either use calculator. Which using the calculator acknowledge that this is your one of the cannons. So, here's how you know which cannon is which. You walk like this. Walk this way back and forth and see which coordinate is changing. For me, it's the Z coordinate. So, that means this is my Z cannon.
+
+[02:18] Then, you do the same thing for this one like this. This is my X coordinate. So, now that you know which cannon is which, remember this is this would For my case, this would be my Z and this would be my X. I pull up the calculator, which would be this thing. You want to put your origin coordinates. Cannon, so look at it from here. Origin for me would be -287, 142, and -32.
+
+[02:55] Then, once you have your cannon's origin, you go to your target. For me, this case is this lovely pumpkin patch right here. Which coordinate I can go ahead and add coordinates for the calculator, which would be -280 in and -30. Now, this would be different in your case, but this is what I get for my output. Needs 91 wind charges in Z and X and six
+
+[03:29] wind charges in the X. This is Z. Here. Oh, but first, what I recommend is already having the wind charges prepared, which in this case for me would be this. And now, once I do that, I go ahead and put the arrow. Put the arrow. Once I have the arrow ready, I then put TNT. Any amount works. Long as it can fit in here.
+
+[04:05] I recommend amounts and big. So, now that you have your TNT loaded, you want to put the wind charges. So, I will put my second 27 and the six in here. Then, to actually use the cannon, you want to leave the area by the portal if you're going to fish uh fishing rod puller or simply leave. So, for me in this case, I would go into spectator mode.
+
+[04:38] Going. So, it dispenses the TNT. Then, once done dispensing the TNT, it shoots the wind charges. Then, once it's done, the calculator also tells you how long it should take. But, then once it's done, you want to load the chunks. So, for me, I'll just go over here already. You want to load the chunks the cannon are in so it could actually launch. And then this lovely pumpkin patch should be a eviscerator. As you can see, lovely pumpkin patch is
+
+[05:10] gone now. There we have it, folks. That was the tutorial for the mini orbital strike cannon. noodles
+

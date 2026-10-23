@@ -1,0 +1,30 @@
+[00:02] This is a tutorial on the Pusk. Firstly, before pasting it in, before building it, you want to make sure that it's aligned to a chunk border like this. So that it's like smooth. And you want to make sure that these blue glasses fit with this blue line and this blue line. So for me, mine is
+
+[00:36] one above. So I will move that up one. No, I will move that down one. And it's ready to be pasted in. Now, if you're building this on a um if you're building this on a server, you want to make sure that there is uh I'll show you. So for um a stab shot, you want to make sure that there is 46
+
+[01:11] items in here. Check that out. Split it. 46. Um you want to make sure that there's 64 random blocks in this dropper with the nether portal. Make sure that there's minecarts there. Uh you want to make sure that there's TNT in all these chests in here, in here, in here, in here. Every single one needs TNT or else it will just go to a different direction. And in here, too. These These two. And over here, you want to make sure I
+
+[01:45] I'm not aligned with schematic. You want to make sure that you have a chest minecart and it's ticking. And then over here, so for me, I'm going to fire a step shot. So, I'm going to put in let's say two stacks, which is going to be 50 50 or so blocks down like deep. &gt;&gt; [snorts] &gt;&gt; Another thing you need is for this
+
+[02:19] hopper clock right here, you just need one Now, in this in this hopper, you just need one random block or item. you want bulb like you want to turn this on if you're going to go into your stab. if this light is blinking, make sure you have that on. I'm not going to get into the fishing rod fire today. I don't I just don't really feel like it.
+
+[02:52] Um All right, and I'll show you how to fire it. You come over here, open up F3. Mine's on I'll open up the 1 second. I forgot where J. All right. I'll open up F3. J. What are my coords? -0.
+
+[03:27] 0. Uh we need to get rid of that. 0. And where do I want it to be at? Um It's going in Let me find it. It goes in that direction. So, where this portal is. So, it's going for me, it's going negative positive.
+
+[04:01] So, I'll probably go negative 500 positive 500. And now it gives you number. So, what you want to do is you're going to come over here and you're going to open up that GUI again. You're going to press bang 32 and 8. Yep, that's all good.
+
+[04:37] And then you're going to come over here. You're going to go bang bang bang, which is what it says here. You You don't have to worry about this stuff here. It doesn't really matter that much. And then you want to make a stasis in the green chunks. So, so the chunks are getting loaded. Only not the red chunks and just the green ones because it'll break if you
+
+[05:10] load. Double current. Um should be ready to fire. Uh All right, I'll go through the nether portal and I'll tick sprint. Let's me get through. All right, I'll block this up so nothing
+
+[05:42] can get in and load the chunks. ticks sprints I'd say 20,000. It doesn't work. It's pretty difficult.
+
+[06:19] Oh. Okay, I I I came in at a very like All right, I'm going to take freeze. And I'm going to take fly over to where where the strut should have strut should have came from. All right, if you look here that's like a spot on. That's like the three blocks off. If I take
+
+[06:52] step 1 second I'll take step 3 seconds. Boom. Um yeah, that's it. It's pretty easy to use. If you want, I can make a tutorial um on an orbital, but it's pretty easy. You just don't turn on the um the bulb in there.
+
+[07:31] Some other things, uh the mod I used, this one, will be in the description. If you If you press this, it like and you leave the chunks, it won't fire. Yeah, so never unload the chunks without pressing this if you don't if you're going to come back soon. Because
+
+[08:04] it'll blow itself up and it'll blow up all the materials you had. So, yeah.
+

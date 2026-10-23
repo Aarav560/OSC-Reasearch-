@@ -1,0 +1,64 @@
+{
+  "id": "2SaD3FYNfEs",
+  "title": "The Change that Broke the Cannon's Back",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260713",
+  "duration": 632,
+  "view_count": 139502,
+  "like_count": 7219,
+  "description": "Minecraft is always changing, often for the better but sometimes for the worse. In this video we'll look at some of the chaotic changes throughout the 1.21 subversions that killed off many cannon designs, and build up a comprehensive understanding of how one tiny change could eliminate the anti-air arrow cannon.\n\nWind charge aiming bug report:\nhttps://report.bugs.mojang.com/servicedesk/customer/portal/2/MC-305092\n\nRelated issue with arrows disappearing:\nhttps://bugs.mojang.com/browse/MC/issues/MC-306076\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The orbital strike cannon",
+      "end_time": 77
+    },
+    {
+      "start_time": 77,
+      "title": "Sensitivity in engineering",
+      "end_time": 140
+    },
+    {
+      "start_time": 140,
+      "title": "Recurring bugs and fixes",
+      "end_time": 197
+    },
+    {
+      "start_time": 197,
+      "title": "The trapdoor mechanism",
+      "end_time": 248
+    },
+    {
+      "start_time": 248,
+      "title": "Analyzing source code",
+      "end_time": 439
+    },
+    {
+      "start_time": 439,
+      "title": "Why the cannon broke",
+      "end_time": 526
+    },
+    {
+      "start_time": 526,
+      "title": "Mojang's bug policy",
+      "end_time": 581
+    },
+    {
+      "start_time": 581,
+      "title": "Future of the cannon",
+      "end_time": 632
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "anti air",
+    "tnt cannon",
+    "why cannon not work",
+    "wind charge cannon",
+    "arrow railgun",
+    "unstable smp arrow cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=2SaD3FYNfEs"
+}

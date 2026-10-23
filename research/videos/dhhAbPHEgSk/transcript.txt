@@ -1,0 +1,30 @@
+[00:00] Hey guys, it's me, Moxy. Um, I'm making this video because I've been seeing a lot of people fail or like struggle at like setting up and making the channel. So, um, yeah, I'm just going to help with that. So, you may already see it's down there. So, before you paste in the most important thing is that you choose coordinates divisible by 16. Now, I'm not going to say some. Well, I will say one or the chords that that's at, but I'll give you guys a spreadsheet of like like probably millions of
+
+[00:33] chords. So, my chords right now areative48, 128, and negative 2048. By the way, um the y axis doesn't really matter as long as you're not too low and too up. Don't go like too far up. Once you're here, you can just paste it in. Now, if we head over to the spreadsheet here, um, you'll see that, don't mind this target. We have yet to set that up. But you'll see the Nether position here already set
+
+[01:06] up for you. So, just go through your Nether portals. Break that. And then TDS256 150 is good for the Nether because puts you really high. And here we are. These are already set down, but just load up. Uh um if your P key is and then here, I suggest turning on hit boxes to see if it comes through,
+
+[01:38] which I know it doesn't seem like it is, but you can see it like refunding back in. So do the same for here. Obviously, check it works. Now, you might think you're done and you're ready, but this is the most important part. Make sure this guy's flipped, not this. Well, make sure this guy's on and this guy isn't, or else it's not going to work. So, once you're done, you can go anywhere. So, I'm just going to TP. So, back to 500. A 500. I'll also probably be sharing
+
+[02:12] this rural world. U you can hide your hit boxes now, but it's fine. So then now you're going to want to show your word borders. Then I don't know the schematic if you'd like. Then get your control panel out. Don't rotate it, by the way. That won't be good. So just move it to wherever you are. Go down a little bit and go to your edge of the chunk. Look up directly. and then move it until it's directly at the edge.
+
+[02:47] Cuz these green boxes are to make sure it's chunk aligned, which is very important. So, space it in. And it's backwards. Oh, I can't rotate it. So, right now, my code is 940, which looks something like So, this is your code right here, which you don't change. Just input it in. And that's pretty simple. Um, you're
+
+[03:22] probably going to want to unload it because it's quite annoying. But right now, we don't have a target. So, let's go find one. Right now, if we speed up 256, that's kind of funny. Um, we can go right here. Now, I'm going to do a stab charge because it's a lot faster. So when typing it in, you want to do the type as a stab stab death. We're going to use 16 and then target. Now looking at your chords 569 71
+
+[03:59] then two could be faster. So, I'm just going to do a stab depth of eight, but it doesn't really change. So, I'll just do 16 instead. Oh, it doesn't change at all. So, here we are. It's right there. Now, we have our code. We fly all the way back. Also, if you don't want to set up the chunk loader here, just break that so you don't go in it accidentally. So, put in your code. Quite simple. I wish there was a reset button because that would
+
+[04:33] make my life a lot easier. So always verify it first that oh also you can disable your chunk borders showing I'm showing also you're just going to follow it like perfectly. So no matter what, you still want to verify that's correct. That's correct.
+
+[05:10] That's correct. And the code's correct. So now we're just going to read full screen this because obviously you're probably going to want to see it full screen. Right click on that. I wouldn't suggest speeding up the tick speed, but I would suggest getting any mob spawn egg because that'll come in handy later. do daylight. You're going to want that to be true. So, that'll blink. And if you're using the right um code, then it'll work. The default code is 940. So, you don't need to change anything on the
+
+[05:42] cannon. Uh, and I guess now we wait. So, yeah. I'd love to go into the Nether, set it up now, but I can't cuz then that'll break it. Um, yeah, sometimes it can take a while, sometimes it won't. You know, it's different each time. I don't know about that. I don't really use this this often, but I just want to
+
+[06:13] help people out. But seeing this blink is important because if it doesn't, that means there's an issue. I know I didn't. And now I know I suggested for you guys to not ex like turn it up, but I'm just going to turn it up for an example. I'll do 100. And it's going to show up in a few seconds.
+
+[06:47] I'm going to set it back down to 20. And bad weird stuff happens. And that'll happen and it should stop
+
+[07:23] blinking. If you can spawn mobs then probably means something is maybe wrong because everything should freeze at some point because well sending kind of a powerful payload. I honestly Oh, yep. It worked. Thankfully, that was quite fast and didn't take too long. But yeah, um that's how you set it up. It's actually really simple, though. I'm not going to
+
+[07:54] show how to build it. Um I'm just going to kill these sheep. Don't mind the sword. Don't mind the sword. Um yeah, but that's how you set up. Um hope you liked it. Um, I hope I get out. Uh, thanks for watching and have a great rest of your day.
+

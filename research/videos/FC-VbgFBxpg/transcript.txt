@@ -1,0 +1,20 @@
+[00:00] Do you want to do this? You want a tutorial? I'll give you a tutorial. I won't be doing the fishing rod mechanism cuz uh this is very poorly skept. If you're on Windows, it's probably going to be FN F3 G. Then once you have that up, you want to put smooth stone like this. Cover it up [music] like this. So it
+
+[00:35] makes a box. It should be a 4x4. Then break this and replace it with a dispenser. Then break these two blocks and replace it with a slab. But make sure the slab is going up. Then place a snow bucket. Then build walls just one block up like that on the outside of the chunk. Then put a dispenser like this. A block two blocks on the corners like these. Now place two blocks like this and put trap doors on the top. Then break the
+
+[01:10] two bottom blocks and replace this with water. Then make sure you put this is very important. Make sure put to put smooth stone on the top. Place two blocks like this and then a block on top. Then put an observer going towards this. And then like this, you put a sticky piston right here. Then get a lever. Do one three ticks like that.
+
+[01:46] And like that. Oh, add one more. And another one. Now, this is very important cuz if you're in survival, you're going to need the this. Now, for this one, put a redstone comparator facing away. Now, put an item inside. One redstone dust, a redstone torch. Place redstone dust like this, and break the bottom blocks. Then on the fourth block, place a sticky piston going towards here, another observer like that
+
+[02:22] and an observer facing the dispenser. Then after you place those, put redstone dust like this and a redstone repeater like that. Now when you take the blocks out, it should do that. That's a good thing. Okay, now get your TNT. I'd recommend only one stack [music] for now to test it. Then make a portal right here. Then light it. Uh don't go in yet,
+
+[02:56] though. Now you want to get go on these chunks without where the powdered snow is. So you want to make sure you're not at the powdered snow. And this chunk, put an ender pearl. Now, I'm going to put some numbers up on screen to show you what number should go in here for your destination. So, like [music] how many how many pieces of TNT you need to go to a certain chunk. Uh,
+
+[03:29] this can only go diagonal, by the way. [music] So, now for me, I'm just going to really quickly. Now again, if [music] you're on carpet, do creative [music] players load chunks. False. However, here's the thing. If you are like in survival, [music] then go in here and flick that. Oh, I did not mean to go in here. So, as you're uh like getting [music] in
+
+[04:02] there, uh you would flick this lever as soon as you're about to teleport. And then you would waste wait an estimated amount of time which is about to pop up on screen. And it's for again how long you'll wait for each stack of TNT. Okay, now we're going to activate it. As you can see, it's going. We're going to make it so
+
+[04:39] they load chunks. True. And our payload should be somewhere over here. Yep. Right there. Right there. Uh, I'll show an actual demonstr I'll show another demonstration right now. This shot should go right here. I'm going to show how accurate it is. It's literally going to go [music] right here or right here. It's going to land. Make sure you elevate this. This is very important. Okay, as you can see,
+
+[05:14] the TNG should arrive like where I predicted [music] between these two chunks or right there. So if you enjoyed the video, subscribe.
+

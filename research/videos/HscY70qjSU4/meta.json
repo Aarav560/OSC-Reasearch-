@@ -1,0 +1,79 @@
+{
+  "id": "HscY70qjSU4",
+  "title": "The Incredible Science of the Orbital Strike Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230409",
+  "duration": 1843,
+  "view_count": 393528,
+  "like_count": 14369,
+  "description": "Now that we got a taste of the impressive power of the orbital strike cannon, lets spend some time breaking down the machine to get a feel for how it works and what insane technology went into its design.\n\nDownloads for the cannon. *Make sure to enable the chunk loaders before attempting to fire the cannon*. And before you ask, no this doesn't work on Bedrock Edition or on paper servers:\nhttps://www.mediafire.com/folder/88qrgise22lax/Orbital_Strike_Cannon\n\nPrevious video showcasing the orbital strike cannon, BE AWARE that the cannon WILL NOT work on different editions of the game such as paper/spigot, purpur or Bedrock edition::\nhttps://www.youtube.com/watch?v=s_TKe16WASY\n\nWavetech Server Discord where you can reach me for questions about this project:\nhttps://discord.gg/SR6q7sC\n\nCheck out the TnT archives for more cannon tech:\nhttps://discord.gg/vPyUBcdmZV\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Orbital strike cannon theory",
+      "end_time": 65
+    },
+    {
+      "start_time": 65,
+      "title": "Advantages and drawbacks",
+      "end_time": 142
+    },
+    {
+      "start_time": 142,
+      "title": "Lazy chunk mechanics",
+      "end_time": 356
+    },
+    {
+      "start_time": 356,
+      "title": "Cannon firing procedure",
+      "end_time": 436
+    },
+    {
+      "start_time": 436,
+      "title": "High speed entity physics",
+      "end_time": 627
+    },
+    {
+      "start_time": 627,
+      "title": "Powdered snow collision",
+      "end_time": 793
+    },
+    {
+      "start_time": 793,
+      "title": "Targeting mathematics",
+      "end_time": 923
+    },
+    {
+      "start_time": 923,
+      "title": "Cannon programming",
+      "end_time": 1060
+    },
+    {
+      "start_time": 1060,
+      "title": "TNT duping system",
+      "end_time": 1237
+    },
+    {
+      "start_time": 1237,
+      "title": "Stab charge mechanics",
+      "end_time": 1418
+    },
+    {
+      "start_time": 1418,
+      "title": "Fine tuning the payload",
+      "end_time": 1583
+    },
+    {
+      "start_time": 1583,
+      "title": "Explosions in unloaded chunks",
+      "end_time": 1843
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "tnt cannon",
+    "redstone"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=HscY70qjSU4"
+}

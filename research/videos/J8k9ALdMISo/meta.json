@@ -1,0 +1,101 @@
+{
+  "id": "J8k9ALdMISo",
+  "title": "A Very Cubic Christmas with Naval Warfare",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20231227",
+  "duration": 3290,
+  "view_count": 109173,
+  "like_count": 4898,
+  "description": "World Download for the Battleship Game as well as text files containing the settings for the cannon:\nhttps://www.mediafire.com/folder/d17sz8dew64ji/Battleship_Game\n\nKiku's UCSM mod for controlling the cannon:\nhttps://modrinth.com/mod/unnamed-cannon-setup-mod\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Project introduction",
+      "end_time": 84
+    },
+    {
+      "start_time": 84,
+      "title": "Game rules and design",
+      "end_time": 219
+    },
+    {
+      "start_time": 219,
+      "title": "Board and display mechanics",
+      "end_time": 384
+    },
+    {
+      "start_time": 384,
+      "title": "Signal transmission",
+      "end_time": 478
+    },
+    {
+      "start_time": 478,
+      "title": "Artillery system design",
+      "end_time": 644
+    },
+    {
+      "start_time": 644,
+      "title": "Cannon characterization",
+      "end_time": 763
+    },
+    {
+      "start_time": 763,
+      "title": "Simulating trajectories",
+      "end_time": 889
+    },
+    {
+      "start_time": 889,
+      "title": "Initial testing and failures",
+      "end_time": 1045
+    },
+    {
+      "start_time": 1045,
+      "title": "Optimizing the artillery",
+      "end_time": 1265
+    },
+    {
+      "start_time": 1265,
+      "title": "Final construction",
+      "end_time": 1401
+    },
+    {
+      "start_time": 1401,
+      "title": "Gift exchange event",
+      "end_time": 1715
+    },
+    {
+      "start_time": 1715,
+      "title": "Technical gifts",
+      "end_time": 1928
+    },
+    {
+      "start_time": 1928,
+      "title": "Personalized gifts",
+      "end_time": 2225
+    },
+    {
+      "start_time": 2225,
+      "title": "Battleship playtest",
+      "end_time": 2371
+    },
+    {
+      "start_time": 2371,
+      "title": "How to play battleship",
+      "end_time": 2657
+    },
+    {
+      "start_time": 2657,
+      "title": "Escape room gift",
+      "end_time": 3290
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "minigame",
+    "battleship",
+    "tnt cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=J8k9ALdMISo"
+}

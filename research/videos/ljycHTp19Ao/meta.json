@@ -1,0 +1,93 @@
+{
+  "id": "ljycHTp19Ao",
+  "title": "Minecraft Air Defense just got a HUGE Upgrade",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20260811",
+  "duration": 1555,
+  "view_count": 296517,
+  "like_count": 15578,
+  "description": "As it turns out the anti-air autocannon would not be out of commission for long as in this video we discover how a new mechanism could bring the cannon back. We even go as far as giving the cannon new capabilities such as higher precision for accuracy and the ability to fire a large burst of multiple rounds turning what was a cool concept into a new deadly super-weapon.\n\nBe sure to watch the original video for more information about the build process:\nhttps://youtu.be/Q_MkxSD33Vw?t=1578\n\nAlso watch these videos to learn more about the cannons mechanics:\nhttps://youtu.be/56BOyq3lwog?si=xtQF3XEoL8srGidA\nhttps://youtu.be/2SaD3FYNfEs?si=lH7wG9Zv-_TtZL2N\n\nWorld download and Schematics:\nhttps://www.mediafire.com/folder/b6wa2ebk8uqdu/Anti-Air_Auto-Cannon\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The return of the cannon",
+      "end_time": 50
+    },
+    {
+      "start_time": 50,
+      "title": "Analyzing hit mechanics",
+      "end_time": 101
+    },
+    {
+      "start_time": 101,
+      "title": "Developing the zero-tick",
+      "end_time": 222
+    },
+    {
+      "start_time": 222,
+      "title": "Why the mechanism works",
+      "end_time": 347
+    },
+    {
+      "start_time": 347,
+      "title": "TNT compressor optimization",
+      "end_time": 441
+    },
+    {
+      "start_time": 441,
+      "title": "Precision TNT alignment",
+      "end_time": 575
+    },
+    {
+      "start_time": 575,
+      "title": "Redstone design improvements",
+      "end_time": 644
+    },
+    {
+      "start_time": 644,
+      "title": "Chamber and containment",
+      "end_time": 751
+    },
+    {
+      "start_time": 751,
+      "title": "Addressing the string bug",
+      "end_time": 830
+    },
+    {
+      "start_time": 830,
+      "title": "Wind charge alignment",
+      "end_time": 967
+    },
+    {
+      "start_time": 967,
+      "title": "Arrow aligner development",
+      "end_time": 1081
+    },
+    {
+      "start_time": 1081,
+      "title": "Testing with an aimbot",
+      "end_time": 1244
+    },
+    {
+      "start_time": 1244,
+      "title": "The scattershot variant",
+      "end_time": 1402
+    },
+    {
+      "start_time": 1402,
+      "title": "Building guide and summary",
+      "end_time": 1555
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "arrow railgun",
+    "arrow machine gun",
+    "arrow minigun",
+    "orbital railcannon",
+    "anti elytra",
+    "tnt railgun"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=ljycHTp19Ao"
+}

@@ -1,0 +1,44 @@
+[00:02] This is the orbital strike can. A weapon of mass destruction being able to fire mass loads of dupe TNTs anywhere you want to around the server, making this the pinnacle of Minecraft redstone. Okay. Okay. Welcome back to another video. Uh so in this video, I'm going to be showing you how to make an orbital cannon without any mods or anything. But uh I do want to say please subscribe
+
+[00:34] since this already took me like seven attempts to do. Last one I I recorded it but like uh I kind of forgot to hit record three times but it's a pain in the ass. So uh it's just to get started. So what you want to do is you want to go to your e to your tool and schematics and do control and your scroll wheel to go to five mode five out of nine [music] as you can see in the bottom left corner. And what you want to do is you want to go FN3 and G.
+
+[01:11] And then so basically you have the chunk borders. Just do Fn and tree. Uh, so you're going to see chunk borders [music] right here. So basically we want to see the origin of the cannon. So I already have mine right here. So just DP 16 1112 and six. So basically just right here. So this will give you
+
+[01:45] So you could place your cannon right here. Just do M load schematics. Uh the downloads already in the description below. Just want to seal strike MK1 load schematic. And there we go. Don't paste it yet. You want to see if it's aligned. The chunk loaders are aligned to the chunk border. So as you can see here, it is also for this one. So my frames, bro. So, perfect. All we just got to do is go
+
+[02:19] to our tool and execute paste. Either G or K. K for me. Uh, that's a bug. Don't mind that. That's that's that's my that's my game right there. But you just want to go in into this Nether portal right here. But before I move on into this next part, I want to ask you all to subscribe. You see, we're so close to 700 subscribers. And if you could like, comment, and subscribe, it's going to
+
+[02:51] push this video out to [music] more people to help them out on this video. But anyways, let's go back into the next part. And after you enter, [music] break that. And now, based on the coordinates that you got from the spreadsheet, you just want to enter the another coordinate. So B mine is basically two and two. So basically just right here we can do load schematics nether. So right [music] here and then we just
+
+[03:24] paste the and then we can go here and we should come out in the orable orbital cannon. [music] Yeah. So right here. So what you want to do now is you should flick this lever. and flick this lever. [music] This activates the chunk reloaders. And uh what you want to do to activate [music] the cannon now is to flick this lever. So basically when you leave the cannon, it's basically already active if you leave the cannon. So yeah, that [music] makes it good. And now we
+
+[04:00] just choose where to build our control panel. You can build it anywhere but anywhere in the server but like I chose mine here [music] for some reason because just want I'm already used to choosing it here. So turn on your chunk borders [music] again press M load schematics and do control panel. So basically just like that just want to go down and make sure this green concrete is aligned to the yellow things which is the chunk border. So just configure that.
+
+[04:33] Boom. And all right. So make sure it's aligned. Okay. So it is aligned. So we can just go and paste this. Oh my gosh. And basically, yeah, you can hear some dings here. And then after this, you don't need the tool anymore. You just want to go to obsidian, a netherrack, and a flint and steel. So, we're going to build another portal.
+
+[05:07] So, this is optional for if you want the So, this is optional if you want the fishing rod mechanic. So, boom, boom, boom, boom. So, let's just build our other portal like any just make sure it doesn't connect to that portal or like the control room portal again. So, basically just right there [music] we can enter that. All right. And we spawn here.
+
+[05:41] You can go back of that. So yeah, basically we have that. You can just turn flick this lever on our chunk border and we can go choose [music] a location. So Oh, my bad. So basically, the further it is from the cannon, the longer it takes. So, I'm going to choose mine like a a bit a bit like closer. Uh, this mountain seems cool, but I'm trying to do a nuke here. So, let's
+
+[06:16] let's just locate a plains biome. So, 150 blocks away. Just right here basically. Oh, what? What is this place biome? What is this? Okay. So, we can do it in this little island over here. We just decimate this into pieces. But let's just select 119. Let's select it on our targets just right here. Just like 119. 63.
+
+[06:50] Our level 63. And then 54. So, make sure that's the same as this one. Unless All right. So 11 44. So you can go back to our control room. Uh and what you want to do is you want to copy you want to copy the mod this one in the
+
+[07:26] Oops. This one in the control panel just like this one. So you can just do this. Boom boom boom boom boom boom boom boom. Oh. Boom. All right. So, make sure you can
+
+[08:01] they're like same as the spreadsheet and we can just like make make the loop size. So, it depends on loop size. If it's 16, anything above 16 will lag your game. So, I'll set that to 16. Uh, so now I think we have a working orbital cannon. We can just go ahead get our armor. [music]
+
+[08:40] All right. So, we can we want to go ahead by turning this on. Okay. Okay, now the piston is doing its thing. You want this to light. So that means it connected to the cannon. And then once it stops, you want to flick this lever down. Put the fishing rod and fix it back up as quick as you can. Unless I don't think it will work. So there up. You should wait for this to turn off. Okay. Go. All right. So now I think we done it.
+
+[09:14] So, what we want to do it is, it's optional. You can leave the cannon and make the chunk loader do it for you, or you just want to stay in the cannon. But make sure the cannon and the target area of the cannon is not loaded by player chunks because if it is, this will automatically like break either break the cannon, stop it from working or if it's in the target area, [music] it just like stops or like it nukes it instantly because you still
+
+[09:48] have fishing. I highly recommend you to go to the portal and go to your location right [music] now if you're in multiplayer. But if you're in single player, you can just do it like this. But to make this faster, [music] I'll just put this to take rate to 100. So we want like a dick sound [music] here. So if there's a tick sound, it means it works. It worked. It fired the cannon. And now we just go to the go to the
+
+[10:20] or like go to the target area. Okay. Yeah, there we go. There's a flash. You just set this back up. So that worked. We just carefully [music] go to the fishing mode. Make sure you can go to the photo here. &gt;&gt; [music]
+
+[10:53] &gt;&gt; Yeah. So, we have a working little can here. [music] It can be a little loud for animals or something. But the fishing rod you see here is a [music] charge fishing rod. So if I pull this down, another little cannon will come down. Basically you can you can So basically you can So basically you can just fire this whenever you want.
+
+[11:25] You can really do it wherever you want. It's just what was kind of so actual mod. So, we can just fire this. It breaks and it attacks. And as you can see here, there we go. And yeah, there we go. [music]
+
+[12:05] manage to do this cannon survival. And that's all for the video. Once again, I want to ask you all to subscribe and if you want to watch more, click this two videos. And with that, I'll see you all later.
+

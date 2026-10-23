@@ -1,0 +1,87 @@
+{
+  "id": "Q_MkxSD33Vw",
+  "title": "The Best Air Defence in Minecraft is Finally Here!",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250801",
+  "duration": 2075,
+  "view_count": 1285813,
+  "like_count": 57984,
+  "description": "After months of work it's finally here, Minecraft's first true anti-air weapon. In this video we investigate how to use the new wind charge mechanics to make a sophisticated aiming mechanism that is accurate and fast enough to be effective against players using the elytra. We will cover many important decisions, compromises and suprising discoveries that progressed each stage of the design's development to it's eventual success.\n\nHere is Velizar's build of tech utils that includes the fix for the client/server entity interpolation. Be aware that it is only for 1.21.6 and 1.21.7 at this stage:\nhttps://www.mediafire.com/file/ohsx8nu6y25lhmq/techutils-69.6.0%252B1.21.7.jar/file\n\nHere is a schematic of the build, make sure you DO NOT rotate the design as it is highly directional. PLEASE NOTE that as of 1.21.11+ this cannon no longer works:\nhttps://www.mediafire.com/file/3lmdwkokjxf5j95/Anti-Air_Auto-Cannon.litematic/file\n\nI've also made a test world for 1.21.6 that allows you to test the weapon in a realistic scenario. But in order to use this you will at least need Carpet and Carpet TIS additions to make use of the automated features:\nhttps://www.mediafire.com/file/s7dfafxy0c75z8o/Anti-Elytra_Test_World.zip/file\n\nHere is the bug report for high speed projectiles not rendering correctly for the client:\nhttps://report.bugs.mojang.com/servicedesk/customer/portal/2/MC-299627\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The anti-air challenge",
+      "end_time": 140
+    },
+    {
+      "start_time": 140,
+      "title": "Weapon selection",
+      "end_time": 229
+    },
+    {
+      "start_time": 229,
+      "title": "Logistics and firing",
+      "end_time": 330
+    },
+    {
+      "start_time": 330,
+      "title": "TNT compression and aiming",
+      "end_time": 528
+    },
+    {
+      "start_time": 528,
+      "title": "Wind charge alignment",
+      "end_time": 725
+    },
+    {
+      "start_time": 725,
+      "title": "Entity manipulation mechanics",
+      "end_time": 889
+    },
+    {
+      "start_time": 889,
+      "title": "Arrow blast chamber",
+      "end_time": 972
+    },
+    {
+      "start_time": 972,
+      "title": "Activation mechanism",
+      "end_time": 1240
+    },
+    {
+      "start_time": 1240,
+      "title": "Aiming precision testing",
+      "end_time": 1328
+    },
+    {
+      "start_time": 1328,
+      "title": "Networking fixes",
+      "end_time": 1453
+    },
+    {
+      "start_time": 1453,
+      "title": "Effectiveness analysis",
+      "end_time": 1578
+    },
+    {
+      "start_time": 1578,
+      "title": "Schematic and usage",
+      "end_time": 1856
+    },
+    {
+      "start_time": 1856,
+      "title": "Performance and conclusion",
+      "end_time": 2075
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "tnt cannon",
+    "anti elytra cannon",
+    "minecraft machine gun",
+    "anti air cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=Q_MkxSD33Vw"
+}

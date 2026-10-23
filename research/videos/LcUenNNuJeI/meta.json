@@ -1,0 +1,62 @@
+{
+  "id": "LcUenNNuJeI",
+  "title": "Let's Build an Orbital Arrow Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240203",
+  "duration": 1217,
+  "view_count": 259775,
+  "like_count": 10007,
+  "description": "This video documents the process of investigation and discovery attempting to make the ultimate anti-personel weapon in minecraft. However it ends in tragedy as hours of science and mathematics ultimately leads to a critical flaw due to an unexpected behaviour in projectile entities. Despite this I still felt the video was worth uploading given how much technical knowledge I encountered on the path to making the ultimate oneshot weapon.\n\nSipover's video about the Oneblock Cilvilisation Event:\nhttps://youtu.be/5tHVQPvlDq0\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Orbital strike review",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "Combat analysis",
+      "end_time": 269
+    },
+    {
+      "start_time": 269,
+      "title": "Damage frames explained",
+      "end_time": 362
+    },
+    {
+      "start_time": 362,
+      "title": "Armor and protection",
+      "end_time": 482
+    },
+    {
+      "start_time": 482,
+      "title": "Designing a new weapon",
+      "end_time": 627
+    },
+    {
+      "start_time": 627,
+      "title": "Physics and alignment",
+      "end_time": 837
+    },
+    {
+      "start_time": 837,
+      "title": "Payload assembly",
+      "end_time": 977
+    },
+    {
+      "start_time": 977,
+      "title": "Final testing and failure",
+      "end_time": 1217
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "arrow railgun",
+    "tnt cannon",
+    "redstone",
+    "orbital strike",
+    "sipover oneblock"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=LcUenNNuJeI"
+}

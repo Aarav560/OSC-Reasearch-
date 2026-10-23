@@ -1,0 +1,122 @@
+{
+  "id": "eKjJz1WWlCU",
+  "title": "Operation Hellstorm",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240630",
+  "duration": 2470,
+  "view_count": 429056,
+  "like_count": 18557,
+  "description": "Update 1.21 is finally here, which means it is time for operation Hellstorm. In this video we will design an orbital strike cannon capable of delivering water sources anywhere in the nether dimension, leanring about update suppression, falling block entities and the challenges in making the orbital strike cannon fully omnidirectional.\n\nHuge thanks to @savva4424 for help with understanding the code and how the suppression exploit works.\n\nHere is a video by @Comedy4 showing the suppression setup:\nhttps://www.youtube.com/watch?v=c2bCLCLgNHY\n\nThis project features highly locational builds and is made specifically for the wavetech server. There will be no world download for the setup.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Minecraft 1.21 update",
+      "end_time": 14
+    },
+    {
+      "start_time": 14,
+      "title": "Portal logic overhaul",
+      "end_time": 83
+    },
+    {
+      "start_time": 83,
+      "title": "Falling scaffolding exploit",
+      "end_time": 173
+    },
+    {
+      "start_time": 173,
+      "title": "Update suppression history",
+      "end_time": 266
+    },
+    {
+      "start_time": 266,
+      "title": "Setting up the exploit",
+      "end_time": 388
+    },
+    {
+      "start_time": 388,
+      "title": "Creating water in the nether",
+      "end_time": 490
+    },
+    {
+      "start_time": 490,
+      "title": "Long-term entity storage",
+      "end_time": 607
+    },
+    {
+      "start_time": 607,
+      "title": "Creating d-less pistons",
+      "end_time": 717
+    },
+    {
+      "start_time": 717,
+      "title": "Transporting water sources",
+      "end_time": 823
+    },
+    {
+      "start_time": 823,
+      "title": "Building the cannon",
+      "end_time": 938
+    },
+    {
+      "start_time": 938,
+      "title": "Cannon placement",
+      "end_time": 1054
+    },
+    {
+      "start_time": 1054,
+      "title": "Omnidirectional firing",
+      "end_time": 1180
+    },
+    {
+      "start_time": 1180,
+      "title": "Acceleration mechanics",
+      "end_time": 1330
+    },
+    {
+      "start_time": 1330,
+      "title": "Linear vectoring",
+      "end_time": 1566
+    },
+    {
+      "start_time": 1566,
+      "title": "Cannon operation",
+      "end_time": 1775
+    },
+    {
+      "start_time": 1775,
+      "title": "1.21 testing",
+      "end_time": 1967
+    },
+    {
+      "start_time": 1967,
+      "title": "Velocity analysis",
+      "end_time": 2083
+    },
+    {
+      "start_time": 2083,
+      "title": "Fire control matrix",
+      "end_time": 2235
+    },
+    {
+      "start_time": 2235,
+      "title": "Targeting tests",
+      "end_time": 2342
+    },
+    {
+      "start_time": 2342,
+      "title": "Conclusion",
+      "end_time": 2470
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "water",
+    "nether",
+    "tnt cannon",
+    "1.21"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=eKjJz1WWlCU"
+}

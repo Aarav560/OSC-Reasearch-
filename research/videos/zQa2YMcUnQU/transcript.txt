@@ -1,0 +1,38 @@
+[00:00] So, many of you might have watched my old tutorial. This tutorial was relatively bad. It was made in maybe 10 minutes. It was the first uh tutorial I made on a design like this. Now that I have an idea of what I need to go over, I'm going to be making a new tutorial on the old version and then this video also be going through the new version with multiple rings. So, we have our version here and to set this
+
+[00:33] up properly, we're going to want to chunk align it. we're going to want to move our gun in somewhere into a chunk of its own. So, like this. This is by itself and these chunks are also different. Okay? Before we even go about the wire or anything, go ahead, grab this origin block so you can just be standing on this block here on the
+
+[01:07] ground. And whatever X and Y coordinate you're at, so 1008 uh 1007. Actually, it's 1009 and 1007, but that's fine. 1008 1007. Let's remember that. Let's go to our thing. Let's go 1008 1007. Now, before you go about the wire origin, I recommend that you do the um X and the Y's. Uh
+
+[01:38] let's do these. So, our [snorts] target is going to be not minus 1000. It's just 1008. it's going to be Let's say Which way are we facing this now? This is another thing. It's only 90°. So, in whatever direction you want it to go, this is why it's like this direction is going in the positive negative. Okay? So, we're going to do 1,500. And
+
+[02:13] Okay, like 500. Okay. 600, okay? It's actually still quite a lot of TNT, but that's fine. Now, our Y target for us is going to be 56. All right. Now, we need this number. So, this number is the Y origin minus the Y target, and we want this number around 71. So, now it's 82, which isn't good. So, our Y origin should be less than that by about 10
+
+[02:46] 11. So, 11 is 27. 127, yep. Cool. So, we need our schematic at Y 127. There we go. Okay. Now, we have our schematic fully done. I recommend that you guys test this in a creative world before you even go about building this on a server. But, you can paste this in now. And set this up.
+
+[03:19] The chest maker and the pressure plate are glitched. So, you're going to want to unload your schematic. Grab this, break it, break this as well. Put back. Step back. Okay. Once you're done with that and it's clicking, and you can hear it, you can um Also, I'm pretty sure you guys can't actually hear my game, but once you know that it's clicking, it's good, okay?
+
+[03:51] Now, you can turn off the safety. Now, before you can turn off the second safety, you're going to want to fill this up with your payload. Now, this can be any number of TNT. Um I recommend between six to nine stacks. Okay. All right, this is done. You can turn off this safety. This will do this. Then we have this early fuse TNT in here. Per run, you need you need one TNT. So, you can put in like 21 TNT
+
+[04:25] and that's going to last you 21 runs. Okay, or 21 fires. What else do I need to go through? But yes, 90°. For these two chunks, you need to have pearl loaders, okay? So, what I recommend for pearl loaders, uh I don't have it on this. So, we're just going to grab ourselves some soul sand and water. And some pearls. Obviously, you can hide these underground if you want. Uh I'm not really
+
+[04:56] that bothered to do that right now. This up. Yep, that's working. Throw a pearl. Turn on our chunk borders. So, that was that chunk. Then we need to do the other lime green uh stained glass. So, this chunk, yes. Um let's go down two more blocks. That's working. Yes.
+
+[05:30] Put that Okay, perfect. &gt;&gt; [snorts] &gt;&gt; Now we have our two chunk builders. Why do I say like that? Builders. Um our cannon should be fully set up now to run. So, for the people in survival and without carpet and everything like that, what I recommend you do is I just try to search up another portal like I could build one like I can just paste one in. Is you make yourself another portal. Yes, you walk through and then you wait
+
+[06:03] your estimated time. And then you walk back through to run it. Also, you can throw an item through or anything like that. Just something an entity just has to go through this portal for it to run. Now, with these two you'd like to set them up with obviously the TNT. So, for us uh also don't mind these signs. These signs genuinely don't mean anything unless they're in the default rotation, okay? So, for us this one is going in the X direction
+
+[06:35] and this one's going in the Z direction. So, on our cannon, our X direction are 10 stacks and 21 TNT. So, we have a nine stacks here. So, Scribersays another stack, 10 and was it like 21? 21. Okay. And on our Z is eight stacks and 35. eight stacks is 35. Our cannon is fully set up to go now. Fully ready. We have our pearl loaders.
+
+[07:11] Have this chunk unloaded. Have the two safety switches off. Leave this working for TNT everywhere in every dispenser. A big thing people were saying is that this um that I never said that this was 90°. So, I'm really going to say that. Um Obviously, thank you to the people who helped for this design, especially Pretzel and some other people that I'll put on on screen at now
+
+[07:43] uh I have them in the original tutorial as well. So, let's go ahead and run this. So, this is the same as going through the portal, okay? So, your TNT is here. Now, I'm just going to do tick sprint about 1,800. Just so it's a bit quicker because I'm not going to have you waiting 6 minutes. I'm on such a
+
+[08:15] Also, another thing with the time, I recommend you wait a little bit longer. The estimated time isn't very accurate. And I'll also go through how to reset this cannon after it's done. Okay? Cuz the resetting of the cannon, you can completely blow it up if you do it in the wrong order. So, it's very important you do it right. We're going to do another tick sprint 800. Okay, this one still has a bit of TNT,
+
+[08:57] so I'm just going to do tick sprint 2,000. Oh, I put it on minus by accident. &gt;&gt; Okay. That was done now. So, what we can do now is we can do This is basically like loading it back in. True. Now, we've loaded that in. Now, let's go to our target. So, 1,500 600. And here's our TNT.
+
+[09:34] So, it goes in a ring and kaboom. I have explosion damage off with carpet, so don't worry, it will completely destroy stuff. Sorry, I forgot that I had that on. Yeah, you can see it's on, too. Um well, there you go. It's relatively The calculator is a bit broken with the minuses, and especially the X and Z axes. Instead of using the X and Z signs, you're actually going to want to see which way the TNT will get launched with the dispensers, and then add the TNT with the
+
+[10:07] Uh now, I'm going to move on to this newer version and how to use that.
+

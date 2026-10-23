@@ -1,0 +1,59 @@
+{
+  "id": "BF0nRzDJnaw",
+  "title": "TnT Railgun Using Minecraft's Quantum Mechanics",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230113",
+  "duration": 706,
+  "view_count": 740673,
+  "like_count": 33694,
+  "description": "Here's a cool idea, how about we build an armour piercing TnT railgun using what I consider to be Minecraft's quantum mechanics. In this video we explore how we can use advanced subtick mechanics to manipulate redstone to do things your average redstoner could only dream of.\n\nCheck out Space Walker's paper about subtick mechanics to learn more:\nhttps://docs.google.com/document/d/1Nn6-zg2YBIIf0BTSijpmLztV5oasVI_4H-k5bwU6KdE/edit\n\nSchematic of the Prototype cannon:\nhttps://www.mediafire.com/file/0uvhi7160jgdord/TnT_Railgun.litematic/file\n\nI also had some help from the experts at the TnT archive:\nhttps://discord.gg/vPyUBcdmZV\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction to TNT rails",
+      "end_time": 17
+    },
+    {
+      "start_time": 17,
+      "title": "Minecraft ticks explained",
+      "end_time": 120
+    },
+    {
+      "start_time": 120,
+      "title": "Experiments in game mechanics",
+      "end_time": 224
+    },
+    {
+      "start_time": 224,
+      "title": "Understanding order of operations",
+      "end_time": 376
+    },
+    {
+      "start_time": 376,
+      "title": "Instantaneous events and TNT",
+      "end_time": 472
+    },
+    {
+      "start_time": 472,
+      "title": "TNT entity processing",
+      "end_time": 532
+    },
+    {
+      "start_time": 532,
+      "title": "Building the TNT railgun",
+      "end_time": 629
+    },
+    {
+      "start_time": 629,
+      "title": "Results and future concepts",
+      "end_time": 706
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "tnt cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=BF0nRzDJnaw"
+}

@@ -1,0 +1,36 @@
+[00:00] Hello. Hello. Welcome back to another video. Today I'm going to be showing you how to make the Opal Strike Cannon 6.0. Nice and easy. We got a good spawn. This will be nice for firing at here first. These are the cores we're going to paste the cannon. Okay, we got an absolutely terrible problem. So, now we got to make a new world. Okay, good. Now we go here and check our
+
+[00:46] spawn. Hopefully we get like an ocean. Nope. But this will work just as well. Low schematics. Oral strike cannon. Good. Okay, now we have this in. Now you're going to want to take a stick and you're going to want to paste it. So to do that, you click M, configuration menu, hotkeys, execute operation. My bind is G. You can set it whatever to you to whatever you want. Click G. Good. Now it's in. Now you go here through the portal.
+
+[01:21] Break this portal. go up top. And then we're going to want to load our nether side. Open. The cords are 24 48. Good. Just like that. And then we can make it down a bit. Good. Good. Looks perfect. Now you click G. Now it's in. All right. Now everything's perfect. Now
+
+[01:58] we can test it. Yep. Works just perfectly. Now we're going to want to go far away and paste our cannon. Let's go right here and see what our terrain looks like. It's okay. Control panel. Now, F3 and G on your keyboard. Good. Going to want to move it into this. Just like that. Move it one over.
+
+[02:39] Nope. The other way. Perfect. Just like that. Now it's the green box is lined up in this box. Good. So now we turn it off. F3 and G. Hit paste. G. Now you want to go through here and get netherrack and flint and steel. Paste these here. Flint. Steel it. Break. Break. Flint and steel. Good. Now
+
+[03:15] go through. Now, we want to go back to the cannon slash game mode spectator because we're in the cannon right now. Go out slash game mode. Nope, because we're too close. Slash game mode creative. Perfect. Now you want to go over here. Turn this on.
+
+[03:46] Make sure you break these two levers. Break this one and this one. Now we're going to want to set the passcode to everything. You can set it to whatever you like. This is just easiest. Everything. Now turn this on. Good. Everything looks good. Now TP. Now we got to find our target. Preferably the closer the better to the cannon right here. Looks pretty good.
+
+[04:28] We'll make this the target. 5,900. We want to put this in the Excel spreadsheet, which link will be in the description. 1439. Now, that's good. Now, what's the train? 74. 74. Good. We'll make the nuke size probably 10.
+
+[05:02] Good. Good. Now we go back to our control panel over here. Turn all of these on. Now our cannon is this. This this this our code.
+
+[05:36] This this this this and this. This and this. this and these three. Oh, whoops. That one's not right. Now, for over here, just this one right
+
+[06:11] here. Good. Now, we want to do slashtime set night. It just makes it easier, makes it work. Now, click. We're going to turn this on so I can show you the fishing rod thing. Now, make sure you do not forget this, otherwise your game will crash. Carpet optimized fast entity movement right here. True. And then change permanently. True. Good. Now, we wait for all this to finish. And because this didn't turn on, we're
+
+[06:45] going to want to go back to the can and see what's wrong. Game mode. Spectator. Everything's on good. Good. Slash game mode. Creative. Now, specifically, we want to go to the Wallace redstone receivers right here. This is broken. Good. Good. Everything's
+
+[07:18] just right. Now we do slash time set day and then we go tonight. Good. Now let's turn off. Good. Now we go back to our control center and we turn on the button. And if this
+
+[07:51] doesn't work, we got to set it today. See? And now it's on perfectly. See the lights flickering, which means it's working. Now you just got to wait here and wait for it to charge. We made it pretty close to the cannon. So [music]
+
+[08:25] you just do whatever you want. Heat. Heat. Heat
+
+[09:41] up here. &gt;&gt; [music] &gt;&gt; Heat up here. Heat [music]
+
+[10:25] up &gt;&gt; And it fired. And that's how you set up the orbital strike cannon. World description will be in the bio.
+
+[10:59] Thanks for watching. Like and subscribe.
+

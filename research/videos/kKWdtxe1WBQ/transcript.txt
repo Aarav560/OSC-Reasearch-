@@ -1,0 +1,60 @@
+[00:00] D Hello everybody.
+
+[00:53] I'm back. But I have something new for Instead of just showing up orbital, I thought I think it's time to wrap it all up. I give you how I made all of those orbitals as you can see down there. They come down to this one. How we begin? Over here. This is where all began.
+
+[01:26] My first ever orbital string. One, it didn't work. Two, it was a learning experience and three, Hogan, the person who made that really cool paper or gray cannon, was the inspiration for the starting of this. As you can see, it's tiny, small. So, the issue why it doesn't work simple. When charges impact right here.
+
+[02:01] Meaning it's going to be off just by a little where linear equations don't work that well. So, using this as learning experience starting a couple months ago surprise, surprise, 2 months ago. Came across a new layout. What I thought would be the best layout. This is the one and that I did publish. Made a video about this one. It is super tiny. Works very well.
+
+[02:35] you can see there is still many flaws like the cobwebs. That doesn't need to be there. The chunk loader. It's all big. This block doesn't even need to be there. Then, instead of making that small, I decided to make a new. This one was about a month later. This one was I really don't know. I think it was like a couple
+
+[03:06] like um 10 20 days after that one. Then I made this one. This one was last month and this is the halloer. It was my well, first cannon that could actually explode more than just small area. But I did learn about a few things. How rings actually work. So, this is actually a failure in most people's eyes. Wasn't for me. I got to learn about it. Pretty cool
+
+[03:40] though. Then we have what I used to call it the world's smallest over charger. &gt;&gt; This design I made a couple weeks a few weeks ago was made by me and Phantom Lover. So,
+
+[04:11] the issue was is that it still wasn't small. 30 blocks. All of those are already from the first one being 100 something blocks, this one being 150 something blocks. This one is 30 blocks. But, of course, the orbital strike cannon community, especially on WOC's Discord, um saw the challenge and beat me with someone making a 17 block orbital strike cannon, 20 block,
+
+[04:44] 23 blocks. That already beat mine by a lot. So, then I reworked the design from scratch using from from using a few things that I learned. I did this 2 days ago. This design is extremely tiny. As using a cool mechanic that I had to completely forgot about, you could place carpets on top of redstone. Meaning I could still have something to hit the wind charges to hit while not hitting this instead. And you could already see this block
+
+[05:18] could be you get and go away. A few blocks can already go away. How did I achieve that? Simple. I removed the trunk loader. Fun fact, arrows despawn in 60 seconds. Now, not the item arrows, but the arrows that are shoot from a bow or shot, shot from a bow. These arrows in loaded chunks despawn in
+
+[05:53] exactly 60 seconds. Of course, you could always reset it. All I have to do, load the cannon. First with the arrow on it at first. Which then, when loading the cannon I go ahead and put the materials in here. Then I already have the cannon set up and all I have to do is leave the area. The arrow will despawn as this is in a loaded chunk or will be in a loaded
+
+[06:25] chunk. Which then, it despawns within 60 seconds. Orville fires. Yesterday Then I realized I could make it smaller. That design is 20-ish blocks, around that area. This design I'd like you to guess how many blocks this is. You could guess. Put it in the comments
+
+[06:59] or something. Just guess in your head. I'm going to tell you you're wrong. You probably guessed what? 17? Cuz I actually lied about someone making a 17-block orbital strike cannon. No one actually made that yet. It was more of the fact that I miscounted. I counted again. It was actually nine. even then, you think, "Oh, this is 17 blocks, right?" Wrong.
+
+[07:33] This is a 16-block orbital strike cannon. You heard me right. This whole thing uses 16 blocks. How is that possible? Simple. Powdered snow. It's effect on TNT, moment it reaches its location, it pauses. Okay, once the velocity reaches uh is empty, then you would finally have what you would see in orbitals.
+
+[08:08] They would just fall down. all you're wondering, how in the world did I make it this big? Small. Well, simple. The cool mechanic The mechanic I was talking about for arrows can be a replacement for chunk loader. Which as you can see, this chunk loader is already about seven blocks. 1 2 3 7 2 eight blocks.
+
+[08:44] Moving it down to this design, it it minuses five blocks down at three Which then being smart, I could make it down at two blocks. So, now this is already two Then you would have the actual launching mechanism. Which is actually pretty simple. All you would need to do is get an observer clock to activate this. Then once this is empty, it could then go ahead and launch uh start launching the wind
+
+[09:18] charges. So, observe. It doesn't launch wind charges at all whatsoever. whenever the arrow despawns, and all the wind char all the TNT is is out, then starts launching the wind charges. The static gets to its location and falls. Now, few people say, "Well, this isn't an orbital. This is just a TNT cannon."
+
+[09:53] I also like to say, TNT cannons and orbitals TNT cannon is a superset of an orbital cannon. An orbital cannon is a subset. Meaning that this is technically a TNT cannon anyway. Ow. Range-wise, 5K blocks is possible, but only issue is that, um, when I tested it with tick rates and whatnot, I bashed my computer cuz it uses a lot of wind
+
+[10:26] charges to get to that distance. Couple thousand at best. But, the goal is is that you should be able to build this very small design and be able to launch it to people within 1 to 2,000. You may be wondering, "Well, that's kind of useless. It wouldn't be an orbital, would it?" Well, no. Technically not. But, it What this cannon has is the fact that you could build multiple of
+
+[11:00] As you could see, it's literally four observers, three dispensers, two sticky pistons, one block, one comparator, one carpet, one slime block. That is stupidly simple. In fact, I'm pretty sure you could probably speedrun to get the materials to even build this cannon. Cuz all you would need to do is if you get lucky enough, or even using a seed finder or whatnot, or chunk base,
+
+[11:33] you could just figure out how to get snow. Get the powder snow. Go into cave, get about I think seven pieces or I about 12 pieces of redstone. Then you smelt a couple cobblestone into stone. Craft comparator. Go to the nether. Get some quartz. Then you could craft the observers. Kill some slimes. And then you would have yourself a very or
+
+[12:06] portal strike cannon. What does this mean? Is this the smallest? I think so. You think If you think someone could beat it, be my guest. Try to make one smaller. But right now I hold the title of having the smallest portal strike cannon. What will I do in the meantime? Oh, don't you worry. I'm already designing cannons that are
+
+[12:40] smaller. But you'd be thinking, "What do you mean by that? Even smaller, but I thought this is the smallest." I'm not not talking about the puny single TNT payload. They'll ask for a ring. How about this? a cannon with 13 rings. Or even the ability to terraform that mountain over
+
+[13:16] and you subscribe to me. Pretty simple deal. I would deeply appreciate if you would subscribe to me as this has It's a crazy journey of about 2 months. Yeah, I know it's 2 months. everything started from the idea of small can which design is very fairly simple if you want to set it up. I'll give you the schematic. You know the gist. Make sure the powder snows in a single chunk. Then to launch the cannon, you get your
+
+[13:51] target. Then you get the calc. And with the calc you implement the correct out of charges which you might need to expand the storage. Hoppers and chests. But I recommend most of your targets should be within one chunk. Not one. Sorry. About one um
+
+[14:25] one double chest worth of win. Each of these. So you shouldn't have the target too far and plant launching this on single player will multiple double chests hoppers might actually crash your PC. But setup is motion arrow. Put your TNT. Right? Arrow. Put your TNT in here. Put the wind charges and leave the area. Calculator should tell you how long it
+
+[14:59] should take launch the cannon. But always add about 2 minutes of leeway or 1 minute of leeway as it calculates in seconds. So I would wait another And you could build a simple fishing rod. Um simple fishing rod pull er which to set that up We go over here to my hollow world sign. It's simply just pressure plate block and unloaded chunk, redstone torch, block, loaded chunk with
+
+[15:35] a dispenser do do powered rails, a normal block, and then the portal. Then on the other side the portal, if you go through here, you would want to build the nether portal side, which simply does fairly simple. Then you would have a fishing rod puller. Make sure this has a minecart. And you're good to go. And you can just
+
+[16:06] copy this setup, move it to all of my other orbital strike cannons that I will be releasing. And you should be good to go. If you haven't already, please subscribe. Um you got to trust me. I'm going to make pretty cool. As you can see, I've delivered my promise. And all the nice orbitals. I'll go ahead and make another one. if I get
+
+[16:40] 500 likes and maybe 20k views, then I'll release a global strike cannon with a ring. Y'all Y'all got to achieve that, not me. Little
+

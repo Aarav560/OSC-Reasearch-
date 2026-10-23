@@ -1,0 +1,282 @@
+[00:00] good day ladies and gents kic media here it's that time of the year again that time when all the way tick members get assigned a random player and try to make the ultimate Minecraft present this year we have Eric back an insane Builder who just happens to be on the server right now this is super awkward because I have an idea for a present for him but it involves actually getting something that he's built hopefully we can play it cool and pull us off without our rousing [Music]
+
+[00:42] suspicion come on surely he realizes he's made one before I can see the pictures of it in his application oh yes he has realized he's made them all right he he might suspect that something's going on but he might not realize it's directed at him that's what I'm hoping okay I think he took the bait we got the schematics perfect oh that was stressful just for good measure I'm going to act as if I'm letting him in on a little secret hopefully we got away clean
+
+[01:18] hopefully the goods have been acquired but what are we planning to do with them well I kind of already told Eric that we will be making a new artillery system system which I intend to put inside of each of these ships and host a pirate ship battle on the wave Tech server because as a builder the most rewarding experience is to watch as people enjoy the things that you make the idea is pretty straightforward put two ships in a body of water side by side then put half the players on one ship and half
+
+[01:52] the players on the other give them a bunch of stone swords Shields wind charges and other tools and have them go ham at each other with SM artillery being the centerpiece of the conflict then pretty much they keep going until the ships are reduced to smithin which of course means that the biggest challenge is going to be making a cannon that can fit on the deck of these ships okay that was surprisingly easy this little unit does everything we need to make an aimable Cannon we start with a simple wind charge catcher that the
+
+[02:24] player operates manually to load the propellant then the player can dispense the team TNT and time the detonation of the wind charges in order to aim the cannon if you're wondering how the player can hit a precise Target well that's the neat thing you don't the point is that the player has to use skill to aim the cannon by timing the inputs otherwise if the cannon is too accurate then the Cannons will simply obliterate everything before anyone has a chance to actually play the game I am actually bewildered by how
+
+[02:57] straightforward this was make a cannon smack it onto some ships fish bash BOS and Bob's your uncle yep that's definitely an aimable ship cannon that's not too precise that it's overpowered this makes what comes next quite daunting because you might notice that these cannons use a lot of wind charges the only place to get wind charge items is from breezes in Tri Chambers and well Tri Chambers don't really give you much freedom for automation fortunately B came in clutch
+
+[03:30] once again with his trial chamber scanning mod that we could find ourselves a trial chamber with six Bree spawners if you recall my previous video we made a pig cannon that can drop us directly into trial Chambers and one of its functions was to dispense trial Keys directly to players to use the Vault so our Breeze wind charge Farm will also be able to serve as our trial key farm so I guess this project has become a trial chamber for Farm build the first step is to figure out exactly how big this trial
+
+[04:04] chamber is so I've made a world edit selection encompassing my entire render distance now I'm going to move all the wax oxid copper 200 blocks into the air and of course my game immediately freezes okay after crashing my game of world edit the better solution turns out to be simply making the selection manually our trial chamber is almost a perfect square of about 15 15 blocks in the XZ and about 50 blocks tall the next step is lining up an Infinity ball with
+
+[04:37] our trial chamber the benefit of using the infin ball is that we can turn a smaller excavation into a much larger excavation without needing to be harassed by trial mobs continuously and because trial spawners are completely blast prooof we will end up with a massive cavity containing only trial spawners this is the result of the
+
+[05:10] infinity War an automated mining machine I've introduced a while ago on the channel and it is perfectly suited to these awkward jobs of mining blocks and spaces where is inconvenient or impractical for the player oh my God I can't believe how well that worked that trial chamber really was just evaporated from existence all this empty space will make it a lot easier to connect all the spawners together and make an automated farm for the spawners and their loot my God designing a working trial chamber
+
+[05:44] Farm was surprisingly nuanced to activate a spawner all you need to do is get a player within 14 blocks and within line of sight through air or glass but what I did not anticipate was how much of a pain spiders would be they have a tendency to climb on the walls and just refuse to die in hindsight I should have chosen a trial chamber with no spider spawners but this is what we have now something needs to be said about carpa bot abuse yes we have fake players meant
+
+[06:16] to represent real players to run Farms the idea is that we don't need clients with a reliable internet connection to be on the server the Run Farms 24/7 when we design Farms on Wave Teck we will always try to limit the amount of players needed to run that farm however trial Chambers are an exception because their output is directly bottlenecked by the number of players when a trial spawner activates it will scale the amount of mobs and the amount of loot by the number of players it has seen and once it's done dishing out the
+
+[06:52] loot the spawner will go inactive and wait for 30 minutes with a single player this cool down makes things extremely slow so in order to scale up the rates we simply use more players I've decided to compromise with just 24 players plus the Looting bot which is to get the breeze rods the reason I justify this is because it's possible to be super exploitive and spawn like 200 Bots causing the spawner to dish out hundreds of TR keys in contrast 24 players gives
+
+[07:26] a good balance of the design of the farm systems versus the sheer exploitation of carpet Bots what we have is a logic sequence that dispatches the players firstly to farm the regular trial spawners then we use a spawner as a reference to detect when loot has finished which triggers the dispensing of an ominous bottle to the lead player then activate the
+
+[08:00] spawners we found three types of items Breeze rods Tri keys and ominous trial Keys you will notice that these item filters are different to what you might be used to these are stack separation item filters designed by WRA scallion that I slapped onto some simple one times Hopper Speed box loaders the average rate of items is less than Hopper speed but they arrive in a massive burst every 30 minutes meaning we need to overbuild the item filters to
+
+[08:32] handle the high sorting load then load the items into the boxes gradually during the downtime and once we extract the items that we want the rest can simply be disposed of in fire the next step is to actually build the farm to get the wind charges we need for our ship cannons unfortunately the Mad Lads Ur and jkm have gone ahead with blasting out the clearance and build building the infin bore to put things in perspective how competent these people
+
+[09:04] are de cam not only Built the infin but tested it on one of wave Tech creative test servers instead of cloning the regions to the copy server which is where I was designing the trial chamber Farm because he knew that I was designing the farm here and cloning the region files here would override the farm design Bros is always thinking several steps ahead so the infinity ball is all set and ready to go let's Prime the ball and fly over to the chunk loading
+
+[09:43] platform and now we wait all right the infinity ball is done so let's go ahead and fly in and see what we got perfect isn't it great when a machine just works perfectly the first time now we have some water to clean up and a farm to build w
+
+[11:14] after finishing the trial Farm I left it running for a couple of hours so let's see what we have hey look at all those Breeze rods only a single Sher of Tri Keys oh not even a Sher of ominous trial keys yet but not to worry the only thing we need right now is the breeze rods oh yeah let's get all these turned into wind charges there we go set the recipe and let's mcraft oh I think that might be enough
+
+[11:49] charges all right look how many boxes of wind charges we got from that now that we've finally got the propellant for our cannons we can get onto the task of actually getting the ships into position and building them on the server I've got this nice body of water where I've positioned the ships which is nearby to where our tral divver setup is now realistically a coal reef is probably the worst place to find a pair of ships but I mean who cares it looks pretty making sure that the distance between
+
+[12:22] the ships is good for the Cannons oh that was a Miss let's try again oh too short Bingo whoopsie I might have forgotten to enable TNT no block damage there good as new I think all right I think the distance and the
+
+[12:53] positioning is pretty good I'm going to go ahead and make a selection of both of them and a neat trick that I like to do is renaming the sub region inside of the selection to the coordinates of the schematic origin this means that I can position the schematic perfectly the moment AG go into the server with the schematic taken now Begins the uish task of actually collecting the materials so I want to go to the
+
+[13:25] schematical list oh boy we do not need that many water buckets ignore info hod and we've got a lot of stuff to collect this is the great thing about having a main storage any random crap that you need for a build you can probably just find it straight up flying around somewhere oh my goodness that materialist was a nightmare just look at all these random ass materials that we needed to get let's head over to the location and get our schematic set up there's the Super Destroyer and and down
+
+[14:01] here is our schematics here's how it's going to work I'm going to lay out the materials in order from the most common materials to the least common materials which is in these black boxes then I'm going to take the schematic put them into layer mode single layer go down to the bottommost layer and then if I open up the materialist for the schematic I can set it to only show the render layers then I want to hide the materials
+
+[14:34] that are already placed can show an info hard and here's a really neat feature from wamore by Fallen Breath by enable The autoc Click material list I can pretty much just right click on the Sher boxes and it automatically give me the materials with all the materials gathered and the schematics loaded let's throw in some shaders and get into a build time lapse to truly appreciate the beauty of these
+
+[15:08] amazing ship designs by Eric back would you look at that Minecraft's most
+
+[16:30] useful mob just spawned in anyway the ships are done but we still need a few more things we need to stock up the Cannons but we also need to stockpile these things with weapons and equipment what I reckon we should do is get the materials for things like crossbows Shields and stone swords then stockpile them into Crafters placed around the ships oh wow they look pretty cool from a distance using distant Horizons there we go bunch of craft is making various pieces of equipment we've got ammunition
+
+[17:03] perfect and the Cannons are all stocked up and ready to go all that's left to do now is to leave a message for my secret San and wait for the event to begin yes hello cubic I see quite a few wave Tech members sitting in the audience uh keep in mind on Discord because it's a stage you have to join the stage it's an extra button in like the voice Channel whoops there quite there is quite a big button saying speak on the stage and you have
+
+[17:36] to click it if you want to speak on the stage remind speak on the stage twit twitch I am curious is Discord too loud or should I is it fine oh God how we doing chat hello there CU are here cuic he's nude or maybe SS speak on stage uh it's at the bottom of the
+
+[18:12] screen oh wait the honey bottles the hot chocolate it's it's it's summer where I live so um my Christmas gear is a bit more light oh my god oh yes C is provision Chanel so maybe it doesn't see the button yeah I right clicked and hit invite to speak so we'll see if that works oh right thanks completely forgot that we still have provisional it's professional moments oh how's that physically possible yeah why isn't it possible no
+
+[18:45] why is it possible okay never mind ignore me not scientifically possible okay sorry I'm back see we'll see boink we have a special guest today uh they're going to join in a minute mumble jumble uh can everyone okay not everyone random is the only one can you can you join the Squad Squad team oh yeah I join Squad my
+
+[19:20] bad technically this is secret santa teleport well yeah but we can teleport to him if that's the case by the way have you guys thats prefer being near the walls rather than in the middle yeah they get nervous they don't want to go out they are afraid well they remember they're leashes and they're yeah okay first of all I only leash the men uh second of all uh seems like wait how do you know which ones are men and
+
+[19:53] which one are women are the women only the ones wearing pumpkins well he checked men are yeah men are circumcised that's a weird word to say C ccum circumcised Jesus that's impossible to say fast you can circumcise a snow golem circum oh circumcise circumcised wa you named it wait this one's Grant Sanderson yeah yes Richard fman too we had a
+
+[20:29] who have been circumcised their women now people are really using your light I love it are there still any left it's beautiful reason come here if you want if you want you can grab a elra here uh Valar I was attacking cubic with snow balls and cuic looked at me very menacingly beautiful
+
+[21:02] uh I tried to walk back and I fell into the Hall not into the hole God scared right hello everyone welcome to secr Santa 2024 we're having a great time time this year uh we got a bunch of people joined this year um VC is very full and we got a bunch of people watching live which is exciting um we're going to go ahead and get started I have the randomized list already set up and pull up so we're going to go
+
+[21:35] through that and we're going to open our presents uh everyone's throwing around golden hot chocolate I like the jkm is Santa oh I should stream that's right okay we're ready to start secret santa I have the list um thanks to Zoid we have the list cuz Zoid May made the randomizer that we're using so if anyone thinks that it's rigged it's so's fault you only really need one one person to be randomized and then it should be like a chain after
+
+[22:10] that fine we have a randomized list it's fine um all right so first up is jkm it's it feels do redo fine I can re I can re fine roll no no I can go first I already rerolled it it's carbs now carbs okay uh let's see shark box okay another right I'm
+
+[22:44] going to take it oh first wait good sign by earthquake I did not participate this oh yeah right earthqu didn't participate so so it's a decoy yeah your gift will be a secret for a bit longer if you want to find out what it is you have to find it and this is the first clue far away where the stones lie deep a place of toil where the
+
+[23:17] miners creep a nickname of a Sunny Land but here it's a rock and not the sand what head to the furthest place you know and trke the Earth where the Shadows grow okay the furthest place you know World border right no I that sounds like Mexico cuz it's nicknamed after I feel like Mexico or Argentina or Brazil yeah because it sounds like a place that's Sunny remember oh mentioned quaries oh
+
+[23:51] nickname of a Sunny Land so it's definitely got to be a place with a nickname but if it's the farthest place with a nickname that is got to be Brazil okay so I guess I'm going to Brazil after nickname of a Sunny Land that sounds like Mexico to me that's what yeah that sounds like Mexico to me well the soer box is orange so it could be Mexico I mean I could go to both whatever don't you remember Breaking Bad Mexico literally had the the yellow Sunny filter all the time and nickname of a Sunny Land but
+
+[24:24] here it's rock and not the sand wait but here it's rock Rock and not the sand so cat to the furthest place you know and strike the Earth where the Shadows grow I mean it's got to be a quarry got to be yeah obviously I mean the discussion we had when I was uh unveiling my gift was uh either it's Mexico or Brazil uh and for some reason many people were saying that it's got to be Mexico uh yeah but but it clearly says heads to the furthest place
+
+[24:57] you know and if it's not World border then then it must be Brazil I'm sure has a great personality it's a big two Le who said I'm sure it has a great personality that was that was Max oh I don't remember if this is God damn okay so the first one I know that's definitely uh one of the clues I made uh two years ago for my uh secret L was good oh right right right okay okay yeah I
+
+[25:31] see the second book is second clue also you just kind of gave gave it away trolley cuz you said the second look is good no the Le read it yeah okay uh you found the first clue now all that's left is to solve the second feathers bright and color true that's got to be the pirate Farm I already know it com of green and blue still power for here my heart takes cheerful cheerful F flight with chirps
+
+[26:05] and squawks and pure Delights f p Farm seek the place of wings and charm you'll find the most beloved Farm definitely you'll find my most belowed Farm yeah so it is troll well make sure you're uh hitting your airfare miles for the year make sure your elyra doesn't break it's fine the jool that would have been funny yeah definitely zo wait is J the last guy we were waiting for
+
+[26:46] no I just briefly saw the heisen head Eric you can probably uh switch back to survival and like keep making your way out towards your location if not sure which portal to go through which one is safe to go through okay since it going to check the um which Farm is this pirate Farm by me yay there we go divers cubic uh guys teleport to me I found my second clue
+
+[27:23] you found my feathery friend now all you have to do is find your present just go where your heart takes you that's a nothing Burger clearly heisen Perry I thought it would be very obvious but where your heart takes you I mean my heart takes me to quaries should I go to Los Santos I love the all the spectator heads just chasing after jkm yeah yeah I'm just I'm just lying to spawn like oh JK that's weird you turned around and started punching me directly
+
+[28:01] there are oh oh that's an emerald block above the uh intersection that I just went a whatd emerald yeah you heard him that's got to go in cubic video he pissed on what on What uh speaking of the speaking of the where your heart takes you I almost got a heart attack attack because I was like oh no the bats switch and I was worried that I would you know crash the server
+
+[28:34] instantly with all the bats but fortunately it's on okay anything different about the conb actually maybe it's a different conb second nope nope uh there's something different about oh wow they ripped out all last year's present oh there are two okay yeah there are two now oh wait that's what happened oh there's two of them ELO I feel like this one has yeah this one has been there before because the the twiy cone was inside of jungle so this is bigger too oh I didn't make an end I don't see oh
+
+[29:07] there are no blocks here okay so it could be the Breaking Bad theme song what so I couldn't encode it cuz we don't have any discs yeah that is a j red I do have this I made it this Farm well do we have like how many did they need five shers of each disc or something like that jungle yeah can basically what you can do with this is you can encode this and or I I guess
+
+[29:41] I'll encode it with some song Maybe maybe the theme from uh what's called um I don't know uh yeah uh maybe that one and you can play anything you want in the game uh using yeah discs and and stuff like that I guess that's BAS basically what zo made um for some reason some reason I wanted to make this anyway so here you go thank you I guess or
+
+[30:14] one that there are three traffic cones around the void perimeter is already pretty dang I think I know what the next person that gets jkm next year is going to give you we need to even out the balance all right next up is carbs oh people can't hear Discord interesting is hting carbs this this uh these days oh ice ice oh it's not in this
+
+[30:51] Dimension what is the gold helmet about I don't know that's weird crown okay so I guess another location yeah another location all right cool oh my God here is something someone one up kikus from last year I'm not sure oh man this is W insane texturing that this is so cool this is can you guess who this is
+
+[31:29] that's carbs I guess this yeah but I mean the Sant even buils you a Piller Outpost behind the nether portal next up is Zoid yay book Zoid here I'll read it right here I got it I'll read it I got it wow at miname Island a new special mini
+
+[32:02] game has appeared you shall take a central role in it with a chance to toy with other players wrapped in purple and gray the game is waiting for you to play your Secret Santa got another mini game wow battleships to Game of Life 2 no no nuclear submarine yeah uh random yes I couldn't notice that you're kind of poor so please
+
+[32:34] upgrade your armor right now I don't have the upgrades I don't have the upgrades oh right okay I'm going to have to main store then no no no just save it for next year we'll get him nether as a Christmas gift next year you want me to read it sword I could read it I'll read it fine okay go ahead H doesn't this look this doesn't look much like a mini game does it unless playing the note getting lost in Rising notes counts as one no maybe some other day then it must be a portal to another plane of existence but why next to a
+
+[33:06] volcano masterfully you shall lead everyone to to a b to Bunch around you and brace for transdimensional experience woo you tell everyone in spectator or not to come close to you as they press the note block should we have sounds on I'm going to turn I'm going to I'm going to spectate zo yeah everyone spectate yeah this going to kill us maybe oh what what what the what what what what
+
+[33:44] way what just happened what the hell look like the That softw devel season why in the way okay stop scrolling through the book I'm reading in the way tech transdimensional mini game stop it stop at the moment you can play the entirety of one game that being the volcano Master game of course remember what the first book said me neither well
+
+[34:17] anyway so Bas so basically the game represents a of rapidly decaying platforms where each normal player try to survive as long as possible but you're not going to be a normal player player no you're going to be the volcano master haha get it being the volcano Master means you have access to a range of controls to guide the flow of the game and maybe also do a little bit of trolling if you wish I highly recommend you can also fly jump into the portal head in a new game will start have fun you're de finally love this game how know what color only losers stand
+
+[34:51] still I'm not loser red still got it hello wait so uh are we going to are we going to guess who made this um a I don't know I have a sne suspicion wow oh I would guess normally I would guess hon but he already gave the gift wait this isn't hun no he gave it
+
+[35:26] to me like he he gave the poem Oh you're right so there aren't many people who could have actually pulled something like that off to be fair and and jkm gave the dolphin and I don't know how to set up this thing yeah I think it was yes it was me I mean this probably explains why Vala had to restart the server to implement something on the SMP yeah this is not CMP by the way this is
+
+[36:01] a different server this is not J I would guess I would guess so consider on my plot and decided to copy all the cursed statues yes yes I did oh my God and he's pleased with himself about it I am okay Z maybe accelerate the platform Decay Jesus oh God I almost got first place I won I
+
+[36:36] won oh my God the first game J the first game red oh wait we don't get karma for saying GG this is oh my gosh this yeah this is not that's that's not accurate I had a limited budget guys right uh next up is vazar oh okay well I know my gift is up here is car the gift is carry special is carry yeah we going got congratulations you got a
+
+[37:10] Meer see what's inside it stop going you enjoy Minecraft it's a piece of paper with coordinates cool location more coordinates hey if you get some Gunpowder you can turn that into a firework true then lose the C oh thank thank you all right I have a bad feeling about this though because it says it says maze oh no oh no let's see it's actually out a pathfinding algorithm yeah it's
+
+[37:44] next to the others turn around oh what AM we go it's a perimeter oh what am I going to see oh it's amaz Jesus it's it's huge W this look at it in free cam looking at oh than God it's h it's right next to freaking J what yeah of course it's right next to it it's so huge okay okay yeah let's let's see what's in the Le and it's 10 pages okay person seem have an understanding of gradients yeah this gift is dedicated to
+
+[38:20] vazar me okay but I invite anyone else to join in on the challenge it may benefit for more than one set of eyes ooh so maybe you guys can help me okay I only know that you are a programmer of some sorts so I hope you like solving problems I do okay hi Kik um this year I've made something of a puzzle I can see here is all you need to know okay in front of you lies a maze I
+
+[38:55] can tell yeah the center maze appears to be missing it does okay it's just it's it's here just not visible oh wonder what mechanic it uses it can still be solved even without its walls okay tread carefully but not quietly okay maybe it really okay yeah H I might need to take the book anyway
+
+[39:28] all that you need can be seen from afar okay the solution lies not in Nooks corners or crannies all that you need um exists within this island looking elsewhere will lead you nowhere okay free cam ah damn it free caming and spectator are forbidden not that it would help me okay interesting very interesting actually basically everyone
+
+[40:00] just spectate yeah so probably don't spoil it guys if well I mean it says it won't help so anyway your reward will reveal itself when the puzzle is done okay I feel like this is a repeat of last year where I'm going to have to like take 40 minutes to solve it um yeah I'm not a fan just just the last page good good luck PS keep notebook sounds turned up ahuh okay that's next up is hunon is
+
+[40:35] hunon on the server he's on the server Minecraft server I'm here I'm here can you hear me hello yeah we can hear you hello all right I'm sorry I am on an old laptop so let's see if I can even navigate it's so dark in here guys yeah I know this places horrible uh here's your present your present right oh I see it I see it happy
+
+[41:10] holidays okay a of of Pies a branded pen and item frame was this like the extras from a g work gift bag a special message okay what should I start with here I wonder a second that maybe place the item frame so we can see the M part well I assume it's a m part that's
+
+[41:49] awesome a special message happy holidays would like to give you a little something special this holiday season so take a visit to the new staircase at 71 comma 0 in the spawn Palace for a surprise Minecraft server Solutions okay 710 I don't have coordinates can somebody lead me there please oh it's a timer someone made does anyone know how to diffuse a bomb Oh my God someone made a
+
+[42:22] bomb we have 11 there's another book here H looks suspiciously similar to something from last it counting down information booklet if you get counting down here at Minecraft server Solutions we care about making server management as streamlined as possible that's why we decided to gift you the owner of the highly acclaimed wave Tech server a new tool for your toolbox we understand that between planning build events competitions and tours you can get difficult to figure out what time works best for everyone
+
+[42:54] that's why we made the universal time clock UTC to help with that with its Sleek design and highly sought after tick accurate 20 HZ internal clock other servers will be begging to have one not to mention you can easily select the player whose current time you wish to know with the push of a button time zones for most of your members have already been set so go ahead and try it out Simply replace the paper in the dropper with a new member and press the button we look forward to hearing your feedback in the form QR code below happy resolution wow this is advanced
+
+[43:31] technology okay um there are names next to you in a barrel so restart SL crash detection okay I just grabbed 3 3:00 almost or maybe 4 it's 4 should be 4 or yeah 4 they saying it is 127 and not 11:45 no the actual gets delivered to you on Christmas Hunter inflict the mystery lover I still like
+
+[44:02] it all right where's the mystery lover it's over here there is the mystery lover mystery lover so next up is Wilton oh is Wilton here oh I'm not here no wion's not here no Jesus Christ hello where at where this is here hello he got a box I got a lot of
+
+[44:37] goslings back seal rum nice no go when driving yeah right yes yes uh book and quill what's it say chemically speaking alcohol is a solution my name yep there's a quote from me I can confirm theoretically speaking must also be a solution to be to a great Christmas gift just don't drive or fly after drinking enjoy okay and then what are these Map Parts can we look at yeah oh wait it's
+
+[45:12] an invisible one ah I literally have this sitting in my kitchen right next to me nice ch ch ch if I chug this thing I'd be dead are the same are no it's for Wilton it's for wilon are they the same map art Wilton or is there two different you get one oh wait no there's another hold on another that's why there's another
+
+[45:46] invisible item frame and another one o well this is just factually incorrect right here I mean else I supposed to improve the bond between man and machine true yeah all right okay next up is cubic hey Ric It's the Most Wonderful Time of the Year ah I see you're getting getting me
+
+[46:20] monetized tyy yeah get demonetized baby that song is public domain what are you talking about depends on Whose performance yeah CU you're going oo it P signed it oh man need to remember they can't sign the book okay let's let cubic uh read the book oh my God that's a lot of
+
+[46:54] meths right there an activator ra who put the activator right in there hey cubic in the past months I've learned how much you love hellers cuz you have been a so pass passionate about your tral divers project wanted to add some atic aspects by making map arts in the shock box you can find two name plates of the SCS legislator as well as a control screen map which can be added to the cockpit of the Super Destroyer
+
+[47:27] I've been inspired by ingame screenshots which I had to research because I haven't ever played hell diers and made a Minecraft version from the real build I hope you enjoy your gift Merry Christmas and happy holidays all the best Paradox a thanks Paradox oh wa good thing the book wasn't signed so we now know who it was really put that in there yeah who took a sh here's some garbage some gar yeah uh oh I'll take
+
+[48:01] the glass bottle thank you I'll take the the uh decapitate jkm heads well I I think they are it goes egg that's cool eggy oh that's cool that's that stuff should have used the invisible ones oh okay so they they aren't invisible how it oh it's the um it's the little um the little screens that you see like in
+
+[48:36] in the game yeah me rig rig what do you mean I went in the middle I'm like exactly in the middle you want me to go last I'll go last nah we're joking where are you oh there you are who keeps putting redstone on the floor someone is bleeding yeah it's a location all right going to random
+
+[49:11] random random loone itself I what oh random is first okay there we go I'm here fire o i I pulled the I pulled the cookie and it that's J wrapping oh okay that's a new one it's a spoon oh my God and something resembling a penis resembling pis has a dick
+
+[49:50] vein no for for me a okay is it the spoon yeah it's actually like like concave and everything oh my God Christ hang on what the damn oh my God how many blocks is this oh my God it's multiple blocks F seven M yeah what it it's solid what the
+
+[50:23] it's not a single block fig like it's it's actually it's who did this passing through the freaking spoon what the H random random after your guess can we pull up the statistics on Stone used um yeah okay I I just got it spoiled because on Mini you can see uh whose horse it is oh oh no don't um that's so nice they gave you a horse
+
+[51:01] with your spoon right they can eat the horse this horse is this horse is so slow does it jump well no no no just sucks at life for sentimental Reas decid toity yeah sentiment atast it jumps pretty [Laughter] terribly yeah both three two
+
+[51:38] one cars cars that is almost a million almost a million yeah I I really appreciate the randomness of this gift for a random person it really the horse is goneo went to the nether no Peter the horse here okay next up is trolley yay okay I up right here yeah I
+
+[52:14] think I saw something here okay ah people are what the netherite I I already have a guess who stop with the okay okay I'm going to read this seven um Pages under Winters under Winter's quiet glow where snowy forests gently grow lives trly kind and full of sheer a
+
+[52:50] friend to to all both far and near and will arrive in person soon question mark secret Santa thank you that's so nice if someone knows where you live I guess knows where you live trolly I'm I'm gonna quickly guess that cubic is sending a real life bomb to trolley real life bomb to trolley welcome to the uni bomber 2.0 I don't think ym writes like this no
+
+[53:25] offense to C but no no no you're used an AI um I was going say trash gbt writes like everywhere guys guys what the what the are we doing is K uh trying to do falling block right now I I I only put the rails down most this was not me yeah can we not stop doing whatever the this is yeah I mean I could also get everyone as like P right now if I wanted to actually I mean I'm I'm very open that I live in Sweden like I I don't really care yeah but what
+
+[53:57] are we going to do slap a post please deler to Sweden please deliver to the near IKEA two Sweden contents one bomb I mean all right I guess hon did you make it yes and I gave the gift to Santa to deliver to you yo thank you Sant thank you H I did not mean to actually guess on tuna I'm so
+
+[54:30] sorry all right next person is paradox y par shocks wait I'm I'm following the wrong person address and smite tools another set of coordinates okay so I'm gonna explain this one because it's a little complicated uh and
+
+[55:03] I'm I mean I I also already know who made it because it's thank you it's it's the third uh perimeter out of the 3x one and you were one of the people making it yeah it was me really did not keep it a secret we did not do very well on that no um I don't know if this is going to work because I didn't get a chance to test it um but this is a rocket autoc
+
+[55:40] crafter so you come over here this should normally be lit up with at least one of them but I didn't start yet oh and it doesn't work I think you're forgetting some Hoppers yeah I think if it's for it is missing some blocks yeah just a couple just a couple yeah hang on boxes out let's put this what yeah assembly time guys a I wanted to save that for the the
+
+[56:13] the cool machine bummer oh is there a trial chamber here yeah there is yeah I was hoping to sa the for the trial diver machine but oh well we had to uh manually destroy uh all the vaults and spawners from like three or four different trial Chambers while while making the perimeter I this one of the locations no this perimeter is just that big ah I mean I haven't seen explosions yet so maybe it wasn't freaking maybe
+
+[56:49] that's why the components are missing the breach one day one day a breeze is going to shoot one of his little projectiles and it's just going to happen to hit something over here but I really appreciate the rocket crafter because I prefer using charge three rockets which aren't very represented bad choice bad bad stop to choice I really hope it works so we'll do we'll do flight duration 3 just you like flight
+
+[57:23] duration 3 mhm you how many boxes do you want which I didn't do that either there's supposed to be nine items in here um normally there'll be non- stackables but I'll have to replace them um and you can so you can up to nine Cher boxes at once let me before we do this let me yeah before you start let me make sure that this is it's still filling what the it's not going to work I left a bot here overnight it is is nowhere near full oh
+
+[57:58] my God J what's your opinion on the hopper locking setup here copper locking where there's none amazing amazing poers oh there's none okay get it I'm not looking I'm proud of you random thank you it's halfway done being filled so we're not going to be able to use it um but I'll demonstrate once I get it working h ah what oh yeah I have it here no the beautiful
+
+[58:36] sign that was the brightest sign I've ever seen it was so bright oh my God oh my God holy I know random didn't get this gift for you all right I think I think I might know who made this gift yeah maybe I have an idea let's let Kiko read uh I am bad at reading so Random you have the stream you can uh oh wait he has
+
+[59:09] nothing ho ho ho ho ho ho ho ho ho ho ho ho ho ho ho ho ho I'm not reading all of that make the make the voice bot do no God no just the entire no no can everyone stop ship posting okay hi Kiku we all remember how great your Mexico storage was but I still think it was missing something
+
+[59:41] that's why I built you something special that both you and the rest of the server May benefit from now you should try to guess what that thing is it's going to be a war crime isn't it maybe I don't I assume it's a second slice of the deep SL storage but I I already had that idea that'd be funny also as a joke I asked chat gbt who you should kill with the mace it somehow chose squibble three times in a row why does ha L why does AI hate squel
+
+[60:17] so much FYI the gift location is around 2.2k blocks from away from 0 in a straight line you know there aren't coordinates in here but there is do I have a compass okay oh nice all right now Kiko should search every single location in a circle with a radius of 2.2k block yeah this is just go in a circle whoa is this a fish farm your gift
+
+[60:50] is Dolphin reading okay I'll read uh your gift is drum roll turn page a dolphin F the most ultimate storage Tech component not not sponsored by cuic meter so I can now flick the sever oh I guess wait Godot quickly turning off oh my gods
+
+[61:24] dolphin no the oh my ears no yeah ah there's actually a fourth page you well the fourth page is just a manual burn the lever ah is there a reason why it's so loud fish fish fish let's go to sword I wonder where water came from fish it makes a lot more squid who do you think it it made made this oh my god wow oh my God who oh wait I totally
+
+[61:59] didn't even clock that we're in the Nether and that is water this isn't did you see your yeah I wonder who this was that's the fourth page of the lecture oh there's I didn't even realize there's also Bedrock breaking above if you look up that's water in the nether Bedrock breaking and perimeter so next up is Skuse ah
+
+[62:31] May okay now we have free we have free candidates for theer please respect the streams yeah can we can can we please Focus for a bit and not start griefing spawn seriously guys I'm actually kind of serious right please where do we have Skuse on the server yep exuse is right here that's so much text holy oh first map art
+
+[63:13] you oh my God I'm going to read the book it's 14 pages okay okay huge ah par platypus he would appear as though you have fallen into my trap as I intended you see p the Platypus you have arrived just in time to witness my next greatest invention is it the script of pH and verb it's all par Platypus no he's technical server readon okay okay so par platus I decided
+
+[63:46] to join a technical Minecraft server I PA for your W ler wait you're not laughing I didn't take you as a non-judgmental type of platypus anyway I decided to join the server with my building skills wait that wasn't a joke why are you laughing now I guess I was right and you are are a judgmental type of pus I knew it anyway I quickly discovered that I was not in fact the most evil member of the server No in fact there are V people that inhabit this this server even by my standards
+
+[64:20] you see parplus while neither of my parents even showed up for my own birth many members of this serve didn't even have parents and were instead raised by A Flock of monkeys fair oh this is long I guess to cut through this Chase these evil members who evil members who despite their cunning skills and Technical capabilities never learn social socialization skills and will make fun of me for every lack of optimization or potential flaw in my designs sa they will continue to M for almost any reason they could find and
+
+[64:55] found myself growing smaller and smaller due to their insults hence I have taken their most fell insults and invented my latest invention which I am calling the clap beator 9,000 yo uh I name came about myself I must add now when whenever they try to mock me I can simply request the CL backing AG 9000 to come up with a response which I can hand deliver to their faces last page in all seriousness exuse welcome to wave deck and I hope you these map Arts
+
+[65:27] I have prepared for you are used in the most hilarious ways to return to favor to people with diss your BS uh other limitations whoa this is so fun okay let's see sorry it took us so long we kind of forgot yeah might be the record for most long uh longest professional wait is there an actual T in t now maybe love that's for SAA I love ya
+
+[66:03] oh this one's pretty good ah these Dam Snow Golems no don't hit Neil Armstrong needs to go back into the moon he's in the way okay I think that was all maybe real Sant please stand up I need block please stand up please stand up H I think he standing up nice okay
+
+[66:36] got oh man that was hilarious since was slained by Zoid yeah Kiku got smashed oh yeah next up is jkm I'm kidding cuz I randomized it just go through the original list please well the original list is gone save it what oh godam it this is your fault you're the one who said it was R anyway
+
+[67:08] I said it a joke like whatever whatever let's go on yeah all right Eric your turn let's go where's Eric is Eric here yeah Eric's here yeah y so lost oh I see Eric so two sweets in a row it's rigged it's rigged wait Eric is Swedish yeah big time of course it's a book it's a book
+
+[67:42] you pulled it out so fast I thought there was nothing in it and that you just got a gift of a Sher box it's a beautiful Shuler box what does it say to Eric as a master of your craft the most rewarding experience is to witness the things that make you bring joy to us joy to those around us to find your gift go to the place where democracy is served use the portal besides the pig storage and fly south west towards the coast bring your friends and once you arrive Turn the
+
+[68:15] Page yeah you can start without I'm going to read the book no no no no no Kik has a maze no and he has High Ground I I give him the doomed this m I lost my a hole and stop stop griefing ship uh I misplaced my pickaxe netherite I think it's named if anyone has it I you have
+
+[68:49] it everyone here yeah okay I'm going to man the Cannons walk the plank these Beauties are loaded each with three fully functioning cannons and a wealthy and a wealth of weapons and tools below deck the idea is with SP we split every one into two teams then fight until the ships are blown to Smither the Cannons have three controls the bottom note blocks loads the propellant the middle
+
+[69:21] note blocks load some TNT and the top note blocks detonates propell below deck we have beds for respawn for respawn points crafters for weapons and equipment and loads of arrows in barrels I own the crossbow Crafters people should put all their stuff in their Ender Chest to avoid losing it to explosions something to do with TNT I wonder who made it yeah do we have food somewhere uh just
+
+[69:55] sit oh sorry I clicked an block uhoh am I going to blow up so I'm panicking has the first shot been fired we're at War already it up to be fair I want to hit the notebook okay there is water equipment below deck guys huh oh very cool ooh someone has diamond armor and stuff did
+
+[70:27] you save your stuff uh yeah take off a gear the ship Sant told you right can you can you kill me please I I'm hungry oh this is a crossbow maker there any we have to stay on the ship for the entire time or make sure you set your SP I was thinking that too nothing over here guys like that's a really nice crossbow storage I wouldn't have thought this is
+
+[71:01] a really cool Min game I'm already thinking we should add this to the new official miname server question mark neither I guess I guess I guess we're not important enough for food and armor no you didn't get food where oh you don't get food food is away the food that I brought I'm confused am I a crafter or what what's happening yes true you a minor and crafter I identify as a crafter okay uh bottom Note Block is the load propellant middle Note Block
+
+[71:33] is to load TNT uh top Note Block is to fire fire the propell so you just hit bottom Middle top and whatever order makes it work or you hit bottom Middle top and then it fires are we going are we going you mean Crafters like that okay now I now I see wait oh someone already fired aim for flag wait hold on is war being waged
+
+[72:06] right now am I only just noticing this oh yeah we're blowing stuff huh never mind what is this got a swimmer in the water oh God here it comes man the cannon random Fire oh there's a cave oh random you got to shoot faster than that you almost just hit our own ship okay twitch I'm sorry it's laggy we have to try and shoot their Flags now
+
+[72:39] random oh you got to you got to shoot a face what are the controls doing I am worst pirate oh my God oh my God first first cannon is uh is broken they disabled it Canon oh I at spawn what I said by spawn point uhoh oh my bed got destroyed I think oh yeah I told you the bed should be deep the game I said
+
+[73:14] my oh man oh that works that works hey oh that was a great shot how did you do do it like I I don't get the controls these ships are some hard to navigate yeah God damn oh no you just Spam these so do we win when we kill the team or you win when their other ship is in Dave Jones
+
+[73:46] Locker we sink them boys what I set my who had enchanted golden apples and Firework Rockets yeah my the the the spreadshot is a very good idea whoever's doing that over there I mean wait hold on it's a bad idea you're not even close Jesus Christ button oh man I saw that jkm we're taking on water get the
+
+[74:22] buckets I forgot how you get to trial d red bolt on the left random you can load multiple TTS when you shoot I can't get out from the bottom deck yeah except for the fact that my Cannon's yeah I saw that so which button do you spam you spam all of them hold on are we allowed to like take TNT and board the enemy craft is that in the rules what are we
+
+[74:55] not allowed to do is my question lose trolley um what if we have okay I see oh an amazing shot Mr Max I believe that it is time to board we're out of Canon fire all right where do we get the TNT Jesus oh they blew up the dispenser with all the te I uh I got it I have flashback recording
+
+[75:29] right now oh whoa what happed they B up their own ship and I was under it I also am recording as well cubic but it's a perspective I recording I'm also recording but it's not usable this is the real reason wanted to do trial divers is for all of these wind charges I I spawned by the beds I started drowning wait oh no the beds
+
+[76:03] broke oh oh everybody everyone's bed is just getting Obed because no it was obstructed because they're in the floor oh it's in the floor that's why God damn it I didn't realize that was a thing it's in the floor yeah you you have to break the you have to break top I'm in your wall yeah cuz they're evive action Revenge oh no all right now the now the respawn
+
+[76:37] Point work God damn it that sucks literally the only bed that's like how you why would that not going work what what the did you guys do what Happ all of our resupplies are broken well does anyone have any I have flint and TNT please why are you on our ship theong let me get off the ship let me
+
+[77:11] get off the ship no why do I like why am I being spawn Camp because you said you why you shooting me your team two why you shooting me oh well they're where the same team bro why you shooting yeah oh par half a heart yeah let me get shipes matter blew up our spawn points
+
+[77:49] game over oh wait are there any weapons here I'm still alive I'm not going yeah oh the kened already oh my god there was aut at the bottom oh God there's so many of them go down how did you get a shield why is the mspt so bad dude a shield I'm oh no happened he Sandy no explosions they came they came in with
+
+[78:25] oh man all right I I I did a um kamaz attack oh oh oh FK God it doesn't work they came in and blew everything up we got we got annihilated we got annihilated um okay I probably should have banned that strategy captain captain my captain captain it's not looking good no stop placing
+
+[79:01] T guys Zord get off my back oh mind oh man these ships got nailed yeah pretty early on oh there it goes oh there yep there goes my actual respawn Point yeah yeah I forgot I just realized I forgot my sh box of all of my light and at the beach oops I want see my present just sitting in the corner with
+
+[79:33] his shield up all right well I'm at of T all right so I guess no one has any person left well from today yeah we just got to wait for Bard do you want to do your maze now um sure we can do that if you guys want to I have the recording all the way up until I got annihilated that last time but now I'm stuck at spawn they're scuttling our own
+
+[80:08] ship oh the beef last even in heaven oh yep there we go the reset oh man I'm I'm glad I at least got to nail jkm with the cannon yeah the PVP is still going on in oh oh the The View doesn't end just because we died dude punching with strength to is insane truth is the
+
+[80:42] Cuffs through sex and Hil game mode the combo was brutal we just puning each other SP now no okay all right we all just converged on at the exact same no no no stop Merry Christmas Merry Christmas Merry Christmas Merry Christmas we're
+
+[81:16] punching each other mer Christmas Christmas this is exactly what the holidays with my family looks like this is how we te political discussions are done what absolute Carnage in only 20 minutes we managed to reduce 5 hours of work into piles of rubble I sure hope Eric appreciate the effort I put into this and those map hearts on Paradox really spruce up the Super Destroyer thank you all very much
+
+[81:49] for watching and a Merry Christmas to
+

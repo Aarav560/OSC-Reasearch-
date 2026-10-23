@@ -1,0 +1,68 @@
+{
+  "id": "aLLlROo_XWo",
+  "title": "I am Become DEATH, the DESTROYER of Minecraft Worlds",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230902",
+  "duration": 1323,
+  "view_count": 746660,
+  "like_count": 32906,
+  "description": "In this video we experience what is was like for Oppenheimer during the trinity test with actual nukes in Minecraft. It turns out due to a miraculous coincidence of mechanics in the game it is in fact possible to make explosions that perfectly imitate nuclear bombs in Minecraft. Which is all made possible thanks to a new innovation to the orbital strike cannon which allows it to fire programable warheads. What an age for innovation, in minecraft, we live in.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nThis cannon makes use of TnT dupers designed by @lntricateuwu  and Hex encoders designed by @Kahyxen \n\n*Note: The nuclear payload won't work properly with optimizedTnT enabled, so I suggest not trying to recreate it on low spec systems.*\n\nDownloads for the cannon. *Make sure to enable the chunk loaders before attempting to fire the cannon*. And before you ask, no this doesn't work on Bedrock Edition or on paper servers:\nhttps://www.mediafire.com/folder/88qrgise22lax/Orbital_Strike_Cannon\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Orbital strike introduction",
+      "end_time": 133
+    },
+    {
+      "start_time": 133,
+      "title": "Payload encoder mechanics",
+      "end_time": 341
+    },
+    {
+      "start_time": 341,
+      "title": "Controlling explosion shape",
+      "end_time": 421
+    },
+    {
+      "start_time": 421,
+      "title": "Precise fuse timing",
+      "end_time": 522
+    },
+    {
+      "start_time": 522,
+      "title": "Advanced payload scheduling",
+      "end_time": 686
+    },
+    {
+      "start_time": 686,
+      "title": "Creating the mushroom cloud",
+      "end_time": 827
+    },
+    {
+      "start_time": 827,
+      "title": "Destructive payload analysis",
+      "end_time": 1014
+    },
+    {
+      "start_time": 1014,
+      "title": "Firing and aiming the cannon",
+      "end_time": 1150
+    },
+    {
+      "start_time": 1150,
+      "title": "Cannon demonstration and outro",
+      "end_time": 1323
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "oppenheimer",
+    "orbital strike",
+    "nuclear bomb",
+    "tnt cannon",
+    "nuke"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=aLLlROo_XWo"
+}

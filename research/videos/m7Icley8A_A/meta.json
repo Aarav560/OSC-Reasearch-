@@ -1,0 +1,87 @@
+{
+  "id": "m7Icley8A_A",
+  "title": "Introducing the Orbital Gatling Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20261016",
+  "duration": 1702,
+  "view_count": 357298,
+  "like_count": 11192,
+  "description": "This video follows the full design process of a deadly arrow gatling cannon in Minecraft. By mastering the power of wind charges we can create a new generation of super-sonic arrow weaponry capable of rapidly firing volleys of arrows in the direction the player is facing. We also investigate how the new ice ball projectile might fit into this design, with a fully functioning ice ball gatling cannon. We then learn important lessons about the tradeoffs of using different elements in our design and how the ice ball compares to the arrow as a projectile.\n\nFind downloads for schematics and worlds here:\nhttps://www.mediafire.com/folder/b6wa2ebk8uqdu/Anti-Air_Auto-Cannon\n\nPivot cam mod:\nhttps://github.com/cubicmetre/pivot-cam/releases/tag/1.0.0\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Conceptualizing the cannon",
+      "end_time": 64
+    },
+    {
+      "start_time": 64,
+      "title": "Mechanics of the mechanism",
+      "end_time": 146
+    },
+    {
+      "start_time": 146,
+      "title": "The down-firing challenge",
+      "end_time": 280
+    },
+    {
+      "start_time": 280,
+      "title": "Redesigning the architecture",
+      "end_time": 374
+    },
+    {
+      "start_time": 374,
+      "title": "Refining cannon timing",
+      "end_time": 407
+    },
+    {
+      "start_time": 407,
+      "title": "Aligning the arrow generator",
+      "end_time": 526
+    },
+    {
+      "start_time": 526,
+      "title": "Aligning wind charges",
+      "end_time": 737
+    },
+    {
+      "start_time": 737,
+      "title": "Introducing pivot-cam mod",
+      "end_time": 882
+    },
+    {
+      "start_time": 882,
+      "title": "Performance and optimization",
+      "end_time": 1017
+    },
+    {
+      "start_time": 1017,
+      "title": "Transitioning to ice balls",
+      "end_time": 1155
+    },
+    {
+      "start_time": 1155,
+      "title": "Ice ball testing in snapshots",
+      "end_time": 1419
+    },
+    {
+      "start_time": 1419,
+      "title": "Final cannon performance",
+      "end_time": 1526
+    },
+    {
+      "start_time": 1526,
+      "title": "Setup and build guide",
+      "end_time": 1702
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "tnt cannon",
+    "orbital cannon",
+    "arrow railgun",
+    "ice ball combat"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=m7Icley8A_A"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "DYMbplObP7s",
+  "title": "The Ultimate SMP Wither Cannon - 1.17+ - WMC",
+  "channel": "WMC",
+  "channel_url": "https://www.youtube.com/channel/UCNTettGwmLOvQv1oklQYYIg",
+  "upload_date": "20251230",
+  "duration": 293,
+  "view_count": 26404,
+  "like_count": 1038,
+  "description": "Hi guys ! \n\nV2 will be out soon to make it 360° !\n\nBefore making this cannon in your world/server, you will need some details.\n- Not paper proof\n- Not bedrock edition proof\n- This cannon should be for version 1.17 + (for  powder snow)\n- The python script for this cannon is ok if you shoot in the positive/positive direction. It should also work if you rotate the cannon but you might need to chance some parameters\n\nPython script / Downloads : \nhttps://drive.google.com/drive/folders/189bKvMRewQbvr2p3G9DZXOvTTfGVfFAA?usp=sharing",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Wither cannon introduction",
+      "end_time": 14
+    },
+    {
+      "start_time": 14,
+      "title": "How the cannon works",
+      "end_time": 52
+    },
+    {
+      "start_time": 52,
+      "title": "Using the cannon",
+      "end_time": 90
+    },
+    {
+      "start_time": 90,
+      "title": "Tutorial and setup",
+      "end_time": 128
+    },
+    {
+      "start_time": 128,
+      "title": "Loading payload materials",
+      "end_time": 204
+    },
+    {
+      "start_time": 204,
+      "title": "Firing the wither batch",
+      "end_time": 242
+    },
+    {
+      "start_time": 242,
+      "title": "Conclusion and results",
+      "end_time": 293
+    }
+  ],
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=DYMbplObP7s"
+}

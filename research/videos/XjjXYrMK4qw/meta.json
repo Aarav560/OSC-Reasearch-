@@ -1,0 +1,77 @@
+{
+  "id": "XjjXYrMK4qw",
+  "title": "The Problem with PaperMC",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20240323",
+  "duration": 1442,
+  "view_count": 348766,
+  "like_count": 19432,
+  "description": "I am frequently confronted with complaints about the contraptions I share not working on certain multiplayer servers. In this video we will discover the problem with modified servers and how they impact the game to make features that would otherwise provide a universal gameplay experience inaccessible to most players. Of these modified servers Paper is the most common, promising to optimize server performance and management with a diverse ecosystem of pluggins and configurations. We will take an in depth look into Papers various features and how they serve to degrade the minecraft gameplay experience.\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Why Paper is problematic",
+      "end_time": 62
+    },
+    {
+      "start_time": 62,
+      "title": "Testing TNT duplication",
+      "end_time": 178
+    },
+    {
+      "start_time": 178,
+      "title": "Fixing default restrictions",
+      "end_time": 282
+    },
+    {
+      "start_time": 282,
+      "title": "Debugging the broken machine",
+      "end_time": 483
+    },
+    {
+      "start_time": 483,
+      "title": "Testing target functionality",
+      "end_time": 674
+    },
+    {
+      "start_time": 674,
+      "title": "Paper vs Redstone builds",
+      "end_time": 838
+    },
+    {
+      "start_time": 838,
+      "title": "Storage system performance",
+      "end_time": 1009
+    },
+    {
+      "start_time": 1009,
+      "title": "Farms and crafting failures",
+      "end_time": 1119
+    },
+    {
+      "start_time": 1119,
+      "title": "The vicious cycle of Paper",
+      "end_time": 1228
+    },
+    {
+      "start_time": 1228,
+      "title": "Fabric as a better solution",
+      "end_time": 1315
+    },
+    {
+      "start_time": 1315,
+      "title": "Final thoughts on Paper",
+      "end_time": 1442
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "spigot",
+    "purpur",
+    "paper",
+    "multiplayer server"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=XjjXYrMK4qw"
+}

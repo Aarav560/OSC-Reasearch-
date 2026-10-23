@@ -1,0 +1,110 @@
+[00:01] This is an orbital strike cannon, a full-blown machine capable of firing over thousands of TNT to any place you command it. And I'll be showing you how to build it from what every barrels and droppers contained from every discs that makes it functionable from how to install the schematics and light matica from building it and how to use the spreadsheet and control panel all in this video. So, enjoy. Okay, so for this to work, you're going
+
+[00:35] to need a mod called light matica. So, you can just search that. You can download this on mod prints. You're going to need mad and then for this I mean I already downloaded this so there's really no point in downloading it again, but you need this mod and after that after you download it and but placed it in your Minecraft. So, after you're done doing that, you just want to click on the description below. I already shared the link. So, you're going to want to download like four things here. You're going to
+
+[01:06] download orbital strike cannon MK1, OSC fire control, uh nether and control panel. So, we can go ahead by downloading those. Now that you're done with that, um you're going to want to open your Minecraft. So, after you've opened your Minecraft, um you can go ahead and go to your mods folder. You can
+
+[01:38] either go here or here. I'm using TLauncher. If you have Minecraft, you if you have if you like bought the actual Minecraft, you can just paste it you can just paste it in your folder. So, after you've done light matica and paste it here, you can go ahead and open the mod pack or like the folder. And then you want to find a file named schematics right here. So, you just want to open this and then you can go ahead and open another file explore file
+
+[02:10] or file explorer and then you can you can get three of this the orbitals MK1 nether and control panel and then just drag it here. So, that's pretty much it and then you would just want to close that. For fire control then, you're going to want to open this in a spreadsheet. So, I already have Microsoft Excel and then after that, then you have your fire control here. This is going to be the origin. This is
+
+[02:42] going to be the target. This is going to be nuke size tab that blah blah blah. You can just go ahead by opening Minecraft. Now that you have your world up, what you want to do is press FN and then FN or like F3 and G. Yeah, and then you're going to want to press F3 again so you could see your coordinates. So, basically you want it to be the origin of the cannon to be by 16.
+
+[03:17] So, we're going to have to find something within that. So, you want to check like the corners like the the corners of the chunks. So, you're going to like try checking here 160 224. Those are positive. So, you want to go ahead and copy that. And then you're going to see in the control panel that it's 160 by 224. It doesn't show any
+
+[03:49] [music] that the chunk is underlined. It's it works also for for the Y levels. You're going to have to find something there. I personally go with 122. So, yeah. And don't mind that. That's just for the target. [music] So, so what you want to do next is you want to go by pressing M. And then you can go to schematic placements. Oh, wait no. It's loaded schematics. You're going to see here the control panel everything is here. So,
+
+[04:23] what you want to do first is you want to uh load the orbital cannon schematic first. And then once you do that, there's a there's this very important that you check the chunk borders with with the orbital cannon. So, basically oh, you see this nether portal right here. It needs to be just like where the these four chunks are aligned with it. I can't explain, but you just have to check this
+
+[04:55] because this is really going to be important and you will going to going to check your placement origin. It's 94. So, let's move that up to 122. All right. Now now that you've got that in, I'm going to have to build it block by block. So, we can go ahead and then we can render layers. Just put this to like single layer that you can set here. Make sure it's in 107. [music]
+
+[05:27] Turn on easy place mode. And then we can we can just place [music] right now. Okay, for this two hoppers right here. So, you're going to want just two shears with you. And then you can place both of them there and then they will activate. Okay, so after that after you're finished building this part,
+
+[05:58] there's something you're going to need need to put in this chest and in this dispenser and item hoppers. So, it's 13 first. Cat blocks. Far all. It's not hello hi. And lastly, we're going to need stall. So, you're going to need to individually fill out this chests with each of this music discs. So, you're going to need to fill out this
+
+[06:33] now. You're so you're going to need carts a lot of mine carts with chest. So, you're going to want to fill out all of this dispensers and this hopper. And then you can go ahead and place mine cart with chest here with all of this field filled out. And yeah. All right. Now now for this layer, uh
+
+[07:08] you're going to want to fill out just one of these with 19 redstones. And then just don't worry if the redstone dust just goes here. It goes back either way so don't don't mind that. Okay, for now now for this layer, you're going to want to get a lot of shears to fill out barrels. So, these two barrels are going to need this amount of shears here. here.
+
+[07:40] So, you're done with this layer. Now you can move on to the next. Just have to place a mine cart with hopper just just place it there. Like here. And then yeah, you're good for this part. Oh, yeah. I forgot to mention for this part. You see this one here? Like and then you would just want to put the redstone [music] dust like a lot. Uh like secretly them two per each. So,
+
+[08:14] you can put two per dropper. Okay, so now for this there's going to be a lot of important [music] parts in this layer up here. So, we can go ahead by let's finish this first before I tell you some before I tell you guys. Okay, now that you're done with this layer specifically layer, you're going to need a lot of redstone in this part. So, we so each of this droppers not down
+
+[08:47] here. So, just each and on top of here. You can just place a stack of redstone dust. So, just like that and also you can double you have to double check because if if you misplace something, you are cooked the cannon's cooked everything's cooked. oops. That's my bad. So, in this dropper right here, we can place a lot of uh redstone dust also.
+
+[09:21] So, you can just double check. Okay. Also for here, uh I think this is a pass code. You can just uh click on these. So, like yeah. So, all right. Now that you're done with this layer, you're just going to get another redstone dust. And then no, you ignore those yet since and then here this is going to be another important one. You're going to need to
+
+[09:53] put redstone dust in each of this hoppers. So, just like that and you can move on to the next layer. you're going to want to get more more redstone. Oops, that's a lot. So, you have to divide them by just not divide, just segregate them by one. Just place them all of this dropper and all of this droppers.
+
+[10:25] And then, yeah. Uh that's it for this layer cuz they're very complicated when you when you get them wrong. So, we can start there and then boom, then we can place the water there. And then the button. And we can do that for the other side as well. Oh, yeah. And uh something I missed, you're you're going to have to place like white concrete there.
+
+[10:58] So, it's going to make that sound. It's going to keep rotating. So, that's you go with that. Also, for here, then you can just place it back. And then, we can move on to the next layer here. We can turn it off. And then, yeah. We can put those. Also, for here. Okay, now an important thing is you're going to need Don't turn on the nether portals yet. Just leave them be for now. you can just get any rail.
+
+[11:34] And then, in this honey block, there's going to be the water here. And then, we can uh place the rail. And you have to shoot it inside. We have to make sure it's all the way in. Unless if it's not, it won't pick up the boats that you're going to be placing inside. So, it's going to be a a big problem. we're going to do the same right here. Take that off. And then, after that, let's get
+
+[12:07] up minecarts. Boats, a lot of boats. &gt;&gt; [snorts] &gt;&gt; And then, let's just place them all in this dispenser right um in the back here. Also, for here. Only in the dispensers, not the hopper also. Okay, before you move on to the next layer, um we're going to need some redstone dust So, right here,
+
+[12:40] it's going to be for the mainly for the control panel itself. And we can move on to the next layer. Place the dropper there. And then, we can place a white concrete there. So, yeah. Okay, for now, this part, there's a lot of redstone things you're going to need to place here. So, you're going to need a lot. So, here in this area right here near this chunk loader,
+
+[13:11] you can place redstone dusts on top of them all and only on top of them. If you place them below or yeah, any other that, you're cooked. And then, we can place one on top of here, too. And then, below here. And then, here we're going to do the same thing.
+
+[13:44] Just place the redstone dusts. And yeah, that's practically it for this layer. So, in this layer, you're going to need more more redstone. So, let's get that. Um the white concrete for this dropper. Here, this dropper right here, [music] you're going to need to place a stack of redstone dust right here. And for [music] here, you're going to need to place 18 redstone dust.
+
+[14:18] So, just like that. Don't worry. It'll It'll go back anyways. So, and then I forgot in this layer down here, in this area, here down here, there's dropper, you're going to need to place eight So, just like that. And then, you're all set, I think. You just place that and then I think yeah, the redstone goes back there. And then, you can you can just keep moving on.
+
+[14:58] Okay, after that, you can just after this layer, you can just put shears here. Same one as down below. And then, what you want to do next is to I want to ask you all to subscribe. We're so close to 5,000 subscribers and I want to thank all of you for spending your time watching this video. &gt;&gt; [music] &gt;&gt; Okay, so this is the top part of the orbital cannon. It's going to be one of the most
+
+[15:29] important things that you should not mess up with. So, there's going to be a lot of barrels that you're going to have to fill up with shears. So, example, this one right here, you're going to need about this much shears. Just like that. And then, you can go ahead over here. Same amount of shears as the last one. Just like that. And then, here, this two needs to have this amount of shears. So, don't mess that up and then we can go here now in this other barrel. Same right here.
+
+[16:04] Same amount of shears as that one. And then, we can go ahead, place the shears here. Leave three. here, leave three also. So, that's this pretty much it and you can just move on to the next layer. I Yeah, there is no more. All right. And now that you're done with this layer, you can just
+
+[16:37] place more shears. So, you know, this one right here, this one. And then, you just place this amount of shears. This is that that this many amount and you're good. Of course, yeah. Just place this many amount of shears in this two barrels. Also, in this barrel right here. And you're good to go. Turns out you're not good to go. You have to break that dispenser and place 64 redstone [music] in the same layer as well. Uh just break
+
+[17:13] that and then you can just place that again. And you can go to the other one. Just break the top. And then, it should be placed on the bottom &gt;&gt; right there. And then, you're good to go. Yeah, the cannon will work. It will not work if you those are not there. Okay, so I forgot in this barrels, uh you just place them and just leave one. Forgot about this. Boom. And there's another one right So, you can just
+
+[17:46] place that. Remove that. All right. Okay, now you can place your uh lamp or this lanterns. Going to be another shear thing. So, just place two of these. Just right there. And after that, I you're probably Yeah, you're
+
+[18:17] you're done. For now. Okay, so after that, you can just go ahead and go to the nether. Yay! This is where the far control is going to be going to come in use again. So, so now that you have that, you have the nether, uh you have everything. So, you're going to need to go inside, of course.
+
+[18:49] So, after you're inside, you can just go break the thing here. And then, either either it's up to you. I mean, the Y level doesn't really matter, but it's up to you. But for me, I'm going to build it in the nether roof. So, pretend we're in the nether roof, right? So, we can go check we can go check control panel 161 and 82
+
+[19:22] 224. Look at that nether position there. Here, right here. So, it says 21 12 and 28. The Y level doesn't matter, but this all does. So, 20 and 28. We can just go find that 20 and 28. So, it's probably right here. 20 and 28. So right in this block.
+
+[20:00] And then you can go ahead and load your schematics, put the nether and then boom. Oops. So just like that and then you can just build it. All right, after that you can just go through this portal. And then yeah, it should take you in So after that How do we get the chunk loaders working? So for from here uh you can just you're just going to want to press this button right here. So just like that and then you can
+
+[20:33] activate this. So it should yeah, it should not dispense all the boats. So it's this is loading the chunk here right now, so that's that's okay. So we can go [music] here now. So now that our nether thing is good we can go ahead by going to schematic placements or real strike cannon AK1 and then we have to do schematic verify right here.
+
+[21:08] Uh select all of these and then start verification. And then I think we can select all of these as well to like look at the thing. As you can see here, we have a lot of wrong mistakes, so it's going to really help you out of a lot if you're building in survival. So we can just go there. So I'm I'm going to need to tell you
+
+[21:39] what doesn't really matter on the wrong states. These ones, they don't matter, so there's there's no point in changing those. Tho- those doesn't matter. What are we missing here? This and that doesn't really matter, so we can just move on to the next. Um Hm. Here, we need TNT, so we can finally place them now since there is water, so they won't really do anything to the cannon.
+
+[22:13] And then we can just go from here place that. Now we can go forward and placing our TNTs. Doesn't matter now, so I think yeah, we are good with this, so So [music] okay, before you leave the cannon, uh make sure you flick the lever so that it turns on the cannon when you
+
+[22:45] leave the chunks. For the control panel, you can build it anywhere on the world, so I'm going to keep it myself [music] to these coordinates. You can build it anywhere in the world, so just yeah, you can build [music] anywhere. Okay, once you're here, just turn on your chunk your chunk borders and then just you can load the control panel here. What you want is that you want the these green things to be aligned with the chunk borders.
+
+[23:22] So I think yeah. Okay, it's aligned. It's aligned, guys. And we can just start building again. Yay. The most exciting part, building. Yeah, we can get the shears and the redstone again. Just just place it here, just like that. I think this
+
+[23:56] Yeah. Then boom and boom. &gt;&gt; [laughter] &gt;&gt; Also here and here. I think that's it for this. Yeah, and also you're going to need some redstone. Don't place them on top, but place them on the middle. Just like this.
+
+[24:36] Pretty much done with that. let's get more redstone dust. Just you're going to place them on top of And then on top of here also. This one redstone here. Also here you can place the
+
+[25:13] the redstone dusts and then the white concrete there. &gt;&gt; [bell] &gt;&gt; And for this layer we can put
+
+[25:46] nine [music] uh redstones here. Now we can just move on. Everything's mostly okay. Yeah, everything is okay.
+
+[26:23] So all we need to do And then inside here uh we can go ahead and Oh, that's my bad. And on here we can burn this so that the boat can pass through. And then we can make a separate portal from here because it's for the fishing rod mechanic, so but this doesn't really matter.
+
+[26:56] So all right. Or or the spreadsheet. You see that? Uh you you're going to want to put nuke size 16 and above. 31 is the max. It It's very good. But let's try let's just make this 16. So it's So as you can see here, it's going to be 1 minute and 50 seconds. yeah, 1 minute and 50 seconds, so we copy uh the thing
+
+[27:31] in here. So as you can see here, boom. Those as well. This and that. Two Here. And here. So that should be okay. Or like that
+
+[28:05] should that should do the trick. We can just do what we want, so uh wait, I forgot one one other crucial thing. I forgot to fill it with boats, so and then we press the button. The coordinates input in here. You're
+
+[28:41] uh pull this lever to suspend it. And then you can go ahead and press this button. So it's going to do its thing. So let's hope this [music] works. Yeah, it's it's it's connecting. Wait for this to stop lighting before you place your fishing rod inside. So yeah, after that you can just place your fishing rod inside and
+
+[29:14] take that off. And that's it. We can wait for 1 minute and 50 seconds for this. I mean, the fishing rod doesn't leave. We have [music] So we're going to have to leave the area if this dings through that nether portal right there. So it dinged, it should go it should go. Oh my gosh. And then we just go here.
+
+[29:51] And then we go back. Of course. And I think this should do it. This should be it, guys. An orbital strike cannon. Oh.
+
+[30:47] Well, that should do it. For end of the video, I want to ask you all to subscribe, uh, please. It took me at least like 4 hours to build this cannon. And it took me another 1 hour of repairing it. But, um, credits to Cubic Meter for making the actual cannon. I'll link his channel down in the description, and I'll see you guys in the next video. Bye-bye.
+

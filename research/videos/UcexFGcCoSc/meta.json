@@ -1,0 +1,14 @@
+{
+  "id": "UcexFGcCoSc",
+  "title": "Fox Ban Cannon - WMC",
+  "channel": "WMC",
+  "channel_url": "https://www.youtube.com/channel/UCNTettGwmLOvQv1oklQYYIg",
+  "upload_date": "20260322",
+  "duration": 184,
+  "view_count": 23364,
+  "like_count": 1296,
+  "description": "I hope you liked this video !\n\nDownload : \nhttps://discord.gg/PyTSYdSuFT\n\nInformation about the cannon : \nFinally V1 is coming out ! This design can be optimised but I sadly don't have enough time... However, few things need to be known before starting this cannon (they all should be in the schematic) :\nThe cannon should be aligned with the different glass block : \n→ lime glass : loaded chunks\n→ red glass : unloaded chunks\nTo encode the cannon, use the python script. For the cannon cords, use the ones shown in the schematic and use only the X and Z cords. For the destination… Well put the cords… Note that this cannon has a 90° fire angle so some destinations can’t be accessed without rotating the cannon (which you can)\nBefore encoding the cannon :\n→ Make sure to load it with a fox (WHICH HAS NO ITEM IN HIS MOUTH) and don’t forget to place the ban shulker box inside the highest dropper (above the powdered snow !)\n→ When you encoded the cannon and want to start it, splash the fox with a 4:30 slow falling potion and go 64 blocks away and click the note block so that the fox can actually pick the ban shulker box. Then fly away to unload the cannon (don’t load the cannon before it’s finished, otherwise the fox won’t go to the correct place).\nWhen you want to ‘reset’ the cannon, use ONCE the note block to reset the cannon and replace the powdered snow ! (should be in the schematic)",
+  "chapters": null,
+  "tags": [],
+  "webpage_url": "https://www.youtube.com/watch?v=UcexFGcCoSc"
+}

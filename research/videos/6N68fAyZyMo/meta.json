@@ -1,0 +1,44 @@
+{
+  "id": "6N68fAyZyMo",
+  "title": "Minecrafts Inter-Continental Ballistic Anvil Cannon",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20230217",
+  "duration": 603,
+  "view_count": 152478,
+  "like_count": 9612,
+  "description": "Previously I introduced the Smart Artillery which combined cheap and simply redstone components with advanced theory and fire control to make a cannon that is simple to build and easy to aim. In this video we expand on the cannon design, producing a new propulsion method that works with Anvils to deliver strikes on positions at incredible ranges. We also get to look at a new TnT cannon which uses devastating cluster charges to obliterate positions.\n\nDownloads:\nhttps://www.mediafire.com/folder/kjm0zmlyonmvp/Anvil_and_Cluster_Artillery\n\nKiku's Mod that provides firing options ofr the cannon:\nhttps://modrinth.com/mod/unnamed-cannon-setup-mod\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Intro",
+      "end_time": 18
+    },
+    {
+      "start_time": 18,
+      "title": "Anvil Cannon",
+      "end_time": 116
+    },
+    {
+      "start_time": 116,
+      "title": "Installation",
+      "end_time": 312
+    },
+    {
+      "start_time": 312,
+      "title": "Accuracy",
+      "end_time": 580
+    },
+    {
+      "start_time": 580,
+      "title": "Outro",
+      "end_time": 603
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "TnT cannon"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=6N68fAyZyMo"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "AdHGmFpaoCE",
+  "title": "Pushing Minecrafts Precision to its Limits",
+  "channel": "cubicmetre",
+  "channel_url": "https://www.youtube.com/channel/UCsrxrOtjmWnH5FJhJnkTRBg",
+  "upload_date": "20250510",
+  "duration": 578,
+  "view_count": 260992,
+  "like_count": 23375,
+  "description": "Here's a fun math problem I came across when designing a new cannon, is it possible to align entities to ANY arbitrary position with ANY precision? Well it turns out the solution has something to do with minecarts and curved rails. Watch and learn as we break down a seemingly impossible problem into a suprisingly simple solution using a bit of binary fractions.\n\n@2No2Name's original video about precise minecart alignment:\nhttps://youtu.be/Vmhlij-jmZ4?si=cGe-4DMcVqLuHVou\n\nSchematic for the precision minecart aligner:\nhttps://www.mediafire.com/file/zvuwjk2tcopej2c/Precision_Minecart_Aligner.litematic/file\n\nWavetech Server Discord:\nhttps://discord.gg/SR6q7sC\n\nMods that I use:\nhttps://www.mediafire.com/file/rrtgqhxe7l04qc0/mods.zip/file\n\nSecond Channel where I post my Music:\nhttps://www.youtube.com/channel/UCU__v62MRRYVO8IRDKh0adQ",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "The problem with hitboxes",
+      "end_time": 33
+    },
+    {
+      "start_time": 33,
+      "title": "Arbitrary positioning",
+      "end_time": 85
+    },
+    {
+      "start_time": 85,
+      "title": "Binary rail mechanics",
+      "end_time": 160
+    },
+    {
+      "start_time": 160,
+      "title": "Mathematical approach",
+      "end_time": 282
+    },
+    {
+      "start_time": 282,
+      "title": "Precision limitations",
+      "end_time": 371
+    },
+    {
+      "start_time": 371,
+      "title": "Automating the process",
+      "end_time": 462
+    },
+    {
+      "start_time": 462,
+      "title": "Application and conclusion",
+      "end_time": 578
+    }
+  ],
+  "tags": [
+    "minecraft",
+    "redstone",
+    "SoME4"
+  ],
+  "webpage_url": "https://www.youtube.com/watch?v=AdHGmFpaoCE"
+}
