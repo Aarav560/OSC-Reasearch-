@@ -9,7 +9,13 @@ import time
 class Rcon:
     def __init__(self, host="127.0.0.1", port=None, password="osctest"):
         port = port or int(os.environ.get("RCON_PORT", 25575))  # 25576 = vanilla A/B server
-        self.s = socket.create_connection((host, port), timeout=30)
+        self.addr, self.password = (host, port), password
+        self._connect()
+
+    def _connect(self):
+        host, port = self.addr
+        password = self.password
+        self.s = socket.create_connection((host, port), timeout=60)
         self.rid = 0
         self._send(3, password)
         if self._recv()[0] == -1:
@@ -35,9 +41,20 @@ class Rcon:
         rid, _ = struct.unpack("<ii", data[:8])
         return rid, data[8:-2].decode(errors="replace")
 
-    def cmd(self, c):
-        """Run a command; responses over 4 KB arrive split, so a marker request (an empty
-        command, answered by both Paper and vanilla with its own id) ends the read."""
+    def cmd(self, c, _retry=3):
+        """Run a command, reconnecting if the server dropped the connection."""
+        try:
+            return self._cmd(c)
+        except (ConnectionError, OSError, struct.error):
+            if not _retry:
+                raise
+            time.sleep(2)
+            self._connect()
+            return self.cmd(c, _retry - 1)
+
+    def _cmd(self, c):
+        """Responses over 4 KB arrive split, so a marker request (an empty command, answered by
+        both Paper and vanilla with its own id) ends the read."""
         self._send(2, c)
         cid = self.rid
         if os.environ.get("RCON_MARKER", "1") == "0":  # vanilla drops clients that pipeline
