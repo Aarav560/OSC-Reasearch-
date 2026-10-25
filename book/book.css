@@ -1,0 +1,169 @@
+/* The Orbital Strike Codex: print stylesheet (A4, maximalist). */
+@page { size: 210mm 297mm; margin: 0; }
+:root {
+  --paper: #f3ecdc; --paper2: #e9dfc8; --ink: #15120f; --ink2: #3a332b; --mute: #8a7f6f;
+  --coral: #e5673b; --coral-d: #b7461f; --gold: #e9b23a; --navy: #0b2a4a; --navy2: #123a63;
+  --cyan: #7fd3ff; --green: #4fae6a; --lazy: #d9483b; --plum: #5b2a6e;
+  --tab: var(--coral);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #555; }
+body { font-family: 'Inter', sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; position: relative; overflow: hidden; background: var(--paper);
+  break-after: page; page-break-after: always; margin: 0 auto 6mm; }
+@media print { .page { margin: 0; } html, body { background: var(--paper); } }
+.page::before { /* paper grain: one small tile, embedded once in the PDF */
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background: url(assets/grain.png) 0 0 / 64px 64px; }
+.anton { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: -.5px; }
+.serif { font-family: 'Instrument Serif', serif; font-style: italic; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* ---------- page furniture ---------- */
+.tab { position: absolute; top: 0; bottom: 0; width: 13mm; background: var(--tab); }
+.page.odd .tab { right: 0; } .page.even .tab { left: 0; }
+.tab span { position: absolute; top: 50%; left: 50%; white-space: nowrap; transform: translate(-50%, -50%) rotate(90deg);
+  font-family: 'Anton', sans-serif; text-transform: uppercase; color: rgba(255,255,255,.92); font-size: 15pt; letter-spacing: 3px; }
+.page.even .tab span { transform: translate(-50%, -50%) rotate(-90deg); }
+.tab .tabno { position: absolute; left: 0; right: 0; text-align: center; top: 12mm; font-family: 'Anton', sans-serif; font-size: 20pt; color: #fff; }
+.rh { position: absolute; top: 10mm; font-size: 7pt; letter-spacing: 3px; text-transform: uppercase; font-weight: 800; color: var(--ink2); }
+.page.odd .rh { left: 16mm; } .page.even .rh { right: 16mm; text-align: right; }
+.rh b { color: var(--coral-d); }
+.rule { position: absolute; top: 15mm; height: 1.4mm; background: var(--ink); }
+.page.odd .rule { left: 16mm; right: 19mm; } .page.even .rule { left: 19mm; right: 16mm; }
+.folio { position: absolute; bottom: 8mm; font-family: 'Anton', sans-serif; font-size: 26pt; color: var(--ink); line-height: 1; }
+.page.odd .folio { right: 19mm; } .page.even .folio { left: 19mm; }
+.folio small { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 6pt; letter-spacing: 2px; display: block; color: var(--mute); }
+.dark .rh, .dark .folio { color: #dfe9f5; } .dark .rule { background: #dfe9f5; } .dark .rh b { color: var(--gold); }
+.dark .folio small { color: #9fb6cf; }
+
+/* ---------- flowing text ---------- */
+.body { position: absolute; top: 22mm; bottom: 24mm; }
+.page.odd .body { left: 16mm; right: 22mm; } .page.even .body { left: 22mm; right: 16mm; }
+.body > * { max-width: 100%; }
+.body p { font-family: 'Instrument Serif', serif; font-style: normal; font-size: 12.6pt; line-height: 1.42; margin-bottom: 3.2mm; text-align: justify; hyphens: auto; }
+.body p.lead { font-size: 16pt; line-height: 1.3; }
+.body p.lead::first-letter { font-family: 'Anton', sans-serif; float: left; font-size: 52pt; line-height: .82; padding: 2mm 2mm 0 0; color: var(--coral); }
+.body h2 { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 22pt; line-height: 1.02; margin: 4mm 0 2.5mm; letter-spacing: -.3px; }
+.body h2 em { font-style: normal; color: var(--coral); }
+.body h3 { font-weight: 800; font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase; color: var(--coral-d); margin: 3mm 0 1.6mm; }
+.body ul { margin: 0 0 3mm 5mm; } .body li { font-family: 'Instrument Serif', serif; font-size: 12.4pt; line-height: 1.38; margin-bottom: 1mm; }
+.body code, .body .k { font-family: 'JetBrains Mono', monospace; font-size: .82em; background: rgba(229,103,59,.12); padding: 0 .6mm; border-radius: 1mm; }
+.pull { border-top: 2.2mm solid var(--ink); border-bottom: .8mm solid var(--ink); margin: 3mm 0 4mm; padding: 3mm 0; }
+.pull div { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 24pt; line-height: 1.02; }
+.pull small { display: block; font-size: 7pt; letter-spacing: 3px; font-weight: 800; margin-top: 2mm; color: var(--coral-d); text-transform: uppercase; }
+.note { background: var(--navy); color: #e8f1fb; padding: 4mm 5mm; margin: 2mm 0 4mm; border-left: 3mm solid var(--gold); }
+.note b { color: var(--gold); font-size: 7pt; letter-spacing: 3px; text-transform: uppercase; display: block; margin-bottom: 1.5mm; }
+.note p, .note li { color: #e8f1fb; font-size: 11pt !important; text-align: left !important; margin-bottom: 1.5mm !important; }
+.fig { margin: 2mm 0 4mm; }
+.fig .art { background: #fffaf0; border: .6mm solid var(--ink); padding: 3mm; }
+.fig.dark .art { background: var(--navy); border-color: var(--navy); }
+.fig img, .fig svg { display: block; width: 100%; height: auto; max-height: 150mm; object-fit: contain; }
+.fig .cap { font-size: 7.6pt; line-height: 1.35; margin-top: 1.6mm; color: var(--ink2); }
+.fig .cap b { font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--coral-d); margin-right: 1.5mm; }
+table.data { width: 100%; border-collapse: collapse; margin: 1mm 0 4mm; font-size: 8pt; }
+table.data th { background: var(--ink); color: var(--paper); text-align: left; padding: 1.4mm 2mm; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; font-size: 6.6pt; }
+table.data td { padding: 1.2mm 2mm; border-bottom: .3mm solid rgba(21,18,15,.18); font-family: 'JetBrains Mono', monospace; font-size: 7.6pt; }
+table.data tr:nth-child(even) td { background: rgba(233,178,58,.10); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; margin: 2mm 0 4mm; }
+.stats div { background: var(--ink); color: var(--paper); padding: 3mm; }
+.stats div b { display: block; font-family: 'Anton', sans-serif; font-size: 20pt; line-height: 1; color: var(--gold); }
+.stats div span { font-size: 6.5pt; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; }
+
+/* ---------- covers & openers ---------- */
+.cover { background: var(--ink); color: var(--paper); }
+.cover .big { position: absolute; left: 14mm; right: 14mm; top: 40mm; font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 76pt; line-height: .86; }
+.cover .big em { font-style: normal; color: var(--coral); }
+.cover .vol { position: absolute; left: 14mm; top: 16mm; font-weight: 800; letter-spacing: 6px; font-size: 9pt; text-transform: uppercase; color: var(--gold); }
+.cover .sub { position: absolute; z-index: 2; left: 14mm; right: 70mm; bottom: 40mm; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 20pt; line-height: 1.2; }
+.cover .numeral { position: absolute; right: -6mm; bottom: -22mm; font-family: 'Anton', sans-serif; font-size: 240pt; z-index: 0; line-height: 1; color: var(--coral); opacity: .95; }
+.cover .art { position: absolute; left: 0; right: 0; top: 120mm; height: 120mm; display: flex; justify-content: center; }
+.cover .art img { height: 100%; object-fit: contain; filter: drop-shadow(0 6mm 8mm rgba(0,0,0,.5)); }
+.cover .stripe { position: absolute; left: 0; right: 0; bottom: 20mm; height: 6mm; background: repeating-linear-gradient(-45deg, var(--gold) 0 6mm, var(--ink) 6mm 12mm); }
+.opener { color: var(--paper); }
+.opener .num { position: absolute; left: 10mm; top: 6mm; font-family: 'Anton', sans-serif; font-size: 260pt; line-height: .85; color: rgba(255,255,255,.14); }
+.opener .kick { position: absolute; left: 16mm; top: 112mm; font-weight: 800; letter-spacing: 5px; font-size: 8.5pt; text-transform: uppercase; color: var(--gold); }
+.opener .title { position: absolute; left: 16mm; right: 20mm; top: 120mm; font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 50pt; line-height: .92; }
+.opener .dek { position: absolute; left: 16mm; right: 30mm; top: 206mm; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 17pt; line-height: 1.25; color: rgba(255,255,255,.9); }
+.opener .facts { position: absolute; left: 16mm; right: 20mm; bottom: 26mm; display: flex; gap: 3mm; }
+.opener .facts div { flex: 1; border-top: 1.2mm solid rgba(255,255,255,.8); padding-top: 2mm; font-size: 6.8pt; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 800; }
+.opener .facts div b { display: block; font-family: 'Anton', sans-serif; font-size: 19pt; letter-spacing: 0; color: var(--gold); }
+
+/* ---------- blueprint sheets ---------- */
+.bp { background: var(--navy); color: #dfe9f5; }
+.bp::before { opacity: 1; background:
+  linear-gradient(rgba(127,211,255,.07) 1px, transparent 1px) 0 0 / 5mm 5mm,
+  linear-gradient(90deg, rgba(127,211,255,.07) 1px, transparent 1px) 0 0 / 5mm 5mm; }
+.bp .frame { position: absolute; inset: 9mm; border: .6mm solid rgba(223,233,245,.75); }
+.bp .frame::after { content: ''; position: absolute; inset: 1.6mm; border: .25mm solid rgba(223,233,245,.35); }
+.bp .plan { position: absolute; left: 14mm; right: 14mm; top: 24mm; bottom: 62mm; display: flex; align-items: center; justify-content: center; }
+.bp .plan img { max-width: 100%; max-height: 100%; image-rendering: pixelated; border: .4mm solid rgba(223,233,245,.6); }
+.bp .plan.multi { display: grid; gap: 4mm; align-items: center; justify-items: center; }
+.bp .plan.multi figure { display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: center; }
+.bp .plan.multi figure img { max-height: 92%; }
+.bp .plan.multi figcaption { font-family: 'JetBrains Mono', monospace; font-size: 7pt; letter-spacing: 1px; margin-top: 1mm; color: var(--cyan); }
+.bp .hdr { position: absolute; left: 14mm; right: 14mm; top: 13mm; display: flex; justify-content: space-between; align-items: baseline; }
+.bp .hdr .t { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 15pt; letter-spacing: .5px; }
+.bp .hdr .t em { font-style: normal; color: var(--gold); }
+.bp .hdr .s { font-family: 'JetBrains Mono', monospace; font-size: 7pt; color: var(--cyan); }
+.bp .tblock { position: absolute; right: 14mm; bottom: 14mm; width: 92mm; border: .5mm solid rgba(223,233,245,.8); display: grid; grid-template-columns: 1fr 1fr; font-family: 'JetBrains Mono', monospace; font-size: 6.4pt; }
+.bp .tblock div { border: .2mm solid rgba(223,233,245,.35); padding: 1.1mm 1.6mm; }
+.bp .tblock div i { font-style: normal; display: block; color: var(--cyan); font-size: 5pt; letter-spacing: 1.4px; text-transform: uppercase; }
+.bp .tblock .wide { grid-column: span 2; font-family: 'Anton', sans-serif; font-size: 12pt; text-transform: uppercase; }
+.bp .legend { position: absolute; left: 14mm; bottom: 14mm; width: 84mm; height: 44mm; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: min-content; gap: .8mm 3mm; font-family: 'JetBrains Mono', monospace; font-size: 5.8pt; overflow: hidden; align-content: start; }
+.bp .legend div { display: flex; align-items: center; gap: 1.4mm; white-space: nowrap; overflow: hidden; }
+.bp .legend i { width: 3mm; height: 3mm; flex: none; border: .2mm solid rgba(255,255,255,.5); }
+.bp .legend .lt { grid-column: span 2; font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 2px; font-size: 6pt; color: var(--gold); text-transform: uppercase; }
+.bp .north { position: absolute; right: 18mm; top: 26mm; width: 12mm; height: 12mm; }
+.render { position: absolute; display: flex; align-items: center; justify-content: center; }
+.render img { max-width: 100%; max-height: 100%; object-fit: contain; filter: drop-shadow(0 3mm 4mm rgba(0,0,0,.45)); }
+.elev { position: absolute; left: 14mm; right: 14mm; top: 24mm; bottom: 20mm; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4mm; }
+.elev figure { border: .3mm solid rgba(223,233,245,.45); position: relative; display: flex; align-items: center; justify-content: center; padding: 6mm 3mm 3mm; }
+.elev figure img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.elev figcaption { position: absolute; left: 2mm; top: 1.5mm; font-family: 'Anton', sans-serif; font-size: 10pt; text-transform: uppercase; color: var(--gold); letter-spacing: .5px; }
+
+/* ---------- design overview ---------- */
+.ov .render { left: 10mm; right: 10mm; top: 22mm; height: 150mm; }
+.ov .name { position: absolute; left: 16mm; right: 20mm; top: 170mm; font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 34pt; line-height: .95; }
+.ov .by { position: absolute; left: 16mm; top: 164mm; font-weight: 800; letter-spacing: 3px; font-size: 7pt; text-transform: uppercase; color: var(--gold); }
+.ov .specs { position: absolute; left: 16mm; right: 20mm; top: 205mm; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.ov .specs div { border-top: .9mm solid #dfe9f5; padding-top: 1.4mm; font-size: 6pt; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
+.ov .specs div b { display: block; font-family: 'Anton', sans-serif; font-size: 17pt; letter-spacing: 0; color: var(--gold); }
+.ov .blurb { position: absolute; left: 16mm; right: 20mm; top: 224mm; font-family: 'Instrument Serif', serif; font-size: 12pt; line-height: 1.32; color: #e8f1fb; }
+.ov .mats { position: absolute; left: 16mm; right: 20mm; bottom: 16mm; }
+.bar { display: flex; height: 4mm; border: .3mm solid rgba(255,255,255,.6); overflow: hidden; }
+.bar i { display: block; height: 100%; }
+.barkey { display: flex; flex-wrap: wrap; gap: .6mm 3mm; margin-top: 1.4mm; font-family: 'JetBrains Mono', monospace; font-size: 5.6pt; }
+.barkey span { display: inline-flex; align-items: center; gap: 1mm; } .barkey i { width: 2.4mm; height: 2.4mm; display: inline-block; }
+
+/* ---------- video atlas ---------- */
+.vid .head { position: absolute; left: 0; right: 0; top: 0; height: 64mm; background: var(--ink); color: var(--paper); }
+.vid .head .no { position: absolute; right: 16mm; top: 6mm; font-family: 'Anton', sans-serif; font-size: 64pt; line-height: 1; color: var(--chan, var(--coral)); }
+.vid .head .ch { position: absolute; left: 16mm; top: 12mm; font-weight: 800; letter-spacing: 4px; font-size: 7.5pt; text-transform: uppercase; color: var(--chan, var(--coral)); }
+.vid .head .ti { position: absolute; left: 16mm; right: 60mm; top: 19mm; font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 21pt; line-height: 1.02; }
+.vid .head .meta { position: absolute; left: 16mm; right: 16mm; bottom: 5mm; display: flex; gap: 6mm; font-family: 'JetBrains Mono', monospace; font-size: 7pt; color: #cfc6b4; }
+.vid .head .meta b { color: #fff; }
+.vid .sheet { position: absolute; left: 16mm; right: 16mm; top: 70mm; height: 106mm; background: #000; display: flex; align-items: center; justify-content: center; border: .8mm solid var(--ink); }
+.vid .sheet img { width: 100%; height: 100%; object-fit: cover; }
+.vid .sheet .lbl { position: absolute; left: 2mm; top: 2mm; background: var(--chan, var(--coral)); color: #fff; font-weight: 800; font-size: 6pt; letter-spacing: 2px; padding: .6mm 1.6mm; }
+.vid .cols { position: absolute; left: 16mm; right: 16mm; top: 182mm; bottom: 22mm; display: grid; grid-template-columns: 1.6fr 1fr; gap: 6mm; }
+.vid .tx { font-family: 'JetBrains Mono', monospace; font-size: 7.2pt; line-height: 1.5; color: var(--ink2); overflow: hidden; }
+.vid .tx b { color: var(--coral-d); font-weight: 700; }
+.vid .side h4 { font-weight: 800; letter-spacing: 3px; font-size: 6.5pt; text-transform: uppercase; color: var(--coral-d); margin: 0 0 1.5mm; }
+.vid .side .terms { display: flex; flex-wrap: wrap; gap: 1.2mm; margin-bottom: 4mm; }
+.vid .side .terms span { background: var(--ink); color: var(--paper); font-size: 6.4pt; padding: .7mm 1.6mm; font-weight: 800; letter-spacing: .5px; }
+.vid .side .desc { font-family: 'Instrument Serif', serif; font-size: 10.5pt; line-height: 1.3; color: var(--ink2); overflow: hidden; max-height: 40mm; }
+.vid .side .url { font-family: 'JetBrains Mono', monospace; font-size: 6.4pt; color: var(--mute); margin-top: 3mm; word-break: break-all; }
+
+/* ---------- table of contents ---------- */
+.toc .body { top: 26mm; }
+.toc h1 { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 54pt; line-height: .9; margin-bottom: 8mm; }
+.toc .row { display: flex; align-items: baseline; gap: 3mm; padding: 1.7mm 0; border-bottom: .3mm solid rgba(21,18,15,.2); }
+.toc .row .n { font-family: 'Anton', sans-serif; font-size: 15pt; color: var(--coral); width: 11mm; }
+.toc .row .t { font-family: 'Anton', sans-serif; text-transform: uppercase; font-size: 13pt; flex: 1; }
+.toc .row .t small { display: block; font-family: 'Instrument Serif', serif; text-transform: none; font-style: italic; font-size: 10pt; color: var(--ink2); }
+.toc .row .p { font-family: 'JetBrains Mono', monospace; font-size: 9pt; }
+.toc.compact .row { padding: .6mm 0; } .toc.compact .row .t { font-size: 8.6pt; } .toc.compact .row .n { font-size: 9pt; width: 9mm; }
+
+.vid .rh, .vid .rule { display: none; }
+.vid .head .ti { top: 20mm; }
