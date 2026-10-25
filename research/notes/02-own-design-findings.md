@@ -117,3 +117,33 @@ and a fuse is at most 80, so a single-feeder drill holds about 12-16 TNT.
   detonates at once.
 - Next: centre the TNT in Z before staging (bias the dispense drift to one wall, or a second
   push along Z), and stop the first stager pulse from firing during the load.
+
+## Ring nuke warhead (cubicmetre-style), physics on Paper 26.3 (`paper-tests/nuke_test.py`)
+Payload summoned 60-100 blocks above superflat ground, stepped tick by tick; the blast is read
+from the region files. Target: cubicmetre's Mk.6 nuke, diameter up to 372 (size 31 x 12).
+- Ring: TNT (fuse 80) a hair (0.01) from a centre point, each in its own direction. Charges at
+  the centre go off and throw the ring outward radially; every ring TNT lands on the same
+  circle (min = max radius to 0.1 block).
+- **An explosion is centred 0.0625 above its TNT.** Expansion TNT level with the ring push it
+  almost straight down (radius 5.5 for one charge). Sink the expansion charge by 0.0625 and one
+  TNT throws the ring to radius 39.
+- Several expansion TNT in the same tick knock each other around before exploding (each TNT
+  moves before its fuse check). Results: one per tick (`seq`) saturates at radius 90 (5 TNT);
+  cubicmetre's "9 one tick before" gives 87 but mostly upward; height offsets are chaotic.
+- **Pairs:** a second expansion TNT placed exactly at the first one's blast centre (0.0625
+  above) feels nothing from it, so two go off per tick at full strength. 14 in pairs, payload
+  40 above the target ground: radius 113 (diameter ~230), saturating.
+- **Booster ring:** a second ring of short-fuse TNT starts just inside the main ring (offset
+  0.01 vs 0.02), flies out along the same rays a little behind, and detonates mid-flight,
+  kicking each main-ring TNT outward again. Booster fuse 7, 80 rays: a clean ring at radius
+  201, **diameter ~400 > cubicmetre's 372** (`img/nuke-boosted-r201.png`). Fuse 4 throws
+  further but scatters (88-225). 160 rays goes unstable: boosters also push their neighbours
+  sideways (`img/nuke-boosted-160rays-unstable.png`).
+- Not yet a filled disk: inner ring groups (start offsets 1-4 -> radii 72-116 on their own) are
+  thrown off by the booster blasts and detonate in the air. With 80 rays the craters are
+  dots ~16 blocks apart around the circle, where cubicmetre fills it with hundreds of TNT per ring.
+- **Delivery gap.** The ring needs every TNT a hair from the centre in its *own* direction,
+  with the expansion charge 0.0625 lower. My cannons deliver a payload stacked on one point
+  (identical X, Z split two ways by the channel), which can only make a two-lobed blast.
+  cubicmetre builds the ring inside the lazy chunk with a TNT duper, where each TNT keeps its
+  random 0.02 b/t prime momentum. Delivering this warhead needs that kind of payload builder.
