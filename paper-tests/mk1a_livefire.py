@@ -1,6 +1,9 @@
 """Live shot with Zephyr Mk1-A: build, charge in real time, release, log every tick, read the crater.
 
-    python3 mk1a_livefire.py <S x> <S y> <S z> <TNT> <X charges> <Z charges>
+    python3 mk1a_livefire.py <S x> <S y> <S z> <TNT> <X charges> <Z charges> [mk2|mk3]
+
+With "mk2" or "mk3" the compact Zephyr Mk2 / Mk3 Drill is built instead (no arming plate: TNT
+is loaded first and the launch lock holds the charges until it is all staged).
 
 S must be a chunk corner (x, z multiples of 16): the payload chunk is +x/+z of it. The script
 force-loads the W, N and NW chunks (the payload chunk stays lazy until release) and the
@@ -25,7 +28,9 @@ tx, tz = int(pred[0] // 1), int(pred[2] // 1)
 GROUND = -61                     # superflat: grass top at -61
 TOP = GROUND + 10                # target block: stone, 10 high
 FEED = (bx - 1, Ys, bz + 1); XL = (bx - 1, Ys + 1, bz); ZL = (bx, Ys + 1, bz - 1); PL = (bx - 7, Ys - 1, bz + 3)
-tag = f"{NT}x{NX}x{NZ}"
+MODEL = sys.argv[7] if len(sys.argv) > 7 else "mk1a"
+MK2 = MODEL in ("mk2", "mk3")
+tag = ("" if MODEL == "mk1a" else MODEL + "-") + f"{NT}x{NX}x{NZ}"
 out = {"S": [bx, Ys, bz], "tnt": NT, "nx": NX, "nz": NZ, "predicted_stop": pred, "target": [tx, TOP + 1, tz]}
 
 
@@ -48,16 +53,26 @@ r.cmd(f"fill {tx-10} {GROUND+1} {tz-10} {tx+10} {TOP} {tz+10} stone")
 for rad, col in [(9, "white"), (7, "red"), (5, "white"), (3, "red"), (1, "white")]:
     r.cmd(f"fill {tx-rad} {TOP} {tz-rad} {tx+rad} {TOP} {tz+rad} {col}_concrete")
 r.cmd("kill @e[type=tnt]")
-out["build_failures"] = Z.build_auto(bx, Ys, bz)
-r.cmd("kill @e[type=tnt]"); r.cmd("kill @e[type=arrow]"); r.cmd("kill @e[type=wind_charge]")
-r.cmd(f"summon arrow {PL[0]+0.5} {PL[1]+0.3} {PL[2]+0.5} {{Motion:[0d,-0.5d,0d],pickup:0b}}")
-time.sleep(1)
-for p in (FEED, XL, ZL):
-    for i in range(9):
-        r.cmd(f"item replace block {p[0]} {p[1]} {p[2]} container.{i} with air")
-Z.load(FEED, "minecraft:tnt", NT); Z.load(XL, "minecraft:wind_charge", NX); Z.load(ZL, "minecraft:wind_charge", NZ)
-time.sleep(4)
-r.cmd("kill @e[type=arrow]")                       # arm
+if MK2:
+    out["model"] = MODEL
+    lay, kick = (Z.mk3_layout, Z.MK3_KICK) if MODEL == "mk3" else (Z.mk2_layout, Z.MK2_KICK)
+    out["build_failures"] = Z.build_auto(bx, Ys, bz, layout=lay, kick=kick)
+    r.cmd("kill @e[type=tnt]"); r.cmd("kill @e[type=wind_charge]")
+    time.sleep(1)
+    Z.load(FEED, "minecraft:tnt", NT)
+    time.sleep(1)
+    Z.load(XL, "minecraft:wind_charge", NX); Z.load(ZL, "minecraft:wind_charge", NZ)
+else:
+    out["build_failures"] = Z.build_auto(bx, Ys, bz)
+    r.cmd("kill @e[type=tnt]"); r.cmd("kill @e[type=arrow]"); r.cmd("kill @e[type=wind_charge]")
+    r.cmd(f"summon arrow {PL[0]+0.5} {PL[1]+0.3} {PL[2]+0.5} {{Motion:[0d,-0.5d,0d],pickup:0b}}")
+    time.sleep(1)
+    for p in (FEED, XL, ZL):
+        for i in range(9):
+            r.cmd(f"item replace block {p[0]} {p[1]} {p[2]} container.{i} with air")
+    Z.load(FEED, "minecraft:tnt", NT); Z.load(XL, "minecraft:wind_charge", NX); Z.load(ZL, "minecraft:wind_charge", NZ)
+    time.sleep(4)
+    r.cmd("kill @e[type=arrow]")                       # arm
 t0 = time.time(); log = []
 while time.time() - t0 < 600:
     ps = tnts(); f, x, z = cnt(FEED), cnt(XL), cnt(ZL)

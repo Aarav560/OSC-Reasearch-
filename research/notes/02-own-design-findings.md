@@ -74,3 +74,46 @@
   Crater in a 10-high stone block: 311 blocks, 5 deep, centroid within 0.6 blocks of the stop.
 - For aiming, the cannon height only has to keep the fall inside the fuse (~70 blocks max at
   fuse 75); the vertical component of the charges is wasted on the floor.
+
+## Zephyr Mk2: compact (`zephyr.py: mk2_layout`, 102 blocks, 8x4x13)
+- Same core, stager and launcher drive as Mk1-A, so the same calibration. No base slab and no
+  arming plate. The clock is a 4-block column behind the feeder, and the launch is held by
+  *locking* one repeater (RL) while the feeder still holds TNT: the feeder comparator's
+  boosted signal points into RL's side. No inverter and no 50-tick delay chain. Load TNT
+  first, then the wind charges.
+- 64 TNT x 100+100 charges: all 64 staged, every fuse 75, motion (67.59, -33.94, 67.95),
+  sd 0.006 / 0.26 / 0.23.
+- Live fire, 64 TNT x 150/120 (`livefire-mk2-64x150x120.json`): stop 0.79 blocks from the
+  prediction. Crater 650 blocks, 6 deep: 2.1x Mk1-A's 8-TNT shot for 8x the TNT.
+
+## Payload timing matters more than payload size (`payload_drill_test.py`)
+TNT stacked exactly on one spot of a 31x31x20 stone block (fuse 20 + k*stagger):
+
+| payload | destroyed | depth |
+|---|---|---|
+| 8 equal | 236 | 5 |
+| 64 equal | 251-357 | 5-6 |
+| 10 @ 4 t | 385 | 10 |
+| 12 @ 4 t | 471 | 12 |
+| 16 @ 4 t | 647 | 16 |
+| 20 @ 4 t | 825 | 19 |
+| 64 @ 1 t | 1015-1441 | 20+ (to bedrock) |
+
+Explosions at one point in one tick mostly overlap. Staggered fuses drill: each TNT falls into
+the last one's hole, roughly one block deeper per TNT. A dispenser fires at most every 4 ticks
+and a fuse is at most 80, so a single-feeder drill holds about 12-16 TNT.
+
+## Zephyr Mk3 "Drill" (`zephyr.py: mk3_layout`, 106 blocks) - works, drill underperforms
+- Mk2 with a 4-tick two-repeater ring clock. TNT collects in the W cell and is pushed in all
+  at once when the feeder runs empty (an observer on the feeder comparator), so the fuses come
+  out 4 ticks apart (37..73). It launches twice as fast as Mk2.
+- Live fire, 12 TNT (`livefire-mk3-12x150x120.json`): stop 0.55 blocks from the prediction,
+  but only 377 blocks / 6 deep against 471 / 12 deep for the same payload stacked exactly.
+- Why: the payload has to be *exactly* co-located to drill. In the W channel each TNT sits
+  0.01 against one wall or the other (z 0.49 or 0.51). The Z charges turn that into a 0.6%
+  velocity difference, about 0.45 blocks at the target. Spread TNT throw each other sideways
+  instead of falling into the hole (one landed 4 blocks off). One TNT pushed mid-hop by the
+  stager's first pulse also ends up 0.7 off. Mk2 doesn't care, since its whole payload
+  detonates at once.
+- Next: centre the TNT in Z before staging (bias the dispense drift to one wall, or a second
+  push along Z), and stop the first stager pulse from firing during the load.

@@ -234,9 +234,9 @@ def auto_layout():
     return L
 
 
-def build_auto(bx, Y, bz):
+def build_auto(bx, Y, bz, layout=None, kick=(-8, -2, 4, "west")):
     r.cmd(f"fill {bx-14} {Y-3} {bz-7} {bx+3} {Y+3} {bz+8} air")
-    lay = auto_layout()
+    lay = (layout or auto_layout)()
     # supports first, components after, so nothing pops off while placing
     lay.sort(key=lambda b: (b[1], 0 if "concrete" in b[3] or "planks" in b[3] or "table" in b[3] else 1))
     bad = []
@@ -247,6 +247,137 @@ def build_auto(bx, Y, bz):
     # rebuilding pops loose dust/repeaters as items; any entity left on the arming plate holds it
     r.cmd(f"kill @e[type=item,x={bx-16},y={Y-4},z={bz-8},dx=20,dy=8,dz=17]")
     # kick the observer clock into oscillation (placing an observer facing another does it)
-    r.cmd(f"setblock {bx-8} {Y-2} {bz+4} air")
-    r.cmd(f"setblock {bx-8} {Y-2} {bz+4} observer[facing=west]")
+    kx, ky, kz, kf = kick
+    r.cmd(f"setblock {bx+kx} {Y+ky} {bz+kz} air")
+    r.cmd(f"setblock {bx+kx} {Y+ky} {bz+kz} " + (kf if "[" in kf else f"observer[facing={kf}]"))
     return bad
+
+
+# ---------------------------------------------------------------------------------------------
+# Zephyr Mk2: the Mk1-A core, stager and launcher drive, with a compact controller.
+# No base slab, no arming plate: the clock always runs and the launch is held back by locking
+# one repeater while the feeder still holds TNT. Load TNT first, then the wind charges.
+#   clock:  observers (-1,0,7)/(-1,0,6) -> copper bulb Bc (-1,0,5) -> comparator Cc (-1,0,4)
+#           -> feed repeater (-1,0,3) -> block (-1,0,2) -> feeder
+#   B:      comparator Cb (-2,0,5) also reads Bc -> dust west and north -> RL (-5,0,1)
+#   lock:   C_F (-2,0,1) reads the feeder -> R1 -> R1b points into RL's side: RL holds its
+#           state (off) for as long as there is TNT left to stage
+#   launch: RL -> north along x=-5 -> east along z=-5 (repeater boost) -> staircase at x=-1
+#           -> dust above the X launcher (quasi-connectivity) and repeater B into Z
+# ---------------------------------------------------------------------------------------------
+MK2_KICK = (-1, 0, 6, "south")
+
+
+def mk2_layout():
+    L = []
+
+    def put(x, y, z, b):
+        L.append((x, y, z, b))
+
+    def dust(pts, support="gray_concrete"):
+        for (x, y, z) in pts:
+            if support:
+                put(x, y - 1, z, support)
+            put(x, y, z, "redstone_wire")
+
+    # core
+    put(0, 0, 0, "powder_snow")
+    for p in [(0, -1, 0), (-1, -1, 0), (0, -1, -1)]:
+        put(*p, "polished_andesite")
+    put(-1, 1, 0, "dispenser[facing=down]")          # X launcher
+    put(0, 1, -1, "dispenser[facing=down]")          # Z launcher
+    put(-1, 0, 1, "dispenser[facing=north]")         # TNT feeder
+    put(-1, 0, -1, "white_concrete")                 # channel wall
+    put(-2, 0, 0, "piston[facing=east]")             # stager
+    # clock + feed
+    put(-1, 0, 7, "observer[facing=north]"); put(-1, 0, 6, "observer[facing=south]")
+    put(-1, 0, 5, "waxed_copper_bulb")
+    put(-1, -1, 4, "gray_concrete"); put(-1, 0, 4, "comparator[facing=south,mode=compare]")   # Cc
+    put(-1, -1, 3, "gray_concrete"); put(-1, 0, 3, "repeater[facing=south,delay=1]")
+    put(-1, 0, 2, "white_concrete")
+    # stage (as Mk1-A)
+    put(-2, 0, 2, "waxed_copper_bulb")
+    put(-3, -1, 2, "gray_concrete"); put(-3, 0, 2, "comparator[facing=east,mode=compare]")
+    put(-3, 1, 2, "observer[facing=down]")
+    dust([(-3, 2, 2)], support=None)
+    put(-3, 1, 1, "glass"); put(-3, 2, 1, f"repeater[facing=south,delay={STAGE_D}]")
+    put(-3, 1, 0, "glass"); dust([(-3, 2, 0)], support=None)
+    put(-3, 1, -1, "gray_concrete"); dust([(-3, 2, -1)], support=None)
+    put(-3, 0, -2, "gray_concrete"); dust([(-3, 1, -2)], support=None)
+    put(-3, -1, -3, "glass"); dust([(-3, 0, -3)], support=None)
+    put(-2, -1, -3, "glass"); dust([(-2, 0, -3)], support=None)
+    put(-2, -1, -2, "glass"); dust([(-2, 0, -2)], support=None)
+    put(-2, 1, -3, "gray_concrete"); put(-2, 1, -2, "gray_concrete")
+    put(-2, -1, -1, "gray_concrete"); put(-2, 0, -1, "repeater[facing=north,delay=1]")
+    # feeder sense -> lock
+    put(-2, -1, 1, "gray_concrete"); put(-2, 0, 1, "comparator[facing=east,mode=compare]")   # C_F
+    put(-3, -1, 1, "gray_concrete"); put(-3, 0, 1, "repeater[facing=east,delay=1]")          # R1
+    put(-4, -1, 1, "gray_concrete"); put(-4, 0, 1, "repeater[facing=east,delay=1]")          # R1b
+    # B -> RL
+    put(-2, -1, 5, "gray_concrete"); put(-2, 0, 5, "comparator[facing=east,mode=compare]")   # Cb
+    dust([(-3, 0, 5), (-4, 0, 5), (-5, 0, 5), (-5, 0, 4), (-5, 0, 3), (-5, 0, 2)])
+    put(-5, -1, 1, "gray_concrete"); put(-5, 0, 1, "repeater[facing=south,delay=1]")         # RL
+    # launch
+    dust([(-5, 0, z) for z in range(0, -6, -1)] + [(-4, 0, -5), (-2, 0, -5), (-1, 0, -5)])
+    put(-3, -1, -5, "gray_concrete"); put(-3, 0, -5, "repeater[facing=west,delay=1]")
+    dust([(-1, 0, -4)])
+    put(-1, 0, -3, "glass"); dust([(-1, 1, -3)], support=None)
+    put(-1, 0, -2, "glass"); dust([(-1, 1, -2)], support=None)
+    put(-1, 1, -1, "glass"); dust([(-1, 2, -1)], support=None)                                # -> X
+    for p in [(0, 0, -3), (1, 0, -3), (2, 0, -3), (2, 0, -2), (2, 0, -1), (1, 0, -1)]:
+        put(*p, "gray_concrete")
+    dust([(0, 1, -3), (1, 1, -3), (2, 1, -3), (2, 1, -2), (2, 1, -1)], support=None)
+    put(1, 1, -1, "repeater[facing=east,delay=1]")                                        # -> Z
+    # de-duplicate (later entries win), keep supports
+    seen = {}
+    for x, y, z, b in L:
+        seen[(x, y, z)] = b
+    return [(x, y, z, b) for (x, y, z), b in seen.items()]
+
+
+# ---------------------------------------------------------------------------------------------
+# Zephyr Mk3 "Drill": Mk2 with a payload that bores instead of popping.
+# TNT with fuses spaced 4 ticks apart detonate one after another, each falling into the hole
+# the last one made: 12 TNT that way destroy more stone than 64 detonating together
+# (payload tests: 471 vs 251 blocks, 12 deep vs 5).
+#   clock:  two-repeater ring (-1,0,5)/(-2,0,6): one 2-gt pulse every 4 game ticks, the
+#           fastest a dispenser can fire. It feeds the feeder and, through RL, the launchers.
+#   stage:  the TNT collects in the W cell (each one ticking, so its fuse runs down) and is
+#           pushed in all at once: an observer on C_F fires when the feeder runs empty.
+#           Fuses end up 4 ticks apart, the oldest lowest.
+#   lock:   R1b delay 4 keeps RL locked until the push is done.
+# The shortest fuse limits the fall after release (see notes): 12 TNT leave ~29 ticks.
+# ---------------------------------------------------------------------------------------------
+MK3_KICK = (-1, 0, 5, "repeater[facing=south,delay=1,powered=true]")
+
+
+def mk3_layout():
+    drop = {(-2, 0, 2), (-3, -1, 2), (-3, 0, 2), (-3, 1, 2), (-3, 2, 2),       # per-feed stager
+            (-1, 0, 7), (-1, 0, 6), (-1, 0, 5), (-1, -1, 4), (-1, 0, 4),        # observer clock
+            (-2, -1, 5), (-2, 0, 5), (-3, 0, 5), (-4, 0, 5), (-5, 0, 5),        # Cb + B line
+            (-3, -1, 5), (-4, -1, 5), (-5, -1, 5)}
+    L = [b for b in mk2_layout() if (b[0], b[1], b[2]) not in drop]
+
+    def put(x, y, z, b):
+        L.append((x, y, z, b))
+
+    def dust(pts):
+        for (x, y, z) in pts:
+            put(x, y - 1, z, "gray_concrete")
+            put(x, y, z, "redstone_wire")
+
+    # 4-gt ring clock; (-1,0,4) also drives the feed repeater, (-2,0,4) the B line
+    put(-1, -1, 5, "gray_concrete"); put(-1, 0, 5, "repeater[facing=south,delay=1]")   # R_a
+    put(-2, -1, 6, "gray_concrete"); put(-2, 0, 6, "repeater[facing=north,delay=1]")   # R_b
+    dust([(-1, 0, 4), (-2, 0, 4), (-2, 0, 5), (-2, 0, 7), (-1, 0, 7), (-1, 0, 6)])
+    dust([(-3, 0, 4), (-4, 0, 4), (-5, 0, 4)])                                          # B -> RL
+    # stage once, when the feeder runs empty
+    put(-2, 1, 1, "observer[facing=down]")                                            # watches C_F
+    put(-2, 2, 1, "redstone_wire")
+    put(-3, 2, 1, "redstone_wire")                                                    # on glass (-3,1,1)
+    # longer lock so the launch waits for the push
+    put(-4, 0, 1, "repeater[facing=east,delay=4]")
+    seen = {}
+    for x, y, z, b in L:
+        seen[(x, y, z)] = b
+    return [(x, y, z, b) for (x, y, z), b in seen.items()]
