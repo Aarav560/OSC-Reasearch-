@@ -41,3 +41,18 @@ Rebuild (meshes and textures are generated locally, not committed: they contain 
     python3 livefire_sound.py /tmp/lf.wav
     ffmpeg -framerate 30 -i /tmp/lf/f%05d.jpg -i /tmp/lf.wav -c:v libx264 -crf 18 -pix_fmt yuv420p \
       -c:a aac -b:a 192k -shortest -movflags +faststart zephyr-livefire.mp4
+
+# Ring-nuke test video
+
+`ring-nuke.mp4`: 36 s, 1080×1920 at 30 fps. This is the 80-ray boosted ring nuke from
+`paper-tests/nuke_test.py` (14 expansion TNT in pairs, an 80-TNT booster ring with fuse 7,
+payload 140 blocks above superflat ground). Every TNT position comes from the per-tick log
+of the run (`nk/data.json`). The ground is the world's top layer read back after the shot,
+and the crater markers sit on the logged detonation points. The warhead was placed by
+command, not fired from a cannon.
+
+    python3 nuke_test.py 300000 100000 40 80 14 0.02,0.01:7 pairs 0 256   # in paper-tests/
+    PAGE=nuke.html NODE_PATH=$(npm root -g) node render.js /tmp/nk 30 0 36
+    python3 nuke_sound.py /tmp/nk.wav
+    ffmpeg -framerate 30 -i /tmp/nk/f%05d.jpg -i /tmp/nk.wav -c:v libx264 -crf 25 -pix_fmt yuv420p \
+      -c:a aac -b:a 160k -shortest -movflags +faststart ring-nuke.mp4

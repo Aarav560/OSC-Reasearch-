@@ -61,8 +61,14 @@ for i in range(K):
     ey = 0.0625 if (mode == "pairs" and i % 2) else 0.0
     r.cmd(f"summon tnt {cx + 0.5 + ex} {cy - 0.0625 + ey} {cz + 0.5 + ez} {{fuse:{fuse},Motion:[0d,0d,0d],Tags:[\"exp\"]}}")
 last = {}
+track = []                      # every TNT, every tick: [group tag, x, y, z]
 for t in range(82):
     r.step(1)
+    frame = []
+    for tag in ["ring", "boost", "exp"]:
+        o = r.cmd(f"execute as @e[type=tnt,tag={tag}] run data get entity @s Pos")
+        frame += [[tag] + [round(float(v), 3) for v in m] for m in re.findall(r"\[(-?[\d.E-]+)d, (-?[\d.E-]+)d, (-?[\d.E-]+)d\]", o)]
+    track.append(frame)
     o = r.cmd("execute as @e[type=tnt,tag=ring] run data get entity @s Pos")
     ps = re.findall(r"\[(-?[\d.E-]+)d, (-?[\d.E-]+)d, (-?[\d.E-]+)d\]", o)
     if not ps:
@@ -73,6 +79,7 @@ groups = sorted(set(round(v) for v in radii))
 ys = [p[1] for p in last["pos"]]
 print(f"ring {N} exp {K} {mode} dy {dv:+g}: detonate t={last['t']} radius min {radii[0]:.1f} median {radii[len(radii)//2]:.1f} "
       f"max {radii[-1]:.1f}  y {min(ys):.1f}..{max(ys):.1f}  ring radii {groups}")
-json.dump({"centre": [cx, cy, cz], "ring": N, "exp": K, "mode": mode, "offset": off, "last": last, "radii": radii},
+json.dump({"centre": [cx, cy, cz], "ring": N, "exp": K, "mode": mode, "offset": off, "groups": specs,
+           "last": last, "radii": radii, "track": track},
           open(f"nuke-{N}x{K}-{mode}{dv:+g}.json", "w"))
 r.cmd("tick unfreeze")

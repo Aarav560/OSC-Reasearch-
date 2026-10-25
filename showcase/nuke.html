@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ring Nuke Test</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  :root { --ink: #0e0d0c; --cream: #f1ebdd; --coral: #e5673b; --green: #5bd17a; --gold: #ffd36e; --mute: #8a8378; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+  canvas { position: absolute; inset: 0; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+  .anton { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
+  .serif { font-family: 'Instrument Serif', serif; font-style: italic; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .mask { overflow: hidden; display: block; }
+  .mask > span { display: block; }
+  .kicker { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 9px; font-size: 24px; text-transform: uppercase; }
+  .panel { background: rgba(14,13,12,.8); border-left: 6px solid var(--coral); padding: 26px 34px; }
+  .shade { text-shadow: 0 4px 24px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl" width="1080" height="1920"></canvas>
+  <canvas id="fx" width="1080" height="1920"></canvas>
+  <div id="ui" class="layer"></div>
+</div>
+<script src="assets/three.min.js"></script>
+<script>
+/* Ring-nuke test on Paper 26.3. Every frame is renderFrame(t), t in seconds.
+   TNT positions come from a per-tick log of the shot (paper-tests/nuke_test.py, extracted to
+   nk/data.json); the ground is the world's top layer before the shot and after it. */
+const W = 1080, H = 1920, DUR = 36;
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  outCubic: k => 1 - Math.pow(1 - k, 3),
+  inOutCubic: k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  outExpo: k => k >= 1 ? 1 : 1 - Math.pow(2, -10 * k),
+};
+const V = (a, b, k) => a.map((v, i) => lerp(v, b[i], k));
+let D = null, GY = -100, EVENTS = [];
+
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H, false); renderer.outputEncoding = THREE.sRGBEncoding;
+const scene = new THREE.Scene();
+(function sky() {
+  const c = document.createElement('canvas'); c.width = 2; c.height = 256;
+  const g = c.getContext('2d'), gr = g.createLinearGradient(0, 0, 0, 256);
+  gr.addColorStop(0, '#4f7fd8'); gr.addColorStop(.55, '#9dbef5'); gr.addColorStop(1, '#dbe7fb');
+  g.fillStyle = gr; g.fillRect(0, 0, 2, 256); scene.background = new THREE.CanvasTexture(c);
+})();
+scene.fog = new THREE.Fog(0xc7d9f7, 1400, 4200);
+const cam = new THREE.PerspectiveCamera(50, W / H, 0.05, 3000);
+const loader = new THREE.TextureLoader();
+function tex(p) { const t = loader.load(p); t.magFilter = t.minFilter = THREE.NearestFilter; t.generateMipmaps = false; t.encoding = THREE.sRGBEncoding; return t; }
+let groundB, groundA, tntMesh;
+const MAXN = 200;
+
+// ---------------------------------------------------------------- UI helpers
+const ui = document.getElementById('ui'), fx = document.getElementById('fx').getContext('2d');
+const els = {};
+function el(id, html, css) {
+  if (!els[id]) { const d = document.createElement('div'); d.style.cssText = 'position:absolute;' + (css || ''); ui.appendChild(d); els[id] = d; }
+  const d = els[id]; if (d._html !== html) { d.innerHTML = html; d._html = html; } return d;
+}
+function show(d, on, op = 1) { d.style.display = on ? 'block' : 'none'; d.style.opacity = op; }
+function maskLines(id, lines, css, t, t0, t1) {
+  const d = el(id, lines.map(l => `<div class="mask"><span>${l}</span></div>`).join(''), css);
+  show(d, t >= t0 && t < t1);
+  d.querySelectorAll('.mask > span').forEach((s, i) => {
+    const kin = E.outExpo(prog(t, t0 + i * .09, t0 + i * .09 + .7)), kout = E.inOutCubic(prog(t, t1 - .45, t1));
+    s.style.transform = `translateY(${(1 - kin) * 105 - kout * 105}%)`;
+  });
+}
+function fade(t, t0, t1, f = .35) { return Math.min(prog(t, t0, t0 + f), 1 - prog(t, t1 - f, t1)); }
+const cream = 'color:var(--cream);';
+
+// ---------------------------------------------------------------- timeline
+// video time -> game tick (fractional). Ticks 1-8 slow, then the flight, then the impact.
+const T = { ign: 10, boostEnd: 15, impact: 25, reveal: 26.5, end: 32.5 };
+function tickAt(t) {
+  if (t < T.ign) return 0;
+  if (t < T.boostEnd) return lerp(0, 8, prog(t, T.ign, T.boostEnd));
+  if (t < T.impact) return lerp(8, 79, prog(t, T.boostEnd, T.impact));
+  return 80;
+}
+function frameAt(tk) {                          // interpolated TNT list at fractional tick
+  if (tk <= 0) return D.track[0].map(e => [e[0], 0, 0, 0]);
+  const i = Math.min(Math.floor(tk), D.track.length) - 1, f = tk - Math.floor(tk);
+  const A = i < 0 ? D.track[0].map(e => [e[0], 0, 0, 0]) : D.track[i], B = D.track[Math.min(i + 1, D.track.length - 1)];
+  if (!B || B.length !== A.length) return A;
+  return A.map((e, k) => [e[0], lerp(e[1], B[k][1], f), lerp(e[2], B[k][2], f), lerp(e[3], B[k][3], f)]);
+}
+function buildEvents() {                        // a TNT that vanishes between two frames exploded there
+  const cnt = (fr, g) => fr.filter(e => e[0] === g).length;
+  for (let i = 0; i + 1 < D.track.length + 1; i++) {
+    const A = D.track[i], B = D.track[i + 1] || [];
+    for (const g of [0, 1, 2]) {
+      const lost = cnt(A, g) - cnt(B, g);
+      if (lost <= 0) continue;
+      const pts = A.filter(e => e[0] === g);
+      const chosen = cnt(B, g) === 0 ? pts : pts.slice(0, lost);
+      for (const e of chosen) EVENTS.push({ tick: i + 2, g, p: [e[1], e[2], e[3]] });
+    }
+  }
+}
+function camOrbit(t, c, r, h, a0, spd) { const a = a0 + t * spd; return { pos: [c[0] + Math.cos(a) * r, c[1] + h, c[2] + Math.sin(a) * r], look: c }; }
+function project(p) { const v = new THREE.Vector3(...p).project(cam); return v.z < 1 ? [(v.x + 1) / 2 * W, (1 - v.y) / 2 * H, v.z] : null; }
+function screenScale(p, worldR) {
+  const a = project(p), b = project([p[0], p[1] + worldR, p[2]]);
+  return a && b ? Math.max(2, Math.hypot(a[0] - b[0], a[1] - b[1])) : 0;
+}
+function glow(x, y, r, col, a) {
+  const g = fx.createRadialGradient(x, y, 0, x, y, r);
+  g.addColorStop(0, `rgba(${col},${a})`); g.addColorStop(.35, `rgba(${col},${a * .55})`); g.addColorStop(1, `rgba(${col},0)`);
+  fx.fillStyle = g; fx.beginPath(); fx.arc(x, y, r, 0, Math.PI * 2); fx.fill();
+}
+function circleOnGround(rad, col, width, dash, op) {
+  fx.save(); fx.strokeStyle = `rgba(${col},${op})`; fx.lineWidth = width; fx.setLineDash(dash);
+  fx.beginPath(); let first = true;
+  for (let i = 0; i <= 160; i++) {
+    const a = i / 160 * Math.PI * 2, s = project([Math.cos(a) * rad, GY + .2, Math.sin(a) * rad]);
+    if (!s) { first = true; continue; }
+    if (first) { fx.moveTo(s[0], s[1]); first = false; } else fx.lineTo(s[0], s[1]);
+  }
+  fx.stroke(); fx.restore();
+}
+
+const dummy = new THREE.Object3D();
+window.renderFrame = function (t) {
+  for (const k in els) els[k].style.display = 'none';
+  fx.clearRect(0, 0, W, H);
+  const tk = tickAt(t), fr = frameAt(tk);
+  groundB.visible = t < T.impact + .15; groundA.visible = !groundB.visible;
+
+  // camera
+  let c;
+  if (t < T.ign) { c = camOrbit(t, [0, 0, 0], lerp(9, 14, t / T.ign), 3.5, .4, .12); c.look = [0, 2.2, 0]; }
+  else if (t < T.boostEnd) {
+    const k = E.inOutCubic(prog(t, T.ign, T.boostEnd));
+    const a = camOrbit(T.ign, [0, 0, 0], 14, 3.5, .4, .12);
+    c = { pos: V(a.pos, [70, 45, 110], k), look: [0, -2 * k, 0] };
+  } else if (t < T.reveal) {
+    const k = E.inOutCubic(prog(t, T.boostEnd, T.impact));
+    c = { pos: V([70, 45, 110], [260, 760, 560], k), look: V([0, -2, 0], [0, GY, 0], k) };
+  } else {
+    const k = E.inOutCubic(prog(t, T.reveal, T.reveal + 3));
+    const o = camOrbit(t - T.reveal, [0, GY, 0], lerp(615, 330, k), lerp(860, 900, k), 1.14, .05);
+    c = { pos: o.pos, look: o.look };
+  }
+  if (t > T.impact && t < T.impact + .8) { const s = (1 - prog(t, T.impact, T.impact + .8)) * 3; c.pos = c.pos.map((v, i) => v + Math.sin(t * 70 + i * 2) * s); }
+  cam.fov = 50; cam.position.set(...c.pos); cam.lookAt(...c.look); cam.updateProjectionMatrix();
+
+  // TNT as real blocks (instanced), only while they exist
+  const alive = t < T.impact ? fr : [];
+  tntMesh.count = Math.min(alive.length, MAXN);
+  for (let i = 0; i < tntMesh.count; i++) {
+    const e = alive[i]; dummy.position.set(e[1], e[2] + .49, e[3]); dummy.updateMatrix(); tntMesh.setMatrixAt(i, dummy.matrix);
+  }
+  tntMesh.instanceMatrix.needsUpdate = true;
+  renderer.render(scene, cam);
+
+  // glow markers so the payload reads at any distance
+  const cols = ['255,140,70', '255,214,110', '255,255,255'];
+  if (t >= T.ign && t < T.impact) for (const e of alive) {
+    const s = project([e[1], e[2] + .5, e[3]]); if (!s) continue;
+    glow(s[0], s[1], Math.max(13, screenScale([e[1], e[2], e[3]], 1.6)), cols[e[0]], 1);
+  }
+  // explosions
+  for (const ev of EVENTS) {
+    const dt = tk - ev.tick, life = ev.g === 0 ? 6 : 3;
+    const vt = t >= T.impact ? (t - T.impact) * 8 + (79 - ev.tick) : dt;
+    if (vt < 0 || vt > life) continue;
+    const s = project(ev.p); if (!s) continue;
+    const k = vt / life, rr = screenScale(ev.p, ev.g === 0 ? 9 : 5) * (0.6 + 1.6 * E.outExpo(k));
+    glow(s[0], s[1], rr, '255,236,190', 1 - k);
+    glow(s[0], s[1], rr * .45, '255,255,255', (1 - k) * .9);
+  }
+  // craters: at the real detonation points, sized like the measured craters (~6 blocks across)
+  if (t >= T.impact) for (const ev of EVENTS) {
+    if (ev.g !== 0) continue;
+    const s = project([ev.p[0], GY + .1, ev.p[2]]); if (!s) continue;
+    const rr = Math.max(4, screenScale([ev.p[0], GY, ev.p[2]], 3.2));
+    fx.fillStyle = 'rgba(46,32,24,.92)'; fx.beginPath(); fx.arc(s[0], s[1], rr, 0, Math.PI * 2); fx.fill();
+    const ember = 1 - prog(t, T.impact, T.reveal + 2.5);
+    if (ember > 0) glow(s[0], s[1], rr * 2.6, '255,150,70', .75 * ember);
+  }
+  if (t >= T.impact && t < T.impact + .45) { fx.fillStyle = `rgba(255,246,225,${.85 * (1 - prog(t, T.impact, T.impact + .45))})`; fx.fillRect(0, 0, W, H); }
+  // comparison circles on the ground after the impact
+  if (t >= T.reveal + 1.5 && t < T.end) {
+    const o1 = fade(t, T.reveal + 1.5, T.end), o2 = fade(t, T.reveal + 2.6, T.end);
+    circleOnGround(186, '229,103,59', 5, [18, 14], o1);
+    circleOnGround(D.radius_median, '91,209,122', 4, [], o2 * .85);
+  }
+  // scrims
+  if (t < T.end) {
+    const gt = fx.createLinearGradient(0, 0, 0, 760); gt.addColorStop(0, 'rgba(10,9,8,.6)'); gt.addColorStop(1, 'rgba(10,9,8,0)');
+    fx.fillStyle = gt; fx.fillRect(0, 0, W, 760);
+    const gb = fx.createLinearGradient(0, H - 760, 0, H); gb.addColorStop(0, 'rgba(10,9,8,0)'); gb.addColorStop(1, 'rgba(10,9,8,.6)');
+    fx.fillStyle = gb; fx.fillRect(0, H - 760, W, 760);
+  }
+
+  // ---------------- text
+  maskLines('k0', ['<span class="kicker" style="color:var(--coral)">Warhead test · Paper 26.3</span>'], 'left:80px;top:170px;', t, .3, 4.2);
+  maskLines('t0', ['<span class="anton shade" style="font-size:200px;line-height:.9;' + cream + '">Ring</span>', '<span class="anton shade" style="font-size:200px;line-height:.9;color:var(--coral)">Nuke</span>'], 'left:74px;top:220px;', t, .45, 4.2);
+  maskLines('s0', ['<span class="serif shade" style="font-size:54px;' + cream + '">cubicmetre\'s Mk.6 nuke tops out at</span>', '<span class="serif shade" style="font-size:54px;' + cream + '">372 blocks across. Can I match it?</span>'], 'left:80px;top:660px;', t, 1, 4.2);
+  const steps = [
+    ['01', '160 TNT, a hair from the centre', 'each in its own direction · fuse 80'],
+    ['02', '14 expansion charges in pairs', 'sunk 0.0625: a blast sits that far above its TNT'],
+    ['03', '80-TNT booster ring', 'fuse 7: kicks the main ring outward again mid-flight'],
+  ];
+  steps.forEach(([n, a, b], i) => {
+    const t0 = 4.4 + i * 1.7;
+    const d = el('st' + i, `<div class="panel"><div class="kicker" style="color:var(--coral)">${n}</div>
+      <div class="anton" style="font-size:60px;line-height:1.05;color:var(--cream);margin-top:6px">${a}</div>
+      <div class="mono" style="font-size:26px;color:var(--mute);margin-top:8px">${b}</div></div>`, `left:60px;right:60px;top:${300 + i * 290}px;`);
+    show(d, t >= t0 && t < T.ign, fade(t, t0, T.ign));
+    d.style.transform = `translateX(${(1 - E.outCubic(prog(t, t0, t0 + .5))) * -60}px)`;
+  });
+  if (t >= T.ign && t < T.impact + .3) {
+    const n = Math.max(0, Math.floor(tk));
+    const label = tk < 7 ? 'EXPANSION' : tk < 9 ? 'BOOSTER' : 'FLIGHT';
+    const d = el('tick', `<div class="anton shade" style="font-size:210px;line-height:1;color:var(--cream)">${String(n).padStart(2, '0')}<span style="font-size:70px;color:var(--coral)"> / 80</span></div>
+      <div class="kicker" style="color:var(--cream)">game ticks · ${label}</div>`, 'left:70px;bottom:190px;');
+    show(d, true, fade(t, T.ign, T.impact + .3, .25));
+  }
+  maskLines('cap1', ['<span class="anton shade" style="font-size:100px;line-height:1;' + cream + '">Push outward.</span>', '<span class="serif shade" style="font-size:46px;' + cream + '">two charges per tick, each at full strength</span>'], 'left:70px;top:190px;', t, T.ign + .2, T.ign + 3.4);
+  maskLines('cap2', ['<span class="anton shade" style="font-size:100px;line-height:1;' + cream + '">Then again.</span>', '<span class="serif shade" style="font-size:46px;' + cream + '">the booster ring goes off right behind the main ring</span>'], 'left:70px;top:190px;', t, T.ign + 3.5, T.boostEnd + 2);
+  maskLines('cap3', ['<span class="anton shade" style="font-size:100px;line-height:1;' + cream + '">80 TNT, one circle.</span>'], 'left:70px;top:190px;', t, T.boostEnd + 2.4, T.impact);
+  maskLines('rv', ['<span class="kicker" style="color:var(--coral)">Blast map, read from the world</span>', '<span class="anton shade" style="font-size:150px;line-height:.95;' + cream + '">~404 across</span>'], 'left:70px;top:180px;', t, T.reveal + .3, T.end);
+  const leg = el('leg', `<div class="panel"><div class="mono" style="font-size:30px;line-height:1.8;color:var(--cream)">
+    <span style="color:var(--coral)">- - -</span>&nbsp; cubicmetre Mk.6 max · 372<br>
+    <span style="color:var(--green)">———</span>&nbsp; this test · median radius ${D.radius_median.toFixed(0)}<br>
+    <span style="color:var(--mute)">${D.craters} blocks blasted · 80 craters</span></div></div>`, 'left:60px;right:60px;bottom:170px;');
+  show(leg, t >= T.reveal + 1.6 && t < T.end, fade(t, T.reveal + 1.6, T.end));
+  if (t >= T.end) { fx.fillStyle = `rgba(14,13,12,${E.outCubic(prog(t, T.end, T.end + .6))})`; fx.fillRect(0, 0, W, H); }
+  maskLines('e0', ['<span class="anton" style="font-size:150px;line-height:.95;color:var(--cream)">Matched.</span>', '<span class="anton" style="font-size:150px;line-height:.95;color:var(--coral)">Now deliver it.</span>'], 'left:80px;top:620px;', t, T.end + .3, DUR + 1);
+  maskLines('e1', ['<span class="mono" style="font-size:28px;color:var(--mute)">test warhead placed by command · cannon delivery is next</span>', '<span class="mono" style="font-size:28px;color:var(--mute)">Paper 26.3 build 214 · every TNT logged per tick</span>'], 'left:80px;top:1000px;', t, T.end + .8, DUR + 1);
+};
+
+window.ready = (async () => {
+  D = await (await fetch('nk/data.json')).json();
+  GY = D.groundY + 1;                                   // top face of the grass layer
+  const size = 2 * D.R;
+  for (const [name, file] of [['b', 'nk/ground_before.png'], ['a', 'nk/ground_after.png']]) {
+    const gtex = tex(file); gtex.minFilter = THREE.LinearMipmapLinearFilter; gtex.generateMipmaps = true;  // seen from far up
+    gtex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(size, size), new THREE.MeshBasicMaterial({ map: gtex }));
+    m.rotation.x = -Math.PI / 2; m.position.set(0, GY, 0); scene.add(m);
+    if (name === 'b') groundB = m; else groundA = m;
+  }
+  // grass beyond the mapped area, so the horizon is ground, not the edge of the map tile
+  const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d');
+  for (let i = 0; i < 64 * 64; i++) { const k = Math.random() * 2 - 1; g.fillStyle = `rgb(${96 + 10 * k},${150 + 12 * k},${66 + 8 * k})`; g.fillRect(i % 64, i / 64 | 0, 1, 1); }
+  const gt = new THREE.CanvasTexture(c); gt.wrapS = gt.wrapT = THREE.RepeatWrapping; gt.repeat.set(125, 125);
+  gt.magFilter = gt.minFilter = THREE.NearestFilter; gt.encoding = THREE.sRGBEncoding;
+  const far = new THREE.Mesh(new THREE.PlaneGeometry(8000, 8000), new THREE.MeshBasicMaterial({ map: gt }));
+  far.rotation.x = -Math.PI / 2; far.position.set(0, GY - .3, 0); scene.add(far);
+  const s = tex('lf/textures/tnt_side.png'), tp = tex('lf/textures/tnt_top.png'), bt = tex('lf/textures/tnt_bottom.png');
+  const mk = (t, k) => new THREE.MeshBasicMaterial({ map: t, color: new THREE.Color(k, k, k) });
+  tntMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(.98, .98, .98), [mk(s, .6), mk(s, .6), mk(tp, 1), mk(bt, .5), mk(s, .8), mk(s, .8)], MAXN);
+  scene.add(tntMesh);
+  buildEvents();
+  await new Promise(r => setTimeout(r, 400));
+  await document.fonts.ready;
+  return true;
+})();
+</script>
+</body>
+</html>
