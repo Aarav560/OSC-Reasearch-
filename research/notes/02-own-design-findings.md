@@ -60,3 +60,17 @@
   (67.379, -34.005, 67.253) against the core calibration (66.83, -34.1, 66.9). Spread
   sd 0.003 / 0.18 / 0.16 b/t, so after the 0.9x brake the landing spread is about 0.15 blocks.
   (`paper-tests/mk1a-test-8x100.json`)
+
+## Zephyr Mk1-A live fire (`paper-tests/mk1a_livefire.py`, `livefire-8x150x120.json`)
+- Cannon at S = (56000, -10, 56000) in a superflat world. The W, N and NW chunks are
+  force-loaded and the payload chunk stays lazy. Charging runs in real time, fully automatic:
+  8 TNT staged in 5.9 s, then 150 X + 120 Z charges in 90 s.
+- Frozen payload: motion (101.35, -45.49, 81.60) b/t, every fuse 75. The prediction from the
+  8x100 calibration was (101.07, -45.9, 80.70).
+- Release (force-load the payload chunk): Y moves first and is blocked by the cell floor, so
+  the payload goes 0.9·v in X then Z within one tick (117 blocks straight-line) and stops dead
+  in the powder snow. It then falls 40 blocks and detonates at tick 75 on the target.
+- Stop point (56091.72, 56073.95) against the predicted (56091.46, 56073.13): a 0.85-block miss.
+  Crater in a 10-high stone block: 311 blocks, 5 deep, centroid within 0.6 blocks of the stop.
+- For aiming, the cannon height only has to keep the fall inside the fuse (~70 blocks max at
+  fuse 75); the vertical component of the charges is wasted on the floor.

@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zephyr Live Fire</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  :root { --ink: #0e0d0c; --cream: #f1ebdd; --coral: #e5673b; --green: #5bd17a; --lazy: #d9483b; --mute: #8a8378; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+  canvas { position: absolute; inset: 0; }
+  .layer { position: absolute; inset: 0; pointer-events: none; }
+  .anton { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
+  .serif { font-family: 'Instrument Serif', serif; font-style: italic; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .inter { font-family: 'Inter', sans-serif; }
+  .mask { overflow: hidden; display: block; }
+  .mask > span { display: block; }
+  .kicker { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 9px; font-size: 24px; text-transform: uppercase; }
+  .panel { background: rgba(14,13,12,.78); border-left: 6px solid var(--coral); padding: 26px 34px; backdrop-filter: blur(6px); }
+  .shade { text-shadow: 0 4px 24px rgba(0,0,0,.55); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl" width="1080" height="1920"></canvas>
+  <canvas id="fx" width="1080" height="1920"></canvas>
+  <div id="ui" class="layer"></div>
+</div>
+<script src="assets/three.min.js"></script>
+<script>
+/* Zephyr Mk1-A live fire on Paper 26.3. Every frame is renderFrame(t), t in seconds.
+   Blocks are meshed from the saved world (build_livefire_scene.py); the timeline, payload
+   motion, flight and crater come from paper-tests/livefire-8x150x120.json via lf/data.json. */
+const W = 1080, H = 1920, DUR = 44;
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, k) => a + (b - a) * k;
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const E = {
+  outCubic: k => 1 - Math.pow(1 - k, 3),
+  inOutCubic: k => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2,
+  inOutQuint: k => k < .5 ? 16 * k ** 5 : 1 - Math.pow(-2 * k + 2, 5) / 2,
+  outExpo: k => k >= 1 ? 1 : 1 - Math.pow(2, -10 * k),
+};
+const V = (a, b, k) => a.map((v, i) => lerp(v, b[i], k));
+let D = null;
+
+// ---------------------------------------------------------------- 3D
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H, false); renderer.outputEncoding = THREE.sRGBEncoding;
+const scene = new THREE.Scene();
+(function sky() {
+  const c = document.createElement('canvas'); c.width = 2; c.height = 256;
+  const g = c.getContext('2d'), gr = g.createLinearGradient(0, 0, 0, 256);
+  gr.addColorStop(0, '#5f8fe8'); gr.addColorStop(.6, '#a5c4f7'); gr.addColorStop(1, '#d9e6fb');
+  g.fillStyle = gr; g.fillRect(0, 0, 2, 256);
+  scene.background = new THREE.CanvasTexture(c);
+})();
+scene.fog = new THREE.Fog(0xc3d6f7, 90, 260);
+const cam = new THREE.PerspectiveCamera(50, W / H, 0.05, 1000);
+const loader = new THREE.TextureLoader();
+const groups = {};
+async function loadMesh(name) {
+  const dir = 'lf/' + name;
+  const meta = await (await fetch(dir + '/mesh.json')).json();
+  const bin = await (await fetch(dir + '/mesh.bin')).arrayBuffer();
+  const atlas = await new Promise(r => loader.load(dir + '/atlas.png', r));
+  atlas.magFilter = atlas.minFilter = THREE.NearestFilter; atlas.generateMipmaps = false; atlas.encoding = THREE.sRGBEncoding;
+  const grp = new THREE.Group();
+  for (const [layer, L] of Object.entries(meta.layers)) {
+    if (!L.vertices) continue;
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(bin, L.offset, L.vertices * 3), 3));
+    g.setAttribute('uv', new THREE.BufferAttribute(new Float32Array(bin, L.offset + L.vertices * 12, L.vertices * 2), 2));
+    g.setAttribute('color', new THREE.BufferAttribute(new Uint8Array(bin, L.offset + L.vertices * 20, L.vertices * 3), 3, true));
+    const tr = layer === 'translucent';
+    grp.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: atlas, vertexColors: true, side: THREE.DoubleSide,
+      transparent: tr, alphaTest: tr ? .02 : .5, depthWrite: !tr })));
+  }
+  scene.add(grp); groups[name] = grp; return grp;
+}
+function tex(n) { const t = loader.load('lf/textures/' + n + '.png'); t.magFilter = t.minFilter = THREE.NearestFilter; t.encoding = THREE.sRGBEncoding; return t; }
+const tntMats = (() => { const s = tex('tnt_side'), tp = tex('tnt_top'), bt = tex('tnt_bottom');
+  const m = (t, k) => new THREE.MeshBasicMaterial({ map: t, color: new THREE.Color(k, k, k) });
+  return [m(s, .6), m(s, .6), m(tp, 1), m(bt, .5), m(s, .8), m(s, .8)]; })();
+const tnt = new THREE.Mesh(new THREE.BoxGeometry(.98, .98, .98), tntMats); scene.add(tnt);
+const tntW = new THREE.Mesh(new THREE.BoxGeometry(.98, .98, .98), tntMats); scene.add(tntW);
+const glowMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: .0, depthWrite: false });
+const glow = new THREE.Mesh(new THREE.BoxGeometry(1.06, 1.06, 1.06), glowMat); scene.add(glow);
+function burstMesh() { const m = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 14), new THREE.MeshBasicMaterial({ color: 0xe8f4ff, transparent: true, opacity: 0, depthWrite: false })); scene.add(m); return m; }
+const burstX = burstMesh(), burstZ = burstMesh();
+function lineObj(color, width) {
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6 * 64), 3));
+  const l = new THREE.Line(g, new THREE.LineBasicMaterial({ color, transparent: true, opacity: 1, depthTest: false }));
+  l.renderOrder = 9; scene.add(l); return l;
+}
+function setLine(l, pts, op) {
+  const a = l.geometry.attributes.position; pts.forEach((p, i) => a.setXYZ(i, p[0], p[1], p[2]));
+  l.geometry.setDrawRange(0, pts.length); a.needsUpdate = true; l.material.opacity = op; l.visible = op > 0;
+}
+function beamObj(color) { const m = new THREE.Mesh(new THREE.CylinderGeometry(1, 1, 1, 10), new THREE.MeshBasicMaterial({ color, transparent: true, depthWrite: false })); m.renderOrder = 8; scene.add(m); return m; }
+function setBeam(m, a, b, r, op) {
+  const A = new THREE.Vector3(...a), B = new THREE.Vector3(...b), L = A.distanceTo(B);
+  m.visible = op > 0 && L > 1e-3; if (!m.visible) return;
+  m.position.copy(A).add(B).multiplyScalar(.5); m.scale.set(r, L, r);
+  m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), B.clone().sub(A).normalize()); m.material.opacity = op;
+}
+const bX = beamObj(0xffd23a), bZ = beamObj(0xffd23a), bF = beamObj(0xe5673b);
+const chunkP = lineObj(0xd9483b), chunkW = lineObj(0x5bd17a), chunkN = lineObj(0x5bd17a), chunkNW = lineObj(0x5bd17a);
+function square(x0, z0, y) { return [[x0, y, z0], [x0 + 16, y, z0], [x0 + 16, y, z0 + 16], [x0, y, z0 + 16], [x0, y, z0]]; }
+const flash = new THREE.Mesh(new THREE.SphereGeometry(1, 24, 16), new THREE.MeshBasicMaterial({ color: 0xfff1c9, transparent: true, opacity: 0, depthWrite: false }));
+scene.add(flash);
+
+// ---------------------------------------------------------------- UI helpers
+const ui = document.getElementById('ui');
+const fx = document.getElementById('fx').getContext('2d');
+const els = {};
+function el(id, html, css) {
+  if (!els[id]) { const d = document.createElement('div'); d.style.cssText = 'position:absolute;' + (css || ''); ui.appendChild(d); els[id] = d; }
+  const d = els[id]; if (d._html !== html) { d.innerHTML = html; d._html = html; } return d;
+}
+function show(d, on, op = 1) { d.style.display = on ? 'block' : 'none'; d.style.opacity = op; }
+function maskLines(id, lines, css, t, t0, t1) {
+  const d = el(id, lines.map(l => `<div class="mask"><span>${l}</span></div>`).join(''), css);
+  show(d, t >= t0 && t < t1);
+  d.querySelectorAll('.mask > span').forEach((s, i) => {
+    const kin = E.outExpo(prog(t, t0 + i * .09, t0 + i * .09 + .7)), kout = E.inOutCubic(prog(t, t1 - .45, t1));
+    s.style.transform = `translateY(${(1 - kin) * 105 - kout * 105}%)`;
+  });
+}
+function fade(t, t0, t1, f = .35) { return Math.min(prog(t, t0, t0 + f), 1 - prog(t, t1 - f, t1)); }
+const fmt = (v, n = 2) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(n);
+
+// ---------------------------------------------------------------- timeline
+const T = { charge0: 4, launch0: 9, frozen0: 17, release0: 20, fall0: 26, boom: 31, crater0: 32.4, end0: 40 };
+function realCharge(t) {          // video seconds -> real seconds of the live run (two compression rates)
+  if (t < T.launch0) return lerp(0, D.launch_start, prog(t, T.charge0, T.launch0));
+  return lerp(D.launch_start, D.launch_end, prog(t, T.launch0, T.frozen0));
+}
+function stagedAt(rt) { let n = 0; for (const [ts, s] of D.staged) if (rt >= ts) n = s; return n; }
+function firedAt(rt, n) { return Math.max(0, Math.min(n, Math.floor((rt - D.launch_start) / 0.6) + 1)); }
+
+function flightK(t) { return E.inOutCubic(prog(t, T.release0 + .6, T.release0 + 3.8)); }
+function camOrbit(t, c, r, h, a0, spd) { const a = a0 + t * spd; return { pos: [c[0] + Math.cos(a) * r, c[1] + h, c[2] + Math.sin(a) * r], look: c }; }
+function setCam(c, fov = 50) { cam.fov = fov; cam.position.set(...c.pos); cam.lookAt(...c.look); cam.updateProjectionMatrix(); }
+
+window.renderFrame = function (t) {
+  const stop = D.flight[0], tgtTop = D.target[1] - 1;
+  for (const k in els) els[k].style.display = 'none';
+  fx.clearRect(0, 0, W, H);
+  groups.before.visible = t < T.boom + .08; groups.after.visible = !groups.before.visible;
+  [tnt, tntW, glow, burstX, burstZ, flash].forEach(o => o.visible = false);
+  [bX, bZ, bF, chunkP, chunkW, chunkN, chunkNW].forEach(l => l.visible = false);
+
+  // ---------------- camera
+  let c;
+  const core = [-0.5, 0.2, 0.3];
+  if (t < T.charge0) c = camOrbit(t, [-5, -2, 0.5], 24, 11, 2.2, .09);
+  else if (t < T.release0) {
+    const k = E.inOutCubic(prog(t, T.charge0, T.charge0 + 1.6));
+    const a = camOrbit(T.charge0, [-5, -2, 0.5], 24, 11, 2.2, .09), close = { pos: [7.5 + .25 * (t - T.charge0), 6.5, 9.5 - .2 * (t - T.charge0)], look: core };
+    c = { pos: V(a.pos, close.pos, k), look: V(a.look, close.look, k) };
+    if (t > T.frozen0) { const k2 = E.inOutCubic(prog(t, T.frozen0, T.frozen0 + 1.5)); c = { pos: V(c.pos, [-14, 30, 34], k2), look: V(c.look, [0, -2, 0], k2) }; }
+  } else if (t < T.fall0) {
+    // follow the head of the trail: X leg, then Z leg, then settle above the stopped payload
+    const k = flightK(t), stopP = [stop[0], .5, stop[2]];
+    const head = k > .55 ? [stop[0], .5, lerp(.5, stop[2], prog(k, .55, 1))] : [lerp(.5, stop[0], k / .55), .5, .5];
+    const follow = { pos: [head[0] - 16, 16, head[2] + 26], look: head };
+    const from = { pos: [-14, 30, 34], look: [0, -2, 0] };
+    const k0 = E.inOutCubic(prog(t, T.release0, T.release0 + 1.2));
+    c = { pos: V(from.pos, follow.pos, k0), look: V(from.look, follow.look, k0) };
+    const k1 = E.inOutCubic(prog(t, T.release0 + 3.8, T.fall0));
+    c = { pos: V(c.pos, [stopP[0] + 18, -2, stopP[2] + 26], k1), look: V(c.look, [stopP[0], -6, stopP[2]], k1) };
+  } else if (t < T.crater0) {
+    const tick = clamp(Math.floor((t - T.fall0) / (T.boom - T.fall0) * D.flight.length), 0, D.flight.length - 2);
+    const ty = D.flight[tick][1], kf = E.inOutCubic(prog(t, T.fall0, T.boom));
+    c = { pos: [stop[0] + 18, lerp(-2, tgtTop + 12, kf), stop[2] + 26], look: [stop[0], lerp(ty - 6, tgtTop, kf * kf), stop[2]] };
+  } else {
+    c = camOrbit(t - T.crater0, [D.crater.centroid[0], tgtTop - 2, D.crater.centroid[1]], 21, 17, 0.9, .14);
+  }
+  if (t > T.boom && t < T.boom + .7) { const s = (1 - prog(t, T.boom, T.boom + .7)) * .9; c.pos = c.pos.map((v, i) => v + Math.sin(t * 90 + i * 2) * s); }
+  setCam(c);
+
+  // ---------------- payload & bursts
+  if (t >= T.charge0 && t < T.release0) {
+    const rt = realCharge(t), n = stagedAt(rt);
+    if (n > 0) { tnt.visible = true; tnt.position.set(.5, .49, .5); }
+    // the next TNT appears in W 6 ticks before it is pushed, then slides into S
+    for (const [ts, s] of D.staged) if (s > 0 && rt > ts - .3 && rt < ts + .12) {
+      tntW.visible = true; tntW.position.set(lerp(-.5, .5, E.outCubic(prog(rt, ts, ts + .1))), .49, .5);
+    }
+    if (rt > D.launch_start && rt < D.launch_end) {
+      const ph = ((rt - D.launch_start) / .6) % 1, k = prog(ph, 0, .35);
+      burstX.visible = burstZ.visible = k < 1;
+      burstX.position.set(-.5, .25, .5); burstZ.position.set(.5, .25, -.5);
+      [burstX, burstZ].forEach(b => { b.scale.setScalar(.2 + k * 1.4); b.material.opacity = .65 * (1 - k); });
+      glow.visible = true; glow.position.copy(tnt.position); glowMat.opacity = .5 * (1 - k);
+    }
+  }
+  if (t >= T.frozen0 - .5 && t < T.release0 + 1) {
+    const op = fade(t, T.frozen0 - .5, T.release0 + 1, .5);
+    setLine(chunkP, square(0, 0, .02), op); setLine(chunkW, square(-16, 0, .02), op);
+    setLine(chunkN, square(0, -16, .02), op); setLine(chunkNW, square(-16, -16, .02), op);
+  }
+  if (t >= T.release0) {
+    const k = flightK(t);
+    const p1 = [lerp(.5, stop[0], clamp(k / .55)), .5, .5], p2 = [stop[0], .5, lerp(.5, stop[2], prog(k, .55, 1))];
+    const op = 1 - prog(t, T.fall0 + 2, T.boom);
+    setBeam(bX, [.5, .5, .5], p1, .22, op); if (k > .55) setBeam(bZ, [stop[0], .5, .5], p2, .22, op);
+    let p = k >= 1 ? [stop[0], .5, stop[2]] : (k > .55 ? p2 : p1);
+    if (t < T.release0 + .55) p = [.5, .5, .5];
+    if (t >= T.fall0) {
+      const tick = clamp(Math.floor((t - T.fall0) / (T.boom - T.fall0) * D.flight.length), 0, D.flight.length - 2);
+      const f = D.flight[tick]; p = [f[0], f[1] + .5, f[2]];
+      if (t < T.boom) setBeam(bF, [stop[0], .5, stop[2]], p, .14, .8);
+    }
+    if (t < T.boom) { tnt.visible = true; tnt.position.set(p[0], p[1] - .01, p[2]);
+      glow.visible = true; glow.position.copy(tnt.position); glowMat.opacity = t > T.fall0 ? .35 * (Math.sin(t * 22) > 0) : 0; }
+  }
+  if (t >= T.boom - .02 && t < T.boom + 1.4) {
+    const k = prog(t, T.boom, T.boom + 1.4);
+    flash.visible = true; flash.position.set(D.crater.centroid[0], tgtTop + 1, D.crater.centroid[1]);
+    flash.scale.setScalar(2 + 12 * E.outExpo(k)); flash.material.opacity = .95 * (1 - k);
+  }
+  renderer.render(scene, cam);
+  if (t >= T.boom && t < T.boom + .5) { fx.fillStyle = `rgba(255,247,226,${1 - prog(t, T.boom, T.boom + .5)})`; fx.fillRect(0, 0, W, H); }
+  // scrims behind the type, then vignette
+  if (t < T.end0) {
+    const gt = fx.createLinearGradient(0, 0, 0, 760); gt.addColorStop(0, 'rgba(10,9,8,.55)'); gt.addColorStop(1, 'rgba(10,9,8,0)');
+    fx.fillStyle = gt; fx.fillRect(0, 0, W, 760);
+    const gb = fx.createLinearGradient(0, H - 700, 0, H); gb.addColorStop(0, 'rgba(10,9,8,0)'); gb.addColorStop(1, 'rgba(10,9,8,.5)');
+    fx.fillStyle = gb; fx.fillRect(0, H - 700, W, 700);
+  }
+  // vignette
+  const g = fx.createRadialGradient(W / 2, H / 2, H * .3, W / 2, H / 2, H * .75);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.42)'); fx.fillStyle = g; fx.fillRect(0, 0, W, H);
+
+  // ---------------- text
+  const cream = 'color:var(--cream);';
+  // intro
+  maskLines('k0', ['<span class="kicker" style="color:var(--coral)">Live fire · Paper 26.3</span>'], 'left:80px;top:170px;', t, .3, T.charge0);
+  maskLines('t0', ['<span class="anton shade" style="font-size:190px;line-height:.92;' + cream + '">Zephyr</span>', '<span class="anton shade" style="font-size:190px;line-height:.92;color:var(--coral)">Mk1-A</span>'], 'left:74px;top:220px;', t, .45, T.charge0);
+  maskLines('s0', ['<span class="serif shade" style="font-size:54px;' + cream + '">an orbital strike cannon I designed,</span>', '<span class="serif shade" style="font-size:54px;' + cream + '">fired for real.</span>'], 'left:80px;top:640px;', t, .9, T.charge0);
+  const st0 = el('st0', `<div class="mono" style="font-size:30px;line-height:1.6;color:var(--cream)">8 TNT · 150 X charges · 120 Z charges<br><span style="color:var(--mute)">304 blocks · single feeder · auto-sequenced</span></div>`, 'left:80px;bottom:190px;');
+  show(st0, t < T.charge0, fade(t, 1.2, T.charge0));
+
+  // charge + launch HUD
+  if (t >= T.charge0 && t < T.frozen0 + .3) {
+    const rt = realCharge(t), n = stagedAt(rt), fxN = firedAt(rt, D.nx), fzN = firedAt(rt, D.nz);
+    const phase = rt < D.launch_start ? 'STAGING' : 'LAUNCHING';
+    const speed = t < T.launch0 ? (D.launch_start / (T.launch0 - T.charge0)).toFixed(1) : ((D.launch_end - D.launch_start) / (T.frozen0 - T.launch0)).toFixed(0);
+    const vx = fxN * D.motion[0] / D.nx, vz = fzN * D.motion[2] / D.nz, vy = (fxN + fzN) * D.motion[1] / (D.nx + D.nz);
+    const hud = el('hud', `<div class="panel">
+      <div class="kicker" style="color:var(--coral)">${phase} <span style="color:var(--mute)">· ×${speed} speed · t = ${rt.toFixed(1)} s</span></div>
+      <div class="mono" style="font-size:40px;line-height:1.5;color:var(--cream);margin-top:14px">
+        TNT staged&nbsp;&nbsp;<b>${n}/8</b> <span style="color:var(--mute)">fuse 75 each</span><br>
+        X charges&nbsp;&nbsp;&nbsp;<b>${String(fxN).padStart(3, ' ')}/150</b><br>
+        Z charges&nbsp;&nbsp;&nbsp;<b>${String(fzN).padStart(3, ' ')}/120</b></div>
+      <div class="mono" style="font-size:30px;line-height:1.5;color:var(--green);margin-top:12px">payload v = (${fmt(vx, 1)}, ${fmt(vy, 1)}, ${fmt(vz, 1)}) b/t</div></div>`,
+      'left:60px;right:60px;bottom:150px;');
+    show(hud, true, fade(t, T.charge0 + .2, T.frozen0 + .3));
+  }
+  maskLines('cap1', ['<span class="anton shade" style="font-size:96px;line-height:1;' + cream + '">Feed. Settle. Push.</span>', '<span class="serif shade" style="font-size:46px;' + cream + '">every TNT enters the lazy chunk with the same fuse</span>'], 'left:70px;top:190px;', t, T.charge0 + .4, T.launch0);
+  maskLines('cap2', ['<span class="anton shade" style="font-size:96px;line-height:1;' + cream + '">Wind charges.</span>', '<span class="serif shade" style="font-size:46px;' + cream + '">the payload is frozen, so every push just adds up</span>'], 'left:70px;top:190px;', t, T.launch0 + .2, T.frozen0);
+
+  // frozen readout
+  maskLines('fz', ['<span class="kicker" style="color:var(--lazy)">Lazy chunk · entity frozen</span>', '<span class="anton shade" style="font-size:120px;line-height:1;' + cream + '">101.35 / 81.60</span>', '<span class="serif shade" style="font-size:48px;' + cream + '">blocks per tick of stored velocity, X / Z</span>'], 'left:70px;top:180px;', t, T.frozen0 + .3, T.release0 + .6);
+  const leg = el('leg', `<div class="mono" style="font-size:28px;line-height:1.7;color:var(--cream)"><span style="color:var(--lazy)">■</span> payload chunk: lazy<br><span style="color:var(--green)">■</span> W / N / NW: force-loaded</div>`, 'left:70px;bottom:200px;');
+  show(leg, t >= T.frozen0 && t < T.release0 + .6, fade(t, T.frozen0 + .4, T.release0 + .6));
+
+  // release
+  maskLines('rl', ['<span class="kicker" style="color:var(--coral)">Release · one game tick</span>', '<span class="anton shade" style="font-size:132px;line-height:.95;' + cream + '">117 blocks</span>', '<span class="serif shade" style="font-size:50px;' + cream + '">then the powder snow stops it dead</span>'], 'left:70px;top:180px;', t, T.release0 + .7, T.fall0 + .2);
+  // fall
+  if (t >= T.fall0 && t < T.boom) {
+    const tick = clamp(Math.floor((t - T.fall0) / (T.boom - T.fall0) * D.flight.length), 0, D.flight.length - 1);
+    const d = el('tick', `<div class="anton shade" style="font-size:210px;line-height:1;color:var(--cream)">${String(tick + 1).padStart(2, '0')}<span style="font-size:70px;color:var(--coral)"> / 75</span></div><div class="kicker" style="color:var(--cream)">game ticks to detonation</div>`, 'left:70px;bottom:190px;');
+    show(d, true, fade(t, T.fall0, T.boom, .25));
+  }
+  // crater
+  maskLines('cr', ['<span class="kicker" style="color:var(--coral)">Impact</span>', '<span class="anton shade" style="font-size:150px;line-height:.95;' + cream + '">311 blocks</span>', '<span class="serif shade" style="font-size:52px;' + cream + '">5 deep, in solid stone</span>'], 'left:70px;top:180px;', t, T.crater0 + .3, T.end0);
+  const err = Math.hypot(stop[0] - D.pred[0], stop[2] - D.pred[2]);
+  const st = el('cst', `<div class="panel"><div class="mono" style="font-size:32px;line-height:1.65;color:var(--cream)">
+    predicted stop&nbsp;&nbsp;(${D.pred[0].toFixed(2)}, ${D.pred[2].toFixed(2)})<br>
+    actual stop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(${stop[0].toFixed(2)}, ${stop[2].toFixed(2)})<br>
+    <span style="color:var(--green)">miss ${err.toFixed(2)} blocks over 117</span></div></div>`, 'left:60px;right:60px;bottom:170px;');
+  show(st, t >= T.crater0 + .8 && t < T.end0, fade(t, T.crater0 + .8, T.end0));
+  // end card
+  if (t >= T.end0) {
+    fx.fillStyle = `rgba(14,13,12,${E.outCubic(prog(t, T.end0, T.end0 + .6))})`; fx.fillRect(0, 0, W, H);
+  }
+  maskLines('e0', ['<span class="anton" style="font-size:150px;line-height:.95;color:var(--cream)">Smaller.</span>', '<span class="anton" style="font-size:150px;line-height:.95;color:var(--cream)">Automatic.</span>', '<span class="anton" style="font-size:150px;line-height:.95;color:var(--coral)">On target.</span>'], 'left:80px;top:560px;', t, T.end0 + .3, DUR + 1);
+  maskLines('e1', ['<span class="mono" style="font-size:28px;color:var(--mute)">Zephyr Mk1-A · Paper 26.3 build 214 · logged per tick</span>'], 'left:80px;top:1180px;', t, T.end0 + .8, DUR + 1);
+};
+
+window.ready = (async () => {
+  D = await (await fetch('lf/data.json')).json();
+  await Promise.all(['base', 'before', 'after'].map(loadMesh));
+  await new Promise(r => setTimeout(r, 300));
+  await document.fonts.ready;
+  return true;
+})();
+</script>
+</body>
+</html>

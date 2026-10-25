@@ -1,7 +1,7 @@
 // Render reel.html frame by frame with headless Chromium.
 //   node render.js <outDir> [fps=30] [t0] [t1]        full/partial render
 //   node render.js <outDir> stills 1.0 5.2 ...         single preview frames
-// Expects reel.html to be served at http://127.0.0.1:8765/reel.html.
+// Expects the page (PAGE env, default reel.html) to be served at http://127.0.0.1:8765/.
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -16,7 +16,7 @@ const path = require('path');
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
   page.on('console', m => { if (m.type() === 'error') console.error('page:', m.text()); });
   page.on('pageerror', e => console.error('pageerror:', e.message));
-  await page.goto('http://127.0.0.1:8765/reel.html');
+  await page.goto('http://127.0.0.1:8765/' + (process.env.PAGE || 'reel.html'));
   await page.evaluate(() => window.ready);
   const shot = async (t, file) => {
     await page.evaluate(t => window.renderFrame(t), t);
